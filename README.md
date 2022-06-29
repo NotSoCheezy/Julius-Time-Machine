@@ -17,19 +17,40 @@ Julius
 
 ~
 
-Getting Started
+**Getting Started**
 
 Julius' Time Machine is a mod designed for the debug build of Ty the Tasmanian Tiger on Steam. Certain features may work on the latest version, but proper operation is not guaranteed. Follow the following instructions to download the debug build from official servers. (Note: you must have access to a Steam account with a license for the game!)
 
-[INSERT INSTRUCTIONS HERE]
+1. Get DepotDownloader [here](https://github.com/SteamRE/DepotDownloader/releases/tag/DepotDownloader_2.4.6) and extract it to a directory of your choosing.
+
+2. Open a command prompt window in said directory and run the following commands, with username and password fields replaced with your Steam username and password:
+
+  dotnet DepotDownloader.dll -app 411960 -depot 411962 -manifest 6485427333467227869 -username ??? -password ???
+  dotnet DepotDownloader.dll -app 411960 -depot 411961 -manifest 1787916863527675858 -username ??? -password ???
+  
+3. You should now have a folder called "depots" which contains two folders - 411961 and 411962. Within each is another folder - the contents of both of which should be copied into a directory of your choice, now referred to as "TY-DEBUG".
+
+4. Extract Julius-Time-Machine.7z from this repository into TY-DEBUG. It should now contain the following:
+
+  PC_External [folder]
+  Data_PC.rkv
+  Music_PC.rkv
+  OpenAL32.dll
+  soft_oal.dll
+  steam_api.dll
+  steam_appid.txt
+  TY.exe
+  Video_PC.rkv
+  
+ 5. Double click TY.exe and enjoy! You may also want to read up on command line arguments to get more out of your experience - see them [here](https://tcrf.net/Ty_the_Tasmanian_Tiger#Windows_Debug_Commands).
 
 Julius' Time Machine should be fully compatible with normal game saves, but the standard warning applies: the developers of JTM are in no way responsible for any save corruption or other unintended negative side effects. Use this software at your own risk, and back up your data regularly.
 
 It is also suggested that you do not allow Time Attack scores to be submitted to the leaderboards while using this mod, as this could make rankings inaccurate.
 
-Due to a large amount of changes to the game's codebase between prototype and release, some features have not been implemented which were present in the 7/1/02 build. Therefore, this cannot be considered a truly faithful port. However, despite these difficulties, some aspects which were previously inaccessible are now easy to enjoy, including early versions of bonus levels and the E3 demo! With easily accessible debug features, you can feel like a developer at 2002 Krome Studios.
+Due to a large amount of changes to the game's codebase between prototype and release, some features have not been implemented which were present in the 7/1/02 build. Therefore, this cannot be considered a truly faithful port. However, despite these difficulties, some aspects which were previously inaccessible are now easy to enjoy, including early versions of bonus levels and the E3 demo! With easily accessible debug features, you too can feel like a developer at 2002 Krome Studios.
 
-Credits
+**Credits**
 
 Original game and assets by Krome Studios
 Porting and debugging by NotSoCheezy and Floralz
