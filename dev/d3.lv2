@@ -1,0 +1,56 @@
+// MapEd Data File version 2
+// Copyright Krome Studios
+// Saved by [RBW]   Date: 11/03/2002   Time: 5:03:23 PM
+//
+
+
+name setup
+
+WorldMinMax = -7768.853,-2189.143,-7812.897,15635.058,8567.824,13205.946
+ground = room_a4_01.mdl
+collisionHeapSize = 1095680
+envcube = env_a4.mdl
+envrotate = 0
+fog = 0.72, 0.57, 0.30
+waterFog = 0.40, 0.35, 0.75
+maxDepth = 600.00
+fogPlane = 7000.00
+farPlane = 25000.00
+waterFogPlane = 5.00
+waterFarPlane = 3500.00
+bDisplayMist = 0
+music = level1.wav
+waterMaterial = fx_088
+causticMaterial = fx_089
+light = 1.00, 1.50, 1.30
+lod_0 = 1250
+lod_1 = 2500
+lod_2 = 4500
+lod_3 = 8000
+lod_4 = 12000
+lod_5 = 17000
+lod_6 = 25000
+lod_7 = 40000
+overlay_0 = room_a4_02.mdl, 0, grasseffect
+overlay_1 = room_a4_03.mdl, 0, none
+overlay_2 = room_a4_04.mdl, 0, none
+overlay_3 = room_a4_08.mdl, 0, none
+
+name TY
+
+pos = 221, -504, -872
+rot = 0.000, 0.000, 0.000
+effect = 0,none
+// User: RBW
+
+name PORTAL
+
+pos = 98, -475, -1880
+standPos = 137.000, -500.000, -1661.000
+standYaw = 0.000
+connectingLevel = 0,z1
+bExitPortal = 1,true
+bVisible = 1,true
+// User: ???
+
+[Zones]

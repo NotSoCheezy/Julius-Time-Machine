@@ -1,0 +1,4254 @@
+
+
+// Material Description file for
+// Ty the Tasmanian Tiger
+// © 2000,2001,2002 Krome Studios
+
+// new bit-wise texture ID's. To combine ID's, just add the numbers together
+#define ID_NONE           0	      // no material id
+#define ID_WALL           1	      // regular walls we can collide with
+#define ID_SLIPPERY       2           // slippery slopes
+#define ID_CAMERA_IGNORE  4           // the camera will not try to find a better view
+#define ID_ICE            8	      // will give ty inertia. For ice and oil
+#define ID_SAND           16          // sandy floor
+#define ID_ENEMY_COLLIDE  32          // enemies only check for collisions with this material
+#define ID_MUD            64          // muddy surfaces
+#define ID_QUICKSAND      128         // quicksand
+#define ID_UNUSED_8       256         // 
+#define ID_LAVA           512         // hot stuff. For lava and coals
+#define ID_WATER_BLUE     1024        // Blue water
+#define ID_SNOW           2048        // snow
+#define ID_WOOD           4096        // bridge
+#define ID_TUNNEL         8192        // a tunnel
+#define ID_INVISCOLLIDE   16384       // invisible texture used for collision (like the vertical collision on the bridge)
+#define ID_UNUSED_15      32768       // snowtop
+#define ID_Soft		  65536       // 
+#define ID_WATER_SLIDE    131072      // material ID for the water slide
+#define ID_GRASS_THIN     262144      // Thin grass pattern
+#define ID_GRASS_THICK    524288      // Dense grass pattern
+#define ID_ROCK           1048576     // Rock ground  
+#define ID_TREELEAVES     2097152     // Tree leave texture ID so leaves wobble
+#define ID_JUMP_CAMERA    4194304     // Enable the JumpCamera when Ty jumps off the ground with this ID applied#define ID_NORMAL_CAM     8388608     // if the floor below ty has this ID, the camera's Y will be at it's normal height
+#define ID_CAM_GO_THROUGH 16777216    // if the camera collides with a poly with this ID, then it won't register a hit
+#define ID_FAST           33554432    // (1<<25) used to mark that movement should be fast here
+#define ID_SLOW           67108864    // (1<<26) used to mark that movement should be slow here
+#define ID_TURNAWAY       134217728   // used to turn ty away from walls
+#define ID_METAL          268435456   // 1<<27 Metal surfaces
+#define ID_ICE_SLIDE      536870912   // 1<<28 Waterslide, but icy
+#define ID_HOLLOWWOOD     1073741824  // 1<<29 Hollow wood.  Makes a different sound to normal wood.
+
+
+//---------------------------------------------- temp start
+
+
+
+
+
+
+name Room_E4_BridgeFlare
+blend 1
+scroll 0 .5
+
+name Room_E4_FloorRound
+overlay Prop_Common_SpecMetal 1
+ 
+name Room_E4_SmallBolts_1
+overlay Prop_Common_SpecMetal 1
+ 
+name Room_E4_Display
+blend 1
+scroll 0 .2
+ 
+name room_E4_Flare
+blend 1
+
+name Room_E4_Rays
+blend 1
+scroll .03 0
+ 
+name Room_E4_Glass
+overlay TY_Env_B3_003 1
+blend 2
+
+name Room_E4_Steam
+blend 1
+scroll 0 -3
+
+
+name TY_E3_BurnLogo
+masked 1
+
+
+
+name holodeck_01_tranz alias holodeck_01
+color 1 1 1 .5
+
+
+name Font_Wizbang
+zread 0
+
+//john's burning coal test
+name ty_c2_008
+masked 1
+aref .1
+
+name ty_c2_007
+scroll .05 0
+overlay ty_c2_008
+//effect = grass,19
+
+
+//john's ice room test
+name TY_C2_TEST03
+blend 6
+color 1 1 1 0.7
+
+name TY_C2_TEST03_01 alias capture
+color .7 .7 1 0.8
+envmap 1
+overlay TY_C2_TEST03 1
+
+//----------------------------------------------
+
+name Prop_Common_Page_OpalCrust3 
+scroll -.1 -.1
+color 1 1 1 0.7
+overlay Prop_Common_Page_OpalCrust2 1
+
+name Prop_Common_Page_OpalCrust5 
+scroll -.1 -.1
+type alphafog
+blend 1
+overlay Prop_Common_Page_OpalCrust2 1
+
+name Prop_Common_Page_OpalCrust4
+scroll 0 .3
+type alphafog
+blend 1
+
+name Prop_Common_Page_OpalCrust2
+scroll .2 .2
+type alphafog
+blend 2
+
+
+//----------------------------------------------
+
+name Prop_Common_Rainbowscale
+overlay Prop_Common_Specular
+
+name Prop_Common_Specular
+envmap 1
+blend 1
+
+
+
+name fx_090
+masked 1
+aref .9
+
+
+// Ice Block
+name ice_02
+blend 6
+// color 1 0 0 0.7
+color 1 1 1 0.5
+
+name ice_01 alias capture
+// color 1 0 0 0.8
+color .7 .7 1 .8
+envmap 1
+overlay ice_02 1
+
+
+//---------------------------------------------- temp end
+//---------------------------------------------- Front End
+
+
+
+
+
+name FE_000_Map_z2
+masked 1
+aref .7
+
+name FE_000_Map_Z1
+masked 1
+aref .7
+
+name FE_000_Map_A1
+masked 1
+aref .7
+
+name FE_000_Map_A2
+masked 1
+aref .7
+
+name FE_000_Map_A3
+masked 1
+aref .7
+
+name FE_000_Map_A4
+masked 1
+aref .7
+
+name FE_000_Map_B1
+masked 1
+aref .7
+
+name FE_000_Map_B2
+masked 1
+aref .7
+
+name FE_000_Map_B3
+masked 1
+aref .7
+
+name FE_000_Map_B4
+masked 1
+aref .7
+
+name FE_000_Map_C1
+masked 1
+aref .7
+
+name FE_000_Map_C2
+masked 1
+aref .7
+
+name FE_000_Map_C3
+masked 1
+aref .7
+
+name FE_000_Map_C4
+masked 1
+aref .7
+
+name FE_000_Map_D4
+masked 1
+aref .7
+
+name FE_000_Map_E1
+masked 1
+aref .7
+
+name FE_000_Map_E2
+masked 1
+aref .7
+
+name FE_000_Map_E3
+masked 1
+aref .7
+
+name FE_000_Map_E4
+masked 1
+aref .7
+
+name FE_999_bg_Rock
+Scroll .1 .1
+
+Name Fe_003_PawPrint
+scroll .2 .06
+
+name Fe_003_TyGraphic
+masked 1
+aref .1
+
+name Fe_999_Icon_Burner
+masked 1
+aref .7
+
+name Fe_999_Icon_GoldenCog
+masked 1
+aref .7
+
+name FE_999_Icon_Bilby
+masked 1
+aref .7
+
+name Fe_999_Icon_GreenDot
+masked 1
+aref .7
+
+name Fe_999_Icon_ThunEgg
+masked 1
+aref .7
+
+name Fe_999_Icon_KoalaKid
+masked 1
+aref .7
+
+name Fe_999_Icon_Arrow
+masked 1
+aref .7
+clampuv 1 1
+
+name FE_999_Icon_StopWatch
+masked 1
+aref .7
+
+name Fe_999_Icon_TreasureChest
+masked 1
+aref .7
+
+name Fe_999_Icon_WaterValve
+masked 1
+aref .7
+
+name Fe_999_Icon_AuroraKid
+masked 1
+aref .7
+
+name Fe_999_Icon_Emu
+masked 1
+aref .7
+
+name Fe_999_Icon_StopWatch
+masked 1
+aref .7
+
+
+
+
+
+
+//---------------------------------------------- 
+//---------------------------------------------- Lava
+
+name TY_RT_LAVA
+scroll .4, 0
+
+name TY_Lava_01
+scroll -.05- .05 
+
+name TY_Lava_02
+blend 1
+scroll .05 .05
+
+name TY_Lava_03
+scroll .02 .02
+blend 2
+
+name prop_0497_lava
+scroll 0.04 -0.45
+
+//---------------------------------------------------
+//-------------------------------------------------------------
+//              collision materials
+//-------------------------------------------------------------
+
+name T0103_01
+invisible 1
+id 4096
+// wood
+
+name T0103_01_a alias T0103_01
+invisible 1
+id 2
+// id 1048578
+// slippery rock
+
+name T0103_01_b alias T0103_01
+invisible 1
+id 1048576
+// rock
+
+name T0103_01_c alias T0103_01
+invisible 1
+id 4096
+// wood
+
+name T0103_01_d alias T0103_01
+invisible 1
+id 8208
+// sandy sound in a tunnel
+
+name T0103_01_e alias T0103_01
+invisible 1
+id 16
+// sand
+
+name T0103_01_f alias T0103_01
+invisible 1
+id 1024
+// water sound
+
+name T0103_01_g alias T0103_01
+invisible 1
+invisible 1
+id 1024
+// green water
+
+name T0103_01_h alias T0103_01
+invisible 1
+id 9437184
+// rock with normal camera
+
+name T0103_01_i alias T0103_01
+invisible 1
+id 1
+//wall
+
+name T0103_01_j alias T0103_01
+invisible 1
+id 8
+// Ice
+
+name T0103_01_K alias T0103_01
+invisible 1
+id 18
+// slippery sand
+
+name T0103_01_L alias T0103_01
+invisible 1
+ID 131072
+// Water Slide
+
+name T0103_01_m alias T0103_01
+invisible 1
+ID 16385
+// Lets Things pass through collides with ty
+
+name T0103_01_n alias T0103_01
+invisible 1
+id 16777216
+// CAM_GO_THROUGH 
+
+name T0103_01_o alias T0103_01
+invisible 1
+id 64
+// mud
+
+name T0103_01_p alias T0103_01
+invisible 1
+id 64
+// mud wall
+
+name T0103_01_q alias T0103_01
+id 150994944
+invisible 1
+// turn around
+
+name T0103_01_R alias T0103_01
+invisible 1
+// Standard
+
+name T0103_01_S alias T0103_01
+invisible 1
+id 4
+// Standard
+
+name T0103_01_t alias T0103_01
+invisible 1
+id 2048
+// snow
+
+name T0103_01_u alias T0103_01
+invisible 1
+id 512
+// lava
+
+name T0103_01_v alias T0103_01
+invisible 1
+id 268435457
+//metal wall
+
+name T0103_01_w alias T0103_01
+invisible 1
+id 32
+//enemy collision test
+
+
+name T0103_01_x alias T0103_01
+invisible 1
+id 536870912
+// ice slide
+
+name T0103_01_Y alias T0103_01
+invisible 1
+id 65536
+// Soft
+
+//name T0103_01_Z alias T0103_01
+//invisible 1
+//id 32768
+// Snowtop
+
+name T0103_01_z alias T0103_01
+invisible 1
+id 262144
+// Thin grass pattern
+
+name T0103_01_aa alias T0103_01
+invisible 1
+id 524288 
+// Thick grass pattern
+
+
+name T0103_01_ab alias T0103_01
+invisible 1
+id 4098
+//slip wood
+
+name T0103_01_ac alias T0103_01
+invisible 1
+id 268435456
+//metal
+
+name crate_01
+ID 4096
+
+name ty_a3_003
+id 128
+
+name ty_a3_004
+id 16
+clampuv 0 1
+
+name ty_a3_005
+id 16
+clampuv 1 1
+
+name ty_a3_006
+id 16
+clampuv 1 1
+
+name boomerangnocollide
+id 256
+
+
+//-------------------------------------------------------------
+//           collision materials end
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//           Props Start
+//-------------------------------------------------------------
+
+//------------------------------------------------------------- common
+
+
+name Prop_Common_Page_OpalCrust6 alias capture
+blend 1
+
+
+name Prop_0543_Charge_bite
+envmap 1
+
+name Prop_Common_Count00 alias prop_Common_Counter
+
+name Prop_Common_Count01 alias prop_Common_Counter
+
+name Prop_Common_Thunderegg
+masked 1
+aref .1
+
+name Prop_Common_GoldenCog
+masked 1
+aref .1
+
+name prop_common_Talismangold
+envmap 1
+ 
+name prop_Common_vortex
+rotate 0.5 0.5 0.3
+blend 4
+ 
+name rough_texture alias prop_common_talisman
+ 
+name Prop_Common_SpecularTal alias Prop_Common_Specular
+blend 1
+envmap 1
+color .5 . 5 1
+ 
+name prop_Common_talisman
+overlay Prop_Common_SpecularTal 1
+
+
+name Prop_Common_ExploRing
+blend 1
+
+name Prop_0532_blibligate
+masked 1
+
+name prop_0528_E4Flamer
+overlay Prop_Common_SpecMetal_FLM 1
+masked 1
+
+name Prop_0542_Opal_magnet
+overlay Prop_Common_SpecMetal_FLM 1
+
+name Prop_0542_Charge
+blend 1
+scroll  0 1.75
+
+name Prop_Common_SpecMetal_FLM alias Prop_Common_SpecMetal
+color .6 .6 .6 1
+envmap 1
+blend 1
+
+Name drum_01
+masked 1
+aref .9
+id 4096
+
+name Prop_Common_Explosion
+rotate .5 .5 .3
+overlay Prop_Common_ExploBlend
+
+name  Prop_Common_ExploBlend
+blend 1
+envmap 1
+
+name prop_common_InvisCrate
+blend 1
+
+name Prop_common_ThunEggGunScreen
+scroll 0, .7
+
+name Prop_Common_ThunEggGunGlass
+blend 1
+
+name Sign_Common_Page_PS2
+masked 1
+Aref .6
+ 
+name Sign_Common_Page_GCN
+masked 1
+Aref .6
+ 
+Name Prop_Common_Page_GoldEnv
+envmap 1
+
+Name Prop_Common_Page_Oddbits
+masked 1
+aref .9
+
+Name Prop_Common_Page_Oddbits1
+
+Name Prop_Common_Page_Oddbits2
+
+Name Prop_Common_Page_Oddbits3
+masked 1
+aref .8
+
+Name Prop_Common_Page_PurEnv
+envmap 1
+
+Name Prop_Common_Page_RedEnv
+envmap 1
+
+Name Prop_Common_Page_Wood
+masked 1
+aref .9
+id 4097
+
+name Prop_Common_Page_Blueflame
+blend 1
+scroll 0,.75
+
+name prop_common_page_flame
+blend 1
+scroll .25 .25
+
+name prop_common_page_litdrum
+masked 1
+aref .9
+
+// Ice Block
+name Prop_Common_Page_ice_02
+blend 6
+color 1 1 1 0.7
+
+name Prop_Common_Page_ice_01 alias capture
+color .7 .7 1 0.8
+envmap 1
+overlay Prop_Common_Page_ice_02 1
+
+name Prop_Common_Page_Glass
+blend 1
+//zwrite 1
+
+name Page_Force alias Prop_Common_Page_Force
+blend 1
+scroll 0.05 0.05
+
+name Prop_Common_Page_Force
+blend 1
+rotate 0.75 0.5 1
+color .5 .5 .5 1
+overlay Page_Force
+
+name prop_common_page_iceopal2
+envmap 1
+// scroll .5 .5
+
+name prop_common_page_iceopal
+blend 1
+scroll .5 0
+
+name prop_common_page_earthopal
+scroll .02 .075
+
+name prop_common_page_earthglow
+blend 1
+scroll 1 0
+
+name prop_common_page_earth
+masked 1
+scroll -.04 0
+
+name Airover alias prop_common_page_airopal
+blend 1
+rotate .1 .1 20
+color .01 .01 .01 1
+
+name prop_common_page_airopal
+blend 1
+scroll -.05 .025
+overlay Airover
+
+name prop_common_page_airglow
+blend 1
+scroll .2 0
+
+name prop_common_page_AirStrike
+blend 1
+scroll .1 0
+
+name B2_Common_Page_Window_ref
+envmap 1
+
+name Prop_B2_Page_Snow
+Masked 1
+Aref .9
+
+name prop_a2_page_rocktrap
+//overlay Prop_Common_Shader
+
+//name Prop_Common_Shader
+//envmap 1
+//blend 2
+
+name Prop_Common_Rainbowscale
+overlay Prop_Common_Specular
+
+name Prop_Common_Specular
+envmap 1
+blend 1
+
+name fx_090
+masked 1
+aref .9
+
+name Prop_B3_Page_Hay
+masked 1
+aref .6
+
+name Prop_Common_Page_Stone01 alias Prop_Common_Page_Stone
+color .9 1 1 1
+
+name Prop_Common_Page_Bnypstn
+rotate .2 .5 1
+color .1 1 .5 1
+
+name Prop_Common_Page_StreakFx
+scroll .25 .25
+blend 1
+color .5 1 .7 1
+
+name Prop_Common_Chainlink
+masked 1
+aref. 9
+
+name Prop_Common_BarbedWire
+masked 1
+aref. 9
+
+// ------------------------------------------------------------
+
+//------------------------------------------------------------- A1
+
+Name Prop_A1_Deadtrees
+masked 1
+Aref .9
+
+name prop_a1_page_bridges
+masked 1
+
+name Prop_0203_Log_Moss_01
+masked 1
+
+name Prop_0204_Log_Moss_02
+masked 1
+
+name Prop_A1_Page_copper
+masked 1
+aref .9
+
+name Prop_A1_Page_WildFlowers
+masked 1
+aref .8
+
+name prop_A1_page_lily
+masked 1
+
+name Prop_A1_Page_Gumleaves
+Masked 1
+Aref .6
+address 1 1
+sinrotate 0.5 0.23 3.0 2.0
+
+
+// ------------------------------------------------------------
+
+//------------------------------------------------------------- A2
+
+name prop_a2_page_leaves
+masked 1
+Aref .8
+
+name prop_a2_Page_StagHorn
+Masked 1
+Aref .9
+
+name prop_A2_treeroot
+Masked 1
+Aref .6
+
+name Prop_A2_Page_Hibiscflower
+Masked 1
+Aref .6
+
+Name Prop_A2_Page_BrokenJeep
+masked 1
+aref .9
+
+name prop_a2_page_rocktrap
+overlay Prop_Common_Shader
+
+name Prop_Common_Shader
+envmap 1
+blend 2
+
+name Prop_A2_page_towervine
+Masked 1
+Aref .6
+
+// ------------------------------------------------------------
+
+//------------------------------------------------------------- A3
+Name Prop_A3_Page_BeachFurniture
+masked 1
+aref .9
+
+name prop_a3_Page_Weed
+masked 1
+aref .9
+
+name prop_a3_Page_Hut
+masked 1
+aref .9
+
+name prop_a3_Page_Palmbase
+masked 1
+aref .7
+
+name prop_a3_Page_steel
+masked 1
+aref .9
+
+name Prop_A3_Page_ResortObj
+masked 1
+aref .9
+
+name Prop_A3_Page_Resortplants
+masked 1
+aref .7
+
+name Prop_A3_Birdnest
+masked 1
+aref .7
+
+name Prop_A3_Page_Mine
+masked 1
+aref .7
+
+name prop_A3_Chum
+Masked 1
+Aref .6
+
+//-------------------------------------------------------------a4
+//-------------------------------------------------------------
+
+name Prop_A4_Dustwave
+blend 1
+
+
+name Prop_A4_Bullsbreath
+scroll .5, -2
+blend 1
+
+name Prop_A4_Bullspit
+scroll .2, -2.5
+blend 1
+
+
+//-------------------------------------------------------------b1
+//-------------------------------------------------------------
+name prop_a1_Page_spiderweb
+blend 1
+color 1 1 1 1
+//-------------------------------------------------------------
+//------------------------------------------------------------- b2
+name Prop_b2_saw
+masked 1
+aref .9
+
+name Prop_B2_Page_treepage
+masked 1
+aref .8
+
+name Prop_B2_GantryFrame
+Masked 1
+Aref .9
+
+name Prop_common_page_BlueFlame
+blend 1
+scroll 0,.75
+
+name prop_a1_page_copper
+aref .8
+masked 1
+
+name prop_a1_page_Grass
+address 1 1
+masked 1
+aref .7
+
+name prop_B2_FlameLog_colour
+blend 1
+scroll .1 .8
+
+name prop_B2_FlameLog_stencil
+blend 2
+scroll .1 .6
+overlay prop_B2_FlameLog_colour
+
+name Prop_b2_saw
+Masked 1
+Aref .9
+
+name Prop_a3_page_Sawmill_01
+Masked 1
+Aref .9
+
+name Prop_Common_Page_SpikeLog
+Masked 1
+Aref .9
+
+name Prop_B2_Page_Snow
+Masked 1
+Aref .4
+
+name prop_B2_IceRamp
+masked 1
+aref .1
+
+
+//-------------------------------------------------------------
+//------------------------------------------------------------- b3
+
+Name Prop_B3_Whirlwind02
+blend 6
+zread 1
+scroll -5 .0
+
+Name Prop_B3_Whirlwind01
+scroll -1 1
+overlay Prop_B3_Whirlwind03
+
+Name Prop_B3_Whirlwind03 
+scroll -.5 .5
+blend 2
+
+name Prop_B3_Burnt_house
+Masked 1
+Aref .6
+
+name Prop_B3_Tumbleweed
+Masked 1
+Aref .6
+
+name prop_b3_page_grad 
+blend 2
+
+name prop_Z1_snakepontoon
+masked 1
+
+
+//-------------------------------------------------------------
+//------------------------------------------------------------- C3
+
+name Prop_C3_treasurebits
+Masked 1
+Aref .6
+
+name Prop_C3_patchgold
+scroll .2 .2 
+overlay Prop_C3_treasure
+
+name Prop_C3_treasure
+blend 6
+
+//-------------------------------------------------------------
+//------------------------------------------------------------- E1
+
+name Prop_E1_specular
+blend 1
+envmap 1
+
+name Prop_E1_Wires
+masked 1
+
+name Prop_E1_Crystal
+//scroll .1 .1 
+
+overlay Prop_E1_specularCr 1
+envmap 1
+
+name Prop_E1_specularCr alias Prop_E1_specular
+blend 1
+envmap 1
+color .5 .5 1
+
+name prop_E1_lava
+scroll .2 .2
+overlay prop_E1_lavaglow
+
+name  prop_E1_lavaglow
+masked 1
+aref .1
+
+name TY_E1_004
+blend 6
+aref .1
+
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+
+
+// Chain link fence
+name TY_WALL_chainlink_fence
+aref .9
+masked 1
+
+//Target 
+name Prop_0083_TargetB
+masked 1
+address 1 1 
+
+name Prop_0083_TargetC
+masked 1
+address 1 1 
+
+// Golden cog
+name Prop_0085_GoldenCog
+envmap 1
+
+// StopWatch
+name Prop_0086_Stopwatch_02
+envmap 1
+
+// SharkCage
+name Prop_0089_SharkCage_tex
+masked 1
+
+// spy egg
+name prop_0090_spyegg_midmap
+envmap 1
+
+name prop_0090_spyegg_blade
+rotate 0.5 0.5 10.0
+blend 5
+address 1 1 1
+
+name prop_0090_spyegg_glass
+envmap 1
+blend 1
+
+// Gum Trees
+name TY0201_01
+Masked 1
+// aref .9
+address 1 1 
+
+//snowgum02
+name Prop_0125_SnowGum02
+doublesided 1
+aref .9
+address 1 1 
+masked 1
+
+// brewery
+name Prop_0110_Brewer01
+aref .9
+masked 1
+ 
+name Prop_0110_Brewer02
+aref .9
+masked 1
+ 
+name Prop_0110_Brewer05
+aref .9
+masked 1
+ 
+name Prop_0110_Brewer07
+aref .9
+masked 1
+
+name Prop_0005_Triangle
+aref .9
+masked 1
+
+// Frog talisman 
+name prop_0174_frog_talisman
+envmap 1
+
+// croc sign
+name prop_0172_croc_sign
+masked 1
+
+// dual shock
+name prop_0167dualshock02 alias prop_0167_dualshock
+
+name prop_0167_dualshock
+envmap 1
+overlay prop_0167_dualshock_env 1
+
+name prop_0167_dualshock_env
+envmap 1
+
+// grass
+name Prop_0072_SG
+address 1 1 1
+masked 1
+ 
+// Grass
+name Prop_0075_Grass
+address 1 1 
+masked 1
+
+//Dunny Roll
+Name Prop_0092_dunny_roll
+aref .9
+masked 1
+
+// Barbedwire
+name Prop_0141_BarbedWire01
+masked 1
+
+// Speedlines
+name Prop_0154_speedlines
+blend 1
+type alphafog
+
+// Speedlines
+name speed
+blend 1
+type alphafog
+
+// shack
+name prop_0149_shack
+masked 1
+aref .9
+
+// wildflowers
+name prop_0073_SRB
+masked 1
+
+name Prop_0073_WF
+doublesided 1
+masked 1
+address 1 1 
+
+name wildflowers01
+masked 1
+
+name prop_0073_DSRB
+masked 1
+ 
+name prop_0073_WF
+masked 1
+
+//Thunder Egg
+name prop_0084_01
+envmap 1
+ambient 1
+
+//Grasstree
+name Prop_0078_GTC_a
+aref .9
+masked 1
+address 1 1 
+
+// staghorn
+name prop_0052_Staghorn1
+aref .5
+masked 1
+
+name prop_0052_Staghorn2
+aref .5
+masked 1
+
+name Prop_0158_Moss
+doublesided 1
+blend 6
+aref .1
+address 1 1 
+
+// anthill
+name prop_0191_antmound
+id 1
+
+//palm
+
+name Prop_A2_Page_Palms
+masked 1
+aref .8
+
+//fern
+name prop_a2_page_ferns
+masked 1
+address 1 1 1
+
+name prop_0101_fern_0101  
+masked 1  
+address 1 1 1  
+ 
+name prop_0102_fern_0201  
+masked 1  
+address 1 1 1  
+ 
+name prop_0103_fern_03  
+masked 1  
+address 1 1 1  
+ 
+name prop_0105_fern_04
+masked 1  
+address 1 1 1 
+
+name prop_0105_fern
+masked 1
+
+//grasses
+name prop_0095_grassclump  
+masked 1  
+address 1 1  
+
+// reeds
+name prop_0104_reed4
+masked 1
+
+//the red line
+name red_line alias TY_Z1a_015
+blend 1
+
+// Grass Stuff 
+name Prop_0072_SG
+aref .8
+masked 1
+address 1 1
+
+
+// Portal FX
+name portal_01
+scroll -.5 0
+type alphafog
+blend 1
+
+// Bunya Tree
+name prop_A2_page_Bunya_New
+masked 1
+aref 0.5
+
+// Portal
+name portal_02
+type alphafog
+scroll .9 0
+blend 1
+
+
+//Platform
+name Prop_0099_Platform_tex1
+masked 1
+id = 268435456
+ 
+name Prop_0099_Platform_tex2
+masked 1
+
+name Prop_0099_Platform_tex3
+envmap 1
+
+//Snow Gums
+name Prop_0125_SnowGum01_LOD
+masked 1
+// aref .9
+
+name Prop_0126_SnowGum02_LOD
+masked 1
+// aref .9
+
+name Prop_0127_SnowGum03_LOD
+masked 1
+// aref .9
+ 
+name Prop_0067_GhostGum01_LOD
+invisible 1
+masked 1
+Type prelit
+aref .9
+
+name Prop_0068_GhostGum02_LOD
+invisible 1
+Type prelit
+masked 1
+aref .9
+
+name Prop_0069_GhostGum03_LOD
+invisible 1
+Type prelit
+masked 1
+aref .9
+
+//Sappling
+name Prop_153_Sapling2_02
+masked 1
+
+//Sappling
+name Prop_0153_Sapling2_02
+masked 1
+
+//Prop_0189_Coral_03
+Name Prop_0189_Corals
+masked 1
+aref .9
+
+// fire works box
+name Prop_0225_Fireworks
+masked 1
+aref .9
+
+Name Prop_0229_Mushies
+masked 1
+aref .9
+
+Name Prop_0230_Bone
+masked 1
+aref .9
+
+name prop_0321_spiderweb
+masked 1 
+
+
+// charge warp
+Name Prop_0234_BG Alias Capture
+
+Name Prop_A2_page_RockEarthMoss
+masked 1
+aref .9
+
+//-------------------------------------------------------------
+//          		 Props End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		  FX Start
+//-------------------------------------------------------------
+
+name fx_005
+blend 1
+
+name fx_031
+blend 1
+
+name fx_002b
+aref .9
+masked 1
+
+name fx_100
+blend 1
+
+name fx_018
+blend 1
+
+name fx_019
+blend 1
+
+name fx_91
+blend 1
+
+name FX_103
+masked 1
+
+name FX_000
+masked 1
+aref .9
+address 1 1 1
+clampuv 1
+
+name fx_001
+blend 1
+ambient 1
+
+name fx_002
+blend 6
+ambient 1
+aref .5
+
+// bubbles
+name fx_002a
+blend 1
+
+// Sunflare
+name fx_003
+blend 1
+
+// Sunflare2
+name fx_004
+blend 1
+
+name fx_007
+blend 1
+
+name fx_008
+blend 1
+
+name fx_012
+blend 1
+
+name fx_015
+blend 1
+
+name fx_020
+blend 1
+ambient 1
+
+name fx_030
+blend 1
+
+// rainbow glow effect - RJC 18.4.01
+name fx_031
+blend 1
+
+name fx_037
+blend 1
+ambient 1
+
+name fx_038
+blend 1
+ambient 1
+
+name fx_039
+blend 1
+
+// splat - grey
+name fx_040
+masked 1
+
+name fx_052
+blend 1
+
+name fx_055
+blend 6
+aref 0.5
+
+name fx_059
+blend 5
+
+name fx_060
+blend 5
+
+name fx_061
+blend 5
+
+// bang effect
+name fx_062
+masked 1
+
+name fx_063
+blend 1
+
+name fx_064
+blend 1
+
+name fx_065
+blend 6
+
+name fx_066
+blend 6
+
+name fx_067
+blend 6
+aref .5
+
+// thrashing water
+name fx_068
+blend 5
+aref .3
+
+name fx_069
+blend 5
+aref .3
+
+name fx_070
+blend 5
+aref .3
+
+name fx_071
+blend 5
+aref .3
+
+//fire flies
+name fx_072
+blend 1
+
+// snowfale
+name fx_073
+blend 1
+
+// new fx
+name fx_074
+blend 5
+
+name fx_075
+blend 2
+
+name FX_076
+blend 5
+
+// wake
+name fx_077
+blend 1
+
+// Ant
+name fx_078
+masked 1
+
+name FX_079
+blend 5
+
+name FX_080
+aref 0.5
+blend 0
+masked 1
+
+name Fx_081
+blend 1
+
+name FX_082
+blend 1
+
+name FX_083
+blend 1
+
+name FX_084
+blend 1 
+
+name FX_085
+Masked 1
+aref .9
+clampuv 1 1
+
+name FX_086
+Masked 1
+aref .9
+clampuv 1 1
+
+name FX_087
+Masked 1
+aref .9
+clampuv 1 1
+
+name fx_090
+masked 1
+aref .8
+
+name fx_091
+blend 1
+
+
+
+name fx_093 
+blend 1
+
+name fx_094 
+blend 1
+
+name fx_096
+blend 1
+
+name fx_097
+masked 1
+aref .8
+
+
+name fx_098
+masked 1
+aref .8
+
+name fx_099
+masked 1
+aref .8
+
+name fx_102
+masked 1
+aref .8
+
+name fx_104
+masked 1
+aref .8
+
+name Fx_105
+masked 1
+
+name fx_106
+blend 1
+
+name fx_108
+blend 1
+
+name FX07_TX00
+blend 1
+
+name FX07_TX01
+blend 1
+
+name FX07_TX02
+blend 1
+
+name FX07_TX03
+blend 1
+
+name FX07_TX04
+blend 1
+
+name FX_101
+masked 1
+aref .3
+
+name FX_110
+masked 1
+
+name FX_111
+masked 1
+
+name FX_112
+masked 1
+
+name FX_114
+masked 1
+
+name FX_115
+masked 1
+
+//Ice Opal
+name FX_116
+
+
+//Earth Opal
+name FX_117
+
+
+//Air Opal
+name FX_118
+
+name FX_120
+zwrite 1
+blend 1
+type alphafog
+clampuv 0 1
+
+name fx_122
+Masked 1
+aref .2
+
+name fx_124
+blend 1
+
+name fx_125
+blend 1
+
+name fx_126
+blend 1
+
+name fx_127
+blend 1
+
+name fx_128
+blend 1
+
+name fx_130
+blend 1
+
+name fx_131
+blend 1
+
+name fx_129
+blend 1
+
+name fx_132
+blend 1
+
+name fx_133
+blend 1
+
+name fx_134
+masked 1
+aref .8
+
+//-------------------------------------------------------------
+//          		      FX End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		     Actors Start
+//-------------------------------------------------------------
+
+//fluffy
+name act_94_fluffy01
+overlay act_94_fluffyBurn 1
+
+
+// Shiela
+name act_27_shiela
+masked 1
+
+//  Julius
+name act_25_julius_glasses alias act_25_julius
+blend 1
+
+
+// Shadow the Ghost Bat
+name act_75_shadowBat
+
+name act_75_shadowBatShiny alias act_75_shadowBat
+overlay act_75_shadowbatEnv 1
+
+name act_75_shadowBatBlack alias act_75_shadowbatBlack
+
+name act_75_shadowbatEnv
+envmap 1
+blend 1
+
+name act_75_shadowbatBlack
+envmap 1
+
+// Sly
+name Act_31_Sly_02 alias Act_31_Sly_01
+
+//butterflys
+name bfly_01
+Maked 1
+aref .5
+
+name bfly_02
+Maked 1
+aref .5
+
+name bfly_03
+Maked 1
+aref .5
+
+//fire bunyip
+name act_87_fireBunyip
+blend 1
+envmap 1
+doublesided 0
+
+
+// ghostly bunyip
+name act_63_bunyip
+envmap 1
+blend 1
+
+// wombat
+name act_30_wombat
+
+name act_30_wombat2
+aref .7
+envmap 1
+blend 1
+
+// guppy
+name Act_53_Guppy
+masked 1
+
+// frog 
+name Act_52_Frog
+masked 1
+
+//spider
+name act_51_spider
+masked 1
+
+
+// shazza
+name act_06_shazz_01
+masked 1
+aref .7
+
+//shazzaNew
+name Act_06_NewShazz_01
+masked 1
+aref .7
+
+name Act1_08_ShazzaProp_01
+id 1
+
+
+//crikey the shark
+name Act1_09_Crikey03 alias Act1_09_Crikey
+blend 1
+zwrite 1
+zread 1
+
+name Act1_09_CrikeyENV
+blend 1
+envmap 1
+
+name Act1_09_Crikey01 alias Act1_09_Crikey
+overlay Act1_09_CrikeyENV .25
+
+name Act1_09_Crikey03 alias Act1_09_Crikey
+blend 1
+zwrite 1
+zread 1
+
+name Act1_09_Crikey_Caustic
+blend 1
+envmap 1
+scroll .1 .1
+
+name Act1_09_Crikey00 alias Act1_09_Crikey
+overlay Act1_09_Crikey_Caustic .25
+
+name Act1_09_CrikeyCaustic
+blend 1
+envmap 1
+
+name Act_10_blueTongue_01
+masked 1
+
+
+//Groper
+name act1_15_Groper
+masked 1
+aref .9
+
+
+//aurora
+name act_99_aurora
+masked 1
+aref .7
+ 
+// boscass
+name Act_23_BossCass_01
+blend 6
+masked 1
+
+name Act_23_BossCass_02 alias Act_23_BossCass_01
+overlay cass_env 1
+name cass_env
+blend 1
+envmap 1
+
+
+// Neddy
+name neddy_03 alias neddy_02 
+ambient 1
+
+name neddy_10 alias neddy_09
+doublesided 1
+blend 6
+aref .5
+masked 1
+
+name neddy_11 alias neddy_16 
+doublesided 1
+
+name neddy_12 alias neddy_14 
+doublesided 1
+blend 6
+aref .5
+masked 1
+
+name Act_15_Neddy_01
+blend 6
+masked 1
+
+name act_39_shark
+masked 1
+
+
+name act_39_shark_02
+blend 1
+scroll -0.1 -0.1
+
+
+// Frill BIke
+name Act_44_FrillBike01
+doublesided 1
+
+name Act_44_FrillBike02
+masked 1
+blend 6
+aref .9
+doublesided 1
+
+name Act_44_FrillBike03
+rotate .5 .5 -.8
+
+// bull
+name Act_40_bull
+masked 1
+ 
+name Act_40_bull_00
+alias Act_40_bull
+overlay slime
+name slime
+envmap 1
+
+// Farlapp
+name act_38_farlapp
+name act_38_farlappEye alias act_38_farlapp
+
+// clam
+name Act_35_Clam_01
+masked 1
+
+// Elle 
+name Act_28_Elle
+name Act_28_ElleShiny alias Act_28_Elle
+overlay Act_28_ElleENV 1
+doublesided 1
+name Act_28_ElleENV
+blend 1
+envmap 1
+
+// Rhino Beetle 
+name Act_36_Rhino01
+overlay Act_36_RhinoENV 1
+
+name Act_36_RhinoENV
+blend 1
+envmap 1
+
+// fat emu - A.S 11.6.01
+name fatemu_01
+blend 6
+aref 0.9
+
+// Grasshopper et Dragonfly
+name GrassHopperRotate45
+blend 6
+aref .03
+
+//Dragonfly
+name Dfly_A1
+blend 6
+aref .03
+
+name Dfly_A2
+blend 6
+aref .03
+
+name crab_01
+doublesided 1
+ambient .3
+//overlay crab_01b 1
+
+//name crab_01b
+//blend 1
+//bumpmap 1
+
+//frills dble sided
+name frill_03 
+doublesided 1
+
+//tyres dble sided
+name frill_04
+doublesided 1
+
+//collar dble sided aliased jacket
+name frill_06 alias frill_05 
+doublesided 1
+
+//bottom jaw aliased head
+name frill_02 alias frill_01 
+
+//straps dble sided opacity
+name frill_12
+doublesided 1
+blend 6
+aref 0.9
+
+// goggles aliased head
+name frill_13 alias frill_01 
+overlay shine_02 1
+name shine_02
+blend 1
+envmap 1 
+
+//belt buckle aliased belt end
+name frill_14 alias frill_09 
+overlay shine_02 1
+name shine_02
+blend 1
+envmap 1 
+
+// Lowpoly bird
+name act_62_lowpolybird
+doublesided 1
+blend 2
+ambient 1
+
+// small crab
+name crab_02 
+masked 1
+aref .5
+
+
+// roach
+name act_58_roach
+masked 1
+
+name Act_55_Gecko00
+masked 1
+aref .9
+ 
+name Act_55_Gecko01
+masked 1
+aref .9
+
+name act_09_Butterfly
+masked 1
+aref .9
+
+name Act_12_Rex_01
+masked 1
+blend 6
+
+// new croc
+name Act_02_Croc_01
+masked 1
+ 
+name Act_02_Croc_02 alias Act_02_Croc_01
+overlay Croc_env 1
+name croc_env
+blend 1
+envmap 1
+
+//  The bilbies
+name Act_Bilbies
+masked 1
+
+name act_56_lenny 
+masked 1
+
+
+name Act_Bilbies_00 alias Act_Bilbies
+overlay Prop_Common_Specular 1
+name Prop_Common_Specular 
+blend 1
+env 1
+
+// new Frills
+name Act_07_Frill_02 alias Act_07_Frill_01 
+blend 6
+aref 0.9
+ 
+name Act_07_Frill_03 alias Act_07_Frill_01
+overlay shine_02 1
+
+name shine_02
+blend 1
+envmap 1
+
+//clownfish
+name Act_37_Clownfish_tex 
+masked 1
+
+// moth
+name moth_01
+blend 6
+aref .1
+
+
+
+//name ty_A02
+//envmap 1
+
+//name ty_a03
+//doublesided 1
+
+//name ty_a04
+//doublesided 1
+
+//name ty_a09
+//doublesided 1
+
+//name ty_a12 alias ty_a01
+
+//name ty_a11 alias ty_a05
+
+//name Act_01_ty_02 alias ty_a05
+
+name Act_01_TY_02 alias Act_01_TY_01
+overlay Act_01_TY_01a 1
+
+name Act_01_TY_01a 
+masked 1
+
+name act_86_elderbunyip
+blend 1
+envmap 1
+doublesided 0
+
+name act_76_kenOath
+masked 1
+aref .8
+id 1
+
+name act_42_dennis
+masked 1
+aref .8
+
+name roach_wings
+blend 1
+
+//cuttlefish
+name Act1_05_Cuttlefish 
+masked 1
+
+name act_40_bull_ants
+masked 1
+scroll 2 2
+aref .9
+
+name Act1_12_speedboat01 alias Act1_12_speedboat
+overlay Act1_12_speedboatshine01 .25
+
+name Act1_12_speedboatshine01
+blend 1
+envmap 1
+
+name Act1_12_speedboat02 alias Act1_12_speedboat
+overlay Act1_12_speedboatshine .25
+
+name Act1_12_speedboatshine
+blend 1
+envmap 1
+
+name Act1_12_speedboat03 alias Act1_12_speedboat
+overlay act1_18_scubafrill
+
+name Act1_12_speedboat04 alias Act1_12_speedboat
+overlay turbine
+
+name turbine
+rotate 0.5 0.5 0.8
+
+name Act1_20_Ringo
+masked 1
+aref .9
+
+//-------------------------------------------------------------
+//          		     Actors End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		      Env Start
+//-------------------------------------------------------------
+
+
+name TY_A1_Env_001
+zwrite 0
+
+name TY_A1_Env_002
+zwrite 0
+
+name TY_A1_Env_003
+zwrite 0
+
+name TY_A1_Env_004
+zwrite 0
+
+name TY_A1_Env_005
+zwrite 0
+
+name TY_A1_Env_006
+zwrite 0
+
+name TY_A2_env_004
+clampuv 0 1
+Masked 1
+aref .1
+
+name TY_A2_env_006
+Masked 1
+aref .1
+
+name TY_Env_b3_001
+zwrite 0
+
+name TY_Env_b3_002
+zwrite 0
+
+name TY_Env_b3_003
+zwrite 0
+
+name TY_b1_Env_001
+zwrite 0
+
+name TY_b1_Env_002
+zwrite 0
+
+name TY_b1_Env_003
+zwrite 0
+
+name TY_b1_Env_004
+zwrite 0
+
+name Ty_C2_Env003
+scroll -.1 .1
+
+name Ty_C2_Env004
+scroll -.05 0.01
+
+name Ty_C2_Env005
+scroll .05 0.01
+
+
+
+name ENV_01_up
+ambient 5
+zwrite 0
+
+name ENV_01_dn
+ambient 5
+zwrite 0
+
+name ENV_01_lf
+ambient 5
+zwrite 0
+
+name ENV_01_rt
+ambient 5
+zwrite 0
+
+name ENV_01_bk
+ambient 5
+zwrite 0
+
+name ENV_01_fr
+ambient 5
+zwrite 0
+
+name TY_Z1_Env_005
+masked 1
+aref .9
+
+name TY_C1_Env003
+scroll .05 .03
+
+
+
+
+
+
+//-------------------------------------------------------------
+//          		      Env End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		   Front End Start
+//-------------------------------------------------------------
+
+// Main Menu
+name text_01
+masked 1
+
+name text_02
+masked 1
+
+name text_03
+masked 1
+
+name text_04
+masked 1
+
+// Gallery
+name Gallery_X
+blend 5
+
+name Gallery_Triangle
+blend 5
+
+name Gallery_Icon
+blend 5
+
+name Gallery_Overlay_01
+blend 5
+
+// Load Level
+name Loading_Level_01
+masked 1
+
+name Loading_Text
+masked 1
+
+//-------------------------------------------------------------
+//          		   Front End End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		     Logo Start
+//-------------------------------------------------------------
+name mon_01
+blend 6 mon_01b
+color 1 1 1 .5
+
+name mon_02
+blend 6 mon_02b
+color 1 1 1 .5
+
+name mon_03
+blend 6 mon_03b
+color 1 1 1 .5
+
+name m_logo_01
+masked 2 0 0
+ambient 20
+
+name m_logo_02
+masked 2 0 0
+ambient 20
+
+name m_logo_01b
+ambient 20
+blend 2
+
+name m_logo_02b
+ambient 20
+blend 2
+
+name staff_02
+envmap 7 1
+
+name shadow
+blend 5
+ambient 1
+
+name shadowbuffer
+blend 5
+
+name black
+ambient 2
+
+name gem_01
+envmap 2 4
+overlay gem_02 1
+scroll .05 .05
+//color 1 1 .1
+
+name gem_02
+envmap 5 1
+blend 1
+scroll .1 .1
+
+name gem_03
+//envmap 5 4
+//scroll 0 .02
+
+name gem_04
+ambient 1
+
+//-------------------------------------------------------------
+//          		     Logo End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		     Room Start
+//-------------------------------------------------------------
+
+
+name A2_Puddle_EnvMap
+type indirectwater
+ 
+name A3_Ocean_EnvMap
+type indirectwater
+
+ 
+
+
+
+//==============================A1=============================
+
+
+
+name TY_A1_003_nograss alias TY_A1_003
+
+name TY_A1_004_nograss alias TY_A1_004
+
+name TY_A1_005_nograss alias TY_A1_005
+
+name TY_A1_017_nograss alias TY_A1_017
+
+name TY_A1_044_nograss alias TY_A1_044
+
+name TY_A1_023_nograss alias TY_A1_023
+
+name ty_a1_000
+id 16
+
+name ty_a1_001
+clampuv 0 1
+
+name ty_a1_002
+id 16
+
+name ty_a1_003
+id 524288
+effect = grass,0
+
+name ty_a1_004
+id 262144
+clampuv 0 1
+effect = grass,1
+
+name ty_a1_005
+id 524288
+effect = grass,0
+
+name ty_a1_011
+clampuv 0 1
+
+name ty_a1_012
+clampuv 0 1
+
+name ty_a1_017
+clampuv 1 1
+//id 262144
+effect = grass,1
+
+
+name ty_a1_023
+clampuv 0 1
+effect = grass,4
+
+name ty_a1_023_no_grass alias  ty_a1_023
+clampuv 0 1
+
+name TY_A1_027
+masked 1
+aref .9
+clampuv 1 1
+
+name TY_A1_028
+masked 1
+aref .9
+clampuv 1 1
+
+name TY_A1_029
+masked 1
+aref .9
+clampuv 1 1
+
+name TY_A1_030
+masked 1
+aref .9
+clampuv 0 1
+
+name TY_A1_031
+masked 1
+aref .9
+clampuv 1 1
+
+name TY_A1_032
+masked 1
+aref .9
+clampuv 1 1
+
+
+name TY_A1_HeavySplash
+blend 1
+
+name TY_A1_Mist
+blend 1
+
+name TY_A1_020
+blend 0
+
+name TY_A1_021
+blend 1
+
+name TY_A1_022_Overlay alias TY_A1_022
+blend 1
+
+name TY_A1_022
+overlay TY_A1_022_Overlay
+blend 6
+
+name TY_A1_033
+masked 1
+aref .9
+clampuv 1 1
+
+name TY_A1_034
+clampuv 0 1
+
+name ty_a1_037
+effect = grass,11
+
+name TY_A1_038
+clampuv 0 1
+
+
+name TY_A1_042
+clampuv 0 1
+
+name TY_A1_043
+masked 1
+clampuv 0 1
+
+name TY_A1_044
+clampuv 1 1
+id 262144
+effect = grass,1
+
+name TY_A1_045
+effect = grass,2
+
+name TY_A1_046
+clampuv 0 1
+effect = grass,3
+
+name TY_A1_047
+clampuv 1 1
+
+name TY_A1_048
+clampuv 0 1
+
+name TY_A1_049
+clampuv 1 1
+
+name TY_A1_050
+clampuv 0 1
+
+name ty_a1_051
+effect = grass,5
+
+name ty_a1_051_no_grass alias ty_a1_051
+
+name TY_A1_052
+clampuv 0 1
+
+name TY_A1_053
+clampuv 1 1
+
+name TY_A1_054
+clampuv 1 1
+
+name TY_A1_055
+clampuv 0 1
+
+name TY_A1_056
+clampuv 0 1
+
+name TY_A1_059
+clampuv 0 1
+
+name TY_A1_061
+clampuv 1 1
+
+name TY_A1_062
+clampuv 1 1
+
+name TY_rt_128_2
+blend 1
+envmap 1
+
+name no_grass alias TY_A1_045
+
+name ty_rt_128_02
+blend 5
+
+//==============================A2=============================
+
+name Ty_A2_001
+overlay fx_092 1
+
+
+
+name fx_092
+scroll 0 -2
+overlay ty_a2_046 1
+blend 5
+
+name ty_a2_046
+overlay ty_a2_046_2 .8
+blend 1
+scroll 0 -.5
+
+name ty_a2_046_2 alias ty_a2_047
+ambient 1
+color 1.4 1.4 1.4 1
+blend 1
+scroll 0 -1.2
+
+
+
+name fx_092_blend_1 alias fx_092
+scroll 0 -1
+blend 1
+
+//name FX_092_overlay alias FX_092
+//scroll 0 -2
+//overlay ty_a2_046_overlay 1
+//blend 5
+
+name FX_092_overlay alias fx_092
+//overlay ty_a2_046_overlay .8
+blend 5
+scroll 0 -.5
+
+name ty_a2_046_overlay alias ty_a2_047
+ambient 1
+color 1.4 1.4 1.4 1
+blend 5
+scroll 0 -1.2
+
+
+name ty_a2_046
+blend 1
+scroll 0 -1
+
+
+name TY_A2_004
+clampuv 0 1
+
+
+name TY_A2_005
+effect = grass,11
+
+
+name TY_A2_005_nograss alias TY_A2_005
+
+name TY_A2_006
+clampuv 0 1
+
+name TY_A2_008
+effect = grass,6
+
+name TY_A2_008_no_grass alias TY_A2_008
+
+name TY_A2_009
+clampuv 1 0
+
+name TY_A2_010
+clampuv 1 1
+
+name TY_A2_011
+clampuv 1 1
+effect = grass,6
+
+name TY_A2_011_nograss alias TY_A2_011
+
+name TY_A2_012
+effect = grass,6
+
+name TY_A2_015
+clampuv 1 0
+
+name TY_A2_017
+clampuv 1 1
+
+name TY_A2_020
+clampuv 1 1
+
+name Ty_A2_021
+ID 524288
+
+name TY_a2_022_grass alias TY_a2_022
+effect = grass,12
+
+name TY_A2_023
+clampuv 1 1
+effect = grass,6
+
+name TY_A2_024
+clampuv 0 1
+
+Name Ty_A2_026
+clampuv 1 1
+
+name TY_A2_027
+masked 1
+aref .9
+
+name TY_A2_028
+masked 1
+aref .9
+
+name TY_A2_031
+clampuv 1 0
+
+name TY_A2_032
+overlay fx_092 1
+
+Name TY_A2_033
+overlay fx_092 1
+// water Slide
+
+name TY_A2_037
+masked 1
+aref .9
+clampuv 0 1
+
+name TY_A2_038
+masked 1
+aref .9
+clampuv 1 1
+
+
+name TY_A2_040
+clampuv 0 1
+
+
+name TY_A2_043
+clampuv 1 0
+
+name TY_A2_044
+clampuv 1 1
+
+name TY_A2_045
+clampuv 1 1
+
+
+
+
+//==============================A3=============================
+
+
+name TY_A3_014_nograss alias TY_A3_014
+clampuv 0 1
+
+name TY_A3_015_nograss alias TY_A3_015
+
+
+name TY_A3_016_nograss alias TY_A3_016
+clampuv 1 1
+
+name TY_A3_017_nograss alias TY_A3_017
+clampuv 1 1
+
+
+
+
+name TY_A3_031
+id 16
+
+name ty_a3_grasstest alias TY_A3_044
+effect = grass,7
+
+name ty_a3_004
+effect = grass,1
+
+name ty_a3_005
+effect = grass,1
+
+name ty_a3_006
+effect = grass,1
+
+
+
+name TY_A3_007
+masked 1
+aref 0.8
+clampuv 0 1
+
+name TY_A3_008
+masked 1
+aref 0.8
+clampuv 1 1
+
+name TY_A3_009
+masked 1
+aref .4
+clampuv 0 1
+
+name TY_A3_014
+clampuv 0 1
+effect = grass,1
+
+name TY_A3_015
+effect = grass,0
+
+name TY_A3_016
+clampuv 1 1
+effect = grass,1
+
+name TY_A3_017
+clampuv 1 1
+effect = grass,1
+
+name TY_A3_020
+clampuv 1 1
+
+name TY_A3_021
+clampuv 1 1
+
+name TY_A3_022
+clampuv 1 1
+
+name TY_A3_023
+clampuv 1 1
+
+name TY_A3_024
+clampuv 0 1
+
+name TY_A3_025
+clampuv 0 1
+
+name TY_A3_026
+clampuv 0 1
+
+name Ty_A3_032
+effect = grass,13
+
+
+name TY_A3_033
+clampuv 1 1
+
+name TY_A3_035
+clampuv 1 1
+
+
+name TY_A3_035
+clampuv 1 1
+
+name TY_A3_037
+clampuv 1 1
+
+name TY_A3_038
+clampuv 0 1
+
+name TY_A3_039
+clampuv 0 1
+
+name TY_A3_040
+clampuv 0 1
+
+name TY_A3_041
+clampuv 1 0
+
+name TY_A3_046
+clampuv 1 1
+effect = grass,0
+
+name TY_A3_047
+clampuv 1 1
+effect = grass,0
+
+name TY_A3_048
+clampuv 1 1
+effect = grass,0
+
+name TY_A3_049
+clampuv 1 1
+effect = grass,0
+
+name ty_a3_050
+effect = grass,0
+
+name TY_A3_051
+clampuv 0 1
+
+name TY_A3_052
+clampuv 1 0
+
+name TY_A3_053
+clampuv 0 1
+
+name TY_A3_055
+clampuv 1 1
+
+name TY_A3_057
+clampuv 1 1
+
+name TY_A3_060
+clampuv 0 1
+
+name TY_A3_062
+clampuv 0 1
+
+name TY_A3_063
+clampuv 0 1
+
+name TY_A3_064
+clampuv 1 1
+
+name TY_A3_065
+clampuv 0 1
+
+name TY_A3_069
+clampuv 1 1
+
+name TY_A3_076
+clampuv 0 1
+
+name TY_A3_079
+clampuv 0 1
+
+name TY_A3_080
+clampuv 0 1
+
+name TY_A3_081
+clampuv 0 1
+
+name TY_A3_082
+clampuv 0 1
+
+name TY_A3_090
+clampuv 1 1
+
+name TY_A3_091
+clampuv 1 1
+
+name TY_A3_092
+clampuv 1 1
+
+name TY_A3_093
+clampuv 1 1
+
+name TY_A3_094
+clampuv 1 1
+
+name TY_A3_095
+clampuv 1 1
+
+name TY_A3_097
+masked 1
+
+name TY_A3_098
+clampuv 1 1
+
+name TY_A3_099
+clampuv 1 1
+
+
+
+name TY_A3_60
+clampuv 0 1
+
+name TY_A3_Env_001
+clampuv 0 1
+
+name TY_A3_Env_003
+clampuv 0 1
+
+
+
+
+
+
+
+//==============================A4=============================
+
+name TY_A4_033
+id 16
+
+name TY_A4_006
+id 2
+
+name TY_A4_012
+id 2
+
+name TY_A4_008
+id 2
+
+name ty_a4_009
+id 16
+
+name ty_a4_06
+id 2
+
+name TY_A4_019
+ID 16
+
+name TY_A4_026
+Masked 1
+aref .9
+address 1 1 
+
+name TY_A4_027
+Masked 1
+aref .9
+address 1 1 
+
+name TY_A4_028
+Masked 1
+aref .9
+
+
+name TY_A4_029
+Masked 1
+aref .9
+address 1 1 
+
+name TY_A4_004 alias TY_A4_019
+ID 262144
+effect = grass,10 
+ 
+name TY_A4_020
+ID 524288
+//ID 524304
+effect = grass,9
+
+name TY_A4_012
+blend 6
+ambient 1
+ 
+name TY_A4_007
+blend 6
+ambient 1
+ 
+name TY_A4_012
+blend 6
+ambient 1
+
+name TY_A4_007
+masked 1
+ambient 1
+
+name TY_A4_014
+masked 1
+ambient 1
+
+name TY_A4_24
+scroll 0 -1
+blend 6
+
+//==============================Z1=============================
+
+name Prop_z1_qlander01_02
+masked 1
+
+name Prop_z1_qlander01_03
+masked 1
+
+name waterfall_overlay_01_z alias waterfall_overlay_01
+type alphafog
+scroll 0 -.1
+
+name waterfall_overlay_02_z alias waterfall_overlay_02
+type alphafog
+blend 1
+scroll 0 -.4
+
+name TY_Z1a_010
+masked 1
+aref 0.1
+
+name TY0101_41
+ID 262160
+effect = grass,0
+ 
+name TY0101_42
+ID 262160
+effect = grass,0
+
+name TY_HUB_rock_floor2_water alias TY_HUB_rock_floor2
+id 1024
+
+name TY_clouds
+blend 1
+
+name ty_rock1
+masked 1
+
+name ty_rock2
+masked 1
+
+// new hub textures
+name TY_Z1_001
+overlay TY_Z1_001b 1
+blend 6
+
+name TY_Z1_001b
+blend 1
+
+name TY_B4_006
+blend 1
+
+name TY_z1_042
+blend 2
+aref .5
+
+name ty_Z1_45 
+masked 1
+aref .5
+
+name ty_Z1_49 
+masked 1
+aref .5
+
+name ty_z1a_003 
+masked 1 
+aref .5 
+
+name ty_z1a_006 
+masked 1
+aref .5
+
+name ty_z1_54 
+masked 1 
+aref .5
+
+name ty_z1_55 
+masked 1 
+aref .5
+
+name ty_z1_59
+masked 1
+
+
+name prop_Z1_Electricity
+blend 1
+scroll -2.4  0
+zWrite 1
+
+name ty_z1_61
+masked 1
+aref .5
+
+
+
+
+//==============================Z2=============================
+
+name ty_z2_004
+clampuv 1 0
+
+
+name ty_z2_005
+
+name ty_z2_006
+
+name ty_z2_007
+clampuv 0 1
+
+name ty_z2_008
+clampuv 0 1
+
+name ty_z2_010
+clampuv 0 1
+
+name ty_z2_011
+clampuv 1 0
+
+name ty_z2_012
+clampuv 1 1
+
+name ty_z2_013
+clampuv 1 1
+
+name ty_z2_014
+clampuv 1 1
+
+name ty_z2_015
+clampuv 1 1
+
+name ty_z2_016
+clampuv 0 1
+
+name ty_z2_017
+clampuv 0 1
+
+name ty_z2_018
+clampuv 1 1
+
+name ty_z2_020
+clampuv 0 1
+
+name ty_z2_021
+clampuv 1 1
+
+name ty_z2_022
+clampuv 1 1
+
+name ty_z2_023
+clampuv 0 1
+
+name ty_z2_024
+clampuv 1 1
+
+name ty_z2_025
+clampuv 1 1
+
+name ty_z2_026
+clampuv 1 1
+
+
+name TY_Z2_003_grass alias TY_Z2_003
+effect = grass,9
+
+name TY_Z2_017_grass alias TY_Z2_017
+effect = grass,6
+
+name TY_Z2_018_grass alias TY_Z2_018
+effect = grass,6
+
+name TY_A2_005_lessgrass alias TY_A2_005
+effect = grass,18
+
+
+//==============================B1=============================
+name Ty_B1_017
+clampuv 1 1
+
+name Ty_B1_018
+clampuv 1 1
+
+name Ty_B1_019
+clampuv 1 0
+
+name Ty_B1_020
+clampuv 1 0
+
+name Ty_B1_021
+masked 1
+aref .9
+clampuv 0 1
+
+name Ty_B1_023
+clampuv 0 1
+
+name Ty_B1_024
+clampuv 0 1
+
+name Ty_B1_027
+clampuv 0 1
+
+name Ty_B1_026
+mipbias -16
+
+name Ty_B1_028
+clampuv 0 1
+
+name Ty_B1_029
+masked 1
+aref .9
+clampuv 0 1
+
+name Ty_B1_032
+clampuv 0 1
+
+name Ty_B1_033
+masked 1
+aref .9
+clampuv 1 1
+
+name ty_b1_045
+masked 1
+
+name TY_B1_047
+clampuv 0 1
+
+
+//==============================B2=============================
+
+name ty_b2_029
+effect = grass,9
+
+name ty_b2_030
+effect = grass,9
+
+name ty_b2_031
+effect = grass,9
+
+name TY_C2_010_a alias TY_C2_010
+id 2
+
+name ty_b2_001
+id 2048
+
+name ty_b2_005
+id 8
+
+name ty_b2_006
+id 8
+
+name ty_b2_012
+id 2048
+
+
+name ty_b2_022
+scroll .2 0
+
+name TY_B2_021
+masked 1
+aref .7
+
+name ty_b2_020
+masked 1
+aref .7
+
+name ty_b2_002
+id 2
+
+name TY_B2_019
+masked 1
+aref .7
+
+name TY_B2_018
+masked 1
+aref .1
+
+name TY_B2_015
+masked 1
+aref .1
+
+name TY_B2_010
+masked 1
+aref .1
+clampuv 0 1
+
+name TY_B2_028
+masked 1
+
+name TY_B2_001_grass alias TY_B2_001
+invisible 1
+effect = grass,17
+
+name TY_B2_001_snow alias TY_B2_001
+invisible 1
+effect = grass,17
+
+
+
+
+//==============================B3=============================
+name TY_B3_001
+ID 16
+//dirt01
+effect = grass,8
+
+name TY_B3_001_nograss alias TY_B3_001
+ID 16
+//dirt01
+
+
+name TY_B3_002
+ID 16
+//dirt01
+effect = grass,8
+
+name TY_B3_002_nograss alias TY_B3_002
+ID 16
+//dirt01
+
+
+name TY_B3_003
+ID 16
+blend 6
+//aref .3
+Clampuv 0 1
+//dirt01
+
+name TY_B3_004
+ID 16
+//dirt01
+
+name TY_B3_005
+ID 1
+
+
+name TY_B3_009
+ID 4194304
+blend 5
+scroll 0 .2
+//waterfall
+
+name TY_B3_010
+ID 1024
+//water pool
+
+name TY_B3_012
+blend 6
+//aref .3
+Clampuv 0 1
+
+name TY_B3_013
+blend 6
+//aref .3
+Clampuv 0 1
+
+name TY_B3_031
+blend 6
+aref .3
+Clampuv 0 1
+
+name TY_B3_014
+blend 6
+//aref .9
+Clampuv 0 1
+
+name TY_B3_018
+effect = grass,8
+
+name TY_B3_018_nograss alias TY_B3_018
+
+name TY_B3_019
+effect = grass,8
+
+name TY_B3_019_nograss alias TY_B3_019
+
+name TY_B3_038
+masked 1
+
+name ty_b3_001_FX15 alias ty_b3_001
+ID 16
+invisible 1
+effect = grass,15
+//dirt01
+
+name ty_b3_002_FX15 alias ty_b3_002
+ID 16
+invisible 1
+effect = grass,16
+//dirt01
+
+name ty_b3_018_FX15 alias ty_b3_018
+ID 16
+effect = grass,15
+//dirt01
+
+name ty_b3_019_FX15 alias ty_b3_019
+ID 16
+effect = grass,15
+//dirt01
+
+name waterfall_overlay_01_X alias waterfall_overlay_01
+type alphafog
+scroll 0 -.4
+
+name waterfall_overlay_02_X alias waterfall_overlay_02
+type alphafog
+blend 1
+scroll 0 -.6
+
+name waterfall_overlay_03_X alias waterfall_overlay_03
+type alphafog
+scroll 0 -.25
+blend 1
+
+
+name TY_B3_044
+effect = grass,16
+
+name TY_B3_060
+type alphafog
+blend 1
+scroll 0 -.3
+
+name TY_B3_060_X alias TY_B3_060
+type alphafog
+blend 1
+scroll 0 -.5
+
+name FX_113
+masked 1
+aref .9
+//---------
+
+//windmill
+name TY0201_05
+
+name TY0201_03
+
+name TY0201_04
+doublesided 1
+
+name TY0201_06
+doublesided 1
+
+name TY0201_02
+
+name TY0102_08
+
+name TY0102_07
+//==============================B3=============================
+
+Name Ty_B4_006
+blend 1
+
+//==============================C1=============================
+
+name ty_c1_002
+effect = grass,14
+
+name TY_C1_008a alias TY_A2_008
+effect = grass,12
+
+name TY_C1_002_reeds alias TY_C1_002
+effect = grass,4
+clampuv 1 1
+
+name ty_c1_003
+effect = grass,14
+clampuv 0 1
+
+name ty_c1_004
+effect = grass,14
+clampuv 0 1
+
+name TY_C1_002_b alias TY_C1_002
+
+Name ty_a2_005_b alias ty_a2_005
+
+name ty_c1_007
+masked 1
+
+
+Name ty_c1_010
+rotate 0.5 0.5 6
+
+Name TY_C1_011
+masked 1
+aref .9
+
+name TY_c1_011_reed alias TY_a2_007
+effect = grass,4
+
+Name ty_c1_012
+overlay fx_092 1
+
+Name ty_c1_003
+clampuv 0 1
+
+
+//==============================C2=============================
+
+
+name Prop_C2_Snowscroll
+masked 1
+Aref .9
+scroll .7, .9
+
+name Prop_C2_SnowGun
+overlay Prop_Common_SpecMetal 
+
+name  Prop_Common_SpecMetal 
+envmap 1
+//scroll .01 .01
+blend 1
+
+name OpticGlow alias  Prop_C2_SnowGun
+blend 1
+
+name Prop_C2_glass
+Blend 1
+envmap 1
+
+
+name ty_c2_027
+masked 1
+aref .7
+
+
+name ty_c2_017_rotate alias ty_c2_017
+blend 5
+rotate .5 .5 .1
+
+
+name ty_c2_017_scroll alias ty_c2_017
+blend 5
+scroll 0 .1
+
+
+name ty_c2_019
+overlay ty_c2_018
+envmap 1
+
+
+name ty_c2_018
+Blend 6
+
+
+
+//==============================C3=============================
+
+name ty_c3_001a alias ty_c3_001
+scroll .1 .1
+
+name ty_c3_001
+overlay ty_c3_001a 1
+scroll -.1 -.1
+id 512
+
+name ty_c3_003
+id 16
+
+name ty_c3_002
+id 16
+
+name ty_c3_006
+id 16
+
+name ty_c3_007
+id 16
+
+name ty_c3_008
+id 16
+
+name Prop_0426_Janeysgrave
+masked 1
+aref .7
+
+name Prop_C3_LavaBase
+scroll .2 2
+blend 1
+overlay Prop_C3_LavaSpurt
+
+name Prop_C3_LavaSpurt
+blend 2
+scroll -.2 3
+
+//==============================D2=============================
+
+name TY_D2_004
+blend 6
+//==============================D4=============================
+
+name TY_D4_007
+clampuv 0 1
+
+name ty_d4_009
+masked 1
+
+name ty_d4_010
+masked 1
+clampuv 0 1
+
+//==============================E1=============================
+
+name Room_E1_MetalDockGrill
+masked 1
+Aref .8
+
+//==============================E2=============================
+
+name TY0101_39
+masked 1
+
+name TY0101_30
+rotate .1 .1 .05
+blend 1
+aref .7
+
+name fog_01 alias crab_01
+blend 1 
+rotate .1 .1
+nocollide 1
+
+name TY0101_26
+blend 6
+doublesided 1
+aref .6
+masked 1
+
+name ty0101_05_b alias ty0101_05
+id 8208
+
+name TY0101_29
+blend 6
+doublesided 1
+aref .6
+masked 1
+
+name TY0101_05
+id 16
+
+name ty0101_06
+blend 6
+doublesided 1
+aref .75
+masked 1
+
+///   --- vines
+name TY0101_20
+//blend 6
+aref .25
+doublesided 1
+masked 1
+
+//
+name TY0101_25
+blend 6
+doublesided 1
+aref .6
+masked 1
+
+name ty0101_07
+blend 6
+doublesided 1
+aref .6
+masked 1
+
+name ty0101_11
+blend 6
+ambient 1
+scroll -.02 0
+
+//name ty0101_10
+//blend 5
+//address 1 1 1
+//ambient 1
+
+name ty0101_10
+masked 1
+
+name ty0101_09
+address 1 1 1
+ambient 1
+
+// toxic water
+name TY0101_11
+id 256
+
+name TY0101_12
+blend 6
+rotate .5 .5 .1
+address 1 1 1
+
+name TY0101_02
+nocollide 1
+
+name TY0101_03
+doublesided 1
+aref 1
+masked 1
+
+name TY0101_04
+doublesided 1
+
+name TY0101_14
+doublesided 1
+
+name TY0101_13
+masked 1
+aref .6
+
+name TY0101_24
+masked 1
+doublesided 1
+
+//-------------------------------------------------------------
+//          		     Room End
+//-------------------------------------------------------------
+
+//-------------------------------------------------------------
+//          		     Rang Start
+//-------------------------------------------------------------
+
+// Standard
+name rang_02
+blend 5
+ambient 1
+doublesided 1
+color 1 1 1 .5
+
+//frosty
+name rang_04
+blend 1
+doublesided 1
+
+name rang_03
+envmap 1
+
+//flame
+name rang_05
+ambient 1
+
+name rang_06
+blend 1
+doublesided 1
+
+//doom
+
+name rang_11
+envmap 1
+ambient 1
+
+name rang_12
+blend 1
+doublesided 1
+
+// Boomerrang trails
+name rangtrail_01
+blend 1
+doublesided 1
+
+name rangtrail_02
+blend 1
+doublesided 1
+
+name rangtrail_03
+blend 1
+doublesided 1
+
+name rangtrail_06
+blend 1
+doublesided 1
+
+name trail_02
+blend 1
+doublesided 1
+
+name trail_03
+blend 1
+doublesided 1
+
+name hudrang_01
+blend 5
+
+name hudrang_02
+blend 5
+
+name hudrang_03
+blend 5
+
+name hudrang_04
+blend 5
+
+name hudrang_05
+blend 5
+
+name hudrang_06
+blend 5
+
+name hudrang_07
+blend 5
+
+name hudrang_08
+blend 5
+
+name hudrang_09
+blend 5
+
+name hudrang_10
+blend 5
+
+//-------------------------------------------------------------
+//          		      Rang End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		      Font Start
+//-------------------------------------------------------------
+
+name bg_font_01
+blend 5
+
+name bg_font_02
+blend 5
+
+name bg_font_03
+blend 5
+
+//-------------------------------------------------------------
+//          		      Font End
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//          		     Un known start
+//-------------------------------------------------------------
+
+name crosshair
+zwrite 0
+clampuv 1 1
+
+name KG05
+masked 1
+
+name smoke
+Blend 6
+
+// screen grab used by heat flare
+name capture
+blend 0
+
+// water splash
+name splash02
+zwrite 0
+zread 1
+blend 5
+ambient 2
+
+// Toxic water
+name TY0101_15
+scroll .01 .01
+id 256
+
+name smoke_01
+blend 1
+ambient 5
+
+name smoke_02
+blend 2
+ambient 5
+
+
+//name waterfall_overlay_01
+//type alphafog
+//blend 1
+
+//name waterfall_overlay_02
+//type alphafog
+//blend 1
+
+
+name waterfall_overlay_01
+type alphafog
+scroll 0 -.4
+
+name waterfall_overlay_02
+type alphafog
+blend 1
+scroll 0 -.6
+
+name waterfall_overlay_03
+type alphafog
+blend 1
+
+
+
+//name waterfall_overlay_01_X alias waterfall_overlay_01
+//type alphafog
+//scroll 0 -.4
+
+//name waterfall_overlay_02_X alias waterfall_overlay_02
+//type alphafog
+//blend 1
+//scroll 0 -.6
+
+//name waterfall_overlay_03_X alias waterfall_overlay_03
+//type alphafog
+//scroll 0 -.25
+//blend 1
+
+
+
+name waterfall_splash1
+blend 1
+
+name waterfall_splash2
+blend 5
+
+name waterfall_splash3
+blend 1
+
+name waterfall_splash4
+blend 1
+
+name waterfall_splash5
+blend 5
+
+name waterfall_splash6
+blend 5
+
+name waterfall_splash7
+blend 5
+
+name waterfall_splash8
+blend 5
+
+name waterfall_splash9
+blend 5
+
+name waterfall_splash10
+blend 5
+
+name waterfall_splash11
+blend 5
+
+name waterfall_tex_01
+blend 5
+
+name TY_RT_128
+blend 5
+
+name TY_008_caustics
+blend 1
+
+name grass
+ID 524288
+effect = grass,0
+
+name grass_rock
+ID 262144
+effect = grass,1
+
+// test grass
+name ty0101_36
+ID 524288
+effect = grass,0
+
+// ty caustic effect
+name ty_rt_128_3 alias ty_rt_128_2
+envmap 1
+blend 1
+
+name TY_Z1a_019
+masked 1
+aref .9
+
+// Time Attack Arrows
+name neon_Green alias Prop_Common_Page_Pies
+blend 1
+ambient 1
+ 
+name flow_01
+blend 1
+
+name TY0101_01
+clampuv 0 1
+
+name TY0101_03
+clampuv 0 1
+
+name TY0101_23_b alias TY0101_23
+
+// environmental effects
+name mist_01
+blend 1
+
+name pie_01
+ambient 1
+
+name pie_02
+ambient 1
+
+name pie_03
+envmap 1
+doublesided 1
+
+name parcel_02
+doublesided 1
+
+name parcel_04
+envmap 1
+
+name opal_A03
+scroll .5 .5
+blend 1
+ambient 1
+
+name opal_A01
+scroll .5 .5
+blend 0 
+ambient 1
+
+name opal_A02
+blend 6
+envmap 1
+
+name number
+envmap 1
+scroll .1 .1
+
+name pie_03
+envmap 1
+
+// Sand ID
+name dan_07
+id 4
+
+name glyph_01
+envmap 7 1
+blend 5
+color 1 1 1 .7
+
+name glyph_02
+envmap 7 1
+
+name dan_08
+id 4
+
+// Footprints
+name print_01
+blend 6 print_01a
+ambient 5
+color 1 1 1 1
+masked 2 0 0
+
+// Invisible Wall
+name dan_11 
+invisible 1
+id 2
+
+// Invisible Floor
+name dan_12
+invisible 1
+
+//
+name chest_a01
+envmap 7 1
+
+name boom_a1
+blend 1
+ambient 5
+
+name dan_10 alias dan_01
+id 0
+
+name dan_05
+masked 2 0 0
+blend 6 dan_05b
+ambient 5
+
+name kopa_02
+masked 2 0 0
+
+name kopa_03
+masked 2 0 0
+
+// Sliding ground texture
+name dan_01
+id 2
+
+name dan_04
+id 2
+
+name dan_03
+scroll .03 .03
+ambient 5
+blend 5 
+color 1 1 1 .8
+nocollide 1
+
+//OPAL
+
+name cr_44
+blend 1
+ambient 50
+
+name cr_34
+blend 2
+ambient 50
+
+name cr_25
+scroll 0.005 -.01
+ambient 4
+blend 1
+
+name cr_31
+masked 1
+
+name cr_39
+masked 2 0 0
+doublesided 1
+
+name cr_33
+ambient 5
+masked 2 0 0
+face 1
+
+name cr_37
+masked 2 0 0
+blend 5
+color 1 1 1 1
+
+name cr_27
+blend 6 cr_27a
+
+//Opal
+name crystal_01
+ambient .5
+color1 .5 .5 .5
+
+name cr_41
+envmap 5 6
+dither 1
+
+name cr_35
+ambient 20
+blend 2
+scroll 0 .2
+dither 2
+
+name cr_35 alias pvr_35
+masked 2 0 0
+ambient 20
+blend 5
+scroll 0 .2
+color 1 1 1 .2
+
+name fog_01 alias crab_01
+invisible 1
+
+name TY_Grassblade
+aref 0.5
+blend 0
+masked 1
+address 1 1 
+
+name nocam
+id 16777216
+
+name normalcam
+id 8388608
+
+//-------------------------------------------------------------
+//          		     Un known End
+//-------------------------------------------------------------
+
+// Ash Tmp Stuff
+
+name FX00_TX00
+blend 5
+zwrite 0
+
+name FX00_TX01
+blend 1
+
+
+name FX00_TX02
+blend 1
+
+name FX05_TX00
+blend 1
+
+name FX05_TX01
+blend 1
+
+name FX05_TX02
+blend 1
+
+name FX05_TX03
+blend 1
+
+name FX05_TX04
+blend 1
+
+name FX05_TX05
+blend 1
+
+name WT02_TM02_horizon
+blend 1
+
+name WT02_TM02_skydome
+blend 1
+
+name waterSlide_spray alias waterfall_splash10
+blend 1
+
+name fog_01
+blend 1
+
+name DebugFont1
+masked 1
+

@@ -1,0 +1,94 @@
+// Camera.val - Stores values relevant to the camera.
+
+initialDistanceIndex = 1
+
+firstPersonAdjHeight = 80
+centerBehindHeroAngle = PI/4
+
+adjustHeroTarget = 80
+
+distanceFromHeroClose = 300
+heightFromHeroClose = 15
+
+distanceFromHeroMiddle = 450
+heightFromHeroMiddle = 75
+
+distanceFromHeroFar = 600
+heightFromHeroFar = 240
+
+// How long it takes after movement stopped to put camera behind in percentage
+// 1.5 seconds
+timeToCenterCamera = .5
+
+/////////////////////
+
+adjustJeepTarget = 60
+
+distanceFromJeepClose = 600
+heightFromJeepClose = 100
+
+distanceFromJeepMiddle = 800
+heightFromJeepMiddle = 150
+
+distanceFromJeepFar = 1000
+heightFromJeepFar = 200
+
+/////////////////////
+
+adjustBullTarget = 60
+
+distanceFromBullClose = 600
+heightFromBullClose = 100
+
+distanceFromBullMiddle = 800
+heightFromBullMiddle = 150
+
+distanceFromBullFar = 1000
+heightFromBullFar = 200
+
+//////////////////
+
+adjustBushPigTarget = 105
+
+distanceFromBushPigClose = 560
+heightFromBushPigClose = 210
+
+distanceFromBushPigMiddle = 700
+heightFromBushPigMiddle = 315
+
+distanceFromBushPigFar = 840
+heightFromBushPigFar = 385
+
+/////////////////////
+
+adjustBushPigRunTarget = 245
+
+distanceFromBushPigRunClose = 560
+heightFromBushPigRunClose = 140
+
+distanceFromBushPigRunMiddle = 700
+heightFromBushPigRunMiddle = 175
+
+distanceFromBushPigRunFar = 840
+heightFromBushPigRunFar = 210
+
+/////////////////////
+
+// How high to place camera above Ty in HighCamera mode
+highCameraY = 200.0
+
+// How far a drop must be in front of Ty to enter HighCamera mode
+highCameraCheckY = 400.0
+
+// How far ahead to check for drop
+highCameraCheckDistance = 350.0
+
+//glideStepY = 4.5                 // the rate that the camera's y will increase to glideAdjustY
+//glideAdjustY = 180             // the delta the camera y will adjust by when gliding or jumping
+
+//glideStepY = 0.5                 // the rate that the camera's y will increase to glideAdjustY
+glideStepY = 0.5                 // the rate that the camera's y will increase to glideAdjustY
+glideAdjustY = 180             // the delta the camera y will adjust by when gliding or jumping
+glideDistance = 450		// distance camera is from Ty when he glides
+
+bushPigSmoothFrames = 180

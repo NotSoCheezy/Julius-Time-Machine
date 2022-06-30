@@ -1,0 +1,13 @@
+To create a new icon here, follow these steps.
+
+Step 1: Delete old icon files (icon.tga and icon.tpl)
+	NOTE: DO NOT DELETE "icon.tcs"
+
+Step 2: Copy "icon.tga" to this directory
+
+Step 3: Run "make_icon.bat"
+
+Step 4: Make sure "icon.tpl" exists in the folder (if it doesn't then icon was not created)
+
+DONE...
+Any questions regarding this process can be directed to Anthony.

@@ -1,0 +1,7086 @@
+// Global model file
+// Defines LOD and other information for models
+//
+// THIS IS NOT GLOBAL.MAD!
+//
+// name <model>
+// - Name of model
+// collide <subobject>
+// - The name of the subobject to use for static collisions
+// frag <subobject>[,<subobject>...]
+// - If the model breaks into fragments, the subjects used
+//   as fragments are listed here
+// lod <n>
+// - Specifies the level of detail range to be used for the
+//   next few lines. Valid ranges are 0..7
+// subobj <subobject>[,<subobject>...]
+// - The names of the subjects visible in the LOD range
+//   specified by the most recent 'lod' command
+// effect <type>,<subobject>,<parameter>
+// - The effect used in this LOD range and which subobject
+//   is used as a reference point for the effect
+//   Valid types are "shadow", "particles", "sound", "scissor"
+// flags <"alpha"|"camerafade"|"scissor"[,<"alpha"|"camerafade"|"scissor">...]>
+// - Flags that affect functionality of the model.
+//   alpha:       Update alpha values for this model
+//   camerafade:  This model fades if it comes between the
+//                player and the camera
+//   scissor:     This model should have scissor enabled in
+//                certain LOD levels
+// radius <size>
+// - Size of sphere to check for camera obstruction
+// minalpha <alpha>
+// - Minimum alpha level of model
+// height <size>
+// - Height of sphere to check for camera obstruction
+
+name StaticProps
+Shack1 Prop_0149_Shack
+ChainlinkFence prop_0119_chainlink_fence
+Rock1 Prop_0121_Rock_01
+Rock2 Prop_0122_Rock_02
+Rock3 Prop_0128_Rock_03
+Rock4 Prop_0129_Rock_04
+Rock5 Prop_0130_Rock_05
+Rock6 Prop_0131_Rock_06
+Rock7 Prop_0176_Rock_07
+Rock8 Prop_0177_Rock_08
+Rock9 Prop_0178_Rock_09
+Rock10 Prop_0179_Rock_10
+Rock11 Prop_0180_Rock_11
+Rock12 Prop_0181_Rock_12
+Rock13 Prop_0182_Rock_13
+Rock14 Prop_0184_Rock_14
+Rock15 Prop_0185_Rock_15
+Spinifex1 Prop_0072_Spinafex
+GrassTree1 Prop_0078_GrassTree_a
+GrassTree2 Prop_0156_GrassTree_b
+GrassTree3 Prop_0159_GrassTree_c
+GrassTree4 Prop_0160_GrassTree_d
+FallenLog1 Prop_0123_Fallen_Log_01
+GrassClump1 Prop_0079_GrassClump_a
+Fern1 Prop_0101_Fern_01
+Fern2 prop_0102_fern_02
+Fern3 prop_0103_fern_03
+Fern4 prop_0105_fern_04
+Fern5 prop_0107_fern_05
+Brewery Prop_0110_Brewer
+snowgum01 prop_0125_Snowgum01
+snowgum02 prop_0126_Snowgum02
+BigFence1 Prop_0170_bigfence
+TallClump Prop_0075_Grass
+CatTail Prop_0045_CatTail
+Lillys Prop_0046_Lillys
+OysterFungus Prop_0047_Oysterfungus
+Staghorn Prop_0052_Staghorn
+Mushrooms Prop_0053_Mushies
+Wildflowers Prop_0073_Wildflowers
+Stump Prop_0100_Stump
+//Reed1 Prop_0006_reed_01
+//Reed2 Prop_0007_reed_02
+//Reed3 Prop_0008_reed_03
+RainforestLog1 Prop_0195_Rainforest_Log
+LogMoss1 Prop_0203_Log_Moss_01
+LogMoss2 Prop_0204_Log_Moss_02
+SGCMed1 Prop_0072_SGCMed01
+TallFern1 prop_0206_Tall_Fern
+RainforestRock1 Prop_0212_RainRock_01
+RainforestRock2 Prop_0213_RainRock_02
+RainforestRock3 Prop_0214_RainRock_03
+RainforestRock4 Prop_0215_RainRock_04
+PalmTree1 Prop_0209_Palm_Tree
+RainVine1 Prop_0223_Rain_Vine_a
+RainVine2 Prop_0224_Rain_Vine_b
+FeatureTree1 Prop_0208_Feature_Tree_01
+FeatureTree2 Prop_0217_Feature_Tree_02
+Coral1 Prop_0187_Coral_01
+Coral2 Prop_0188_Coral_02
+Coral3 Prop_0189_Coral_03
+Coral4 Prop_0190_Coral_04
+Coral5 Prop_0192_Coral_05
+CoralWallClumpA Prop_0260_CoralwallClumpA
+CoralWallClumpB Prop_0261_CoralwallClumpB
+CoralWallClumpC Prop_0262_CoralwallClumpC
+CoralWallClumpD Prop_0263_CoralwallClumpD
+ClumpA Prop_0254_CoralClumpA
+ClumpB Prop_0255_CoralClumpB
+ClumpC Prop_0256_CoralClumpC
+ClumpD Prop_0257_CoralClumpD
+SnowRoundRock Prop_0248_SnowRoundRock
+SnowWallRock Prop_0249_SnowWallRock
+SnowPlatformRock Prop_0250_SnowPlatformRock
+SnowClusterRock Prop_0251_SnowClusterRock
+SnowSlabRock Prop_0252_SnowSlabRock
+RustyCannon Prop_0265_Cannon
+shute01	Prop_0240_shute01
+shute02	Prop_0241_shute02
+shute03	Prop_0242_shute03
+shute04	Prop_0243_shute04
+shute05	Prop_0244_shute05
+shute06	Prop_0245_shute06
+Bouy Prop_0253_Bouy
+WaterTrough Prop_0027_WaterTrough
+BarbedWire Prop_0141_BarbedWire
+Snowgum03 Prop_0127_Snowgum03
+Snowgum04 Prop_0054_Snowgum04
+Pub Prop_0247_Pub
+Arena1 Prop_0219_B1_ArenaSection_a
+Arena2 Prop_0220_B1_ArenaSection_b
+Arena3 Prop_0221_B1_ArenaSection_c
+Arena4 Prop_0222_B1_ArenaSection_d
+Deadtree01 Prop_0266_DeadTree_01
+Deadtree02 Prop_0267_DeadTree_02
+Hollowtree Prop_0269_Hollowtree
+Ramp Prop_0271_Ramp
+A2CaveRock Prop_0272_A2CaveRock
+QuarterPie Prop_0274_InGamePie_01
+FullPie Prop_0275_InGamePie_02
+CaveMushie Prop_0276_CaveMushie
+A2RockPillar Prop_0279_A2RockPillar
+CavewallMushie Prop_0282_CavewallMushie
+Birdnest Prop_0289_Birdnest
+Beachpalm Prop_0236_BeachPalm
+palmtreeclump Prop_0237_BeachPalm_clump
+BeachPalmrow Prop_0290_beachpalm_row
+Sawmill Prop_0268_sawmill
+Coconuttree Prop_0292_CoconutTree
+Umbrella Prop_0298_Umbrella
+A2Blocker Prop_0303_A2_5x5x1
+BunyaTreeBase Prop_0285_BunyaTree_base
+BunyaTreeTrunk Prop_0286_BunyaTree_trunk
+BunyaTreeTop Prop_0287_BunyaTree_top
+BunyaTreeBranch Prop_0288_BunyaTree_branch
+BeachBar Prop_0293_BeachBar
+TowelFlat Prop_0299_TowelFlat
+TowelDraped Prop_0300_TowelDraped
+TowelHung Prop_0301_TowelHung
+TowelScrunched Prop_0302_TowelScrunched
+Powerpole prop_0319_Powerpole
+B1PipeGround prop_0323_B1PipeGround
+B1PipeAngle prop_0324_B1PipeAngle
+B1Pipe8M prop_0327_B1Pipe8M
+B1Pipe4M prop_0326_B1Pipe4M
+B1Pipe2M prop_0325_B1Pipe2M
+B1PipeJunction prop_0328_B1PipeJunction
+B1PipeJoin prop_0329_B1PipeJoin
+Icicle Prop_0335_Icicle
+iceblock prop_0337_iceblock
+Servo Prop_0278_Servo
+CattleSkull Prop_0312_CattleSkull
+WallBridgePosts Prop_0350_WallBridgePosts
+RustyCar Prop_0336_RustyCar
+Burnthouse Prop_0348_Burnthouse
+HibiscPink Prop_0366_HibiscPink
+HibiscPurple prop_0374_HibiscPurple
+HibiscYellow prop_0375_HibiscYellow
+treehibisPink prop_0376_treehibisPink
+treehibisPurple prop_0377_treehibisPurple
+treehibisYellow prop_0378_treehibisYellow
+TaSignPost Prop_0393_SignPost
+RangerTower prop_0383_RangerTower
+BarbedWireFence Prop_0401_BarbedWireFence
+Sandisland prop_0392_Sandisland
+a3blocker Prop_0403_A3_5x5x1
+BarbwireFence prop_0419_BarbwireFence
+FlamingTree Prop_0399_Flaming_Tree
+FlamingTree02 Prop_0411_Flaming_Tree02
+FlamingShrub Prop_0415_FlamingShrub
+GantryFrame Prop_0433_GantryFrame
+gantrypiece03 Prop_0434_gantrypiece03
+SkiLiftWheel prop_0363_SkiLiftWheel
+carpetmoss Prop_0445_carpetmoss
+Watchtower Prop_0446_Watchtower 
+SnowGunTower Prop_0447_SnowGunTower
+CoralPillarRock Prop_0450_CoralPillarRock
+BillabongPillar Prop_0451_BillabongPillar
+RockLedge Prop_0454_RockLedge
+treeroot prop_0499_treeroot
+SandArrow prop_0409_SandArrow
+treasurepile Prop_0436_treasurepile
+LargePontoon prop_0519_LargePontoon
+lava01 prop_0501_lava01
+lava02 prop_0503_lava02
+lava03 prop_0504_lava03
+lava04 prop_0505_lava04
+snakepontoon prop_0541_snakepontoon
+E4Face Prop_0548_E4Face
+E4Bolt Prop_0549_E4Bolt
+SkiLift Prop_0310_SkiLift
+SnowArrow Prop_0481_SnowArrow
+Wallgrate Prop_0497_Wallgrate
+Rangstone Prop_0531_Rangstone
+Blibligate Prop_0532_Blibligate
+LavaPipeGround Prop_0506_LavaPipeGround
+LavaPipe1M Prop_0507_LavaPipe1M
+LavaPipe2M Prop_0508_LavaPipe2M
+LavaPipeAngle Prop_0509_LavaPipeAngle
+Boiler Prop_0498_Boiler
+Qlander01 Prop_0511_Qlander01
+OpalMagnet Prop_0542_Opal_Magnet
+ChargeBite Prop_0543_Charge_Bite
+BigButtonPole Prop_0558_BigButtonPole
+SnowMound Prop_0559_SnowMound
+LightHouse Prop_0523_LightHouse
+RockPoolFence Prop_0494_RockPoolFence
+Qlander02 Prop_0512_Qlander02
+
+name StaticFXProps
+ButTree1 Prop_0109_ButTree_01
+GhostGum1 Prop_0067_GhostGum01
+GhostGum2 PROP_0068_GhostGum02
+GhostGum3 Prop_0069_GhostGum03
+Sapling1 Prop_0139_sapling01
+Sapling2 Prop_0153_Sapling02
+Sapling3 Prop_0155_Sapling03
+BridgeFlat1 prop_0111_bridge_flat_01
+BridgeFlat2 prop_0112_bridge_flat_02
+BridgeFlat3 prop_0113_bridge_flat_03
+BridgeFlat4 prop_0114_bridge_flat_04
+BridgePost1 prop_0115_bridge_post_01
+BridgePost2 prop_0116_bridge_post_02
+BridgePost3 prop_0117_bridge_post_03
+BridgeRail1 prop_0118_bridge_rail_01
+Tower1 Prop_0147_Tower
+Tower2 Prop_0449_Towervines
+tallpotplant Prop_0304_tallpotplant
+flowerclump Prop_0305_flowerclump
+tropicalplant Prop_0306_tropicalplant
+squarepot Prop_0307_squarepot
+HayBale prop_0341_HayBale
+BrokenJeep Prop_0227_BrokenJeep
+ButTreeTop Prop_0520_ButTreeTop
+
+
+
+// TDL additional parameters:-
+// power - power of the explosion, defaults to 3.0 
+// upVel - amount of upwards lift when exploding, defaults to 0.0 
+// life - length frags stay before fading out, defaults to 120 (2 secs) 
+// bounce - 0->1, 0 is no bounce, 1 is bounce back to full height. Defaults to 0.7 
+// gravity - defaults to 1.0 
+// spinrate - defaults to 0.
+
+name ShatterableProps
+WoodFenceMid1 Prop_0162_FenceMid_a
+WoodFenceMid2 Prop_0163_FenceMid_b
+WoodFenceEnd1 Prop_0164_FenceEnd_a
+WoodFenceEnd2 Prop_0165_FenceEnd_b
+Shed1 Prop_0196_Shed
+DangerSign Prop_0230_Danger_Sign
+WaterCrate Prop_0309_WaterCrate
+snowball Prop_0330_snowball
+CollIceBridge prop_0334_CollIceBridge
+B1FallingPlanks Prop_0370_B1FallingPlanks
+BullsBoulder Prop_0416_BullsBoulder
+LeafClump Prop_0547_LeafClump
+RiverLog Prop_0550_RiverLog
+RiverRock Prop_0553_RiverRock
+E4Door Prop_0557_E4Door
+// PicnicBasket Prop_0093_PicnicBasket
+// chumBox Prop_0495_Box0chum
+// crikeycanister prop_0482_AirTank
+// Chumbucket prop_0483_Chumbucket
+
+name BouncerProps
+JumpFungus Prop_0277_Jumpfungus
+deckchair Prop_0087_Deckchair
+
+name GateProps
+Gate1 prop_0194_gates
+SeaGate prop_0294_a3seagate
+shiphatch prop_308_ShipHatch
+MillGate Prop_0331_MillGate
+MillGate02 Prop_0458_MillGate02
+EZoneGate prop_0402_EZoneGate
+trapdoor prop_0169_trapdoor
+
+name TurningPlatforms
+TurningLog Prop_0229_SpinningLog
+
+name BurnableProps
+Homestead Prop_0066_HomeStead
+
+name AnimatingProps // add here animating props with just one anim called "idle" (and make it loop)
+ThundEggCollector Prop_0404_ThundEggCollector
+JuliusMachine prop_0461_JuliusMachine
+Mechanics Prop_0530_Mechanics
+
+name DamageableProps
+Postoffice Prop_0280_Postoffice
+House Prop_0284_House
+
+name ButtonProps
+BigRedButton prop_0205_big_red_button
+BigBlueButton prop_0406_big_blue_button
+Lever Prop_0500_Lever
+
+name CollapsibleProps
+FallingBridge1 Prop_0168_Burnt_Bridge
+
+// ==================================================================== Actors go here
+
+name Prop_0035_Pontoon
+maxTilt = 0.40
+maxDrawDist   = 15000
+maxUpdateDist = 15000
+maxScissorDist= 1000.0
+collisionInfoFlags = NoIce
+flags = alpha,scissor
+lod = 0
+subobj = a_pontoon_hi
+lod = 3
+subobj = a_pontoon_low
+
+name Prop_0099_Platform
+maxTilt = 0.40
+rotVel  = 0.0
+maxDrawDist = 14500.0
+maxUpdateDist = 14500.0
+maxScissorDist =  1000.0
+collisionInfoFlags = NoIce,Grabable,JumpCamera
+collide = dynamic
+flags = scissor, alpha
+lod = 0
+subobj = a_platform_high,a_propeller
+lod = 1
+subobj = a_platform_medium,a_propeller
+lod = 4
+subobj = a_platform_low
+
+name Act_02_Croc
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_croc
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 3.333
+runSpeed = 5.5
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+name Act_07_Frill
+radius = 50.0
+height = 120.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_body, A_head, A_parts
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableLOS, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 110
+runHitRange = 90
+stopHitRange = 85
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 1.2
+runSpeed = 5.0
+// PI/92
+walkTurnSpeed = 0.032724
+// PI/32
+runTurnSpeed = 0.09817475
+
+name act1_22_smallEel
+radius = 250.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+// LOD descriptor
+lod = 0
+subobj = A_smalleel
+// Enemy descriptor
+enemyflags = water, rangable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 2
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+waypointRange = 50
+// Collision
+bodySphere = 80.0, r_col1
+bodySphere = 80.0, r_col2
+bodySphere = 80.0, r_col3
+bodySphere = 80.0, r_col4
+
+
+name Act1_11_ChemicalFrill
+radius = 50.0
+height = 140.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_body
+enemyflags = land, rangable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 0.0
+size = Medium
+maxHealth = 2
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2.0
+runSpeed = 5.0
+// PI/92
+walkTurnSpeed = 0.032724
+// PI/32
+runTurnSpeed = 0.09817475
+
+name Act_08_Jeep
+radius = 100.0
+height = 180.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+// LOD descriptor
+// Movement descriptor
+waypointRange = 250
+
+name Act_10_Bluetongue
+radius = 50.0
+height = 150.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_BT_Parts, a_BT_Arms, a_BT_Body
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableLOS, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Large
+maxHealth = 2
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 90
+alertRange = 1300
+stayAlertRange = 1500
+chaseRange = 1100
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 50
+walkSpeed = 1.2
+runSpeed = 4.3
+// PI/64
+walkTurnSpeed = 0.0490873
+// PI/32
+runTurnSpeed = 0.09817475
+
+name act_23_bosscass
+radius = 175.0
+height = 500.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist = 1000.0
+
+name act1_40_syncerfrill
+radius = 175.0
+height = 500.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist = 1000.0
+
+name act1_42_syncbluetongue
+radius = 175.0
+height = 500.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist = 1000.0
+
+name Act_35_Clam
+radius = 175.0
+height = 500.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_clam
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 0
+walkSpeed = 0.0
+runSpeed = 0.0
+// PI/92
+walkTurnSpeed = 0.0
+// PI/32
+runTurnSpeed = 0.0
+
+name Act_40_Bull
+radius = 150.0
+height = 150.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, rangable, EnableLOD, EnableCOLOBJ
+maxHealth = 5
+attackDamage = 0.0
+attackToChaseRange = 4000
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 8000
+stayAlertRange = 8100
+chaseRange = 5000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 1
+// immunue to all rangs
+rangImmunity = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 1
+runSpeed = 6
+// PI/32
+walkTurnSpeed = 0.025
+// PI/64
+runTurnSpeed = 0.01
+// collision
+bodySphere = 33.0, r_bound_legFrontL_R
+bodySphere = 33.0, r_bound_legFrontL_L
+bodySphere = 62.0, r_bound_legFrontU_R
+bodySphere = 62.0, r_bound_legFrontU_L
+bodySphere = 33.0, r_bound_legRearL_R
+bodySphere = 33.0, r_bound_legRearL_L
+bodySphere = 46.0, r_bound_legRearU_R
+bodySphere = 46.0, r_bound_legRearU_L
+bodySphere = 77.0, r_bound_rump
+bodySphere = 46.0, r_bound_nose
+bodySphere = 67.5, r_bound_head
+bodySphere = 150.0, r_bound_chest
+
+name Act_42_Dennis
+radius = 50.0
+height = 100.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Medium
+maxHealth = 3
+attackDamage = 0.0
+attackToChaseRange = 200
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 300
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to all rangs
+rangImmunity = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2
+runSpeed = 6
+// PI/32
+walkTurnSpeed = 0.049087375
+// PI/64
+runTurnSpeed = 0.09817475
+
+name act_66_Boonie
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_armL, A_armR, A_body, A_head, A_legs
+enemyflags = land, rangable, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+maxHealth = 3
+maxOpals = 0
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_66_BadBoonie
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = biteable, rangable, EnableCOLOBJ, EnableEnemyCollision
+size = Small
+maxHealth = 3
+alertRange = 700
+stayAlertRange = 700
+chaseRange = 400
+maxFOV = -0.5
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no frostyrang
+rangImmunity = 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 70
+walkSpeed = 0.0
+runSpeed = 11.5
+// PI/92
+walkTurnSpeed = 0.0
+// PI/32
+runTurnSpeed = 0.055
+
+name Act_47_Leech
+radius = 50.0
+height = 40.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = Act_47_Leech
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+maxHealth = 1
+maxOpals = 0
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2.0
+runSpeed = 4.0
+// PI/92
+walkTurnSpeed = 0.02
+// PI/32
+runTurnSpeed = 0.03
+
+name Act_03_Muddie
+radius = 50.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body_BOTTOM, A_Body_TOP, A_Claw_L, A_Claw_R, A_legs_L, A_legs_R
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to all rangs but the frosty
+rangImmunity = 1, 0, 1, 1, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2
+runSpeed = 6
+// PI/32
+walkTurnSpeed = 0.049087375
+// PI/64
+runTurnSpeed = 0.09817475
+
+name Act_77_Tick
+radius = 50.0
+height = 40.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_Tick
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+maxHealth = 1
+maxOpals = 0
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2.0
+runSpeed = 4.0
+// PI/92
+walkTurnSpeed = 0.02
+// PI/32
+runTurnSpeed = 0.03
+
+name Act1_02_PubeCrab
+radius = 120.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 320
+chaseToAttackRange = 280
+runHitRange = 190
+stopHitRange = 170
+alertRange = 1100
+stayAlertRange = 1400
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to all rangs but the frosty
+rangImmunity = 1, 0, 1, 1, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 1.85
+runSpeed = 5.33
+// PI/32
+walkTurnSpeed = 0.046087375
+// PI/64
+runTurnSpeed = 0.09517475
+
+
+name act_15_Neddy
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_Neddy, a_arms
+enemyflags = land, rangable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 1.6
+runSpeed = 20.0
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+bodySphere = 77.0, R_Collide_Chest
+bodySphere = 37.0, R_Collide_Head
+bodySphere = 28.0, R_Collide_BicepL
+bodySphere = 28.0, R_Collide_ForearmL
+bodySphere = 28.0, R_Collide_HandL	
+bodySphere = 28.0, R_Collide_BicepR
+bodySphere = 28.0, R_Collide_ForearmR
+bodySphere = 28.0, R_Collide_HandR
+
+name Act_83_NinjaGecko
+radius = 50.0
+height = 110.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 1000
+stopHitRange = 500
+alertRange = 1400
+stayAlertRange = 1800
+chaseRange = 1400
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 6.5
+runSpeed = 10.4
+// PI/100
+walkTurnSpeed = 0.036415
+// PI/32
+runTurnSpeed = 0.0991748
+
+name Act_36_Rhino
+radius = 90.0
+height = 90.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+size = Large
+maxHealth = 2
+runHitRange = 120
+// Movement descriptor
+walkSpeed = 3.3
+runSpeed = 13.3
+
+name act_75_shadowBat
+radius = 60.0
+height = 150.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+// Enemy descriptor
+enemyflags = land, rangable, EnableLOD, EnableCOLOBJ
+size = Large
+maxHealth = 3
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+// collision
+bodySphere = 25.0, R_Collide_head
+bodySphere = 15.0, R_Collide_Chest
+bodySphere = 20.0, R_Collide_Groin
+bodySphere = 10.0, R_Collide_ThighL
+bodySphere = 10.0, R_Collide_ShinL
+bodySphere = 10.0, R_Collide_FootL
+bodySphere = 10.0, R_Collide_ThighR
+bodySphere = 10.0, R_Collide_ShinR
+bodySphere = 10.0, R_Collide_FootR
+bodySphere = 12.0, R_Collide_BicepL
+bodySphere = 12.0, R_Collide_ForarmL
+bodySphere = 12.0, R_Collide_HandL
+bodySphere = 12.0, R_Collide_BicepR
+bodySphere = 12.0, R_Collide_ForarmR
+bodySphere = 12.0, R_Collide_HandR
+
+name Act_29_Rufus
+radius = 60.0
+height = 170.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_roo_bits, a_roo_body, a_roo_head, a_roo_limbs
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Large
+maxHealth = 2
+attackDamage = 0.25
+attackToChaseRange = 300
+chaseToAttackRange = 250
+runHitRange = 100
+stopHitRange = 80
+alertRange = 1300
+stayAlertRange = 1500
+chaseRange = 1100
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 3
+runSpeed = 7
+// PI/64
+walkTurnSpeed = 0.0491
+// PI/32
+runTurnSpeed = 0.09817475
+
+name Act_90_ScrubTurkey
+radius = 80.0
+height = 60.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = biteable, rangable, EnableCOLOBJ, EnableEnemyCollision
+maxCollisionLod = 20.0
+size = Small
+maxHealth = 3
+alertRange = 700
+stayAlertRange = 700
+chaseRange = 400
+maxFOV = -0.5
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to frostyrang
+rangImmunity = 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 70
+walkSpeed = 0.0
+runSpeed = 11.5
+walkTurnSpeed = 0.0
+runTurnSpeed = 0.055
+
+name Act_39_Shark
+radius = 160.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_shark
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 550
+chaseToAttackRange = 500
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1400
+stayAlertRange = 1600
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 500
+walkSpeed = 4.5
+runSpeed = 6.666
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+name Act1_09_Crikey
+radius = 280.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableTyCollision
+maxHealth = 3
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// collision
+bodySphere = 35.0, r_collide_dorsalFin01
+bodySphere = 15.0, r_collide_dorsalFin02
+bodySphere = 40.0, r_collide_fin01_L
+bodySphere = 40.0, r_collide_fin01_L01
+bodySphere = 20.0, r_collide_fin02_L
+bodySphere = 20.0, r_collide_fin02_L01
+bodySphere = 45.0, r_collide_noseTip
+bodySphere = 65.0, r_collide_head
+bodySphere = 75.0, r_collide_neck
+bodySphere = 80.0, r_collide_stomach
+bodySphere = 35.0, r_collide_tail01
+bodySphere = 25.0, r_collide_tail02
+bodySphere = 30.0, r_collide_tail03
+bodySphere = 50.0, r_collide_tailBase
+bodySphere = 25.0, r_collide_tailFinTop01
+bodySphere = 15.0, r_collide_tailFinTop02
+bodySphere = 15.0, r_collide_tailFinBottom
+
+name Act1_12_Speedboat
+radius = 160.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 550
+chaseToAttackRange = 500
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1400
+stayAlertRange = 1600
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 500
+walkSpeed = 4.5
+runSpeed = 6.666
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+bodySphere = 71.0, r_collision01 
+bodySphere = 77.0, r_collision02
+bodySphere = 67.0, r_collision03 
+bodySphere = 59.0, r_collision04 
+
+
+name Act_81_Skink
+radius = 50.0
+height = 150.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableLOS, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 12.0
+size = Medium
+maxHealth = 2
+attackDamage = 0.25
+attackToChaseRange = 500
+chaseToAttackRange = 350
+runHitRange = 300
+stopHitRange = 130
+alertRange = 1300
+stayAlertRange = 1500
+chaseRange = 1100
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to all but frosty- and zappy-rangs
+rangImmunity = 0, 0, 0, 0, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 50
+walkSpeed = 1.1
+runSpeed = 4.3
+// PI/64
+walkTurnSpeed = 0.0490873
+// PI/32
+runTurnSpeed = 0.09817475
+
+name Act_94_Fluffy
+radius = 500.0
+height = 1200.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, rangable, freezeable
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 3.333
+runSpeed = 5.5
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+// collision
+bodySphere = 244.0, r_collide_torso02
+bodySphere = 290.0, r_collide_torso03
+bodySphere = 282.0, r_collide_torso04
+bodySphere = 201.0, r_collide_head
+bodySphere = 174.0, r_collide_leg01_R
+bodySphere = 174.0, r_collide_leg01_L
+bodySphere = 143.0, r_collide_leg03_R
+bodySphere = 143.0, r_collide_leg03_L
+bodySphere = 152.0, r_collide_leg04_R
+bodySphere = 152.0, r_collide_leg04_L
+bodySphere = 124.0, r_collide_leg06_R
+bodySphere = 124.0, r_collide_leg06_L
+bodySphere = 186.0, r_collide_leg08_R
+bodySphere = 186.0, r_collide_leg08_L
+bodySphere = 95.0, r_collide_leg09_R
+bodySphere = 95.0, r_collide_leg09_L
+bodySphere = 95.0, r_collide_leg11_R
+bodySphere = 95.0, r_collide_leg11_L
+bodySphere = 186.0, r_collide_arm01_R
+bodySphere = 186.0, r_collide_arm01_L
+bodySphere = 144.0, r_collide_arm04_R
+bodySphere = 144.0, r_collide_arm04_L
+bodySphere = 155.0, r_collide_arm05_R
+bodySphere = 155.0, r_collide_arm05_L
+bodySphere = 172.0, r_collide_arm07_R
+bodySphere = 172.0, r_collide_arm07_L
+bodySphere = 135.0, r_collide_arm08_R
+bodySphere = 135.0, r_collide_arm08_L
+bodySphere = 153.0, r_collide_arm09_R
+bodySphere = 153.0, r_collide_arm09_L
+
+name act_41_SnowRoos
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_snowRoo, a_arms, a_hands, a_snowBall
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Large
+maxHealth = 2
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 3.333
+runSpeed = 5.5
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+name act_30_Wombat
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_board, a_body, a_head
+enemyflags = water, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 1000
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 40000
+chaseRange = 1100
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 5.333
+runSpeed = 10.5
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+name act1_20_ringo
+
+name Act1_30_ringotenticle
+
+name Act1_29_ArsonFrill
+radius = 50.0
+height = 120.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+enemyflags = land, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackToChaseRange = 300
+chaseToAttackRange = 110
+runHitRange = 90
+stopHitRange = 85
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 900
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 1.2
+runSpeed = 5.0
+// PI/92
+walkTurnSpeed = 0.032724
+// PI/32
+runTurnSpeed = 0.09817475
+
+name Act_92_Roach
+radius = 30.0
+height = 40.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Roach, A_InnerWings, A_OuterWings, a_legs, a_ANTANAE
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision,EnableTyCollision
+maxCollisionLod = 20.0
+size = Large
+maxHealth = 3
+attackDamage = 0.25
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+
+name Act_44_Frillbike
+radius = 150.0
+height = 220.0
+minAlpha = 0.5
+maxDrawDist = 10000.0
+maxUpdateDist = 14000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_body, A_head, A_parts
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD, EnableCOLOBJ
+maxCollisionLod = 20.0
+maxHealth = 2
+attackDamage = 0.25
+attackToChaseRange = 2000
+chaseToAttackRange = 1500
+runHitRange = 1000
+stopHitRange = 800
+alertRange = 8000
+stayAlertRange = 9000
+chaseRange = 10000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 620
+walkSpeed = 12.0
+runSpeed = 32.1
+// PI/92
+walkTurnSpeed = 0.018724
+// PI/32
+runTurnSpeed = 0.09887475
+
+name act1_14_yabby
+radius = 100.0
+height = 120.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 0
+chaseToAttackRange = 0
+runHitRange = 0
+stopHitRange = 0
+alertRange = 0
+stayAlertRange = 0
+chaseRange = 1000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+
+name Act_86_ElderBunyip
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+flags = alpha,scissor,alphaProp
+maxDrawDist = 6000.0
+maxUpdateDist = 100000.0
+maxScissorDist =  1000.0
+
+name Act_28_Elle
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_elleBody, A_elleExtremities, A_elleSkirt
+
+name Act_28_Elle_MG
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_elleBody, A_elleExtremities, A_elleSkirt
+
+name act_93_trapDoor_Spider
+radius = 50.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 0
+chaseToAttackRange = 0
+runHitRange = 0
+stopHitRange = 0
+alertRange = 0
+stayAlertRange = 0
+chaseRange = 1000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+
+name act1_16_SnowSpider
+radius = 50.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableCOLOBJ, EnableLOS, EnableLOD, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+maxHealth = 3
+attackDamage = 0.25
+attackToChaseRange = 0
+chaseToAttackRange = 0
+runHitRange = 0
+stopHitRange = 0
+alertRange = 0
+stayAlertRange = 0
+chaseRange = 1000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+
+name Act_38_FarLapp
+radius = 40.0
+height = 90.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_eyes, a_farLapp
+
+name act_76_kenoath
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_kenArms, a_kenLegs, a_kenOath
+
+name Act_11_Maurie
+radius = 30.0
+height = 60.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_beak, a_head, a_maurie, a_wings
+
+name Act_12_Rex
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_rex
+
+name Act_12_Rex_MG
+radius = 50.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_rex
+
+name Act_06_Shazza
+radius = 50.0
+height = 110.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_arm_L, A_Arm_R, A_Body, A_Head
+
+name Act_80_Lil_Neddy
+radius = 50.0
+height = 108.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, biteable, rangable, freezeable, sneakable, EnableLOD,EnableLOS, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Large
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 900
+chaseToAttackRange = 550
+runHitRange = 300
+stopHitRange = 130
+alertRange = 1200
+stayAlertRange = 1500
+chaseRange = 1000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+rangImmunity = 0, 0, 0, 0, 1, 1, 1, 1, 1, 1
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 50
+walkSpeed = 1.1
+runSpeed = 4.6
+// PI/64
+walkTurnSpeed = 0.0494873
+// PI/32
+runTurnSpeed = 0.09517475
+
+name act_31_slyProp
+radius = 30.0
+height = 140.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = land, rangable, freezeable, EnableLOS, EnableCOLOBJ,EnableTyCollision
+size = Medium
+maxHealth = 3
+alertRange = 1500
+stayAlertRange = 1700
+chaseRange = 1000
+chaseToAttackRange = 900
+attackToChaseRange = 950
+runHitRange = 100
+stopHitRange = 80
+biteImmunity = 0
+// immunue to all rangs but the frostyrang
+rangImmunity = 1, 0, 1, 1, 1, 1, 1, 1, 1, 1
+maxFOV = -0.1
+maxGradient = 0.25
+// Movement descriptor
+waypointRange = 120
+walkSpeed = 2.0
+runSpeed = 4.0
+// PI/92
+walkTurnSpeed = 0.032724
+// PI/64
+runTurnSpeed = 0.049087375
+
+
+
+name act_25_julius
+radius = 40.0
+height = 100.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_eyebrows ,a_eyes ,a_head ,a_juliusbody ,a_juliuslegs ,a_juliusmisc ,a_pencil ,a_zglasses
+
+name act_27_shiela
+radius = 40.0
+height = 100.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_shielaBody, A_shielaArms, A_shielaLegs, A_shielaHead, A_shielaBeads, A_shielaGlasses, A_shielaEyes
+
+name act_99_aurora
+radius = 80.0
+height = 80.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_aurora
+
+name act1_00_aurorakid
+radius = 50.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 1000000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_aurorakid
+
+name act_67_Kiki
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_body, a_head, a_limbs, a_neck
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_68_Dubbo
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_body, a_head, a_arms, a_skarf
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_69_Gummy
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_body, a_legs
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_70_Snugs
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_arm_l, a_arm_r, a_ear_l, a_ear_r, a_head, a_legs, a_pompom, a_torso
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_71_Elizabeth
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_elizabeth
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_72_Mim
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_min
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_73_Katie
+radius = 25.0
+height = 65.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_arms, a_body, a_ears, a_hands, a_head, a_legs, a_pompom, a_skarfMain, a_skarfMinor
+enemyflags = land, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+size = Small
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 20
+walkSpeed = 0.533
+runSpeed = 3.5
+// PI/92
+walkTurnSpeed = 0.067
+// PI/32
+runTurnSpeed = 0.06
+
+name act_91_Bat01
+radius = 40.0
+height = 40.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+// LOD descriptor
+// Enemy descriptor
+enemyflags = land, biteable, rangable, EnableLOD, EnableCOLOBJ, DialogActor
+maxCollisionLod = 20.0
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+waypointRange = 50
+
+name Act_96_Sentinel
+radius = 75.0
+height = 115.0
+minAlpha = 0.5
+maxDrawDist = 3000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Sentinel
+
+name Act1_03_Barracuda
+radius = 160.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_barracuda
+enemyflags = water, rangable, EnableLOD, EnableCOLOBJ, EnableColObjCollision
+maxCollisionLod = 20.0
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 2000
+chaseToAttackRange = 2000
+runHitRange = 100
+stopHitRange = 80
+alertRange = 2000
+stayAlertRange = 2000
+chaseRange = 2000
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 1
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 750
+walkSpeed = 4.5
+runSpeed = 8
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.05
+
+name Act1_15_Groper
+radius = 120.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+enemyflags = water, rangable, EnableLOD, EnableCOLOBJ, EnableColObjCollision, DialogActor
+maxCollisionLod = 20.0
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+waypointRange = 50
+// Collision
+bodySphere = 90.0, R_Sphere_Head
+bodySphere = 95.0, R_Sphere_Chest
+bodySphere = 70.0, R_Sphere_Back
+
+name Act1_04_kookaburra
+radius = 75.0
+height = 115.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+
+name act1_08_shazzaprop
+radius = 50.0
+height = 110.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_arm_L, A_Arm_R, A_Body, A_Head
+
+name act1_07_Andy
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_board, a_body
+enemyflags = water, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 5.333
+runSpeed = 10.5
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+name act1_13_synkerfrog
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+
+name act_95_Chopper
+radius = 50.0
+height = 110.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+
+name act1_18_ScubaFrill
+radius = 40.0
+height = 40.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+// LOD descriptor
+lod = 0
+subobj = A_body
+// Enemy descriptor
+enemyflags = water, rangable, EnableLOD, EnableCOLOBJ, EnableEnemyCollision
+maxCollisionLod = 20.0
+maxHealth = 1
+waypointRange = 100
+
+name act1_23_treasurechest
+radius = 50.0
+height = 140.0
+minAlpha = 0.5
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Chest,A_Lid,A_Speaker
+
+name prop_0452_Chest
+radius = 50.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Chest
+
+name act_56_lenny
+radius = 45.0
+height = 86.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_lenny
+waypointRange = 100
+walkSpeed = 0.75
+runSpeed = 2.25
+walkTurnSpeed = 0.03927
+runTurnSpeed = 0.05236 
+
+name Act1_27_SnowAndy
+radius = 100.0
+height = 180.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = a_board, a_body
+enemyflags = water, EnableLOD, EnableCOLOBJ, EnableEnemyCollision, EnableTyCollision
+maxCollisionLod = 20.0
+size = Medium
+maxHealth = 1
+attackDamage = 0.25
+attackToChaseRange = 340
+chaseToAttackRange = 320
+runHitRange = 150
+stopHitRange = 80
+alertRange = 1000
+stayAlertRange = 1200
+chaseRange = 900
+maxFOV = -0.1
+maxGradient = 0.25
+biteImmunity = 0
+// immunue to no rangs
+rangImmunity = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+increaseDDA = 0
+decreaseDDA = 0
+// Movement descriptor
+waypointRange = 250
+walkSpeed = 5.333
+runSpeed = 5.0
+// PI/92
+walkTurnSpeed = 0.02166
+// PI/32
+runTurnSpeed = 0.045
+
+// ==================================================================== Props go here
+
+name Prop_0018_Thunderbox
+radius = 60.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha
+lod = 0
+subobj = A_Door, A_Dunny
+
+name Prop_0001_woodencrate_01
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_CrateHi 
+lod = 3
+subobj = A_CrateMed
+lod = 5
+subobj = A_CrateLow
+collide = dynamic
+
+name prop_0026_WaterTank
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Bracing,A_Posts
+lod = 1
+subobj = A_Bracing,A_Posts
+collide = C_Collide
+
+name prop_0042_portal
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha, alphaProp
+lod = 0
+subobj = cylinder01, cylinder02, cylinder03, cylinder04
+
+name prop_0090_spyegg
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha,alphaProp
+lod = 0
+subobj = a_camera, a_propeller, a_spyegg
+lod = 3
+subobj = a_propeller, a_spyegg
+lod = 4
+subobj = a_spyegg
+collide = dynamic
+
+name Prop_0225_fireworks
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Rocket04, F_Rocket01, F_Rocket02, F_Cracker, F_Craker02, F_Craker03, F_TomThumbs01, F_TomThumbs02, F_Rocket, F_Rocket03, F_Rocket05, F_Side01, F_Side02, F_Side03, F_Side04, F_Chunk01, F_Chunk02, F_chunk03, F_chunk04, A_Sand
+collide = dynamic
+
+name Prop_0093_PicnicBasket
+radius = 110.0
+height = 95.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Basket, A_Handle
+lod = 5
+subobj = A_Basket, 
+
+name Prop_0274_InGamePie_01
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+
+name Prop_0275_InGamePie_02
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+
+name Prop_0267_DeadTree_02
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Tree
+collide = C_Collide
+
+name Prop_0266_DeadTree_01
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Tree
+collide = C_Collide
+
+name Prop_0222_B1_ArenaSection_d
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 17000.0
+maxUpdateDist = 17000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Section
+
+name Prop_0221_B1_ArenaSection_c
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 17000.0
+maxUpdateDist = 17000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Section
+
+name Prop_0220_B1_ArenaSection_b
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 17000.0
+maxUpdateDist = 17000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Section
+
+name Prop_0219_B1_ArenaSection_a
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 17000.0
+maxUpdateDist = 17000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Section
+
+name Prop_0087_Deckchair
+maxUpdateDist = 4000
+maxDrawDist = 4000
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+radius = 60.0
+height = 200.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_DeckChair
+
+name prop_0003_44gallondrum
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 17000.0
+maxUpdateDist = 17000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Barrel, 
+lod = 5
+subobj = L_Barrel
+collide = C_Collide
+
+name Prop_0247_Pub
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Awnings, A_Chimney, A_Floor01, A_Floor02, A_Frame, A_Legs, A_PorchPoles, A_Railing, A_Roof, A_Roofiron, A_Screens, A_Steps, A_Walls, A_WindowProp
+collide = C_collide
+
+name Prop_0054_Snowgum04
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0127_Snowgum03
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0141_BarbedWire
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+
+
+name Prop_0027_WaterTrough
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+lod = 0
+subobj = A_WaterTrough 
+effect = scissor
+lod = 2
+subobj = A_WaterTrough 
+
+name Prop_0253_Bouy
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Bouy
+collide = dynamic
+
+name Prop_0193_SeaMine
+collide = dynamic
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Chain
+
+name Prop_0245_shute06
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute06, 
+effect = scissor
+lod = 2
+subobj = A_shute06, 
+lod = 5
+subobj = L_shute06
+collide = C_Collide
+
+name Prop_0244_shute05
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute05, 
+effect = scissor
+lod = 2
+subobj = A_shute05, 
+lod = 5
+subobj = L_shute05
+collide = C_Collide
+
+name Prop_0243_shute04
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute04, 
+effect = scissor
+lod = 2
+subobj = A_shute04, 
+lod = 5
+subobj = L_shute04
+collide = C_Collide
+
+name Prop_0242_shute03
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute03, 
+effect = scissor
+lod = 2
+subobj = A_shute03, 
+lod = 5
+subobj = L_shute03
+collide = C_Collide
+
+name Prop_0241_shute02
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute02, 
+effect = scissor
+lod = 2
+subobj = A_shute02, 
+lod = 6
+subobj = L_shute02
+collide = C_Collide
+
+name Prop_0240_shute01
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_shute01, 
+effect = scissor
+lod = 2
+subobj = A_shute01, 
+lod = 6
+subobj = L_shute01
+collide = C_Collide
+
+name Prop_0265_Cannon
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Cannon
+collide = C_collide
+
+name Prop_0252_SnowSlabRock
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_rock
+collide = C_collide
+
+name Prop_0251_SnowClusterRock
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_rock
+collide = C_collide
+
+name Prop_0250_SnowPlatformRock
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_rock
+collide = C_collide
+
+name Prop_0249_SnowWallRock
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_rock
+collide = C_collide
+
+name Prop_0248_SnowRoundRock
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_rock
+collide = C_collide
+
+name Prop_0258_BeachHut
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_BeachHut
+collide = C_collide
+
+name Prop_0257_CoralclumpD
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0256_CoralclumpC
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0255_CoralclumpB
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0254_CoralclumpA
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0260_CoralWallclumpA
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0261_CoralWallClumpB
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0262_CoralWallClumpc
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0263_CoralWallClumpd
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Coral
+collide = C_collide
+
+name Prop_0192_Coral_05
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Coral
+collide = C_Collide
+
+name Prop_0190_Coral_04
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Coral
+collide = C_Collide
+
+name Prop_0189_Coral_03
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Coral
+collide = C_Collide
+
+name Prop_0188_Coral_02
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_CoralMain, 
+lod = 4
+subobj = L_CoralMain
+collide = C_Collide
+
+name Prop_0187_Coral_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Coral
+collide = C_Collide
+
+name Prop_0217_Feature_Tree_02
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_FeatureTree02
+collide = C_collide
+
+name Prop_0208_Feature_Tree_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_FeatureTree01
+collide = C_collide
+
+name Prop_0066_HomeStead
+radius = 100.0
+height = 50.0
+minAlpha = 0.9
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Besers, A_Bricks, A_Chimney, A_Doors, A_Floor, A_Frame, A_Legs, A_Planks, A_PorchPoles, A_Roof, A_RoofIron, A_Screens, A_Steps, A_Walls
+lod = 4
+subobj = A_Besers, A_Chimney, A_Floor, A_Frame, A_Legs, A_PorchPoles, A_Roof, A_Steps, A_Walls
+lod = 6
+subobj = A_Chimney, A_Floor, A_Legs, A_PorchPoles, A_Roof, A_Walls
+collide = C_collide
+gradMat = prop_b3_page_grad
+cinderMat = prop_b3_page_cinder
+burnSpeed = 0.02
+
+
+name Prop_0224_Rain_Vine_b
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Vine
+effect = scissor
+lod = 1
+subobj = A_Vine
+collide = C_Collide
+drawlayer = 0
+
+name Prop_0223_Rain_Vine_a
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Vine
+effect = scissor
+lod = 1
+subobj = A_Vine
+collide = C_Collide
+drawlayer = 0
+
+name Prop_0209_Palm_tree
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 400.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_PalmTree
+effect = scissor
+lod = 2
+subobj = A_PalmTree
+collide = C_collide
+drawlayer = 0
+
+name Prop_0215_Rainrock_04
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_RainRock
+collide = C_collide
+
+name Prop_0214_Rainrock_03
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_RainRock
+collide = C_collide
+
+name Prop_0213_Rainrock_02
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_RainRock
+collide = C_collide
+
+name Prop_0212_Rainrock_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_RainRock
+collide = C_collide
+
+name Prop_0206_Tall_Fern
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 0.0
+maxScissorDist =  2000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Tall_Fern
+effect = scissor
+lod = 2
+subobj = A_Tall_Fern
+effect = scissor
+lod = 3
+subobj = A_Tall_Fern
+collide = C_collide
+drawlayer = 0
+
+name Prop_0072_SGCMed01
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0091_RollingLog
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Log
+effect = scissor
+lod = 1
+subobj = A_Log
+
+
+name Prop_0204_Log_Moss_02
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0203_Log_Moss_01
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0195_Rainforest_Log
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  2200.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rainforestlog
+effect = scissor
+lod = 1
+subobj = A_Rainforestlog
+collide = C_collide
+
+name Prop_0109_ButTree_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+effectFlags = spawnLeaf
+flags = alpha,scissor
+lod = 0
+subobj = A_Buttree
+effect = particles
+lod = 1
+subobj = A_Buttree
+collide = C_collide
+drawlayer = 0
+
+name Prop_0008_reed_03
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0007_reed_02
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0006_reed_01
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0100_Stump
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0073_Wildflowers
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Flower
+collide = C_Collide
+
+name Prop_0053_Mushies
+radius = 60.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 2500.0
+maxUpdateDist = 2500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Prop_0053_Mushies
+
+name Prop_0052_Staghorn
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0047_oysterfungus
+radius = 60.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 2500.0
+maxUpdateDist = 2500.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Fungus
+collide = C_Collide
+
+name Prop_0046_Lillys
+radius = 60.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Lilly
+
+name Prop_0045_CatTail
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0075_Grass
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0170_bigfence
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0126_Snowgum02
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Tree
+collide = C_collide
+
+name prop_0125_Snowgum01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Tree
+collide = C_collide
+
+name Prop_0110_Brewer
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0107_fern_05
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0105_fern_04
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3500.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0103_fern_03
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3500.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0102_fern_02
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3500.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0101_Fern_01
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3500.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0079_grassclump_a
+maxUpdateDist = 150
+maxDrawDist = 3000
+maxScissorDist =  1000.0
+radius = 75.0
+height = 125.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_grass
+
+
+name Prop_0123_Fallen_Log_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Prop_0123_Fallen_Log_01
+effect = scissor
+lod = 1
+subobj = A_Prop_0123_Fallen_Log_01
+collide = C_collide
+
+name Prop_0160_GrassTree_d
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_Grasstree
+lod = 1
+subobj = A_Grasstree
+collide = C_Collide
+
+name Prop_0159_GrassTree_c
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_Grasstree
+lod = 1
+subobj = A_Grasstree
+collide = C_Collide
+
+name Prop_0156_GrassTree_b
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_Grasstree
+lod = 1
+subobj = A_Grasstree
+collide = C_Collide
+
+
+name Prop_0078_GrassTree_a
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Grasstree
+lod = 1
+subobj = A_Grasstree
+collide = C_Collide
+
+name Prop_0072_Spinafex
+maxUpdateDist = 150
+maxDrawDist = 4000
+maxScissorDist =  1000.0
+collide = C_Collide
+radius = 100.0
+height = 50.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = Prop_0072_Spinafex
+
+name prop_0069_ghostgum03
+maxUpdateDist = 3000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+effectFlags = spawnLeaf
+collide = C_Collide
+radius = 100.0
+height = 50.0
+minalpha = 0.5
+flags = alpha,scissor
+lod = 0
+subobj = A_Foliage, A_Trunk
+effect = particles
+lod = 1
+subobj = A_Foliage, A_Trunk
+
+name prop_0068_ghostgum02
+maxUpdateDist = 3000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+effectFlags = spawnLeaf
+collide = C_Collide
+radius = 100.0
+height = 50.0
+minalpha = 0.5
+flags = alpha,scissor
+lod = 0
+subobj = A_Foliage, A_Trunk
+effect = particles
+lod = 1
+subobj = A_Foliage, A_Trunk
+
+name prop_0067_ghostgum01
+maxUpdateDist = 3000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+effectFlags = spawnLeaf
+collide = C_Collide
+radius = 100.0
+height = 50.0
+minalpha = 0.5
+flags = alpha,scissor
+lod = 0
+subobj = A_Foliage, A_Trunk
+effect = particles
+lod = 1
+subobj = A_Foliage, A_Trunk
+
+name Prop_0185_Rock_15
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0184_Rock_14
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0182_Rock_13
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0181_Rock_12
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0180_Rock_11
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0179_Rock_10
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_rock_10
+collide = C_Collide
+
+name Prop_0178_Rock_09
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0177_Rock_08
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0176_Rock_07
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0131_Rock_06
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0130_Rock_05
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0129_Rock_04
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0128_Rock_03
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0122_Rock_02
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0121_Rock_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+collide = C_collide
+
+name Prop_0155_sapling03
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Sapling
+effectFlags = spawnLeaf
+collide = C_Collide
+
+name Prop_0153_sapling02
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Sapling
+effectFlags = spawnLeaf
+collide = C_Collide
+
+name Prop_0139_sapling01
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 25000.0
+maxUpdateDist = 25000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Sapling
+effectFlags = spawnLeaf
+collide = C_Collide
+
+name prop_0119_chainlink_fence
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name prop_0118_bridge_rail_01
+maxUpdateDist = 3000
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+effectFlags = shake
+collide = C_Collide
+radius = 40.0
+height = 100.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_Rail
+
+
+name prop_0117_bridge_post_03
+maxUpdateDist = 3000
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+effectFlags = shake, waterRipple
+collide = C_Collide
+radius = 40.0
+height = 100.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_Post
+
+
+name prop_0116_bridge_post_02
+maxUpdateDist = 3000
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+effectFlags = shake, waterRipple
+collide = C_Collide
+radius = 40.0
+height = 100.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_Post
+
+name prop_0115_bridge_post_01
+maxUpdateDist = 3000
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+effectFlags = shake, waterRipple
+collide = C_Collide
+radius = 40.0
+height = 100.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_post
+
+name prop_0114_bridge_flat_04
+maxUpdateDist = 150
+maxDrawDist = 15000
+maxScissorDist =  1000.0
+invisibleZone = -1
+flags = alpha
+effectFlags = shake
+collide = C_Collide
+
+name prop_0113_bridge_flat_03
+maxUpdateDist = 150
+maxDrawDist = 15000
+maxScissorDist =  1000.0
+invisibleZone = -1
+flags = alpha
+effectFlags = shake
+collide = C_Collide
+
+name prop_0112_bridge_flat_02
+maxUpdateDist = 150
+maxDrawDist = 15000
+maxScissorDist =  1000.0
+invisibleZone = -1
+flags = alpha
+effectFlags = shake
+collide = C_Collide
+
+name prop_0111_bridge_flat_01
+maxUpdateDist = 150
+maxDrawDist = 15000
+maxScissorDist =  1000.0
+flags = alpha
+effectFlags = shake
+collide = C_Collide
+
+name Prop_0149_Shack
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+
+name Prop_0147_Tower
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 500.0
+maxScissorDist =  1000.0
+collisionInfoFlags = Grabable,JumpCamera
+flags = alpha
+lod = 0
+subobj = Prop_147_Tower
+effectFlags = shake
+collide = C_Collide
+
+name Prop_0168_Burnt_Bridge
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4500.0
+maxUpdateDist = 4500.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+lod = 0
+subobj = F_Plank00,F_Plank01,F_Plank02,F_Plank03,F_Plank03,F_Plank04,F_Plank05,F_Plank06,F_Plank07,F_Plank08,F_Plank09,F_Plank10
+
+name prop_0005_signpost
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Post
+collide = C_collide
+
+name prop_0172_croc_sign
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = Prop_0172_croc_sign
+collide = collide
+
+name Prop_0014_Detour_sign
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = detour_sign_01, detour_posts_01
+
+name prop_0080_construct_sign
+maxUpdateDist = 4000
+maxDrawDist = 4000
+maxScissorDist =  1000.0
+radius = 40.0
+height = 105.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = detour_sign_01, detour_posts_01
+
+name prop_0124_Arrow_01
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Arrow01
+
+
+name Prop_0400_Arrow02
+radius = 40.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_Arrow
+
+name prop_0481_SnowArrow
+radius = 40.0
+height = 200.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_Arrow
+
+
+name Prop_0229_SpinningLog
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = NoIce
+flags = alpha, scissor
+lod = 0
+subobj = A_Mushies04, A_Prop_0229_SpinningLog
+effect = scissor
+lod = 2
+subobj = A_Prop_0229_SpinningLog
+collide = C_Collide
+maxShadowHeight = 0
+
+name Prop_0083_Target
+
+name Prop_0074_RockTrap
+maxUpdateDist = 9000
+maxDrawDist = 9000
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+
+name Prop_0084_ThunderEgg
+maxUpdateDist = 10000
+maxDrawDist = 14000
+maxScissorDist =  1000.0
+radius = 40.0
+height = 105.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_Thunderegg
+
+name Prop_0085_goldencog
+maxUpdateDist = 5000
+maxDrawDist = 7000
+maxScissorDist =  1000.0
+radius = 40.0
+height = 105.0
+minalpha = 0.5
+flags = alpha
+lod = 0
+subobj = A_Centre, A_Spokes, A_Cog
+lod = 3
+subobj = A_Spokes, A_Cog
+lod = 6
+subobj = L_Cog
+
+name Prop_0194_Gates
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+collide = C_Collide
+rightDoor = A_DoorRight
+leftDoor = A_DoorLeft
+activateDist = 700.0
+autoOpen = 1
+openSound = GateOpen
+closeSound = GateClose
+
+name Prop_0196_Shed
+radius = 100.0
+height = 50.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Frag03, F_Frag01, F_Frag02, F_Frag05, F_Frag04, F_Frag06, F_Frag07, F_Frag00
+collide = C_Collide
+
+name Prop_0165_FenceEnd_b
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Frag04, F_Frag01, F_Frag02, F_Frag03, F_Frag05, F_Frag06, F_Frag07, F_Frag08
+collide = C_Collide
+upVel = 15.0
+power = 15.0
+
+name Prop_0164_FenceEnd_a
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Frag04, F_Frag01, F_Frag02, F_Frag03, F_Frag05, F_Frag06, F_Frag07, F_Frag08
+collide = C_Collide
+upVel = 15.0
+power = 15.0
+
+name Prop_0163_FenceMid_b
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Frag08, F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07
+collide = C_Collide
+upVel = 15.0
+power = 15.0
+
+name Prop_0162_FenceMid_a
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = F_Frag04, F_Frag01, F_Frag02, F_Frag03, F_Frag05, F_Frag06, F_Frag07, F_Frag08
+collide = C_Collide
+upVel = 15.0
+power = 15.0
+
+name Prop_0226_Shard
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha
+lod = 0
+subobj = F_Shard01, F_Shard02, F_Shard03, F_Shard04, F_Shard05, F_Shard06, F_Shard07, F_Shard08, F_Shard09, F_Shard10, F_Shard11, F_Shard12
+
+name Prop_0230_Danger_Sign
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = dynamic
+lod = 0
+subobj = F_Bone_01, F_Bone_02, F_Rope_01, F_Rope_02, F_Rope_04,F_Skull, F_Stud_01,F_Stud_02, F_Stud_03, F_Stud_04, F_Stud_05, F_Stud_06, F_Stud_07, F_Stud_08, F_Plank_01, F_plank_02
+
+name Prop_0259_Eelhole
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Body,A_Eelhole
+collide = C_Collide
+
+name Prop_0269_hollowtree
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 16000.0
+maxUpdateDist = 0.0
+maxScissorDist =  2000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Tree
+effect = scissor
+lod = 2
+subobj = A_Tree
+collide = C_Collide
+
+name Prop_0270_FireOpal
+maxUpdateDist = 6100
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+drawLayer = 2
+lod = 0
+subobj = A_Opal
+
+name Prop_0271_Ramp
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Ramp
+collide = C_Collide
+
+
+name Prop_0272_A2caverock
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 0.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Rock
+collide = C_Collide
+
+name Prop_0273_Warpflower
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = Warpflower
+collide = C_Collide
+
+name Prop_0274_InGamePie_01
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Slice
+
+name Prop_0275_InGamePie_02
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Full
+
+name Prop_0276_CaveMushie
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_CaveMush
+
+name Prop_0277_Jumpfungus
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_fungus
+collide = C_Collide
+
+name Prop_0279_A2RockPillar
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = Grabable
+flags = alpha,scissor
+lod = 0
+subobj = A_Junglerock
+collide = C_Collide
+
+name Prop_0282_CavewallMushie
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_CaveMush
+
+name Prop_0281_BeerCan01
+
+name Prop_0285_BunyaTree_base
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+collide = C_Collide
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Bunya_Base
+lod = 1
+subobj = A_Bunya_Base
+lod = 2
+subobj = A_Bunya_Base
+
+name Prop_0286_BunyaTree_trunk
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+collide = C_Collide
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Bunya_trunk
+lod = 1
+subobj = A_Bunya_trunk
+lod = 2
+subobj = A_Bunya_trunk
+
+name Prop_0287_BunyaTree_top
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+collide = C_Collide
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Bunya_top
+lod = 1
+subobj = A_Bunya_top
+lod = 2
+subobj = A_Bunya_top
+
+name Prop_0288_BunyaTree_branch
+radius = 75.0
+height = 125.0
+minAlpha = 0.5
+collide = C_Collide
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Bunya_branch
+lod = 1
+subobj = A_Bunya_branch
+lod = 2
+subobj = A_Bunya_branch
+
+name prop_0191_AntMound
+collide = dynamic
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+height = 300
+radius = 200
+minAlpha = 0.5
+flags = alpha,camerafade
+lod = 0
+subobj = A_AntMound
+
+
+name Prop_0108_Elevator
+maxDrawDist = 14000.0
+maxUpdateDist = 14000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = NoIce,Grabable
+flags = alpha
+lod = 0
+subobj = a_base2
+
+name Prop_0289_Birdnest
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = L_Birdnest,A_birdnest
+lod = 4
+subobj = A_birdnest
+
+name Prop_0236_beachpalm
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Palm
+effect = scissor
+lod = 1
+subobj = A_Palm
+
+name Prop_0237_beachpalm_Clump
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Palm
+effect = scissor
+lod = 1
+subobj = A_Palm
+
+name Prop_0290_beachpalm_row
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Palm
+effect = scissor
+lod = 1
+subobj = A_Palm
+
+name Prop_0292_CoconutTree
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Tree 
+effect = scissor
+lod = 1
+subobj = A_Tree
+
+name Prop_0293_BeachBar
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Bar, A_Door, A_Hut, A_Poles, A_RoofTrim, A_Support, A_Windows
+effect = scissor
+lod = 1
+subobj = A_Bar, A_Door, A_Hut, A_Poles, A_RoofTrim, A_Support, A_Windows
+
+name Prop_0291_Coconut
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Coconut
+effect = scissor
+lod = 1
+subobj = A_Coconut
+maxShadowHeight = 0
+
+name Prop_0299_TowelFlat
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Towel
+effect = scissor
+lod = 1
+subobj = A_Towel
+
+name Prop_0300_TowelDraped
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Towel
+effect = scissor
+lod = 1
+subobj = A_Towel
+
+name Prop_0301_TowelHung
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Towel
+effect = scissor
+lod = 1
+subobj = A_Towel
+
+name Prop_0302_TowelScrunched
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Towel
+effect = scissor
+lod = 1
+subobj = A_Towel
+
+name Prop_0303_A2_5x5x1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+//flags = alpha,scissor
+flags = alpha
+lod = 0
+subobj = A_Prop_0303_A2_5x5x1
+//effect = scissor
+//lod = 3
+//subobj = A_Prop_0303_A2_5x5x1
+drawlayer = 0
+
+//placeholder prop
+name Prop_5x5x1_Placeholder
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = A_5x5x1_Placeholder
+effect = scissor
+lod = 1
+subobj = A_5x5x1_Placeholder
+
+name Prop_0268_sawmill
+maxDrawDist = 16000.0
+maxUpdateDist = 16000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+subobj = l_windows,l_floorwood,l_wood,l_closedwindows,a_sawmill,l_pipes,l_snow,l_roof,l_woodsticks,l_platform
+effect = scissor
+lod = 2
+subobj = l_windows,l_floorwood,l_wood,l_closedwindows,a_sawmill,l_pipes,l_roof,l_woodsticks,l_platform
+lod = 3
+subobj = l_windows,l_closedwindows,a_sawmill,l_pipes,l_roof,l_woodsticks,l_platform
+lod = 5
+subobj = l_windows,l_closedwindows,a_sawmill,l_roof,l_woodsticks,l_platform
+lod = 7
+subobj = a_sawmill
+
+name Prop_0205_Big_Red_Button
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Button_Box,A_Button
+effect = scissor
+lod = 1
+subobj = A_Button_Box,A_Button
+
+name Prop_0406_Big_Blue_Button
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Button_Box,A_Button
+effect = scissor
+lod = 1
+subobj = A_Button_Box,A_Button
+
+name Prop_0294_A3SeaGate
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_DoorLeft,A_DoorRight,A_Frame
+effect = scissor
+lod = 2
+subobj = A_DoorLeft,A_DoorRight,A_Frame
+collide = C_Collide
+rightDoor = A_DoorRight
+leftDoor = A_DoorLeft
+activateDist = 700.0
+autoOpen = 0
+openSound = UWGateOpens
+
+name Prop_0298_Umbrella
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Umbrella
+effect = scissor
+lod = 1
+subobj = A_Umbrella
+collide = C_Collide
+
+name Prop_0304_tallpotplant
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_plant
+effec t = scissor
+lod = 1
+subobj = A_plant
+collide = C_Collide
+
+name Prop_0307_squarepot
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_plant
+effect = scissor
+lod = 1
+subobj = A_plant
+collide = C_Collide
+
+
+name Prop_0306_tropicalplant
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_plant
+effect = scissor
+lod = 1
+subobj = A_plant
+collide = C_Collide
+
+
+name Prop_0305_flowerclump
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_plant
+effect = scissor
+lod = 1
+subobj = A_plant
+collide = C_Collide
+
+name Prop_0089_SharkCage
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+
+name Prop_0296_OpalCollector
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor,alphaProp
+lod = 0
+subobj = A_Glass,A_Body,A_DoorR,A_DoorL,a_zzdome
+lod = 2
+subobj = A_Glass,A_Body,A_DoorR,A_DoorL,a_zzdome
+collide = C_Collide
+
+name Prop_0309_WaterCrate
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 15000.0
+maxUpdateDist = 15000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Crate
+effect = scissor
+lod = 1
+subobj = A_Crate
+
+name prop_308_ShipHatch
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = 
+flags = alpha,scissor
+lod = 0
+subobj = A_hatch
+effect = scissor
+lod = 2
+subobj = A_hatch
+leftdoor = A_hatch
+openSound = UWGateOpens
+
+name prop_0319_Powerpole
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_powerpole
+effect = scissor
+lod = 2
+subobj = A_powerpole
+
+
+name Prop_0321_Spiderweb
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+collide = C_Collide
+flags = alpha, alphaProp
+lod = 0
+subobj = A_spiderweb
+lod = 2
+subobj = A_spiderweb
+
+
+name prop_0320_Burner
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe, A_Base
+effect = scissor
+lod = 2
+subobj = A_Pipe, A_Base
+
+
+name prop_0318_litdrum
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 5500.0
+maxUpdateDist = 4800.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = a_litdrum
+effect = scissor
+lod = 2
+subobj = a_litdrum
+
+
+name prop_0338_ThinIcePlate
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  4000.0
+drawLayer = 1
+collide = C_Collide
+flags = alpha,scissor,alphaProp
+lod = 0
+subobj = F_Ice22,F_Ice02,F_Ice03,F_Ice04,F_Ice05,F_Ice06,F_Ice07,F_Ice08,F_Ice09,F_Ice10,F_Ice11,F_Ice12,F_Ice13,F_Ice14,F_Ice15,F_Ice16,F_Ice17,F_Ice18,F_Ice19,F_Ice20,F_Ice21,F_Ice01,F_Ice23,F_Ice24,F_Ice25,F_Ice26,F_Ice27,F_Ice28,F_Ice29,F_Ice30,F_Ice31,F_Ice32,F_Ice33,F_Ice34,F_Ice35,F_Ice36,F_Ice37,F_Ice38,F_Ice39,F_Ice41,F_Ice42,F_Ice40
+lod = 3
+subobj = F_Ice22,F_Ice02,F_Ice03,F_Ice04,F_Ice05,F_Ice06,F_Ice07,F_Ice08,F_Ice09,F_Ice10,F_Ice11,F_Ice12,F_Ice13,F_Ice14,F_Ice15,F_Ice16,F_Ice17,F_Ice18,F_Ice19,F_Ice20,F_Ice21,F_Ice01,F_Ice23,F_Ice24,F_Ice25,F_Ice26,F_Ice27,F_Ice28,F_Ice29,F_Ice30,F_Ice31,F_Ice32,F_Ice33,F_Ice34,F_Ice35,F_Ice36,F_Ice37,F_Ice38,F_Ice39,F_Ice41,F_Ice42,F_Ice40
+
+
+name prop_0340_whirlWind
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 14000.0
+maxUpdateDist = 13800.0
+flags = alpha, alphaProp
+lod = 0
+subobj = A_Whirlwind
+lod = 1
+subobj = A_Whirlwind
+drawLayer = 3
+
+
+name Prop_0346_PipePart
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxUpdateDist = 10000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+collide = C_Collide
+collisionInfoFlags = NoIce
+
+name Prop_0350_WallBridgePosts
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxUpdateDist = 9000
+maxDrawDist = 9000
+maxScissorDist =  1000.0
+collide = C_Collide
+lod = 0
+subobj = A_WallBridgePosts, L_Detail
+effect = scissor
+lod = 1
+subobj = A_WallBridgePosts, L_Detail
+lod = 2
+subobj = A_WallBridgePosts
+
+name prop_0323_B1PipeGround
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe,L_nut
+effect = scissor
+lod = 1
+subobj = A_Pipe,L_nut
+lod = 2
+subobj = A_Pipe
+
+name prop_0324_B1PipeAngle
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe,L_nut
+effect = scissor
+lod = 1
+subobj = A_Pipe,L_nut
+lod = 2
+subobj = A_Pipe
+
+name prop_0325_B1Pipe2M
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe
+effect = scissor
+lod = 1
+subobj = A_Pipe
+
+
+name prop_0326_B1Pipe4M
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe,L_nut
+effect = scissor
+lod = 1
+subobj = A_Pipe,L_nut
+lod = 2
+subobj = A_Pipe
+
+name prop_0327_B1Pipe8M
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pipe,L_nut
+effect = scissor
+lod = 2
+subobj = A_Pipe
+
+name prop_0328_B1PipeJunction
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Block
+effect = scissor
+lod = 1
+subobj = A_Block
+
+name prop_0329_B1PipeJoin
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_pipe,L_Nut
+effect = scissor
+
+name Prop_0339_SnowPile
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4600.0
+maxUpdateDist = 4600.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Mound
+effect = scissor
+lod = 1
+subobj = A_Mound
+
+name Prop_0330_snowball
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Snowball
+effect = scissor
+lod = 1
+subobj = A_Snowball
+
+name Prop_0346_B3PipePart
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+collide = C_Collide
+
+name Prop_0342_SnowRoosSnowBall
+
+name Prop_0386_GeckoStar
+
+name Prop_0343_B1RoofSnow
+collisionInfoFlags = NoIce
+maxUpdateDist = 5000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+collide = c_collide
+
+name Prop_0344_RoofIcicle
+radius = 100.0
+height = 300.0
+minAlpha = 0.0
+maxUpdateDist = 9000
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+effect = scissor
+collisionInfoFlags = NoIce
+
+name Prop_0335_Icicle
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Icicle
+effect = scissor
+lod = 1
+subobj = A_Icicle
+
+name Prop_0336_RustyCar
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+subobj = A_Car, A_LicencePlates, A_Wheels
+lod = 1
+subobj = A_Car, A_LicencePlates, A_Wheels
+lod = 2
+subobj = A_Car, A_LicencePlates, A_Wheels
+lod = 3
+subobj = A_Car, A_Wheels
+
+name prop_0334_CollIceBridge
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+drawLayer = 1
+collide = C_Collide
+flags = alpha,scissor,alphaProp
+lod = 0
+subobj = A_Bridge
+effect = scissor
+lod = 2
+subobj = A_Bridge
+
+name Prop_0331_MillGate
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Frame,A_FrameBolts,A_FrameSnow,A_Gate,A_GateBolts,A_GateSnow
+effect = scissor
+lod = 2
+subobj = A_Frame,A_FrameBolts,A_FrameSnow,A_Gate,A_GateBolts,A_GateSnow
+lod = 3
+subobj = A_Frame,A_FrameSnow,A_Gate,A_GateSnow
+lod = 5
+subobj = A_Frame,A_Gate
+leftdoor = A_Gate
+openSound = DoorSlideUpDown
+closeSound = DoorSlideUpDown
+closeThudSound = DoorThud
+
+name Prop_0458_MillGate02
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Frame,A_FrameBolts,A_Gate,A_GateBolts
+effect = scissor
+lod = 2
+subobj = A_Frame,A_FrameBolts,A_Gate,A_GateBolts
+lod = 3
+subobj = A_Frame,A_Gate
+leftdoor = A_Gate
+openSound = DoorSlideUpDown
+closeSound = DoorSlideUpDown
+closeThudSound = DoorThud
+
+name Prop_0183_SpikeyIce
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = a_SpikeyIce
+effect = scissor
+lod = 2
+subobj = a_SpikeyIce
+
+name prop_0333_ChuteLog
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 40000.0
+maxUpdateDist = 40000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Log,L_Knots
+effect = scissor
+lod = 2
+subobj = A_Log,L_Knots
+lod = 3
+subobj = A_Log
+
+name prop_0337_iceblock
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Block
+effect = scissor
+lod = 2
+subobj = A_Block
+
+name Prop_0278_Servo
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_ServoParts,A_Servo
+effect = scissor
+lod = 2
+subobj = A_ServoParts,A_Servo
+lod = 4
+subobj = A_Servo
+
+name Prop_0280_Postoffice
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = a_canopy,a_front,a_house,a_letterbox,a_posts,a_steps01,a_steps02
+effect = scissor
+lod = 1
+subobj = a_canopy,a_front,a_house,a_letterbox,a_posts,a_steps01,a_steps02
+
+name Prop_0284_House
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = C_Collide, C_Collide02
+flags = alpha,scissor
+lod = 0
+subobj = A_Blocks, A_Canopy, A_House, A_Post, A_Steps, A_Supports
+effect = scissor
+lod = 2
+subobj = A_Blocks, A_Canopy, A_House, A_Post, A_Steps, A_Supports
+lod = 3
+subobj = A_Blocks, A_Canopy, A_House, A_Steps, A_Supports
+lod = 5
+subobj = A_Canopy, A_House
+
+name Prop_0312_CattleSkull
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = a_skull
+effect = scissor
+lod = 2
+subobj = a_skull
+
+name prop_0341_HayBale
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_HayBale
+effect = scissor
+lod = 2
+subobj = A_HayBale
+
+name Prop_0348_Burnthouse
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_BurntHouse,A_MidDetails
+effect = scissor
+lod = 1
+subobj = A_BurntHouse,A_MidDetails
+lod = 4
+subobj = A_BurntHouse
+
+name Prop_0365_WarpMushroom
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_Mushrooms
+lod = 1
+subobj = A_Mushrooms
+
+name prop_0011_torch
+radius = 20.0
+height = 200.0
+minAlpha = 0.0
+maxDrawDist = 5000.0
+maxUpdateDist = 5500.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Torch
+effect = scissor
+lod = 2
+subobj = A_Torch
+
+name Prop_0364_LilyPad
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha
+lod = 0
+subobj = a_lilypad
+lod = 1
+subobj = a_lilypad
+
+name Prop_0367_SnowFence_01
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Snowfence, L_Snow
+effect = scissor
+lod = 1
+subobj = A_Snowfence, L_Snow
+lod = 2
+subobj = A_Snowfence, L_Snow
+lod = 3
+subobj = A_Snowfence, L_Snow
+lod = 4
+subobj = A_Snowfence, L_Snow
+lod = 5
+subobj = A_Snowfence
+
+name Prop_0368_SnowFence_02
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Snowfence, L_Snow
+effect = scissor
+lod = 1
+subobj = A_Snowfence, L_Snow
+lod = 2
+subobj = A_Snowfence, L_Snow
+lod = 3
+subobj = A_Snowfence, L_Snow
+lod = 4
+subobj = A_Snowfence, L_Snow
+lod = 5
+subobj = A_Snowfence
+
+name Prop_0369_SnowFence_03
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Snowfence, L_Snow
+effect = scissor
+lod = 1
+subobj = A_Snowfence, L_Snow
+lod = 2
+subobj = A_Snowfence, L_Snow
+lod = 3
+subobj = A_Snowfence, L_Snow
+lod = 4
+subobj = A_Snowfence, L_Snow
+lod = 5
+subobj = A_Snowfence
+
+name Prop_0370_B1FallingPlanks
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = F_Frag05,F_Frag02,F_Frag03,F_Frag01,F_Frag04,F_Frag00
+effect = scissor
+lod = 1
+subobj = F_Frag05,F_Frag02,F_Frag03,F_Frag01,F_Frag04,F_Frag00
+
+name Prop_0207_BuzzSaw
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = A_Buzz_Arm,A_Buzz_Base
+effect = scissor
+lod = 1
+subobj = A_Buzz_Arm,A_Buzz_Base
+
+name prop_0362_CableCar
+radius = 0.0
+height = 0.0
+minAlpha = 0.0
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist =  1000.0
+collide = dynamic,C_Collide,dynamic
+flags = alpha,scissor,noIce,Grabable
+lod = 0
+subobj = A_CableCar
+effect = scissor
+lod = 1
+subobj = A_CableCar
+maxShadowHeight = 2000
+
+name prop_0380_IceOpal
+maxUpdateDist = 6100
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+drawLayer = 2
+lod = 0
+subobj = a_iceopal,a_zglow
+
+name prop_0381_EarthOpal
+maxUpdateDist = 6100
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+drawLayer = 2
+lod = 0
+subobj = a_zglow,a_eartopal,Sphere01
+
+name prop_0382_AirOpal
+maxUpdateDist = 6100
+maxDrawDist = 6000
+maxScissorDist =  1000.0
+drawLayer = 2
+lod = 0
+subobj = a_zglow,a_eartopal,a_strike
+
+name Prop_0366_HibiscPink
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name prop_0374_HibiscPurple
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name prop_0375_HibiscYellow
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name prop_0376_treehibisPink
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name prop_0377_treehibisPurple
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name prop_0378_treehibisYellow
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_flowers
+
+name Prop_0351_Tumbleweed
+maxUpdateDist = 4000
+maxDrawDist = 2000
+maxScissorDist =  1000.0
+lod = 0
+subobj = a_Tumbleweed
+
+name prop_0388_Z1WaterWheel
+maxUpdateDist = 9100
+maxDrawDist = 9000
+maxScissorDist =  1000.0
+collide = c_collide
+lod = 0
+subobj = A_wheel
+
+name Prop_0227_BrokenJeep
+maxUpdateDist = 9100
+maxDrawDist = 9000
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = c_collide
+lod = 0
+subobj = A_Parts,A_Jeep
+effect = scissor
+lod = 1
+subobj = A_Parts,A_Jeep
+lod = 4
+subobj = A_Jeep
+
+name prop_0372_FlameLog
+maxUpdateDist = 10100
+maxDrawDist = 10000
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = c_collide
+lod = 0
+subobj = A_Log,A_ZFlame
+effect = scissor
+lod = 1
+subobj = A_Log,A_ZFlame
+
+name Prop_0393_SignPost
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Post
+collide = C_collide
+
+name prop_0383_RangerTower
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 11000.0
+maxUpdateDist = 11000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_collide
+lod = 0
+effect = scissor
+subobj = A_Tower,L_Details
+lod = 1
+subobj = A_Tower,L_Details
+lod = 3
+subobj = A_Tower
+
+name Prop_0401_BarbedWireFence
+radius = 40.0
+height = 105.0
+minAlpha = 0.5
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = A_Fence
+lod = 1
+subobj = A_Fence
+
+name Prop_0218_RainbowScale
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 11000.0
+maxUpdateDist = 11000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_collide
+lod = 0
+effect = scissor
+subobj = A_RainbowScale
+lod = 4
+subobj = L_RainbowScale
+
+name prop_0392_Sandisland
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 11000.0
+maxUpdateDist = 11000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_collide
+lod = 0
+effect = scissor
+subobj = A_Sandisland
+lod = 1
+subobj = A_Sandisland
+
+
+name Prop_0403_A3_5x5x1
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 7000.0
+maxUpdateDist = 7000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = Scissor
+subobj = A_a3_5x5x1
+lod = 1
+subobj = A_a3_5x5x1
+
+name Prop_0395_chutesaw
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = Dynamic
+lod = 0
+effect = Scissor
+subobj = A_Saw,A_block
+lod = 1
+subobj = A_Saw,A_block
+
+name prop_0373_bubblespawner
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = c_collide
+lod = 0
+effect = Scissor
+subobj = a_bubblespawner
+lod = 1
+subobj = a_bubblespawner
+
+name prop_0371_CollIceWall
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+maxScissorDist =  1000.0
+drawLayer = 1
+flags = alpha,scissor,alphaProp
+collide = c_collide
+lod = 0
+effect = Scissor
+subobj = A_Wall
+lod = 1
+subobj = A_Wall
+
+name Prop_0418_SmashRock
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 12000.0
+maxUpdateDist = 12100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = Scissor
+subobj = A_Prop_0418_SmashRock00
+lod = 1
+subobj = A_Prop_0418_SmashRock00
+
+
+name Prop_0416_BullsBoulder
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = Dynamic
+lod = 0
+effect = Scissor
+subobj = A_Prop_0416_BullsBoulder00
+lod = 1
+subobj = A_Prop_0416_BullsBoulder00
+
+name prop_0419_BarbwireFence
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = Scissor
+subobj = A_Fence
+lod = 1
+subobj = A_Fence
+
+name prop_0402_EZoneGate
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 15000.0
+maxUpdateDist = 15100.0
+collide = C_Collide
+lod = 0
+subobj = A_GateLeft,A_GateRight,A_SideLeft,A_SideRight
+lod = 1
+subobj = A_GateLeft,A_GateRight,A_SideLeft,A_SideRight
+lod = 2
+subobj = A_GateLeft,A_GateRight,A_SideLeft,A_SideRight
+rightDoor = A_GateRight
+leftDoor = A_GateLeft
+openSound = DoorSlideUpDown
+closeSound = DoorSlideUpDown
+closeThudSound = DoorThud
+
+name Prop_0396_Generator
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+collide = C_Collide
+lod = 0
+subobj = A_Generator_Wheel,A_Ground,A_Generator,A_Rope05
+lod = 3
+subobj = A_Ground,A_Generator
+
+name prop_0379_pontoon_ropes
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+collide = C_Collide
+lod = 0
+subobj = A_Bottom, A_top
+
+name Prop_0399_Flaming_Tree
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+collide = C_Collide
+lod = 0
+subobj = A_fireplane00,A_fireplane02,A_fireplane01,A_ATree
+
+name Prop_0411_Flaming_Tree02
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+collide = C_Collide
+lod = 0
+subobj = A_fireplane00,A_fireplane01,A_ATree
+
+name Prop_0415_FlamingShrub
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+collide = C_Collide
+lod = 0
+subobj = A_flame,A_Flame,A_ATrunk
+
+name prop_0363_SkiLiftWheel
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 15000.0
+maxUpdateDist = 5000.0
+flags = alpha,scissor
+maxScissorDist =  1000.0
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Wheel,A_Tower
+lod = 1
+subobj = A_Wheel,A_Tower
+
+name prop_0389_gantry
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Rail,A_gantry
+lod = 1
+subobj = A_Rail,A_gantry
+lod = 5
+subobj = A_gantry
+
+name Prop_0424_C1_Water
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+collide = C_Collide
+
+name prop_0390_gantrycorner
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Block
+lod = 1
+subobj = A_Block
+lod = 5
+subobj = A_Block
+
+name prop_0391_gantryangle01
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Block
+lod = 1
+subobj = A_Block
+lod = 5
+subobj = A_Block
+
+name Prop_0480_gantryangle02
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Block
+lod = 1
+subobj = A_Block
+lod = 5
+subobj = A_Block
+
+name Prop_0384_Furnace
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10100.0
+collide = C_Collide
+lod = 0
+subobj = A_door,A_Furnace,A_Arrow
+
+name Prop_0414_myrtle
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+lod = 0
+subobj = A_myrtle
+
+name Prop_0417_Pinetree
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+lod = 0
+subobj = A_Pinetree
+
+name Prop_0421_Pinetree02
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+lod = 0
+subobj = A_Pinetree
+
+name Prop_0431_Burningtree
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+lod = 0
+subobj = A_foliage,A_Trunk
+
+name prop_0435_GasJet
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+maxScissorDist =  1000.0
+flags = alpha, scissor
+collide = C_Collide
+lod = 0
+subobj = A_burnerLit,A_Flame
+drawLayer = 3
+
+name prop_0405_depthcharger
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+lod = 0
+subobj = A_depthcharger
+
+name Prop_0433_GantryFrame
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+flags = alpha,scissor
+collide = C_Collide
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_gantryframe,A_pipe01
+lod = 1
+subobj = A_gantryframe,A_pipe01
+lod = 5
+subobj = A_gantryframe
+
+name Prop_0434_gantrypiece03
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_block
+lod = 1
+subobj = A_block
+
+name prop_0169_trapdoor
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8100.0
+collide = C_Collide
+maxScissorDist =  1000.0
+lod = 0
+subobj = A_Base,A_Door
+lod = 1
+subobj = A_Base,A_Door
+rightDoor = A_Door
+activateDist = 0
+autoOpen = 1
+openSound = TrapdoorOpen
+
+name prop_0443_spear
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+lod = 0
+subobj = A_Base,A_Door
+
+name Prop_0438_SnowGun
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist =  1000.0
+lod = 0
+subobj = A_Turret,A_Gun
+
+name Prop_0447_SnowGunTower
+radius = 100.0
+height = 380.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_Prop_SnowGunTower
+
+name Prop_0444_LavaSpurt
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+lod = 0
+subobj = A_ZLarva,A_AInner,A_Base
+
+name prop_0422_rockparticle
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+
+name Prop_0445_carpetmoss
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Carpetmoss
+lod = 1
+subobj = A_Carpetmoss
+
+name Prop_0446_Watchtower
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Watchtower
+lod = 1
+subobj = A_Watchtower
+
+name Prop_0449_Towervines
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = Grabable
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Vinetower
+lod = 1
+subobj = A_Vinetower
+
+name Prop_0450_CoralPillarRock
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = Grabable
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Pillar
+lod = 1
+subobj = A_Pillar
+
+name Prop_0451_BillabongPillar
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+collisionInfoFlags = Grabable
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Pillar
+lod = 1
+subobj = A_Pillar
+
+name Prop_0427_BunStnFire
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+lod = 1
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+
+name Prop_0428_BunStnIce
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+lod = 1
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+
+name Prop_0429_BunStnAir
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+lod = 1
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+
+name Prop_0430_BunStnEarth
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+lod = 1
+subobj = A_Stone1/anim=1,A_Stone2/anim=2,A_Stone3/anim=3,A_Streak01,A_Streak02,A_Base
+
+name Prop_0454_RockLedge
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Prop_RockLedge
+lod = 1
+subobj = A_Prop_RockLedge
+
+name Prop_0453_SpiderTrapdoor
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_spidertrapdoor,A_Trapdoor 
+lod = 1
+subobj = A_spidertrapdoor,A_Trapdoor
+
+
+
+name Prop_0404_ThundEggCollector
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+collide = C_Collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_GunAxle01,A_GunNozzle01,A_GunPod,a_gunturret,A_Recepticle,A_RightArm_Bot_top,A_RightArm_Mid,A_ZRayShield
+lod = 2
+subobj = A_GunAxle01,A_GunNozzle01,A_GunPod,a_gunturret,A_Recepticle,A_RightArm_Bot_top,A_RightArm_Mid,A_ZRayShield
+idleSound = JuliusTalMachineLP
+soundEvents = JuliusTalMachineEvent1, JuliusTalMachineEvent2
+
+name Prop_0345_InvisibleCrate
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_CrateInvisible 
+lod = 1
+subobj = A_CrateInvisible
+
+name Prop_0495_Box0chum
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+collide = C_Collide
+lod = 0
+effect = scissor
+subobj = A_Box 
+lod = 1
+subobj = A_Box
+
+
+name prop_0482_AirTank
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_AirTank 
+lod = 1
+subobj = A_AirTank
+
+name prop_0483_Chumbucket
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_chumbucket
+lod = 1
+subobj = A_chumbucket
+
+name Prop_0548_E4Face
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+flags = scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Face, A_ZDome, A_ZFlare, A_ZFlare01
+lod = 1
+subobj = A_Face, A_ZDome, A_ZFlare, A_ZFlare01
+
+name Prop_0549_E4Bolt
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_Collide
+flags = scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_FaceBolt
+lod = 1
+subobj = A_FaceBolt
+
+name prop_0460_icecoolant
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist = 1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = a_base,a_glass,a_crystal 
+lod = 1
+subobj = a_base,a_glass,a_crystal
+power = 3.4
+upVel = 3.2
+life = 110
+bounce = 0.4
+gravity = 0.95
+spinrate = 0.15
+
+name prop_0166_metal_spikes
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = A_Spike_01
+subobj = A_Spike_02
+subobj = A_Spike_03
+subobj = A_Spike_04
+subobj = A_Spike_05
+subobj = A_Spike_06
+subobj = A_Spike_07
+subobj = A_Spike_08
+subobj = A_Spike_09
+subobj = A_Spike_10
+subobj = A_Spike_11
+subobj = A_Spike_12
+subobj = A_Spike_13
+subobj = A_Spike_14
+subobj = A_Spike_15
+subobj = A_Spike_16
+subobj = A_Spike_17
+subobj = A_Spike_18
+subobj = A_Spike_19
+subobj = A_Spike_20
+subobj = A_Spike_21
+subobj = A_Spike_22
+subobj = A_Spike_23
+subobj = A_Spike_24
+subobj = A_Spike_25
+lod = 1
+subobj = A_Spike_01
+subobj = A_Spike_02
+subobj = A_Spike_03
+subobj = A_Spike_04
+subobj = A_Spike_05
+subobj = A_Spike_06
+subobj = A_Spike_07
+subobj = A_Spike_08
+subobj = A_Spike_09
+subobj = A_Spike_10
+subobj = A_Spike_11
+subobj = A_Spike_12
+subobj = A_Spike_13
+subobj = A_Spike_14
+subobj = A_Spike_15
+subobj = A_Spike_16
+subobj = A_Spike_17
+subobj = A_Spike_18
+subobj = A_Spike_19
+subobj = A_Spike_20
+subobj = A_Spike_21
+subobj = A_Spike_22
+subobj = A_Spike_23
+subobj = A_Spike_24
+subobj = A_Spike_25
+
+name prop_0143_spikes
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+subobj = cylinder04
+effect = scissor
+lod = 1
+subobj = cylinder04
+
+name Prop_0517_Snake
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Snake
+lod = 1
+subobj = A_Snake
+
+name prop_0494_rockpoolfence
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 8000.0
+maxUpdateDist = 8000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_Fence,A_Floats
+lod = 1
+subobj = A_Fence,A_Floats
+lod = 4
+subobj = A_Fence
+
+name prop_0499_treeroot
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 4000.0
+maxUpdateDist = 4000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_TreeRoot
+lod = 1
+subobj = A_TreeRoot
+
+name prop_0461_JuliusMachine
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = a_cogspinner,a_conductorpoles,a_electric01,a_hammer,a_hammerControl,a_hammerhold,a_hammerlatch,a_hammerpad,a_hammerpress,a_julius,a_machine01,a_spinner01,a_spinner02
+lod = 1
+subobj = a_cogspinner,a_conductorpoles,a_electric01,a_hammer,a_hammerControl,a_hammerhold,a_hammerlatch,a_hammerpad,a_hammerpress,a_julius,a_machine01,a_spinner01,a_spinner02
+idleSound = JuliusRangMachineWorkLP
+soundEvents = JuliusRangMachineEvent1
+
+name Prop_0530_Mechanics
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5100.0
+maxScissorDist =  1000.0
+flags = scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_CamShaft, A_DrivingShaft1, A_DrivingShaft2, A_MachineryRoom, A_Piston, A_PistonTube, A_Shaft1, A_Shaft2, A_Shaft3, A_Wire1, A_Wire2
+lod = 1
+subobj = A_CamShaft, A_DrivingShaft1, A_DrivingShaft2, A_MachineryRoom, A_Piston, A_PistonTube, A_Shaft1, A_Shaft2, A_Shaft3, A_Wire1, A_Wire2
+
+name Prop_0510_iceramp
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+maxScissorDist =  1000.0
+lod = 0
+effect = scissor
+subobj = A_iceramp
+lod = 1
+subobj = A_iceramp
+
+name prop_0409_SandArrow
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+collide = C_collide
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = A_Arrow01
+lod = 1
+subobj = A_Arrow01
+
+
+name Prop_0436_treasurepile
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+collide = C_collide
+lod = 0
+effect = scissor
+subobj = A_Treasure
+lod = 1
+subobj = A_Treasure
+
+name Prop_0407_AquaRang
+radius = 40.0
+height = 105.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+flags = alpha
+lod = 0
+subobj = A_Aquarang
+
+name prop_0410_IceCube
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 7000.0
+maxUpdateDist = 7000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor,alphaprop
+collide = Dynamic
+lod = 0
+effect = scissor
+subobj = A_IceCube
+lod = 1
+subobj = A_IceCube
+drawlayer = 0
+
+name Prop_0534_Lifeup
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 7000.0
+maxUpdateDist = 7000.0
+maxScissorDist =  1000.0
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = A_Head
+lod = 1
+subobj = A_Head
+
+name prop_0536_raft
+maxUpdateDist = 8000
+maxDrawDist = 	8000
+maxScissorDist =  1000.0
+invisibleZone = -1
+collisionInfoFlags = NoIce
+flags = alpha, scissor
+collide = dynamic
+lod = 0
+effect = scissor
+subobj = prop_0111_bridge_flat_01
+
+name Prop_0500_Lever
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = alpha,scissor
+lod = 0
+effect = scissor
+subobj = A_Base,A_Handle,A_Lever
+lod = 1
+subobj = A_Base,A_Handle,A_Lever
+
+name Prop_0535_Explosion
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+collide = dynamic
+flags = scissor
+lod = 0
+effect = scissor
+subobj = A_Explosion
+lod = 1
+subobj = A_Expolosion
+
+name Prop_0544_ExpoTend
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 5000.0
+maxUpdateDist = 5000.0
+maxScissorDist =  1000.0
+flags = scissor
+lod = 0
+effect = scissor
+subobj = A_Tendril
+lod = 1
+subobj = A_Tendril
+
+name prop_0519_LargePontoon
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  400.0
+collisionInfoFlags = Grabable
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = A_pontoon,L_Details
+lod = 1
+subobj = A_pontoon,L_Details
+lod = 5
+subobj = L_Details
+
+name prop_0501_lava01
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  800.0
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_lava
+lod = 1
+subobj = a_lava
+
+name prop_0503_lava02
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  500.0
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_lava
+lod = 1
+subobj = a_lava
+
+name prop_0504_lava03
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  500.0
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_lava
+lod = 1
+subobj = a_lava
+
+name prop_0505_lava04
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 6000.0
+maxUpdateDist = 6000.0
+maxScissorDist =  500.0
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_lava
+lod = 1
+subobj = a_lava
+
+name prop_0541_snakepontoon
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  700.0
+collisionInfoFlags = Grabable
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_pontoon
+lod = 1
+subobj = a_pontoon
+
+name prop_0528_E4Flame
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 3000.0
+maxUpdateDist = 3000.0
+maxScissorDist = 1000.0
+Collide = Dynamic
+flags = scissor
+collisionInfoFlags = NoIce
+lod = 0
+effect = scissor
+subobj = A_Flamer
+lod = 1
+subobj = A_Flamer
+
+name Prop_0310_SkiLift
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist =  700.0
+collide = C_Collide
+flags = scissor
+lod = 0
+effect = scissor
+subobj = a_skiliftmain, L_far, L_medium, L_close
+lod = 1
+subobj = a_skiliftmain, L_far, L_medium, L_close
+lod = 2
+subobj = a_skiliftmain, L_far, L_medium
+lod = 3
+subobj = a_skiliftmain, L_far, L_medium
+lod = 4
+subobj = a_skiliftmain, L_far
+
+name Prop_0497_Wallgrate
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_lava,A_wallgrate
+lod = 1
+subobj = A_lava,A_wallgrate
+
+name Prop_0531_Rangstone
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_rangstone, A_Rang
+lod = 1
+subobj = A_rangstone, A_Rang
+
+name Prop_0532_Blibligate
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha, scissor
+lod = 0
+effect = scissor
+subobj = A_blibligate
+lod = 1
+subobj = A_blibligate
+
+name Prop_0506_LavaPipeGround
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_pipe, L_nut
+lod = 1
+subobj = A_pipe, L_nut
+lod = 2
+subobj = A_Pipe
+
+name Prop_0507_LavaPipe1M
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_pipe
+lod = 1
+subobj = A_pipe
+lod = 2
+subobj = A_Pipe
+
+name Prop_0508_LavaPipe2M
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_pipe, L_nut
+lod = 1
+subobj = A_pipe, L_nut
+lod = 2
+subobj = A_Pipe
+
+name Prop_0509_LavaPipeAngle
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha
+lod = 0
+subobj = A_pipe, L_nut
+lod = 1
+subobj = A_pipe, L_nut
+lod = 2
+subobj = A_Pipe
+
+name Prop_0533_Counterprop
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+flags = scissor
+lod = 0
+effect = scissor
+subobj = A_Counterprop, A_Leg1, A_Leg2
+lod = 1
+subobj = A_Counterprop, A_Leg1, A_Leg2
+
+name Prop_0174_Frog_Talisman
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist = 1000.0
+lod = 0
+subobj = A_Talisman
+lod = 1
+subobj = L_Talisman
+
+name Prop_0522_TigerTalisman
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist = 1000.0
+lod = 0
+subobj = A_Talisman
+lod = 1
+subobj = L_Talisman
+
+name Prop_0525_DingoTalisman
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist = 1000.0
+lod = 0
+subobj = A_Talisman
+lod = 1
+subobj = L_Talisman
+
+name Prop_0526_CockyTalisman
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist = 1000.0
+lod = 0
+subobj = A_Talisman
+lod = 1
+subobj = L_Talisman
+
+name Prop_0527_PlatyTalisman
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 2000.0
+maxUpdateDist = 2000.0
+maxScissorDist = 1000.0
+lod = 0
+subobj = A_Talisman
+lod = 1
+subobj = L_Talisman
+
+name Prop_0498_Boiler
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+lod = 0
+subobj = A_Boiler
+lod = 1
+subobj = A_Boiler
+
+name Prop_0511_Qlander01
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist = 1000.0
+flags = alpha, scissor
+Collide = C_Collide
+lod = 0
+subobj = A_House
+lod = 1
+subobj = A_House
+
+name prop_0520_ButTreeTop
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist = 1000.0
+flags = alpha,scissor
+lod = 0
+subobj = A_Bunya
+effect = scissor
+lod = 1
+subobj = A_Bunya
+
+name Prop_0542_Opal_Magnet
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Opal_Magnet, A_ZElectricity
+effect = scissor
+lod = 1
+subobj = A_Opal_Magnet, A_ZElectricity
+
+name Prop_0543_Charge_Bite
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = dynamic
+flags = alpha
+lod = 0
+subobj = A_Charge_Bite, A_Sphere
+lod = 1
+subobj = A_Charge_Bite, A_Sphere
+
+name Prop_0556_SnowBoulder
+maxUpdateDist = 9000
+maxDrawDist = 9000
+maxScissorDist =  1000.0
+flags = alpha
+lod = 0
+subobj = A_Rock
+
+name Prop_0547_LeafClump
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Ground, F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10
+effect = scissor
+lod = 1
+subobj = A_Ground, F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10
+
+name Prop_0550_RiverLog
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10
+effect = scissor
+lod = 1
+subobj = F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10
+
+name Prop_0553_RiverRock
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10, F_Frag11
+effect = scissor
+lod = 1
+subobj = F_Frag01, F_Frag02, F_Frag03, F_Frag04, F_Frag05, F_Frag06, F_Frag07, F_Frag08, F_Frag09, F_Frag10, F_Frag11
+
+name Prop_0557_E4Door
+maxDrawDist = 10000.0
+maxUpdateDist = 10000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Good
+effect = scissor
+lod = 1
+subobj = A_Good
+
+name Prop_0558_BigButtonPole
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+Collide = C_Collide
+flags = alpha,scissor
+lod = 0
+subobj = A_Pole
+effect = scissor
+lod = 1
+subobj = A_Pole
+
+name Prop_0559_SnowMound
+maxDrawDist = 9000.0
+maxUpdateDist = 9000.0
+maxScissorDist = 1000.0
+flags = alpha
+lod = 0
+subobj = A_Mound
+lod = 1
+subobj = A_Mound
+
+name Prop_0523_LightHouse
+maxDrawDist = 15000.0
+maxUpdateDist = 15000.0
+maxScissorDist = 1000.0
+flags = alpha, scissor
+lod = 0
+subobj = A_Light
+effect = scissor
+lod = 1
+subobj = A_Light
+
+name Prop_0512_Qlander02
+radius = 0.0
+height = 0.0
+minAlpha = 0.1
+maxDrawDist = 12000.0
+maxUpdateDist = 12000.0
+maxScissorDist = 1000.0
+flags = alpha, scissor
+Collide = C_Collide
+lod = 0
+subobj = A_House, A_Posts, A_Stairs, A_Trimmings, A_Windows
+lod = 1
+subobj = A_House, A_Posts, A_Stairs, A_Trimmings, A_Windows
+
+name prop_0516_LavaBurner
+
+
+// ==================================================================== Actors don't go here 
+// ===================================================================== return to actors
+
+//==================================================================================================== Rangs Start
+
+name  prop_0484_rang_01               // BR_Standard
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 1500.0
+flightTime = 1.5
+
+name  prop_0485_rang_02              // BR_Frostyrang
+trailMatName = RANGTRAIL_02
+ammoCount = 1
+range = 1000.0
+flightTime = 1.75
+
+name  prop_0486_rang_03              // BR_Flamerang
+trailMatName = RANGTRAIL_03
+ammoCount = 1
+range = 1200.0
+flightTime = 1.5
+
+name  prop_0490_rang_09              // BR_Smasharang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 800.0
+flightTime = 1.85
+
+name  prop_0484_rang_01              // BR_Kaboomarang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 1350.0
+flightTime = 1.75
+
+name  prop_0487_rang_06              // BR_Doomarang
+trailMatName = RANGTRAIL_06
+ammoCount = 1
+range = 1500.0
+flightTime = 1.5
+
+name  prop_0484_rang_01              // BR_Megarang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 1350.0
+flightTime = 1.75
+
+name  prop_0489_rang_08              // BR_Zoomerang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 5500.0
+flightTime = 6.5
+
+name  prop_0492_rang_11              // BR_Infrarang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 1500.0
+flightTime = 2.0
+
+name  prop_0493_rang_20              // BR_Zappyrang
+trailMatName = RANGTRAIL_01
+ammoCount = 1
+range = 1150.0
+flightTime = 1.5
+
+name  prop_0488_rang_07              // BR_Aquarang
+trailMatName = RANGTRAIL_02
+ammoCount = 1
+range = 1500.0
+flightTime = 1.65
+
+name  prop_0491_rang_10              // BR_Multirang
+trailMatName = RANGTRAIL_01
+ammoCount = 4
+range = 1000.0
+flightTime = 2.0
+
+//==================================================================================================== rang end
