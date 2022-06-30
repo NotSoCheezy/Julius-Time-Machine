@@ -19,7 +19,7 @@ Julius
 
 **Getting Started**
 
-Julius' Time Machine is a mod designed for the debug build of Ty the Tasmanian Tiger on Steam. Certain features may work on the latest version, but proper operation is not guaranteed. Follow the following instructions to download the debug build from official servers. (Note: you must have access to a Steam account with a license for the game!)
+Julius' Time Machine is a mod designed for the debug build of Ty the Tasmanian Tiger on Steam. It's designed to bring aspects of the 7/1/2002 leaked prototype build to PC, with all benefits thereof. Certain features may work on the latest version, but proper operation is not guaranteed. Follow the following instructions to download the debug build from official servers. (Note: you must have access to a Steam account with a license for the game!)
 
 1. Get DepotDownloader [here](https://github.com/SteamRE/DepotDownloader/releases/tag/DepotDownloader_2.4.6) and extract it to a directory of your choosing.
 
