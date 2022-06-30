@@ -1,0 +1,64 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA1_31
+TotalPhrases = 1
+
+[PHONEMES]
+PhonemeName = CSA1_31_P01EN
+SubTitleNr = 0
+InTime = 100
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Maurie
+Model = ACT_11_MAURIE_SYNKER.BAD
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 278.22,-108.59,6598.04,1114.76,-226.63,6655.28
+  Spline = 277.95,-108.59,6603.73,1116.39,-226.65,6594.93
+
+[CELLS]
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = 362.470,-144.040,6579.570
+ActorRot = 0.000,-2.400,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 269.640,-228.430,6699.460
+ActorRot = 0.000,0.480,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+
+[END]

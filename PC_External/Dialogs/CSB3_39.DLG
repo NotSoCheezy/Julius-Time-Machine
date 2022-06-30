@@ -1,0 +1,80 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSB3_39
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSB3_39_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 400
+PhonemeName = CSB3_39_P02EN
+SubTitleNr = 1
+InTime = 400
+OutTime = 1600
+
+[ACTORS]
+Count = 1
+Actor = Ken
+Model = ACT_76_KENOATH_SYNKER.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 7.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 60485.05,3975.40,-30067.24,60886.80,3896.33,-30809.45
+  Spline = 60485.05,3975.40,-30067.24,61122.87,3886.24,-30618.36
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 59541.71,5254.36,-31946.38,60351.68,5126.44,-31731.02
+  Spline = 59543.33,5254.99,-31965.62,60322.38,5125.70,-31657.17
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = bodyOnya
+FitAnimToPhrase = 0
+ActorPos = 59750.305,5137.357,-31847.590
+ActorRot = 0.100,-0.700,0.200
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 59750.305,5137.357,-31847.590
+ActorRot = 0.100,-0.700,0.200
+
+[PHRASES]
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+
+[END]

@@ -1,0 +1,90 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSE4_01
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSE4_01_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 300
+PhonemeName = CSE4_01_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 450
+PhonemeName = CSE4_01_P03EN
+SubTitleNr = 2
+InTime = 0
+OutTime = 1500
+
+[ACTORS]
+Count = 1
+Actor = BossCass
+Model = ACT_23_BOSSCASS.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 12.00
+ForceLength = 0
+TCBInfo = 5
+  spline = 0.00,0.00
+  spline = 0.31,0.03
+  spline = 0.76,0.12
+  spline = 0.86,0.17
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -54.91,934.59,-519.06,1933.04,836.27,9558.52
+  Spline = -231.89,938.41,-1422.44,1928.23,-768.23,8473.72
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyYes
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNo
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = goingpostal
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

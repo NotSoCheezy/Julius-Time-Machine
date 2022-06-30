@@ -1,0 +1,188 @@
+mesh act_76_kenoath.mdl
+skeleton act_76_kenoath_Synker.anm
+
+// IDLE LOOPS
+//standard idle
+anim idle01
+500-725,1
+cycle loop
+
+//ken blows some snot out his very occa nose
+anim idle02
+250-286,1
+event snotExpel 269-271
+cycle stop
+
+//scratches his chest
+anim idle03
+300-346,1
+cycle stop
+
+//chin scratching
+anim idle04
+350-386,1
+cycle stop
+
+//back scratching
+anim idle05
+386-467,1
+cycle stop
+
+//breathe idle
+anim idle06
+750-773,1
+cycle stop
+
+
+// CONVERSATIONAL LOOPAGE:
+//ken thumps his finger into his palm
+anim gesture01
+800-829,1
+cycle stop
+
+anim gesture01_idle
+830-841,1
+cycle loop
+
+anim gesture01_exit
+842-860,1
+cycle stop
+
+//single armed shrug
+anim gesture02
+870-902,1
+cycle stop
+
+//points over his shoulder
+anim gesture03
+920-952,1
+cycle stop
+
+//shoulder shrug
+anim gesture04
+960-995,1
+cycle stop
+
+//point finger at ty
+anim gesture05
+1000-1034,1
+cycle stop
+
+//points at himself  This anim has an entry, loopable idle, and exit, so that he can
+//continue the gesture for varied lengths of time.
+anim gesture06
+1040-1058,1
+cycle stop
+
+anim gesture06_idle
+1059-1083,1
+cycle loop
+
+anim gesture06_exit
+1084-1093,1
+cycle stop
+
+// SYNCER ANIMATIONS:
+anim HeadVeryAngry
+0,1
+cycle loop
+
+anim HeadNeutral
+1400-1420,1
+cycle stop
+
+anim HeadHappy
+1490-1510,1
+cycle loop
+
+anim HeadVerySad
+1460-1480,1
+cycle loop
+
+anim HeadSurprised
+1460-1480,1
+cycle loop
+
+anim HeadCurious
+1490-1510,1
+cycle loop
+
+anim HeadSad
+1460-1480,1
+cycle loop
+
+anim HeadAngry
+1430-1450,1
+cycle loop
+
+anim LipsSad
+1240-1260,1
+cycle stop
+
+anim LipsAngry
+1210-1230,1
+cycle stop
+
+anim LipsHappy
+1180-1200,1
+cycle stop
+
+anim LipsNeutral
+1150-1170,1
+cycle stop
+
+anim BodyGreeting
+1300-1396,1
+cycle stop
+
+anim BodyChinScratch
+350-386,1
+cycle stop
+
+anim BodySnotBlow
+250-286,1
+cycle stop
+
+anim BodyNeutral
+500-725,1
+cycle stop
+
+anim BodyShrug
+960-995,1
+cycle stop
+
+anim BodyHandPoint
+800-860,1
+cycle stop
+
+anim BodyNo
+1530-1588,1
+cycle stop
+
+anim BodyYes
+1600-1669,1
+cycle stop
+
+anim BodyGive
+1700-1750,1
+cycle stop
+
+anim BodyNod
+2001-2130,1
+cycle stop
+
+anim bodyOnya
+2201-2259,1
+cycle stop
+
+anim bodySniffle
+2301-2352,1
+cycle stop
+
+anim bodyLookaround
+2380-2420,1
+cycle stop
+
+anim binocularlookaround
+2421-2550,1
+cycle loop

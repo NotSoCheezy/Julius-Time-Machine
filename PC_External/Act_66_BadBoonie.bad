@@ -1,0 +1,84 @@
+mesh act_66_BadBoonie.mdl
+skeleton act_66_BadBoonie.anm
+
+
+// AMBULATORY LOOPS:
+anim walk
+1-30,1
+event RightFoot 6
+event LeftFoot 20
+cycle loop
+
+anim run
+50-64,1
+event RightFoot 54
+event LeftFoot 60
+cycle loop
+
+anim slide
+851-877,1
+cycle loop
+
+// IDLES:
+anim idle01
+100-250,1
+cycle stop
+
+anim idle02
+300-400,1
+cycle stop
+
+anim sigh
+400-500,1
+cycle stop
+
+anim wave
+500-560,1
+cycle stop
+
+anim dance
+600-695,1
+event RightFoot 618
+event LeftFoot 618
+cycle stop
+
+// BODY ANIMS:
+
+anim BodyGreeting
+500-560,1
+cycle stop
+
+anim Bodyneutral 
+100-250,1
+cycle stop
+
+anim Bodysigh
+400-500,1
+cyclestop
+
+// Give Animation
+anim BodyGive
+800-850,1
+cycle stop
+
+anim FlinchJump
+70-90,1
+cyclestop
+
+//Lyp Sync
+
+
+//head anims
+
+anim headneutral
+750-785,1
+cycle loop
+
+//Lip anims
+
+anim lipsneutral
+880-915,1
+cycle loop
+
+
+//end

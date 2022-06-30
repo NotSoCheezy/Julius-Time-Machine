@@ -1,0 +1,144 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSD4_01
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSD4_01_P01EN
+SubTitleNr = 0
+InTime = 900
+OutTime = 500
+PhonemeName = CSD4_01_P02EN
+SubTitleNr = 1
+InTime = 300
+OutTime = 700
+PhonemeName = CSD4_01_P03EN
+SubTitleNr = 2
+InTime = 500
+OutTime = 1500
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 3
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 15.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5855.26,-178.61,2987.27,-5108.91,-212.70,3386.98
+  Spline = -5855.26,-178.61,2987.27,-5062.95,-213.30,2689.03
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5891.34,-440.13,2826.50,-6617.96,-550.25,2405.65
+  Spline = -5881.22,-440.13,2807.55,-6638.79,-548.66,2444.92
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 0.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5968.13,-457.45,2760.31,-6547.65,-519.60,2145.81
+  Spline = -5961.18,-457.45,2751.52,-6623.94,-519.49,2227.88
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -6021.280,-514.100,2910.260
+ActorRot = 0.000,-0.200,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_ChinScratch
+FitAnimToPhrase = 0
+ActorPos = -6065.750,-508.990,2782.510
+ActorRot = 0.000,1.930,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -6021.280,-514.100,2910.260
+ActorRot = 0.000,-0.200,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_Thinking
+FitAnimToPhrase = 0
+ActorPos = -6065.750,-508.990,2782.510
+ActorRot = 0.000,1.930,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -6113.627,-504.981,2781.078
+ActorRot = 0.000,1.000,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_LookAround
+FitAnimToPhrase = 0
+ActorPos = -6016.959,-513.969,2681.255
+ActorRot = 0.000,-3.300,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 4
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

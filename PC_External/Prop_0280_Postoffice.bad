@@ -1,0 +1,11 @@
+mesh            Prop_0280_Postoffice.mdl
+skeleton        Prop_0280_Postoffice.anm
+
+anim Damage
+30-135,1
+cycle stop
+
+
+
+
+

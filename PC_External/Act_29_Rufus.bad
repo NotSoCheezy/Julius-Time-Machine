@@ -1,0 +1,99 @@
+//Rufus Bad File
+// by Junior
+
+mesh Act_29_Rufus.mdl
+skeleton Act_29_Rufus.anm
+
+
+//run anim - fast hop.  I don't believe this is to be used until the roos get harder to kill??
+//may wish to start cycle from frame 105 because it's closer to idle pos
+anim bounce_run
+100-116,1
+event hit_ground 104
+event start_anim 105
+cycle loop
+
+//walk anim - slow hop.  There's 2 hops, a left and right for arms twisting.
+//Move the translate of the roo while in the air
+//between leave_ground and hit_ground only, otherwise the feet will slide!
+//use hit_ground for dust as usual
+anim hopL
+300-315,1
+event leave_ground 306
+event hit_ground 313
+cycle stop
+
+anim hopR
+315-330,1
+event leave_ground 321
+event hit_ground 328
+cycle stop
+
+
+//Idle 1 is the main idle.  All other idles should be spliced in between idle 1, 
+//not after eachother!
+anim idle01_breath
+908-1037,1
+cycle stop
+
+anim idle02_LookLR
+330-396,1
+cycle stop
+
+anim idle03_evil
+400-500,1
+cycle stop
+
+anim idle04_fists
+500-566,1
+cycle stop
+
+anim idle05_lookHigh
+566-764,1
+cycle stop
+
+anim idle06_scratchchest
+764-908,1
+cycle stop
+
+//attack : roo puts fists up for a short time before he bounces on his tail and kicks foward, lands and hops back to his previous position
+ 
+anim attack
+1100-1211,1
+event startMoveFoward 1147
+event KickHit 1140-1153
+event stopMoveFowards 1155
+event hopbackStart01 1162
+event hopbackStop01 1168
+// these hops (02 - 04) can move in any direction hop 01 must move backwards
+event hopbackStart02 1175
+event hopbackStop02 1181
+event hopbackStart03 1187
+event hopbackStop03 1193
+event hopbackStart04 1199
+event hopbackStop04 1205
+cycle stop
+
+//death
+anim die
+1300-1367,1
+event hitground 1312
+cycle stop
+
+//when rufus gets hit by a 'rang
+anim hit
+1400-1482,1
+cycle stop
+
+//when he sees the bunyip.  This animation follows directly into the bounce_run anim.
+anim scare
+1516-1559,1
+cycle stop
+
+//kick while charging at full speed
+anim runkick
+1135-1160,1
+event KickHit 1140-1153
+cycle stop
+
+//end

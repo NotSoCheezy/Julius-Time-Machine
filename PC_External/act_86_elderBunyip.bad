@@ -1,0 +1,60 @@
+mesh act_86_elderBunyip.mdl
+skeleton act_86_elderBunyip.anm
+
+
+//AMBULATORTY LOOPAGE:
+anim walk01
+5-35,1
+event LeftFoot 35
+event RightFoot 20
+cycle loop
+
+anim run01
+0,1
+cycle loop
+
+
+//IDLES:
+anim idle01
+150-511,1
+cycle loop
+
+anim LipsNeutral
+0,1
+cycle loop
+
+
+
+anim BodyNeutral
+550-650,1
+cycle loop
+
+anim BodyGreeting
+0,1
+cycle loop
+
+anim BodyNo
+0,1
+cycle loop
+
+anim BodyYes
+700-754,1
+cycle stop
+
+anim BodyNod
+800-870,1
+cycle stop
+
+anim BodyMannerism1
+900-960,1
+cycle stop
+
+anim HeadNeutral
+0,1
+cycle loop
+
+anim HeadConcerned
+0,1
+cycle loop
+
+//end

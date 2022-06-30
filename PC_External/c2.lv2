@@ -1,0 +1,7687 @@
+// MapEd Data File version 2
+// Copyright Krome Studios
+// Saved by [KMW]   Date: 1/07/2002   Time: 8:23:09 PM
+//
+
+
+name setup
+
+WorldMinMax = -24314.963,-6027.070,-12856.913,35325.328,19512.902,39721.934
+ground = Room_C2_01.mdl
+collisionHeapSize = 1537024
+envcube = env_c2.mdl
+envrotate = 0.00
+fog = 0.60, 0.40, 0.20
+waterFog = 0.40, 0.35, 0.75
+maxDepth = 600.00
+fogPlane = 7000.00
+farPlane = 25000.00
+waterFogPlane = 5.00
+waterFarPlane = 3500.00
+bDisplayMist = 0
+music = level1.wav
+waterMaterial = fx_088
+causticMaterial = fx_089
+light = -1.0, 1.5, 1.3
+lod_0 = 1250
+lod_1 = 2500
+lod_2 = 4500
+lod_3 = 8000
+lod_4 = 12000
+lod_5 = 17000
+lod_6 = 25000
+lod_7 = 40000
+overlay_0 = Room_c2_04.mdl, 1, none, 0, 15
+overlay_1 = Room_c2_03.mdl, 1, none, 0, 15
+overlay_2 = Room_c2_02.mdl, 0, grasseffect, 0, 15
+overlay_3 = Room_c2_06.mdl, 0, none, 0, 15
+
+name TY
+
+pos = -5498, -562, -7015
+rot = 0.051, -1.632, 0.054
+effect = 1,breathmist
+// User: ???
+
+name TRIGGERSPHERE
+
+pos = -11565, 8099, 16616
+ID = 49,TriggerWarpflower4
+sphere = spherezone
+  pos = -11318,8095,16618
+  radius = 60.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 2,Warpflower4
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -13026, 1710, 16316
+ID = 50,TriggerWarpflower3
+sphere = spherezone
+  pos = -12930,1798,16116
+  radius = 60.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 3,Warpflower3
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -13698, -1379, 18919
+ID = 51,TriggerWarpflower2
+sphere = spherezone
+  pos = -13590,-1281,19022
+  radius = 60.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 4,Warpflower2
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -15754, -5629, 18807
+ID = 52,TriggerWarpFlower1
+sphere = spherezone
+  pos = -15548,-5609,19074
+  radius = 60.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 1,WarpFlower1
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -14346, -5623, 24819
+ID = 945,TriggerTeleport2
+sphere = spherezone
+  pos = -14330,-5620,24537
+  radius = 100.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 885,ScriptTeleporter
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 135,Teleport2
+  Message = Deactivate
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -17529, -5373, 21449
+ID = 949,TriggerCheckPoint3
+sphere = spherezone
+  pos = -17543,-5326,20580
+  radius = 700.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 859,CheckPoint3
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = 6731, 1528, 3029
+ID = 950,TriggerAfterFrills
+sphere = spherezone
+  pos = 6742,1568,3320
+  radius = 500.00
+bActive = 0,false
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 934,Objective9Success
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = 6542, 1528, 3120
+ID = 951,TriggerObjective9
+sphere = spherezone
+  pos = 6742,1568,3320
+  radius = 500.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 915,Objective9Intro
+  Message = Activate
+OnAction = event
+  TargetID = 915,Objective9Intro
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -20417, -5588, 18874
+ID = 952,TriggerMiniGame
+sphere = spherezone
+  pos = -20099,-5367,19097
+  radius = 400.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 932,IntroduceMiniGame
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -3969, -487, -2398
+ID = 953,TriggerCheckPoint1
+sphere = spherezone
+  pos = -3769,-387,-2198
+  radius = 500.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 860,CheckPoint1
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -20185, -5592, 18814
+ID = 954,TriggerAfterMiniGame
+sphere = spherezone
+  pos = -20091,-5436,19089
+  radius = 400.00
+bActive = 0,false
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 927,AfterMiniGame
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5585, 1505, 1174
+ID = 955,TriggerBoonieObjective
+sphere = spherezone
+  pos = -5515,1605,1409
+  radius = 400.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 919,Objective7Intro
+  Message = Activate
+OnAction = event
+  TargetID = 919,Objective7Intro
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5892, -536, -7450
+ID = 957,TriggerObjective5
+sphere = spherezone
+  pos = -6034,-417,-6964
+  radius = 400.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 939,Objective5Intro
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -6369, -521, -6455
+ID = 958,TriggerOpalCollector
+sphere = spherezone
+  pos = -6169,-421,-6255
+  radius = 400.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 858,OpalCollector
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5652, -553, -7389
+ID = 959,TriggerAfterObjective5
+sphere = spherezone
+  pos = -6039,-417,-6960
+  radius = 400.00
+bActive = 0,false
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 940,Objective5Success
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5341, -568, -7011
+ID = 960,TriggerStartMainObjective
+sphere = spherezone
+  pos = -5499,-459,-7017
+  radius = 150.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 939,Objective5Intro
+  Message = Activate
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 1,true
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5448, -523, -5876
+ID = 961,TriggerTeleport1
+sphere = spherezone
+  pos = -5385,-513,-6048
+  radius = 100.00
+bActive = 0,false
+OnEnter = event
+  TargetID = 136,Teleporter1
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 136,Teleporter1
+  Message = Deactivate
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+name TRIGGERBOX
+
+pos = 5866, 1468, 1508
+ID = 942,TriggerCheckPoint2
+box = boxzone
+  pos = 6112,1688,1778
+  yaw = 0.00
+  width = 300.00
+  height = 700.00
+  depth = 1600.00
+  pitch = 0.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 861,CheckPoint2
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 845,SpawnerWombatBottom
+  Message = Activate
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = -5690, 9006, 14615
+ID = 943,TriggerSpawnerWombatTop
+box = boxzone
+  pos = -4615,8776,13660
+  yaw = 0.88
+  width = 3000.00
+  height = 4000.00
+  depth = 7000.00
+  pitch = 0.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 842,SpawnerWombatTop
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+pos = 405, 4824, 9713
+ID = 944,TriggerSpawnerWombatMiddle
+box = boxzone
+  pos = 1008,4384,9199
+  yaw = 0.92
+  width = 3000.00
+  height = 4000.00
+  depth = 9000.00
+  pitch = 0.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 844,SpawnerWombatMiddle
+  Message = Activate
+OnAction = event
+  TargetID = 0,none
+  Message = none
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 0,false
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: KMW
+
+name DIALOG
+
+pos = -15638, -5644, 18155
+ID = 44,TALose
+camera = camera
+  cameraSource = -15538.126, -5643.642, 18255.350
+  cameraTarget = -16138.126, -5643.642, 17655.350
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 10
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -15644, -5643, 18343
+ID = 45,TARestart
+camera = camera
+  cameraSource = -15544.134, -5643.079, 18442.838
+  cameraTarget = -16144.134, -5643.079, 17842.838
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 11
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -15231, -5651, 18279
+ID = 46,TAWinAgainDidntBeatTime
+camera = camera
+  cameraSource = -15130.709, -5651.257, 18378.588
+  cameraTarget = -15730.709, -5651.257, 17778.588
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = -13192.000, 1682.000, 19276.000
+bUseHeroPos = 0,false
+dialogNr = 9
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -15333, -5651, 18337
+ID = 47,TAWinAgainBeatTime
+camera = camera
+  cameraSource = -15232.596, -5651.257, 18436.871
+  cameraTarget = -15832.596, -5651.257, 17836.871
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 8
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -15499, -5651, 18262
+ID = 48,TATimeOut
+camera = camera
+  cameraSource = -15398.532, -5651.257, 18361.996
+  cameraTarget = -15998.532, -5651.257, 17761.996
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 12
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = 6608, 1510, 2815
+ID = 915,Objective9Intro
+camera = camera
+  cameraSource = 6071.335, 1468.172, 2278.149
+  cameraTarget = 6107.731, 1468.172, 2314.545
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 38
+dialogNr2 = 39
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 882,BlueTongueRockObjective
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5494, 1448, 1080
+ID = 916,Objective7Success
+camera = camera
+  cameraSource = -5027.392, 1580.656, 1417.310
+  cameraTarget = -5627.392, 1580.656, 817.310
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 37
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5364, 1469, 1310
+ID = 917,TAWin
+camera = camera
+  cameraSource = -5243.256, 1771.173, 1214.964
+  cameraTarget = -5445.811, 1441.465, 1339.577
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 7
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 708,ThunderEggTA
+  Message = Enable
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5441, 1468, 1542
+ID = 918,BoonieTauntsTy
+camera = camera
+  cameraSource = -5131.674, 1468.172, 1151.654
+  cameraTarget = -5317.293, 1610.800, 1074.260
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 35
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5463, 1469, 1286
+ID = 919,Objective7Intro
+camera = camera
+  cameraSource = -5288.153, 1738.172, 1510.806
+  cameraTarget = -5471.783, 1522.895, 1271.138
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 33
+dialogNr2 = -1
+dialog2Nr = 34
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 837,BadBoonie
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5165, 1468, 1115
+ID = 920,SeeBoonie
+camera = camera
+  cameraSource = -5065.300, 1468.172, 1215.398
+  cameraTarget = -5665.300, 1468.172, 615.398
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 36
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -6978, 9521, 15685
+ID = 926,TAIntroduction
+camera = camera
+  cameraSource = -7105.937, 9696.444, 15507.232
+  cameraTarget = -6967.881, 9497.361, 15688.786
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 6
+dialogNr2 = 11
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 926,TAIntroduction
+  Message = Toggle
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20600, -5467, 18855
+ID = 927,AfterMiniGame
+camera = camera
+  cameraSource = -20499.463, -5467.453, 18955.477
+  cameraTarget = -21448.727, -5502.688, 19212.768
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 27
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20812, -5275, 19050
+ID = 928,LoseMiniGame
+camera = camera
+  cameraSource = -20658.719, -5174.659, 19892.656
+  cameraTarget = -20714.365, -4930.550, 20442.232
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 32
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20610, -5241, 19404
+ID = 929,MiniGameHint
+camera = camera
+  cameraSource = -20768.539, -5184.715, 20132.969
+  cameraTarget = -20876.338, -4930.703, 20655.486
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 30
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20643, -5250, 19214
+ID = 930,DeclineMiniGame
+camera = camera
+  cameraSource = -20498.893, -5236.237, 19666.480
+  cameraTarget = -20661.861, -4930.465, 20652.627
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 29
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20421, -5268, 19317
+ID = 931,AcceptMiniGame
+camera = camera
+  cameraSource = -20284.627, -5221.236, 19680.027
+  cameraTarget = -20447.596, -4930.228, 20666.174
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 28
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 883,MiniGame
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20808, -5239, 19325
+ID = 932,IntroduceMiniGame
+camera = camera
+  cameraSource = -20495.693, -5238.864, 20007.160
+  cameraTarget = -20658.664, -4930.419, 20993.303
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 25
+dialogNr2 = 26
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 883,MiniGame
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -21146, -5256, 19102
+ID = 933,WinMiniGame
+camera = camera
+  cameraSource = -20996.604, -5210.300, 20150.078
+  cameraTarget = -21159.572, -4930.963, 21136.225
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 31
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 886,ScriptAfterMiniGame
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = 6506, 1513, 2593
+ID = 934,Objective9Success
+camera = camera
+  cameraSource = 6605.655, 1552.172, 2693.064
+  cameraTarget = 6005.655, 1468.172, 2093.064
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 41
+dialogNr2 = 40
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 707,ThunderEggObjective9
+  Message = Enable
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5883, -546, -7308
+ID = 935,LevelIntro
+camera = camera
+  cameraSource = -5572.931, -556.956, -6160.920
+  cameraTarget = -6172.931, -556.956, -6760.920
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = -1
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5956, -559, -6823
+ID = 936,Objective2Success
+camera = camera
+  cameraSource = -5665.398, -530.705, -5926.709
+  cameraTarget = -6265.398, -530.705, -6526.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 3
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -6004, -557, -6653
+ID = 937,Objective1Success
+camera = camera
+  cameraSource = -5787.696, -507.474, -5752.919
+  cameraTarget = -6387.696, -507.474, -6352.919
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 2
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -6029, -537, -7201
+ID = 938,SheilaIdle1
+camera = camera
+  cameraSource = -5992.301, -534.040, -7030.479
+  cameraTarget = -5402.516, -385.154, -7424.018
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 13
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5916, -553, -7122
+ID = 939,Objective5Intro
+camera = camera
+  cameraSource = -5865.920, -555.663, -6812.557
+  cameraTarget = -5276.135, -406.935, -7206.096
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 14
+dialogNr2 = 15
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 884,MainObjective
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -6006, -532, -7347
+ID = 940,Objective5Success
+camera = camera
+  cameraSource = -6118.576, -513.749, -7166.851
+  cameraTarget = -5528.791, -365.909, -7560.390
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 24
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 710,ThunderEggMain
+  Message = Enable
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 881,blank
+  Message = Show
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5392, -569, -6893
+ID = 941,LevelIntro
+camera = camera
+  cameraSource = -5292.134, -569.266, -6793.058
+  cameraTarget = -5892.134, -569.266, -7393.058
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 1
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 1,true
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+name WATERSLIDE
+
+pos = -6884, 9554, 15820
+waypoints = waypoint
+  waypoint = -5968, 9230, 15818
+  waypoint = -5189, 8974, 14811
+  waypoint = -4852, 8724, 13864
+  waypoint = -3993, 7352, 12761
+  waypoint = -3199, 7061, 12072
+  waypoint = -1691, 6839, 12052
+  waypoint = -807, 6670, 11589
+  waypoint = -1014, 5459, 10704
+  waypoint = -731, 4913, 9214
+  waypoint = -211, 4779, 8704
+  waypoint = 1730, 4594, 9707
+  waypoint = 2545, 4249, 8866
+  waypoint = 2637, 2974, 7246
+  waypoint = 3633, 2540, 6046
+  waypoint = 4775, 2342, 5926
+// User: KMW
+
+pos = 3039, 1468, 769
+waypoints = waypoint
+  waypoint = 2962, 1468, 1204
+  waypoint = 2411, 1468, 1756
+  waypoint = 2994, 1468, 2604
+  waypoint = 2286, 1468, 2974
+  waypoint = 1028, 1468, 3893
+  waypoint = -77, 1468, 4219
+  waypoint = -2159, 1468, 4331
+  waypoint = -4824, 1468, 5084
+  waypoint = -6039, 1468, 4760
+  waypoint = -6204, 1468, 4016
+  waypoint = -6383, 1468, 3310
+  waypoint = -5895, 1468, 2751
+  waypoint = -5778, 1468, 2204
+  waypoint = -5749, 1468, 1759
+  waypoint = -5410, 1469, 1301
+// User: KMW
+
+pos = 4786, 2339, 5886
+waypoints = waypoint
+  waypoint = 5183, 1468, 5096
+  waypoint = 6801, 1468, 4966
+  waypoint = 8161, 1468, 5535
+  waypoint = 9373, 1468, 5406
+  waypoint = 9694, 1468, 3903
+  waypoint = 8884, 1468, 2510
+  waypoint = 7736, 1468, 1227
+  waypoint = 6167, 1468, 2010
+  waypoint = 5364, 1468, 1658
+  waypoint = 5272, 1468, 978
+  waypoint = 4863, 1468, 691
+  waypoint = 4298, 1468, 431
+  waypoint = 4007, 1468, -150
+  waypoint = 3244, 1468, 16
+  waypoint = 3047, 1468, 809
+// User: KMW
+
+name PATH
+
+pos = -6583, 9349, 15645
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = -5718, 9149, 15483
+  waypoint = -5559, 8975, 14546
+  waypoint = -4439, 8700, 13957
+  waypoint = -4395, 7503, 12893
+  waypoint = -3291, 7200, 12671
+  waypoint = -3439, 7043, 11795
+  waypoint = -2007, 6909, 12344
+  waypoint = -1415, 6742, 11453
+// User: KMW
+
+pos = -6583, 9347, 15636
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = -6550, 9182, 14789
+  waypoint = -6284, 8931, 13720
+  waypoint = -4184, 8696, 14068
+  waypoint = -4436, 7645, 13198
+  waypoint = -3564, 7318, 12991
+  waypoint = -3362, 7040, 11846
+  waypoint = -2482, 6814, 11047
+  waypoint = -1376, 6732, 11398
+// User: KMW
+
+pos = -5774, 10919, 15308
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = -4811, 10042, 14488
+  waypoint = -3885, 9427, 13696
+  waypoint = -3058, 9048, 12985
+  waypoint = -2415, 8847, 12430
+  waypoint = -1831, 8753, 11925
+// User: KMW
+
+pos = -6663, 11062, 14610
+type = 11,EnemyRegion
+waypoints = waypoint
+  waypoint = -6319, 11137, 14314
+  waypoint = -6608, 11107, 14038
+  waypoint = -6946, 11019, 14377
+// User: KMW
+
+pos = -22428, -5540, 20933
+type = 7,FrillPipeMinigame
+waypoints = waypoint
+  waypoint = -22455, -5554, 20471
+  waypoint = -21263, -5554, 19319
+  waypoint = -20748, -5529, 18794
+  waypoint = -20116, -5581, 19088
+  waypoint = -19665, -5585, 19709
+  waypoint = -19738, -5536, 20390
+  waypoint = -19836, -5530, 20648
+  waypoint = -19872, -5575, 21116
+  waypoint = -19537, -5488, 20783
+// User: KMW
+
+pos = -22429, -5537, 20914
+type = 7,FrillPipeMinigame
+waypoints = waypoint
+  waypoint = -22273, -5536, 21308
+  waypoint = -21674, -5533, 21663
+  waypoint = -20645, -5490, 21726
+  waypoint = -20405, -5575, 22374
+  waypoint = -20191, -5576, 21998
+  waypoint = -19755, -5591, 22167
+// User: KMW
+
+pos = -22438, -5537, 20912
+type = 7,FrillPipeMinigame
+waypoints = waypoint
+  waypoint = -22806, -5502, 21581
+  waypoint = -22865, -5541, 20142
+  waypoint = -21863, -5569, 18401
+// User: KMW
+
+pos = -1279, 1468, 4249
+type = 1,ScrubTurkey
+waypoints = waypoint
+  waypoint = -386, 1468, 4212
+  waypoint = 304, 1468, 4032
+  waypoint = 1782, 1468, 3684
+// User: KMW
+
+pos = 3659, 1468, -246
+type = 1,ScrubTurkey
+waypoints = waypoint
+  waypoint = 4149, 1468, 228
+  waypoint = 4407, 1468, 716
+  waypoint = 4909, 1468, 2165
+  waypoint = 2971, 1468, 2607
+  waypoint = 1779, 1468, 3685
+// User: KMW
+
+pos = 1771, 1468, 3684
+type = 1,ScrubTurkey
+waypoints = waypoint
+  waypoint = 2880, 1468, 2597
+  waypoint = 2397, 1468, 1655
+  waypoint = 3033, 1468, 941
+  waypoint = 3099, 1468, 231
+  waypoint = 3669, 1468, -247
+// User: KMW
+
+pos = 1776, 1468, 3680
+type = 1,ScrubTurkey
+waypoints = waypoint
+  waypoint = 1083, 1468, 4689
+  waypoint = 35, 1468, 5408
+  waypoint = -1368, 1468, 5621
+  waypoint = -2139, 1468, 5032
+  waypoint = -3006, 1468, 4630
+  waypoint = -1479, 1468, 4190
+  waypoint = -96, 1468, 4228
+  waypoint = 1763, 1468, 3680
+// User: KMW
+
+pos = -1337, 6728, 11408
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = -775, 6667, 11602
+  waypoint = -710, 5353, 10790
+  waypoint = 496, 4907, 10558
+  waypoint = 370, 4758, 9114
+  waypoint = 2346, 4233, 8177
+  waypoint = 3046, 2837, 7391
+  waypoint = 4041, 2601, 7477
+  waypoint = 4815, 2383, 6422
+// User: KMW
+
+pos = -1343, 6730, 11414
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = -1523, 6668, 10802
+  waypoint = -453, 4942, 9720
+  waypoint = 1766, 4621, 9942
+  waypoint = 1127, 4438, 7984
+  waypoint = 1825, 4225, 7496
+  waypoint = 2932, 2881, 7444
+  waypoint = 3512, 2567, 6127
+  waypoint = 4827, 2379, 6406
+// User: KMW
+
+pos = -1830, 8761, 11928
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = -604, 7624, 11060
+  waypoint = 71, 7112, 10589
+  waypoint = 709, 6699, 10139
+  waypoint = 1371, 6444, 9694
+  waypoint = 1342, 6456, 9717
+  waypoint = 1991, 6338, 9249
+  waypoint = 2766, 5416, 8502
+  waypoint = 3219, 4936, 8052
+  waypoint = 3632, 4589, 7666
+  waypoint = 4046, 4351, 7261
+  waypoint = 4458, 4242, 6866
+  waypoint = 4956, 3825, 6488
+  waypoint = 5447, 3514, 6142
+  waypoint = 5955, 3285, 5772
+// User: KMW
+
+pos = -309, 6769, 9458
+type = 11,EnemyRegion
+waypoints = waypoint
+  waypoint = 47, 6845, 9171
+  waypoint = -174, 6852, 8872
+  waypoint = -551, 6712, 9152
+// User: KMW
+
+pos = 2804, 4645, 6549
+type = 11,EnemyRegion
+waypoints = waypoint
+  waypoint = 3138, 4691, 6313
+  waypoint = 2936, 4674, 6025
+  waypoint = 2581, 4580, 6293
+// User: KMW
+
+pos = 1584, 6345, 8526
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = 946, 6436, 8984
+  waypoint = 309, 6691, 9427
+  waypoint = -319, 7069, 9867
+  waypoint = -990, 7588, 10333
+  waypoint = -2246, 8748, 11217
+  waypoint = -2901, 8825, 11776
+  waypoint = -3549, 9026, 12341
+  waypoint = -4199, 9347, 12902
+  waypoint = -4854, 9787, 13462
+  waypoint = -5528, 10330, 14040
+  waypoint = -6167, 10932, 14597
+  waypoint = -6530, 10939, 14916
+  waypoint = -6898, 10957, 15244
+  waypoint = -7283, 11003, 15583
+// User: KMW
+
+pos = -2884, 8740, 11166
+type = 11,EnemyRegion
+waypoints = waypoint
+  waypoint = -2508, 8803, 10875
+  waypoint = -2735, 8801, 10592
+  waypoint = -3169, 8679, 10850
+// User: KMW
+
+pos = -7297, 11002, 15591
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = -7643, 11078, 15893
+  waypoint = -8021, 11201, 16239
+  waypoint = -8372, 11353, 16526
+  waypoint = -8517, 11361, 16672
+  waypoint = -8579, 11361, 16889
+  waypoint = -8522, 11361, 17105
+  waypoint = -8369, 11360, 17262
+  waypoint = -8155, 11369, 17315
+  waypoint = -7942, 11370, 17257
+  waypoint = -7453, 11154, 16795
+  waypoint = -6966, 11025, 16351
+  waypoint = -6541, 10958, 15959
+  waypoint = -5913, 10935, 15421
+  waypoint = -5783, 10934, 15316
+// User: KMW
+
+pos = 5955, 3285, 5772
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = 6445, 3139, 5427
+  waypoint = 6944, 3060, 5056
+  waypoint = 7437, 3036, 4700
+  waypoint = 7591, 3033, 4541
+  waypoint = 7649, 3036, 4340
+  waypoint = 7594, 3041, 4131
+  waypoint = 7434, 3042, 3971
+  waypoint = 7456, 3043, 3966
+  waypoint = 7228, 3045, 3908
+  waypoint = 7040, 3032, 3977
+  waypoint = 6527, 3130, 4343
+  waypoint = 6017, 3236, 4712
+  waypoint = 5553, 3373, 5061
+  waypoint = 5042, 3582, 5420
+// User: KMW
+
+pos = 5042, 3582, 5420
+type = 10,CableCar
+waypoints = waypoint
+  waypoint = 4560, 3864, 5774
+  waypoint = 4045, 4240, 6148
+  waypoint = 3622, 4318, 6552
+  waypoint = 3217, 4527, 6952
+  waypoint = 2807, 4847, 7344
+  waypoint = 2393, 5280, 7747
+  waypoint = 1994, 5769, 8125
+  waypoint = 1787, 6056, 8327
+  waypoint = 1683, 6200, 8428
+  waypoint = 1580, 6344, 8529
+// User: KMW
+
+pos = 4824, 2379, 6400
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = 4734, 2330, 5726
+  waypoint = 5244, 1468, 5157
+  waypoint = 6759, 1468, 4842
+  waypoint = 6828, 1468, 2978
+  waypoint = 5447, 1468, 1030
+// User: KMW
+
+pos = 4813, 2381, 6400
+type = 2,Dennis
+waypoints = waypoint
+  waypoint = 5083, 2330, 6400
+  waypoint = 5252, 1467, 5743
+  waypoint = 6648, 1468, 5111
+  waypoint = 6718, 1468, 3364
+  waypoint = 6645, 1468, 760
+// User: KMW
+
+name SCRIPT
+
+pos = -14523, -5625, 24769
+ID = 885,ScriptTeleporter
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 136,Teleporter1
+  Message = Show
+Message1 = event
+  TargetID = 961,TriggerTeleport1
+  Message = Activate
+Message2 = event
+  TargetID = 135,Teleport2
+  Message = Activate
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -20409, -5458, 18972
+ID = 886,ScriptAfterMiniGame
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 952,TriggerMiniGame
+  Message = Deactivate
+Message1 = event
+  TargetID = 954,TriggerAfterMiniGame
+  Message = Activate
+Message2 = event
+  TargetID = 704,ThunderEggMiniGame
+  Message = Enable
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = 6813, 1558, 2578
+ID = 887,ScriptObjective9Success
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 951,TriggerObjective9
+  Message = Deactivate
+Message1 = event
+  TargetID = 950,TriggerAfterFrills
+  Message = Activate
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+pos = -5706, -546, -7542
+ID = 888,ScriptObjective5Success
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 957,TriggerObjective5
+  Message = Deactivate
+Message1 = event
+  TargetID = 959,TriggerAfterObjective5
+  Message = Activate
+Message2 = event
+  TargetID = 862,Portal
+  Message = Show
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+name KOALAKIDOBJECTIVE
+
+pos = -6098, -545, -6806
+ID = 884,MainObjective
+OnSuccess = event
+  TargetID = 888,ScriptObjective5Success
+  Message = Activate
+ThunderEgg = 3,Primary
+// User: KMW
+
+name MINIGAMEOBJECTIVE
+
+pos = -19924, -5563, 19181
+gameSubState = 3,MiniGame_C2_Arson
+ID = 883,MiniGame
+OnSuccess = event
+  TargetID = 933,WinMiniGame
+  Message = Activate
+OnFailure = event
+  TargetID = 928,LoseMiniGame
+  Message = Activate
+ThunderEgg = 5,Secondary2
+OnBegin = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+name BLUETONGUEROCKOBJECTIVE
+
+pos = 6874, 1518, 3241
+ID = 882,BlueTongueRockObjective
+OnSuccess = event
+  TargetID = 887,ScriptObjective9Success
+  Message = Activate
+ThunderEgg = 4,Secondary1
+// User: KMW
+
+name SOUNDPROP
+
+pos = -6848, -95, -7126
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 863,blank
+dummySphere = spherezone
+  pos = -6848,-95,-7126
+  radius = 1500.00
+// User: AJM
+
+pos = -4084, 297, -7888
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 864,blank
+dummySphere = spherezone
+  pos = -4084,297,-7888
+  radius = 1500.00
+// User: AJM
+
+pos = 9532, -81, -7452
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 865,blank
+dummySphere = spherezone
+  pos = 9532,-81,-7452
+  radius = 1500.00
+// User: AJM
+
+pos = 7519, -135, -7286
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 866,blank
+dummySphere = spherezone
+  pos = 7519,-135,-7286
+  radius = 1500.00
+// User: AJM
+
+pos = 1062, 10, -3289
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 867,blank
+dummySphere = spherezone
+  pos = 1062,10,-3289
+  radius = 1500.00
+// User: AJM
+
+pos = 5807, -263, -9696
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 868,blank
+dummySphere = spherezone
+  pos = 5807,-263,-9696
+  radius = 1500.00
+// User: AJM
+
+pos = 9587, -183, -4842
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 869,blank
+dummySphere = spherezone
+  pos = 9587,-183,-4842
+  radius = 1500.00
+// User: AJM
+
+pos = 1005, 29, -7216
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 870,blank
+dummySphere = spherezone
+  pos = 1005,29,-7216
+  radius = 1500.00
+// User: AJM
+
+pos = 3198, 334, -8775
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 871,blank
+dummySphere = spherezone
+  pos = 3198,334,-8775
+  radius = 1501.00
+// User: AJM
+
+pos = 5409, -49, -6923
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 872,blank
+dummySphere = spherezone
+  pos = 5409,-49,-6923
+  radius = 1500.00
+// User: AJM
+
+pos = 3905, 258, -3691
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 873,blank
+dummySphere = spherezone
+  pos = 3905,258,-3691
+  radius = 1500.00
+// User: AJM
+
+pos = 64, 31, -9033
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 874,blank
+dummySphere = spherezone
+  pos = 64,31,-9033
+  radius = 1500.00
+// User: AJM
+
+pos = 335, 220, -10895
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 875,blank
+dummySphere = spherezone
+  pos = 335,220,-10895
+  radius = 1500.00
+// User: AJM
+
+pos = -1868, 421, -9522
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 876,blank
+dummySphere = spherezone
+  pos = -1868,421,-9522
+  radius = 1500.00
+// User: AJM
+
+pos = -1435, -31, -7256
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 877,blank
+dummySphere = spherezone
+  pos = -1435,-31,-7256
+  radius = 1500.00
+// User: AJM
+
+pos = -691, 173, -4736
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 878,blank
+dummySphere = spherezone
+  pos = -691,173,-4736
+  radius = 1500.00
+// User: AJM
+
+pos = -3651, -158, -5073
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 879,blank
+dummySphere = spherezone
+  pos = -3651,-158,-5073
+  radius = 1500.00
+// User: AJM
+
+pos = -5865, 173, -4554
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 880,blank
+dummySphere = spherezone
+  pos = -5865,173,-4554
+  radius = 1500.00
+// User: AJM
+
+pos = 1408, 389, -5398
+rot = 0.000, 0.000, 0.000
+sound = *EnvBushFireLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 0.000
+maxDelay = 0.000
+bActive = 1,true
+ID = 881,blank
+dummySphere = spherezone
+  pos = 1408,389,-5398
+  radius = 1500.00
+// User: AJM
+
+name PORTAL
+
+pos = -5713, -401, -5914
+ID = 862,Portal
+standPos = 0.000, 0.000, 0.000
+standYaw = 0.000
+connectingLevel = 0,z1
+bExitPortal = 0,false
+bVisible = 0,false
+// User: KMW
+
+name RESTART
+
+pos = -17947, -5305, 21136
+ID = 859,CheckPoint3
+rot = 0.000, 1.105, 0.000
+DDAValue = -1
+camera = camera
+  cameraSource = -17627.135, -5129.771, 20452.258
+  cameraTarget = -17685.609, -5123.228, 20968.078
+// User: DAN
+
+pos = -3400, -486, -1972
+ID = 860,CheckPoint1
+rot = 0.000, -1.657, 0.000
+DDAValue = -1
+camera = camera
+  cameraSource = -3956.487, -244.395, -2297.488
+  cameraTarget = -3619.795, -307.395, -1947.396
+// User: DAN
+
+pos = 6316, 1468, 2666
+ID = 861,CheckPoint2
+rot = 0.000, 1.289, 0.000
+DDAValue = -1
+camera = camera
+  cameraSource = 6763.492, 1669.172, 2001.200
+  cameraTarget = 6591.324, 1681.172, 2515.635
+// User: DAN
+
+name OPALCOLLECTOR
+
+pos = -6167, -531, -6247
+ID = 858,OpalCollector
+rot = 0.092, 0.000, 0.074
+OnActivated = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+name OPAL
+
+pos = -14984, -2055, 20551
+// User: KMW
+
+pos = -14330, 367, 19743
+// User: KMW
+
+pos = -13689, 4534, 19561
+// User: KMW
+
+pos = -14766, -1639, 20041
+// User: KMW
+
+pos = -14072, 2333, 19817
+// User: KMW
+
+pos = -11031, 7140, 19636
+// User: KMW
+
+pos = -11261, 7772, 18707
+// User: KMW
+
+pos = -11127, 7427, 19132
+// User: KMW
+
+pos = -11661, 7166, 20003
+// User: KMW
+
+pos = -12153, 6728, 20342
+// User: KMW
+
+pos = -10651, 10693, 18379
+// User: KMW
+
+pos = -11192, 10425, 18406
+// User: KMW
+
+pos = -11731, 10015, 18474
+// User: KMW
+
+pos = -11366, 8122, 18270
+// User: KMW
+
+pos = -12265, 9599, 18221
+// User: KMW
+
+pos = -10289, 0, 18142
+// User: KMW
+
+pos = -12495, 9183, 17665
+// User: KMW
+
+pos = -12265, 8773, 17106
+// User: KMW
+
+pos = -11684, 8213, 16848
+// User: KMW
+
+pos = -11480, 8120, 17177
+// User: KMW
+
+pos = -11426, 8179, 17790
+// User: KMW
+
+pos = -14530, -416, 18714
+// User: KMW
+
+pos = -13739, -1204, 18741
+// User: KMW
+
+pos = -14297, -1224, 19720
+// User: KMW
+
+pos = -13865, 761, 20006
+// User: KMW
+
+pos = -14264, 3653, 18496
+// User: KMW
+
+pos = -13656, 4091, 18922
+// User: KMW
+
+pos = -14119, -810, 18328
+// User: KMW
+
+pos = -13471, 1895, 19510
+// User: KMW
+
+pos = -13717, -1386, 19483
+// User: KMW
+
+pos = -14582, -27, 19259
+// User: KMW
+
+pos = -12752, 1093, 20014
+// User: KMW
+
+pos = -13073, 1474, 19593
+// User: KMW
+
+pos = -13343, 1154, 20036
+// User: KMW
+
+pos = -9940, 10616, 18262
+// User: KMW
+
+pos = -8622, 10668, 17879
+// User: KMW
+
+pos = -14454, -5580, 24133
+// User: KMW
+
+pos = -16432, -4130, 19142
+// User: KMW
+
+pos = -16048, -3714, 19739
+// User: KMW
+
+pos = -15383, -2471, 21057
+// User: KMW
+
+pos = -16621, -5397, 21059
+// User: KMW
+
+pos = -16231, -5517, 21702
+// User: KMW
+
+pos = -15831, -5558, 22333
+// User: KMW
+
+pos = -17138, -4546, 19215
+// User: KMW
+
+pos = -16299, -3298, 20363
+// User: KMW
+
+pos = -16080, -2882, 20974
+// User: KMW
+
+pos = -15357, -5596, 22923
+// User: KMW
+
+pos = -17036, -5202, 20470
+// User: KMW
+
+pos = -17394, -4957, 19868
+// User: KMW
+
+pos = -4712, -485, -5362
+// User: KMW
+
+pos = -4579, -502, -4942
+// User: KMW
+
+pos = -4473, -459, -4492
+// User: KMW
+
+pos = -4150, -439, -4217
+// User: KMW
+
+pos = -3692, -447, -4097
+// User: KMW
+
+pos = -3876, -447, -2340
+// User: KMW
+
+pos = -3347, -447, -2983
+// User: KMW
+
+pos = -3233, -447, -3412
+// User: KMW
+
+pos = -3377, -447, -3828
+// User: KMW
+
+pos = -3509, -447, -2542
+// User: KMW
+
+pos = -4239, -429, -2188
+// User: KMW
+
+pos = -4612, 73, -1747
+// User: KMW
+
+pos = -1634, 1064, -1646
+// User: KMW
+
+pos = -1620, 863, -1656
+// User: KMW
+
+pos = -1428, 1184, -1454
+// User: KMW
+
+pos = 6216, 1536, 2106
+// User: KMW
+
+pos = -3709, 457, -662
+// User: KMW
+
+pos = -3383, 376, -900
+// User: KMW
+
+pos = -3982, 230, -1267
+// User: KMW
+
+pos = -4508, 136, -1445
+// User: KMW
+
+pos = -4671, -437, -1124
+// User: KMW
+
+pos = -3637, 401, -1248
+// User: KMW
+
+pos = -3292, 201, -1188
+// User: KMW
+
+pos = -3297, 949, -37
+// User: KMW
+
+pos = -3251, 1129, 809
+// User: KMW
+
+pos = -3674, 1213, 1035
+// User: KMW
+
+pos = -218, 1536, 4142
+// User: KMW
+
+pos = -1051, 1536, 4182
+// User: KMW
+
+pos = -1893, 1536, 4241
+// User: KMW
+
+pos = -2734, 1536, 4382
+// User: KMW
+
+pos = 605, 1536, 3823
+// User: KMW
+
+pos = 744, 1588, -467
+// User: KMW
+
+pos = 855, 1585, -346
+// User: KMW
+
+pos = 304, 1449, -50
+// User: KMW
+
+pos = -984, 1538, 226
+// User: KMW
+
+pos = -1176, 1538, 540
+// User: KMW
+
+pos = 108, 1447, -488
+// User: KMW
+
+pos = -1727, 1539, 2510
+// User: KMW
+
+pos = -2412, 1539, 2591
+// User: KMW
+
+pos = -2024, 1539, 2669
+// User: KMW
+
+pos = 330, 1417, -972
+// User: KMW
+
+pos = 844, 1581, -588
+// User: KMW
+
+pos = 973, 1587, -464
+// User: KMW
+
+pos = -4746, 962, 243
+// User: KMW
+
+pos = -4359, 488, -117
+// User: KMW
+
+pos = -3746, 1082, -102
+// User: KMW
+
+pos = -5489, 498, -525
+// User: KMW
+
+pos = -4829, 607, -511
+// User: KMW
+
+pos = -5756, 484, -217
+// User: KMW
+
+pos = 1378, 1536, 3504
+// User: KMW
+
+pos = -4261, 972, 80
+// User: KMW
+
+pos = 3767, 1536, 2595
+// User: KMW
+
+pos = 2183, 1536, 3214
+// User: KMW
+
+pos = 2981, 1536, 2908
+// User: KMW
+
+pos = -4040, 559, -403
+// User: KMW
+
+pos = 4563, 1536, 2281
+// User: KMW
+
+pos = 5371, 1536, 2057
+// User: KMW
+
+pos = -7921, 10668, 16880
+// User: KMW
+
+pos = -8234, 10668, 17406
+// User: KMW
+
+pos = -7476, 10658, 16440
+// User: KMW
+
+pos = 7571, 2339, 4020
+// User: KMW
+
+pos = 8025, 2375, 3826
+// User: KMW
+
+pos = 8129, 2145, 3485
+// User: KMW
+
+pos = 7405, 1942, 3552
+// User: KMW
+
+pos = 6822, 1543, 3572
+// User: KMW
+
+pos = 7087, 1736, 3872
+// User: KMW
+
+pos = 6766, 1543, 2726
+// User: KMW
+
+pos = -4202, 1352, 1149
+// User: KMW
+
+pos = -4779, 1513, 1292
+// User: KMW
+
+pos = -4328, 1536, 4869
+// User: KMW
+
+pos = -5086, 1536, 4891
+// User: KMW
+
+pos = -3525, 1536, 4677
+// User: KMW
+
+pos = -5870, 1536, 2225
+// User: KMW
+
+pos = -5885, 1536, 2649
+// User: KMW
+
+pos = -5937, 1536, 3073
+// User: KMW
+
+pos = -6035, 1536, 3906
+// User: KMW
+
+pos = -5702, 1536, 4626
+// User: KMW
+
+pos = -5176, 818, 387
+// User: KMW
+
+pos = -5623, 742, 343
+// User: KMW
+
+pos = -5644, 1536, 1483
+// User: KMW
+
+pos = -5883, 1536, 1802
+// User: KMW
+
+pos = -13819, 4972, 20118
+// User: KMW
+
+pos = -14898, 3215, 18883
+// User: KMW
+
+pos = -14797, 2777, 19619
+// User: KMW
+
+pos = -12488, 6290, 20818
+// User: KMW
+
+pos = -13108, 5847, 21024
+// User: KMW
+
+pos = -13654, 5409, 20699
+// User: KMW
+
+pos = -14898, -5590, 23523
+// User: KMW
+
+pos = -4948, -491, -5760
+// User: KMW
+
+pos = -5399, -532, -6526
+// User: KMW
+
+pos = -5185, -527, -6123
+// User: KMW
+
+name CAGEDBILBY
+
+pos = 5375, -488, -9475
+rot = 0.000, -2.505, 0.000
+type = 3,boy
+// User: KMW
+
+pos = 1221, -438, -5365
+rot = 0.000, 1.473, 0.000
+type = 2,girl
+// User: DAN
+
+pos = 3922, 1494, -1607
+rot = 0.000, 3.204, 0.000
+type = 0,dad
+// User: DAN
+
+pos = -827, 823, -1828
+rot = 0.000, -1.980, 0.000
+type = 4,grandma
+// User: KMW
+
+pos = -3272, -487, 442
+rot = 0.000, -1.584, 0.000
+type = 1,mum
+// User: DAN
+
+name THUNDEREGG
+
+pos = -20176, -5590, 19103
+camera = camera
+  cameraSource = -20009.527, -5587.408, 19366.479
+  cameraTarget = -20168.555, -5590.128, 19109.672
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 0,false
+type = 5,secondary2
+ID = 704,ThunderEggMiniGame
+platformID = 0,none
+// User: KMW
+
+pos = 865, 1438, -475
+camera = camera
+  cameraSource = 1055.296, 1753.151, -641.785
+  cameraTarget = 873.840, 1452.605, -477.812
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 7,hidden
+ID = 705,ThunderEggHidden
+platformID = 0,none
+// User: KMW
+
+pos = 1715, 1513, 3605
+camera = camera
+  cameraSource = -6061.148, -537.722, -6711.234
+  cameraTarget = -5471.363, -391.115, -7104.773
+OnCollected = event
+  TargetID = 919,Objective7Intro
+  Message = Toggle
+bInitiallyVisible = 0,false
+type = 6,secondary3
+ID = 706,ThunderEggBoonie
+platformID = 0,none
+// User: KMW
+
+pos = 6980, 1550, 3139
+camera = camera
+  cameraSource = 0.000, 0.000, 0.000
+  cameraTarget = 0.000, 0.000, 0.000
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 0,false
+type = 4,secondary1
+ID = 707,ThunderEggObjective9
+platformID = 0,none
+// User: KMW
+
+pos = -5324, 1514, 1239
+camera = camera
+  cameraSource = -15465.078, -5650.308, 18813.699
+  cameraTarget = -16065.078, -5650.308, 18213.699
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 0,false
+type = 2,timeattack
+ID = 708,ThunderEggTA
+platformID = 0,none
+// User: KMW
+
+pos = -6313, -463, -6785
+camera = camera
+  cameraSource = -6212.896, -523.115, -6684.890
+  cameraTarget = -5623.111, -376.508, -7078.429
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 0,false
+type = 1,bilbies
+ID = 709,ThunderEggBilbies
+platformID = 0,none
+// User: KMW
+
+pos = -6027, -507, -6798
+camera = camera
+  cameraSource = 0.000, 0.000, 0.000
+  cameraTarget = 0.000, 0.000, 0.000
+OnCollected = event
+  TargetID = 582,StopWatch
+  Message = Show
+bInitiallyVisible = 0,false
+type = 3,mainobjective
+ID = 710,ThunderEggMain
+platformID = 0,none
+// User: KMW
+
+pos = -5894, -514, -6392
+camera = camera
+  cameraSource = -6063.478, -531.814, -6205.750
+  cameraTarget = -5473.693, -382.344, -6599.289
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 0,false
+type = 0,opals
+ID = 711,ThunderEggOpals
+platformID = 0,none
+// User: KMW
+
+name GOLDENCOG
+
+pos = -12807, 1833, 16493
+camera = camera
+  cameraSource = -12777.400, 2133.342, 16927.084
+  cameraTarget = -12814.377, 1826.385, 16493.078
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 3
+platformID = 0,none
+// User: KMW
+
+pos = -8177, 10620, 18253
+camera = camera
+  cameraSource = -8504.941, 10778.573, 17909.648
+  cameraTarget = -8188.792, 10613.924, 18264.945
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 9
+platformID = 0,none
+// User: KMW
+
+pos = -14854, -5561, 22047
+camera = camera
+  cameraSource = -15264.265, -5295.517, 21923.389
+  cameraTarget = -14863.008, -5565.806, 22042.568
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 1
+platformID = 0,none
+// User: KMW
+
+pos = -1616, -118, -8894
+camera = camera
+  cameraSource = -1958.989, 69.795, -8758.205
+  cameraTarget = -1626.724, -115.681, -8895.802
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 6
+platformID = 0,none
+// User: KMW
+
+pos = 2803, 675, -5401
+camera = camera
+  cameraSource = 2480.199, 811.699, -5571.037
+  cameraTarget = 2794.063, 660.346, -5398.129
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 5
+platformID = 0,none
+// User: KMW
+
+pos = 9203, -255, -6196
+camera = camera
+  cameraSource = 9187.690, -165.821, -5780.850
+  cameraTarget = 9189.092, -266.679, -6189.341
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 8
+platformID = 0,none
+// User: KMW
+
+pos = 9863, -439, -11024
+camera = camera
+  cameraSource = 9649.388, -271.395, -10628.284
+  cameraTarget = 9863.131, -391.395, -11024.178
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 7
+platformID = 0,none
+// User: KMW
+
+pos = -1906, 861, -1622
+camera = camera
+  cameraSource = -2234.370, 985.754, -1689.025
+  cameraTarget = -1923.512, 899.605, -1624.054
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 0
+platformID = 0,none
+// User: KMW
+
+pos = -19822, -5521, 18746
+camera = camera
+  cameraSource = -19987.594, -5280.639, 18273.842
+  cameraTarget = -19835.266, -5509.464, 18739.572
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 4
+platformID = 0,none
+// User: KMW
+
+pos = -5214, 344, -802
+camera = camera
+  cameraSource = -5242.728, 500.605, -1139.652
+  cameraTarget = -5213.552, 415.873, -802.094
+OnCollected = event
+  TargetID = 0,none
+  Message = none
+bInitiallyVisible = 1,true
+type = 2
+platformID = 0,none
+// User: KMW
+
+name PICNICBASKET
+
+pos = 7395, -302, -3755
+rot = 0.000, 0.000, 0.000
+type = 0,DDABasket
+bVisible = 1,true
+// User: KMW
+
+pos = 7873, 2317, 4321
+rot = 0.000, -0.552, 0.000
+type = 0,DDABasket
+bVisible = 1,true
+// User: KMW
+
+name CRATE
+
+pos = -12835, 984, 20211
+rot = -0.010, 3.142, -0.007
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 5,blank
+// User: KMW
+
+pos = -12671, 986, 20285
+rot = 0.002, -2.362, -0.007
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 6,blank
+// User: KMW
+
+pos = -13469, -1377, 19447
+rot = -0.007, -3.052, -0.043
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 7,blank
+// User: KMW
+
+pos = -13476, -1347, 19606
+rot = 0.029, 2.497, -0.053
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 8,blank
+// User: KMW
+
+pos = -17605, -5409, 21719
+rot = 0.178, 3.142, 0.197
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 660,blank
+// User: KMW
+
+pos = -17447, -5429, 21653
+rot = 0.065, 2.628, 0.227
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 661,blank
+// User: KMW
+
+pos = 5160, -487, -9264
+rot = 0.000, 2.527, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 662,blank
+// User: KMW
+
+pos = 5028, -487, -9486
+rot = 0.000, -2.497, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 663,blank
+// User: KMW
+
+pos = 5024, -487, -9040
+rot = 0.000, 3.082, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 664,blank
+// User: KMW
+
+pos = 1905, -490, -5600
+rot = -0.072, 4.191, -0.146
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 665,blank
+// User: KMW
+
+pos = 1759, -498, -5451
+rot = -0.043, 3.584, -0.142
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 666,blank
+// User: KMW
+
+pos = 9748, -487, -10631
+rot = 0.000, 1.300, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 667,blank
+// User: KMW
+
+pos = 9679, -487, -10861
+rot = 0.000, 0.700, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 668,blank
+// User: KMW
+
+pos = 9916, -487, -10811
+rot = 0.000, 0.000, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 669,blank
+// User: KMW
+
+pos = -1057, 813, -1673
+rot = 0.000, -0.810, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 670,blank
+// User: KMW
+
+pos = -1014, 812, -1442
+rot = 0.000, 0.000, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 671,blank
+// User: KMW
+
+pos = -1256, 813, -1731
+rot = 0.000, 1.185, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 672,blank
+// User: KMW
+
+pos = 1140, 1213, -318
+rot = 0.000, 3.142, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 673,blank
+// User: KMW
+
+pos = 1183, 1214, -510
+rot = -0.006, -2.392, -0.012
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 674,blank
+// User: KMW
+
+pos = -1200, 1468, 1905
+rot = 0.000, -2.677, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 675,blank
+// User: KMW
+
+pos = -1021, 1468, 1920
+rot = 0.000, -1.942, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 676,blank
+// User: KMW
+
+pos = -1115, 1468, 2094
+rot = 0.000, 2.662, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 677,blank
+// User: KMW
+
+pos = 1058, 1213, -697
+rot = -0.014, -2.197, -0.018
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 678,blank
+// User: KMW
+
+pos = 192, 4994, 10945
+rot = -0.026, -2.593, 0.164
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 679,blank
+// User: KMW
+
+pos = -84, 5083, 10985
+rot = -0.995, -1.848, -0.474
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 680,blank
+// User: KMW
+
+pos = -256, 5232, 11130
+rot = -0.282, 2.483, 0.543
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 681,blank
+// User: KMW
+
+pos = -176, 1468, 5722
+rot = 0.000, 0.660, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 682,blank
+// User: KMW
+
+pos = 9913, 1468, 4432
+rot = 0.000, 1.065, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 683,blank
+// User: KMW
+
+pos = 9897, 1468, 4699
+rot = 0.000, -2.737, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 684,blank
+// User: KMW
+
+pos = 9655, 1468, 4842
+rot = 0.000, -0.795, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 685,blank
+// User: KMW
+
+pos = -5035, 1468, 3155
+rot = 0.000, 0.000, 0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 686,blank
+// User: KMW
+
+pos = -5070, 1468, 2959
+rot = 0.000, 0.570, -0.000
+count = 5
+platformID = 0,none
+(A)Opal = 0
+ID = 687,blank
+// User: KMW
+
+name FLAMINGLOG2
+
+pos = 1854, -194, -9098
+rot = 0.000, -2.463, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2258, -194, -8655
+rot = 0.000, 0.000, 0.000
+scale = 0.500, 0.600, 0.700
+collide = 1,true
+// User: KMW
+
+pos = 1936, -194, -9343
+rot = 0.000, -0.500, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -7040, -487, -2940
+rot = 0.000, 1.319, 0.000
+scale = 1.015, 0.935, 0.795
+collide = 1,true
+// User: KMW
+
+pos = -6750, -487, -2918
+rot = 0.000, 3.203, 0.000
+scale = 0.835, 0.700, 1.175
+collide = 1,true
+// User: KMW
+
+pos = -6338, -487, -3334
+rot = 0.000, 2.638, 0.000
+scale = 1.070, 1.045, 1.145
+collide = 1,true
+// User: KMW
+
+pos = -6340, -487, -2924
+rot = 0.000, 3.768, 0.000
+scale = 0.910, 0.910, 1.035
+collide = 1,true
+// User: KMW
+
+pos = -6607, -487, -3478
+rot = 0.000, 1.130, 0.000
+scale = 1.130, 1.050, 1.120
+collide = 1,true
+// User: KMW
+
+pos = -6629, -487, -3182
+rot = 0.000, 2.512, 0.000
+scale = 0.815, 1.100, 1.090
+collide = 1,true
+// User: KMW
+
+pos = 4697, -488, -9660
+rot = 0.000, 0.440, 0.000
+scale = 0.720, 0.780, 0.790
+collide = 1,true
+// User: KMW
+
+pos = 5182, -489, -7855
+rot = 0.000, 2.638, 0.000
+scale = 0.900, 1.175, 0.700
+collide = 1,true
+// User: KMW
+
+pos = 4479, -487, -8196
+rot = 0.000, 6.154, 0.000
+scale = 0.950, 1.175, 1.010
+collide = 1,true
+// User: KMW
+
+pos = 3895, -490, -8175
+rot = 0.000, 3.517, 0.000
+scale = 1.015, 0.715, 0.945
+collide = 1,true
+// User: KMW
+
+pos = 5362, -489, -8608
+rot = 0.000, 1.821, 0.000
+scale = 0.805, 1.100, 1.125
+collide = 1,true
+// User: KMW
+
+pos = 4339, -487, -7696
+rot = 0.000, 1.444, 0.000
+scale = 1.100, 0.820, 1.050
+collide = 1,true
+// User: KMW
+
+pos = 5019, -487, -8079
+rot = 0.000, 0.377, 0.000
+scale = 1.125, 0.895, 1.055
+collide = 1,true
+// User: KMW
+
+pos = 4642, -487, -7440
+rot = 0.000, 1.005, 0.000
+scale = 1.095, 0.745, 0.760
+collide = 1,true
+// User: KMW
+
+pos = 4427, -489, -9567
+rot = 0.000, 5.150, 0.000
+scale = 1.125, 1.000, 1.015
+collide = 1,true
+// User: KMW
+
+pos = 4146, -488, -7233
+rot = 0.000, 0.502, 0.000
+scale = 1.010, 1.155, 1.070
+collide = 1,true
+// User: KMW
+
+pos = 4831, -487, -9328
+rot = 0.000, 0.754, 0.000
+scale = 1.075, 1.120, 0.805
+collide = 1,true
+// User: KMW
+
+pos = 4223, -488, -8318
+rot = 0.000, 5.526, 0.000
+scale = 0.880, 0.740, 0.865
+collide = 1,true
+// User: KMW
+
+pos = 5463, -487, -9234
+rot = 0.000, 3.266, 0.000
+scale = 1.050, 0.900, 1.085
+collide = 1,true
+// User: KMW
+
+pos = 5317, -489, -8214
+rot = 0.000, 5.150, 0.000
+scale = 0.740, 0.860, 1.025
+collide = 1,true
+// User: KMW
+
+pos = 4173, -490, -8633
+rot = 0.000, 4.584, 0.000
+scale = 1.175, 0.805, 0.835
+collide = 1,true
+// User: KMW
+
+pos = 6542, -497, -9845
+rot = 0.000, 3.768, 0.000
+scale = 0.968, 0.968, 1.068
+collide = 1,true
+// User: KMW
+
+pos = 6858, -482, -10008
+rot = 0.000, 2.952, 0.000
+scale = 1.176, 0.900, 1.112
+collide = 1,true
+// User: KMW
+
+pos = 7173, -492, -10154
+rot = 0.000, -0.467, -0.000
+scale = 0.800, 1.152, 1.020
+collide = 1,true
+// User: KMW
+
+pos = 6774, -497, -9604
+rot = 0.000, 6.154, 0.000
+scale = 1.000, 1.180, 1.048
+collide = 1,true
+// User: KMW
+
+pos = 7308, -485, -9968
+rot = 0.000, 2.442, 0.000
+scale = 0.980, 0.920, 1.080
+collide = 1,true
+// User: KMW
+
+pos = 7105, -487, -8035
+rot = 0.000, 4.019, 0.000
+scale = 0.804, 1.060, 1.120
+collide = 1,true
+// User: KMW
+
+pos = 7046, -487, -8673
+rot = 0.000, 5.275, 0.000
+scale = 1.080, 1.100, 1.052
+collide = 1,true
+// User: KMW
+
+pos = 6888, -487, -8223
+rot = 0.000, 4.459, 0.000
+scale = 1.088, 1.064, 0.844
+collide = 1,true
+// User: KMW
+
+pos = 7122, -487, -8306
+rot = 0.000, 0.879, 0.000
+scale = 1.160, 1.004, 0.968
+collide = 1,true
+// User: KMW
+
+pos = 7329, -487, -8044
+rot = 0.000, 1.821, 0.000
+scale = 0.808, 0.864, 0.836
+collide = 1,true
+// User: KMW
+
+pos = -2746, -487, -5568
+rot = 0.000, 1.821, 0.000
+scale = 1.125, 0.810, 0.865
+collide = 1,true
+// User: KMW
+
+pos = -2570, -487, -5285
+rot = 0.000, -1.630, 0.000
+scale = 1.145, 1.115, 1.030
+collide = 1,true
+// User: KMW
+
+pos = -2196, -487, -5788
+rot = 0.000, -2.220, 0.000
+scale = 1.175, 1.165, 0.870
+collide = 1,true
+// User: KMW
+
+pos = -2526, -488, -5812
+rot = 0.000, 2.352, 0.000
+scale = 0.795, 0.905, 1.150
+collide = 1,true
+// User: KMW
+
+pos = -2397, -487, -5521
+rot = 0.000, 2.049, 0.000
+scale = 0.980, 0.785, 1.175
+collide = 1,true
+// User: KMW
+
+pos = 2040, -447, -3688
+rot = 0.000, 1.319, 0.000
+scale = 0.820, 1.070, 1.125
+collide = 1,true
+// User: KMW
+
+pos = 1807, -347, -3136
+rot = 0.000, 2.638, 0.000
+scale = 0.915, 1.000, 0.815
+collide = 1,true
+// User: KMW
+
+pos = 1694, -334, -2748
+rot = 0.000, 4.898, 0.000
+scale = 1.035, 0.895, 1.130
+collide = 1,true
+// User: KMW
+
+pos = 2545, -387, -3491
+rot = 0.000, 0.691, 0.000
+scale = 1.015, 0.720, 1.135
+collide = 1,true
+// User: KMW
+
+pos = 3076, -299, -3223
+rot = 0.000, 5.652, 0.000
+scale = 1.065, 0.880, 0.850
+collide = 1,true
+// User: KMW
+
+pos = 2293, -463, -3846
+rot = 0.000, 1.758, 0.000
+scale = 0.935, 1.070, 0.960
+collide = 1,true
+// User: KMW
+
+pos = 2833, -324, -3322
+rot = 0.000, 4.522, 0.000
+scale = 1.020, 0.955, 0.835
+collide = 1,true
+// User: KMW
+
+pos = 2561, -348, -3174
+rot = 0.000, 5.275, 0.000
+scale = 1.050, 1.075, 1.015
+collide = 1,true
+// User: KMW
+
+pos = 2726, -325, -2770
+rot = 0.000, 0.565, 0.000
+scale = 0.955, 1.095, 0.985
+collide = 1,true
+// User: KMW
+
+pos = 2235, -355, -3144
+rot = 0.000, 2.638, 0.000
+scale = 1.195, 0.755, 1.085
+collide = 1,true
+// User: KMW
+
+pos = 1899, -343, -2956
+rot = 0.000, 3.328, 0.000
+scale = 0.935, 1.020, 0.705
+collide = 1,true
+// User: KMW
+
+pos = 2392, -338, -2844
+rot = 0.000, 2.261, 0.000
+scale = 0.925, 0.850, 1.050
+collide = 1,true
+// User: KMW
+
+pos = 2062, -194, -8850
+rot = 0.000, 1.460, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5296, -507, -8014
+rot = 0.000, 0.510, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5881, -494, -8169
+rot = 0.000, 2.540, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4975, -492, -8200
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4202, -554, -5872
+rot = 0.000, -0.640, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+name SPIDERWEB
+
+pos = -2374, -827, -6446
+rot = -0.000, 1.605, 0.300
+scale = 1.800, 1.800, 1.800
+// User: KMW
+
+pos = -2436, -822, -6922
+rot = 0.015, 1.052, 0.512
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 1314, -428, -5101
+rot = 0.000, 1.105, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 1240, -416, -5607
+rot = 0.000, -1.179, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 1123, -429, -5491
+rot = 0.203, -1.676, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 3801, 1468, -1426
+rot = 0.147, 0.460, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 4204, 1482, -1545
+rot = 0.203, -0.516, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = -3461, -488, 276
+rot = -0.552, -1.841, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+name SNOWPILE
+
+pos = -14857, -5601, 22046
+rot = 0.000, 0.000, 0.000
+targetID = 0,none
+bActive = 1,true
+// User: KMW
+
+pos = -5599, 1496, 2654
+rot = 0.000, 0.000, 0.000
+targetID = 134,Frill1
+bActive = 0,false
+// User: KMW
+
+name SNOWGUN
+
+pos = -20963, -5150, 19788
+rot = 0.000, 2.468, 0.000
+// User: KMW
+
+name SIGNPOST
+
+pos = -5564, 1468, 1259
+rot = 0.000, 1.657, 0.000
+// User: KMW
+
+name SNOWARROW
+
+pos = -17833, -5318, 21379
+rot = 0.000, 1.105, 0.000
+// User: KMW
+
+pos = -3006, -487, -3187
+rot = 0.000, 2.394, 0.000
+// User: KMW
+
+pos = -2765, 1468, 3509
+rot = 0.000, 0.552, 0.000
+// User: KMW
+
+pos = 4, 1468, 3884
+rot = 0.000, -0.363, -0.000
+// User: KMW
+
+pos = 3199, 1468, 2192
+rot = 0.000, 0.184, 0.000
+// User: KMW
+
+pos = 6844, 1472, 4097
+rot = 0.000, -0.737, 0.000
+// User: KMW
+
+pos = 6973, 1468, 1916
+rot = 0.000, 1.473, 0.000
+// User: KMW
+
+pos = -5624, 1468, 3170
+rot = 0.000, 2.394, 0.000
+// User: KMW
+
+pos = -6662, 1468, 3815
+rot = 0.000, 1.164, -0.000
+// User: KMW
+
+name STOPWATCH
+
+pos = -5526, -461, -6388
+ID = 582,StopWatch
+time = 100
+// User: KMW
+
+name FINISHLINE
+
+pos = -5416, 1469, 1308
+ID = 581,blank
+rot = 0.000, 0.750, -0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+name TIMEATTACK
+
+pos = -6975, 9563, 15785
+ID = 580,TimeAttack
+rot = 0.000, 0.975, -0.000
+OnInit = event
+  TargetID = 829,SnowAndy
+  Message = Show
+OnRace = event
+  TargetID = 829,SnowAndy
+  Message = Enable
+OnDeinit = event
+  TargetID = 0,none
+  Message = none
+OnIntro = event
+  TargetID = 926,TAIntroduction
+  Message = Activate
+OnLose = event
+  TargetID = 44,TALose
+  Message = Activate
+On1stWin = event
+  TargetID = 917,TAWin
+  Message = Activate
+OnBeatTime = event
+  TargetID = 47,TAWinAgainBeatTime
+  Message = Activate
+OnDidNotBeatTime = event
+  TargetID = 46,TAWinAgainDidntBeatTime
+  Message = Activate
+OnTimeOut = event
+  TargetID = 48,TATimeOut
+  Message = Activate
+// User: KMW
+
+name TIMEATTACKRING
+
+pos = -5963, 9420, 15812
+rot = 0.000, 1.065, -0.000
+scale = 1.000, 1.000, 1.000
+index = 0
+// User: KMW
+
+pos = -117, 1658, 4181
+rot = 0.000, 1.310, -0.000
+scale = 1.000, 1.000, 1.000
+index = 31
+// User: KMW
+
+pos = -2103, 1652, 4311
+rot = 0.000, 1.425, -0.000
+scale = 1.000, 1.000, 1.000
+index = 32
+// User: KMW
+
+pos = 3221, 1668, -2
+rot = 0.000, 0.525, -0.000
+scale = 1.000, 1.000, 1.000
+index = 27
+// User: KMW
+
+pos = 3987, 1652, -150
+rot = 0.000, -1.220, -0.000
+scale = 1.000, 1.000, 1.000
+index = 26
+// User: KMW
+
+pos = 4264, 1660, 353
+rot = 0.000, -0.540, -0.000
+scale = 1.000, 1.000, 1.000
+index = 25
+// User: KMW
+
+pos = 2257, 1676, 2989
+rot = 0.000, 1.065, -0.000
+scale = 1.000, 1.000, 1.000
+index = 29
+// User: KMW
+
+pos = 2364, 1676, 1751
+rot = 0.000, -0.200, -0.000
+scale = 1.000, 1.000, 1.000
+index = 28
+// User: KMW
+
+pos = 1008, 1652, 3889
+rot = 0.000, 1.215, -0.000
+scale = 1.000, 1.000, 1.000
+index = 30
+// User: KMW
+
+pos = 5376, 1654, 1684
+rot = 0.000, -0.660, -0.000
+scale = 1.000, 1.000, 1.000
+index = 23
+// User: KMW
+
+pos = 5280, 1659, 984
+rot = 0.000, -1.130, -0.000
+scale = 1.000, 1.000, 1.000
+index = 24
+// User: KMW
+
+pos = 6184, 1663, 1996
+rot = 0.000, -1.455, -0.000
+scale = 1.000, 1.000, 1.000
+index = 22
+// User: KMW
+
+pos = 7799, 1684, 1222
+rot = 0.000, -1.700, 0.000
+scale = 1.000, 1.000, 1.000
+index = 21
+// User: KMW
+
+pos = -3060, 7227, 12026
+rot = 0.000, 1.025, -0.000
+scale = 1.000, 1.000, 1.000
+index = 4
+// User: KMW
+
+pos = -657, 5104, 9155
+rot = 0.000, 0.870, -0.000
+scale = 1.000, 1.000, 1.000
+index = 8
+// User: KMW
+
+pos = -849, 5212, 9808
+rot = 0.000, 0.380, -0.000
+scale = 1.000, 1.000, 1.000
+index = 7
+// User: KMW
+
+pos = -3909, 7543, 12714
+rot = 0.000, 0.735, -0.000
+scale = 1.000, 1.000, 1.000
+index = 3
+// User: KMW
+
+pos = -4816, 8928, 13854
+rot = 0.000, 0.550, -0.000
+scale = 1.000, 1.000, 1.000
+index = 2
+// User: KMW
+
+pos = -5153, 9166, 14772
+rot = 0.000, 0.840, -0.000
+scale = 1.000, 1.000, 1.000
+index = 1
+// User: KMW
+
+pos = 2535, 4456, 8846
+rot = 0.000, 0.810, -0.000
+scale = 1.000, 1.000, 1.000
+index = 11
+// User: KMW
+
+pos = -194, 4988, 8735
+rot = 0.000, 1.670, 0.000
+scale = 1.000, 1.000, 1.000
+index = 9
+// User: KMW
+
+pos = -899, 6860, 11570
+rot = 0.000, 1.130, -0.000
+scale = 1.000, 1.000, 1.000
+index = 6
+// User: KMW
+
+pos = -1699, 7028, 12015
+rot = 0.000, 0.915, -0.000
+scale = 1.000, 1.000, 1.000
+index = 5
+// User: KMW
+
+pos = 3077, 2914, 6713
+rot = 0.000, 0.780, -0.000
+scale = 1.000, 1.000, 1.000
+index = 12
+// User: KMW
+
+pos = 1790, 4778, 9657
+rot = 0.000, 1.470, -0.000
+scale = 1.000, 1.000, 1.000
+index = 10
+// User: KMW
+
+pos = 6127, 1676, 4993
+rot = 0.000, 1.520, -0.000
+scale = 1.000, 1.000, 1.000
+index = 15
+// User: KMW
+
+pos = 3626, 2767, 6068
+rot = 0.000, 1.070, -0.000
+scale = 1.000, 1.000, 1.000
+index = 13
+// User: KMW
+
+pos = 4757, 2538, 5863
+rot = 0.000, 1.190, -0.000
+scale = 1.000, 1.000, 1.000
+index = 14
+// User: KMW
+
+pos = 6799, 1666, 4972
+rot = 0.000, 1.620, 0.000
+scale = 1.000, 1.000, 1.000
+index = 16
+// User: KMW
+
+pos = 8180, 1652, 5513
+rot = 0.000, 1.563, -0.000
+scale = 1.000, 1.000, 1.000
+index = 17
+// User: KMW
+
+pos = 8881, 1634, 2530
+rot = 0.000, -0.615, -0.000
+scale = 1.000, 1.000, 1.000
+index = 20
+// User: KMW
+
+pos = 9682, 1633, 3882
+rot = 0.000, -0.300, -0.000
+scale = 1.000, 1.000, 1.000
+index = 19
+// User: KMW
+
+pos = 9407, 1644, 5380
+rot = 0.000, 0.890, -0.000
+scale = 1.000, 1.000, 1.000
+index = 18
+// User: KMW
+
+pos = -3931, 1634, 4865
+rot = 0.000, 1.410, -0.000
+scale = 1.000, 1.000, 1.000
+index = 33
+// User: KMW
+
+pos = -6335, 1638, 3305
+rot = 0.000, 0.300, -0.000
+scale = 1.000, 1.000, 1.000
+index = 35
+// User: KMW
+
+pos = -5663, 1674, 4798
+rot = 0.000, -1.185, -0.000
+scale = 1.000, 1.000, 1.000
+index = 34
+// User: KMW
+
+pos = -5616, 1668, 1520
+rot = 0.000, 0.585, -0.000
+scale = 1.000, 1.000, 1.000
+index = 36
+// User: KMW
+
+name SNOWROUNDROCK
+
+pos = 4136, 1468, -1328
+rot = 0.000, 4.836, 0.000
+scale = 0.578, 0.776, 0.710
+// User: KMW
+
+pos = -3562, -463, -243
+rot = 0.000, 3.142, 0.000
+scale = 0.956, 0.692, 0.908
+// User: KMW
+
+pos = -4353, 159, -1239
+rot = -0.129, 3.142, -0.132
+scale = 1.094, 0.536, 0.866
+// User: KMW
+
+pos = 980, 1468, 4130
+rot = 0.000, 2.135, 0.000
+scale = 0.926, 0.902, 0.746
+// User: KMW
+
+pos = 2984, 1468, 2297
+rot = 0.000, 5.526, 0.000
+scale = 0.716, 0.548, 0.698
+// User: KMW
+
+pos = 8653, 1468, 1115
+rot = 0.000, 6.029, 0.000
+scale = 0.848, 0.956, 0.920
+// User: KMW
+
+pos = 5080, 1468, 1432
+rot = 0.000, 3.391, 0.000
+scale = 0.632, 0.692, 0.512
+// User: KMW
+
+pos = 5995, 1468, 1251
+rot = 0.000, 2.575, 0.000
+scale = 0.764, 0.524, 0.680
+// User: KMW
+
+pos = -2449, 6755, 10781
+rot = 0.000, 1.821, 0.000
+scale = 0.686, 0.866, 0.824
+// User: KMW
+
+pos = -4659, 7591, 13019
+rot = 0.000, 0.126, 0.000
+scale = 0.944, 1.004, 1.088
+// User: KMW
+
+pos = -2550, 7058, 13101
+rot = 0.000, 1.193, 0.000
+scale = 0.566, 0.644, 0.914
+// User: KMW
+
+pos = -3907, 7127, 11820
+rot = 0.000, 4.522, 0.000
+scale = 0.548, 0.758, 0.938
+// User: KMW
+
+pos = 4241, 2496, 6709
+rot = 0.000, 4.773, 0.000
+scale = 0.566, 0.506, 0.968
+// User: KMW
+
+pos = -362, 1468, 5859
+rot = 0.000, 5.464, 0.000
+scale = 0.716, 0.992, 0.878
+// User: KMW
+
+pos = -846, 1468, 5919
+rot = 0.000, 1.382, 0.000
+scale = 0.794, 0.794, 1.046
+// User: KMW
+
+pos = -3571, -487, 672
+rot = 0.000, 0.942, 0.000
+scale = 0.800, 1.016, 0.734
+// User: KMW
+
+pos = -4876, 1468, 4753
+rot = 0.000, 1.507, 0.000
+scale = 0.890, 0.656, 0.554
+// User: KMW
+
+name SNOWPLATFORMROCK
+
+pos = 1427, -614, -8486
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = -1626, 692, -1645
+rot = 0.000, -2.357, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = -1423, 813, -1449
+rot = 0.000, -0.110, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 101, 1213, -479
+rot = 0.000, -1.289, 0.000
+scale = 1.000, 0.600, 1.000
+// User: KMW
+
+pos = 314, 1213, -52
+rot = 0.000, 1.105, 0.000
+scale = 1.000, 0.600, 1.000
+// User: KMW
+
+pos = 857, 1213, -477
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 0.500, 1.000
+// User: KMW
+
+pos = 740, 1213, -472
+rot = 0.000, 1.657, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 979, 1213, -461
+rot = 0.000, -1.455, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 860, 1213, -346
+rot = 0.000, -3.131, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+pos = 319, 1213, -972
+rot = 0.000, 2.210, 0.000
+scale = 1.000, 0.500, 1.000
+// User: KMW
+
+pos = 847, 1213, -593
+rot = 0.000, 3.094, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+name SNOWGUM01
+
+pos = 3871, 1468, -1396
+rot = 0.000, 2.575, 0.000
+scale = 0.976, 1.138, 1.162
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -860, 813, -1578
+rot = 0.000, 3.203, 0.000
+scale = 0.994, 1.228, 0.874
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1295, 813, -1896
+rot = 0.000, 3.831, 0.000
+scale = 1.024, 1.204, 1.006
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -7084, 9253, 14599
+rot = 0.000, 4.459, 0.000
+scale = 0.718, 1.084, 0.994
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -7327, 9463, 15154
+rot = 0.000, 0.377, 0.000
+scale = 1.072, 1.222, 1.048
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -7565, 9287, 14329
+rot = 0.000, 2.952, 0.000
+scale = 1.096, 0.922, 1.198
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -7242, 9131, 13858
+rot = 0.000, 5.338, 0.000
+scale = 1.024, 0.742, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3707, -487, 453
+rot = 0.000, 3.203, 0.000
+scale = 0.970, 0.886, 0.892
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1440, 1468, 2611
+rot = 0.000, 3.642, 0.000
+scale = 0.898, 1.138, 1.078
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1198, 1468, 3048
+rot = 0.000, 3.768, 0.000
+scale = 0.730, 1.000, 1.246
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1061, 1468, 2446
+rot = 0.000, 5.275, 0.000
+scale = 1.036, 0.838, 1.042
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -629, 1468, 2044
+rot = 0.000, 2.010, 0.000
+scale = 1.108, 1.150, 1.186
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1373, 1468, 234
+rot = 0.000, 2.386, 0.000
+scale = 0.958, 0.760, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1590, 1468, 1673
+rot = 0.000, 7.904, 0.000
+scale = 1.234, 0.946, 1.096
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1360, 1468, 1118
+rot = 0.000, 0.377, 0.000
+scale = 1.240, 0.796, 0.928
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -727, 1213, -644
+rot = 0.000, 4.333, 0.000
+scale = 1.204, 0.958, 1.156
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -384, 1213, -51
+rot = 0.000, 3.718, 0.000
+scale = 0.982, 1.180, 1.270
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2278, 1468, 3992
+rot = 0.000, 4.480, 0.000
+scale = 0.802, 0.790, 1.120
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2979, 1468, 2654
+rot = 0.000, 6.049, 0.000
+scale = 1.036, 0.838, 1.042
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2048, 1468, 4849
+rot = 0.000, 2.449, 0.000
+scale = 1.096, 0.766, 1.102
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2999, 106, -978
+rot = 0.000, 4.145, 0.000
+scale = 1.036, 0.916, 1.174
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4251, 187, -1103
+rot = 0.000, 5.652, 0.000
+scale = 1.174, 0.856, 0.958
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -433, 1213, -791
+rot = 0.000, 2.512, 0.000
+scale = 1.216, 0.838, 0.988
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5410, 396, -12
+rot = 0.000, 4.433, 0.000
+scale = 0.712, 1.024, 0.784
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4109, 1468, -1067
+rot = 0.000, 0.188, 0.000
+scale = 0.844, 1.000, 0.778
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4040, 1468, -619
+rot = 0.000, 4.459, 0.000
+scale = 1.258, 1.228, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3700, 1468, -573
+rot = 0.000, 5.589, 0.000
+scale = 0.772, 0.712, 0.832
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1319, 1468, 5842
+rot = 0.000, 3.226, 0.000
+scale = 1.276, 1.054, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4970, 1468, 1166
+rot = 0.000, 2.889, 0.000
+scale = 0.964, 0.934, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2868, 1468, 55
+rot = 0.000, 2.386, 0.000
+scale = 0.958, 0.760, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2086, 1468, 5332
+rot = 0.000, 4.149, 0.000
+scale = 1.042, 1.138, 1.288
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1544, 1468, 5808
+rot = 0.000, 0.502, 0.000
+scale = 1.186, 0.796, 0.766
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 907, 1468, 4574
+rot = 0.000, 5.103, 0.000
+scale = 1.186, 0.814, 1.066
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 443, 1468, 4788
+rot = 0.000, 8.248, 0.000
+scale = 1.114, 0.778, 0.820
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -729, 1468, 5761
+rot = 0.000, 3.517, 0.000
+scale = 0.886, 0.892, 1.246
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4739, 1468, 941
+rot = 0.000, 6.154, 0.000
+scale = 0.742, 1.174, 0.892
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4366, 1468, 154
+rot = 0.000, 5.275, 0.000
+scale = 1.276, 1.030, 0.796
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2756, 1468, 862
+rot = 0.000, 5.778, 0.000
+scale = 0.730, 0.814, 1.222
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2574, 1468, 3358
+rot = 0.000, 2.826, 0.000
+scale = 0.838, 1.012, 0.982
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2303, 1468, 2366
+rot = 0.000, 4.270, 0.000
+scale = 0.868, 1.018, 0.706
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2894, 1468, 1576
+rot = 0.000, 5.232, 0.000
+scale = 1.042, 0.898, 0.856
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 826, 1468, 3576
+rot = 0.000, 3.266, 0.000
+scale = 0.778, 0.886, 0.946
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 8947, 1468, 902
+rot = 0.000, 4.333, 0.000
+scale = 1.042, 1.192, 0.766
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 9115, 1468, 1182
+rot = 0.000, 4.019, 0.000
+scale = 0.982, 1.174, 0.910
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 9633, 1468, 1616
+rot = 0.000, 1.387, 0.000
+scale = 1.288, 0.742, 0.730
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 8429, 1468, 1200
+rot = 0.000, 5.752, 0.000
+scale = 1.186, 0.880, 1.156
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6222, 1468, 1264
+rot = 0.000, 4.019, 0.000
+scale = 1.084, 0.730, 1.006
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4587, 1468, 2492
+rot = 0.000, 1.821, 0.000
+scale = 0.940, 1.252, 0.796
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4356, 1468, 2875
+rot = 0.000, 2.679, 0.000
+scale = 1.018, 1.180, 0.868
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5488, 1468, 1253
+rot = 0.000, 5.464, 0.000
+scale = 1.288, 1.258, 0.862
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6817, 1468, 707
+rot = 0.000, 4.208, 0.000
+scale = 1.000, 1.294, 1.132
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5104, 1468, 2609
+rot = 0.000, 2.181, 0.000
+scale = 1.216, 0.898, 1.228
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 7219, 1468, 604
+rot = 0.000, 3.454, 0.000
+scale = 1.144, 1.150, 0.700
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -590, 4840, 8782
+rot = 0.000, 1.696, 0.000
+scale = 1.156, 1.072, 1.192
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2001, 5658, 10356
+rot = 0.000, 3.077, 0.000
+scale = 0.820, 1.048, 0.802
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1690, 5190, 9503
+rot = 0.000, 0.879, 0.000
+scale = 0.718, 0.862, 1.264
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2194, 5536, 9905
+rot = 0.000, 6.154, 0.000
+scale = 1.222, 0.736, 0.862
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1292, 5023, 9486
+rot = 0.000, 3.203, 0.000
+scale = 0.994, 1.228, 0.874
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4685, 7606, 13044
+rot = 0.000, 2.072, 0.000
+scale = 0.778, 1.120, 0.898
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4065, 7749, 13825
+rot = 0.000, 3.580, 0.000
+scale = 0.940, 0.706, 1.204
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3219, 7230, 13162
+rot = 0.000, 2.826, 0.000
+scale = 1.090, 1.030, 1.288
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5578, 8914, 14243
+rot = 0.000, 1.570, 0.000
+scale = 1.090, 1.234, 1.012
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5112, 7662, 12815
+rot = 0.000, 2.449, 0.000
+scale = 1.174, 0.880, 0.766
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5997, 8968, 14223
+rot = 0.000, 3.391, 0.000
+scale = 0.952, 0.868, 1.126
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3148, 3061, 8616
+rot = 0.000, 0.377, 0.000
+scale = 0.826, 1.228, 1.288
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3043, 3011, 8207
+rot = 0.000, 1.821, 0.000
+scale = 0.934, 0.754, 1.078
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3488, 2817, 8235
+rot = 0.000, 5.275, 0.000
+scale = 0.748, 1.138, 0.874
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2304, 4455, 9802
+rot = 0.000, 4.647, 0.000
+scale = 1.138, 0.706, 0.928
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1636, 3186, 6840
+rot = 0.000, 2.763, 0.000
+scale = 1.024, 0.730, 0.736
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 964, 4396, 7622
+rot = 0.000, 2.135, 0.000
+scale = 0.880, 1.246, 0.946
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 437, 4600, 8209
+rot = 0.000, 1.884, 0.000
+scale = 0.862, 1.006, 1.252
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 229, 4691, 8507
+rot = 0.000, 1.319, 0.000
+scale = 1.252, 0.814, 1.204
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -249, 4747, 8398
+rot = 0.000, 1.319, 0.000
+scale = 1.054, 0.928, 0.880
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -58, 4695, 8226
+rot = 0.000, 1.444, 0.000
+scale = 0.958, 1.132, 1.108
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1015, 4830, 10523
+rot = 0.000, 4.773, 0.000
+scale = 1.276, 1.150, 0.700
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4191, 7116, 11718
+rot = 0.000, 5.212, 0.000
+scale = 1.078, 0.718, 0.850
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3708, 7647, 13916
+rot = 0.000, 3.140, 0.000
+scale = 0.706, 0.736, 1.150
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3498, 6973, 11349
+rot = 0.000, 5.024, 0.000
+scale = 0.952, 0.922, 0.826
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4570, 7133, 11283
+rot = 0.000, 4.082, 0.000
+scale = 1.120, 1.144, 0.898
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5452, 7632, 12191
+rot = 0.000, 2.324, 0.000
+scale = 0.712, 0.748, 1.012
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3905, 7004, 11247
+rot = 0.000, 1.319, 0.000
+scale = 1.048, 0.904, 1.222
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4773, 7230, 11486
+rot = 0.000, 2.512, 0.000
+scale = 0.922, 0.982, 1.012
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4893, 7363, 11939
+rot = 0.000, 4.773, 0.000
+scale = 0.904, 1.180, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3371, 7466, 13833
+rot = 0.000, 2.010, 0.000
+scale = 1.012, 1.078, 1.156
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5592, 7794, 12658
+rot = 0.000, 2.763, 0.000
+scale = 0.988, 1.234, 1.192
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2957, 6733, 10328
+rot = 0.000, 4.396, 0.000
+scale = 0.742, 0.820, 1.258
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3740, 6911, 10782
+rot = 0.000, 3.105, 0.000
+scale = 1.276, 0.742, 0.868
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4721, 8992, 15521
+rot = 0.000, 3.203, 0.000
+scale = 1.084, 0.730, 0.952
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6638, 8974, 13501
+rot = 0.000, 1.570, 0.000
+scale = 1.018, 0.862, 0.970
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6874, 9067, 13780
+rot = 0.000, 1.005, 0.000
+scale = 1.150, 0.880, 0.886
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5492, 9192, 16233
+rot = 0.000, 2.010, 0.000
+scale = 1.240, 1.078, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5082, 9082, 15747
+rot = 0.000, 4.773, 0.000
+scale = 1.096, 0.754, 1.078
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4482, 8886, 15097
+rot = 0.000, 5.087, 0.000
+scale = 0.724, 1.120, 0.904
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6036, 8789, 13199
+rot = 0.000, 5.526, 0.000
+scale = 0.838, 0.958, 1.288
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 213, 5232, 11795
+rot = 0.000, 1.319, 0.000
+scale = 1.240, 1.198, 1.030
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -393, 5596, 12107
+rot = 0.000, 4.798, 0.000
+scale = 0.916, 0.832, 1.054
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1200, 4878, 11216
+rot = 0.000, 3.014, 0.000
+scale = 1.276, 0.832, 1.204
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 789, 4959, 11363
+rot = 0.000, 0.377, 0.000
+scale = 0.844, 1.114, 1.228
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 370, 5063, 11503
+rot = 0.000, 1.005, 0.000
+scale = 0.970, 0.700, 1.168
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -2567, 7130, 13475
+rot = 0.000, 2.717, 0.000
+scale = 1.234, 1.000, 1.180
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1493, 6839, 12813
+rot = 0.000, 2.424, 0.000
+scale = 1.186, 1.102, 1.252
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -24, 5431, 12138
+rot = 0.000, 3.517, 0.000
+scale = 1.144, 1.006, 0.916
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1683, 4745, 10712
+rot = 0.000, 1.633, 0.000
+scale = 1.066, 0.802, 0.736
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -1943, 6915, 12673
+rot = 0.000, 5.652, 0.000
+scale = 0.964, 1.108, 0.754
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1792, 2999, 6482
+rot = 0.000, 2.010, 0.000
+scale = 0.928, 1.096, 0.808
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5866, 1468, 4207
+rot = 0.000, 4.584, 0.000
+scale = 1.222, 1.114, 0.910
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6149, 1468, 4450
+rot = 0.000, 5.024, 0.000
+scale = 1.228, 0.790, 0.988
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5288, 1468, 4532
+rot = 0.000, 0.754, 0.000
+scale = 1.102, 0.784, 1.186
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6285, 1468, 3617
+rot = 0.000, 3.956, 0.000
+scale = 0.802, 1.018, 0.982
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 7080, 1468, 5686
+rot = 0.000, 2.386, 0.000
+scale = 1.048, 1.108, 1.282
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6252, 1468, 6010
+rot = 0.000, 5.840, 0.000
+scale = 0.760, 0.736, 0.802
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6797, 1468, 5681
+rot = 0.000, 0.502, 0.000
+scale = 0.982, 0.988, 1.120
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5911, 1468, 5927
+rot = 0.000, 4.522, 0.000
+scale = 0.772, 1.192, 0.946
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 6382, 1468, 5703
+rot = 0.000, 1.507, 0.000
+scale = 0.748, 1.258, 1.270
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4850, 1468, 4442
+rot = 0.000, 3.328, 0.000
+scale = 1.006, 0.946, 0.988
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5216, 1468, 4851
+rot = 0.000, 1.947, 0.000
+scale = 0.898, 0.868, 0.904
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5119, 2375, 7084
+rot = 0.000, 1.821, 0.000
+scale = 1.228, 0.802, 1.012
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4055, 2345, 4951
+rot = 0.000, 4.898, 0.000
+scale = 1.108, 0.820, 1.276
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4351, 1468, 4642
+rot = 0.000, 2.198, 0.000
+scale = 0.994, 1.270, 1.006
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3982, 2445, 5676
+rot = 0.000, 5.903, 0.000
+scale = 0.706, 1.258, 0.964
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3734, 2345, 4771
+rot = 0.000, 5.589, 0.000
+scale = 0.772, 0.886, 0.790
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3035, 2556, 5554
+rot = 0.000, 1.884, 0.000
+scale = 1.228, 0.700, 1.012
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3673, 2493, 5707
+rot = 0.000, 2.512, 0.000
+scale = 0.724, 0.844, 0.802
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4680, 2456, 7484
+rot = 0.000, 0.879, 0.000
+scale = 0.748, 1.288, 0.982
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5611, 1468, 6289
+rot = 0.000, 2.072, 0.000
+scale = 1.186, 0.706, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4259, 2594, 7982
+rot = 0.000, 3.768, 0.000
+scale = 1.018, 1.102, 1.108
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 4229, 2365, 5315
+rot = 0.000, 5.903, 0.000
+scale = 1.192, 1.126, 0.946
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2307, 2746, 5913
+rot = 0.000, 3.328, 0.000
+scale = 1.066, 0.886, 0.760
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2717, 2609, 5585
+rot = 0.000, 1.570, 0.000
+scale = 1.072, 0.802, 1.270
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 832, 1468, 5347
+rot = 0.000, 1.507, 0.000
+scale = 0.748, 1.270, 0.916
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 330, 1468, 5532
+rot = 0.000, 2.680, 0.000
+scale = 0.808, 0.892, 1.258
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5061, 2407, 7606
+rot = 0.000, 4.208, 0.000
+scale = 1.186, 1.198, 0.754
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5850, 1468, 7212
+rot = 0.000, 1.130, 0.000
+scale = 1.186, 1.174, 1.270
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3172, 4276, 10023
+rot = 0.000, 2.261, 0.000
+scale = 1.258, 1.078, 0.844
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2006, 4684, 10715
+rot = 0.000, 0.000, 0.000
+scale = 1.102, 1.138, 0.706
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2204, 4564, 10322
+rot = 0.000, 3.956, 0.000
+scale = 1.024, 1.084, 1.246
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2089, 4723, 11056
+rot = 0.000, 5.840, 0.000
+scale = 1.258, 0.718, 0.784
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 276, 5286, 12085
+rot = 0.000, 3.580, 0.000
+scale = 1.180, 1.150, 0.838
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1281, 4912, 11587
+rot = 0.000, 3.894, 0.000
+scale = 0.970, 0.850, 0.862
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6180, 9529, 17233
+rot = 0.000, 3.014, 0.000
+scale = 0.922, 1.294, 1.198
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 1588, 4801, 11076
+rot = 0.000, 5.024, 0.000
+scale = 1.024, 0.934, 1.120
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 870, 5013, 11897
+rot = 0.000, 5.966, 0.000
+scale = 1.222, 0.964, 1.126
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5742, 9266, 16676
+rot = 0.000, 0.942, 0.000
+scale = 1.282, 0.814, 1.114
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6039, 9387, 16862
+rot = 0.000, 5.401, 0.000
+scale = 0.784, 1.114, 0.790
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5384, 9205, 16582
+rot = 0.000, 2.826, 0.000
+scale = 0.964, 1.294, 0.886
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2274, 2824, 6324
+rot = 0.000, 4.710, 0.000
+scale = 0.826, 0.988, 1.120
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 2740, 4348, 9853
+rot = 0.000, 5.715, 0.000
+scale = 1.042, 1.066, 0.904
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 3563, 2952, 9080
+rot = 0.000, 1.382, 0.000
+scale = 1.108, 0.748, 0.946
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 7928, 1468, 5581
+rot = 0.000, 4.396, 0.000
+scale = 1.120, 0.802, 0.742
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 5852, 1468, 6611
+rot = 0.000, 3.203, 0.000
+scale = 0.742, 1.264, 1.150
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = 7569, 1468, 5904
+rot = 0.000, 3.328, 0.000
+scale = 1.108, 1.240, 0.904
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4623, -487, 616
+rot = 0.000, 0.251, 0.000
+scale = 0.976, 0.898, 0.934
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4451, -487, 549
+rot = 0.000, 1.193, 0.000
+scale = 0.832, 1.174, 0.754
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -3988, -487, 816
+rot = 0.000, 5.526, 0.000
+scale = 0.994, 1.108, 1.252
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -4779, 1468, 2909
+rot = 0.000, 0.395, 0.000
+scale = 0.700, 0.850, 1.048
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6143, 1468, 2578
+rot = 0.000, 2.910, 0.000
+scale = 0.766, 0.736, 0.928
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5773, 1468, 3054
+rot = 0.000, 5.676, 0.000
+scale = 1.078, 1.156, 1.036
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -6490, 1468, 4090
+rot = 0.000, 5.024, 0.000
+scale = 1.060, 0.754, 1.204
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+name SNOWGUM02
+
+pos = 7199, 1468, 1910
+rot = 0.000, -4.235, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+name FLAMINGTREE
+
+pos = -6375, -436, -7978
+rot = 0.000, 2.763, 0.000
+scale = 0.935, 0.745, 0.910
+collide = 1,true
+// User: KMW
+
+pos = -4637, -512, -8333
+rot = -0.000, 0.188, -0.331
+scale = 1.160, 1.085, 1.170
+collide = 1,true
+// User: KMW
+
+pos = -6031, -466, -8441
+rot = 0.295, 1.947, 0.074
+scale = 1.105, 0.770, 0.765
+collide = 1,true
+// User: KMW
+
+pos = -7090, 0, -6200
+rot = -0.166, 5.464, -0.166
+scale = 0.880, 0.805, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -6954, -49, -7242
+rot = 0.000, 0.245, -0.000
+scale = 0.700, 0.845, 0.860
+collide = 1,true
+// User: KMW
+
+pos = -6633, -12, -5407
+rot = 0.376, 0.416, -0.030
+scale = 1.105, 0.770, 0.765
+collide = 1,true
+// User: KMW
+
+pos = -6140, -171, -5279
+rot = -0.331, 4.019, 0.000
+scale = 0.855, 1.115, 1.080
+collide = 1,true
+// User: KMW
+
+pos = -5417, -203, -5081
+rot = 0.074, 2.135, 0.221
+scale = 0.880, 0.870, 1.170
+collide = 1,true
+// User: KMW
+
+pos = 2608, -80, -8639
+rot = 0.000, 3.454, 0.000
+scale = 0.836, 0.972, 0.720
+collide = 1,true
+// User: KMW
+
+pos = 1723, -85, -9589
+rot = 0.203, 2.512, 0.074
+scale = 0.756, 0.864, 0.792
+collide = 1,true
+// User: KMW
+
+pos = 2788, 39, -9343
+rot = 0.000, 2.449, -0.203
+scale = 0.792, 0.936, 1.004
+collide = 1,true
+// User: KMW
+
+pos = -6055, -236, -3816
+rot = -0.184, 5.589, -0.184
+scale = 0.780, 0.915, 1.175
+collide = 1,true
+// User: KMW
+
+pos = -3097, 527, -8612
+rot = -0.368, 5.212, 0.000
+scale = 1.180, 0.955, 1.110
+collide = 1,true
+// User: KMW
+
+pos = -2793, 136, -8278
+rot = 0.110, 3.517, 0.147
+scale = 1.015, 0.715, 0.945
+collide = 1,true
+// User: KMW
+
+pos = 3963, 351, -3228
+rot = -0.037, 5.840, -0.295
+scale = 0.855, 1.155, 1.020
+collide = 1,true
+// User: KMW
+
+pos = 3001, 286, -2222
+rot = -0.405, 2.761, 0.000
+scale = 0.935, 1.080, 1.145
+collide = 1,true
+// User: KMW
+
+pos = -1838, -409, -4543
+rot = 0.000, 4.773, 0.000
+scale = 0.880, 1.015, 1.110
+collide = 1,true
+// User: KMW
+
+pos = -412, -156, -5273
+rot = 0.368, 5.212, 0.000
+scale = 0.785, 1.050, 1.195
+collide = 1,true
+// User: KMW
+
+pos = 1637, -141, -2387
+rot = -0.074, 1.197, 0.000
+scale = 0.970, 1.175, 0.775
+collide = 1,true
+// User: KMW
+
+pos = 1225, -15, -2448
+rot = 0.552, 0.691, 0.000
+scale = 1.040, 1.160, 0.985
+collide = 1,true
+// User: KMW
+
+pos = 932, -35, -3058
+rot = 0.000, 3.328, 0.184
+scale = 1.040, 1.150, 0.870
+collide = 1,true
+// User: KMW
+
+pos = 508, -455, -4156
+rot = -0.110, 1.005, -0.110
+scale = 0.905, 1.145, 0.880
+collide = 1,true
+// User: KMW
+
+pos = 6637, -354, -7014
+rot = 0.000, 5.778, 0.000
+scale = 0.840, 0.948, 1.072
+collide = 1,true
+// User: KMW
+
+pos = 7943, -285, -7451
+rot = 0.295, 1.256, 0.000
+scale = 1.004, 1.032, 1.024
+collide = 1,true
+// User: KMW
+
+pos = 6429, -342, -7997
+rot = -0.295, 4.886, 0.110
+scale = 1.032, 0.756, 1.004
+collide = 1,true
+// User: KMW
+
+pos = 6250, -326, -9574
+rot = -0.110, 5.401, 0.331
+scale = 0.884, 0.928, 0.960
+collide = 1,true
+// User: KMW
+
+pos = 9273, -352, -8127
+rot = -0.405, 3.831, -0.184
+scale = 0.784, 0.964, 0.936
+collide = 1,true
+// User: KMW
+
+pos = 9062, -460, -7168
+rot = -0.331, 1.947, 0.000
+scale = 0.832, 0.828, 1.008
+collide = 1,true
+// User: KMW
+
+pos = 7702, 338, -11331
+rot = 0.258, 3.430, -0.110
+scale = 1.084, 0.916, 0.716
+collide = 1,true
+// User: KMW
+
+pos = 8796, -295, -9970
+rot = 0.147, 2.261, 0.000
+scale = 0.736, 1.024, 0.940
+collide = 1,true
+// User: KMW
+
+pos = 9089, -273, -11397
+rot = 0.405, 0.691, 0.184
+scale = 0.864, 0.732, 0.752
+collide = 1,true
+// User: KMW
+
+pos = 8689, 92, -10593
+rot = -0.037, 0.628, 0.110
+scale = 1.044, 0.964, 0.988
+collide = 1,true
+// User: KMW
+
+pos = 8225, 239, -10820
+rot = 0.000, 4.773, 0.000
+scale = 0.988, 0.748, 0.960
+collide = 1,true
+// User: KMW
+
+pos = 7910, -20, -10207
+rot = -0.258, 0.063, 0.000
+scale = 0.804, 0.868, 1.044
+collide = 1,true
+// User: KMW
+
+pos = 7563, -213, -7369
+rot = 0.000, 2.575, 0.000
+scale = 1.004, 0.988, 0.864
+collide = 1,true
+// User: KMW
+
+pos = 7949, -421, -6694
+rot = 0.147, 3.517, 0.000
+scale = 1.052, 0.808, 0.976
+collide = 1,true
+// User: KMW
+
+pos = 2077, 105, -2246
+rot = -0.368, 2.952, 0.000
+scale = 0.805, 1.115, 0.940
+collide = 1,true
+// User: KMW
+
+pos = -6424, 81, -8446
+rot = 0.066, -1.745, 0.282
+scale = 0.900, 0.820, 0.960
+collide = 1,true
+// User: KMW
+
+pos = -5438, -52, -8748
+rot = 0.000, 0.879, 0.000
+scale = 0.715, 0.880, 1.120
+collide = 1,true
+// User: KMW
+
+pos = -4299, 164, -7967
+rot = 0.147, 3.391, -0.442
+scale = 1.085, 0.835, 0.835
+collide = 1,true
+// User: KMW
+
+pos = -2228, -61, -8812
+rot = -0.018, 5.275, 0.203
+scale = 1.050, 1.075, 1.015
+collide = 1,true
+// User: KMW
+
+pos = -2243, 101, -7970
+rot = 0.000, 4.522, 0.000
+scale = 1.020, 0.955, 0.835
+collide = 1,true
+// User: KMW
+
+pos = -1799, -448, -6140
+rot = 0.000, 3.617, 0.000
+scale = 1.085, 0.725, 0.795
+collide = 1,true
+// User: KMW
+
+pos = -133, -153, -9326
+rot = 0.000, 0.440, 0.000
+scale = 0.905, 0.875, 0.730
+collide = 1,true
+// User: KMW
+
+pos = 4023, 270, -3584
+rot = -0.147, 2.010, 0.000
+scale = 0.875, 1.125, 0.730
+collide = 1,true
+// User: KMW
+
+pos = 4773, 336, -10400
+rot = 0.221, 2.512, 0.000
+scale = 0.900, 0.868, 0.732
+collide = 1,true
+// User: KMW
+
+pos = 5003, 71, -10178
+rot = -0.331, 5.663, -0.037
+scale = 0.704, 0.752, 0.708
+collide = 1,true
+// User: KMW
+
+pos = 5982, -354, -9975
+rot = 0.258, 0.691, 0.000
+scale = 0.708, 1.088, 0.700
+collide = 1,true
+// User: KMW
+
+pos = 5344, -180, -10666
+rot = 0.147, 5.589, 0.147
+scale = 0.764, 0.872, 1.080
+collide = 1,true
+// User: KMW
+
+pos = 9608, -358, -5116
+rot = 0.552, 4.208, 0.000
+scale = 1.072, 0.772, 0.972
+collide = 1,true
+// User: KMW
+
+pos = 9503, -693, -4805
+rot = -0.147, 0.962, -0.331
+scale = 0.708, 0.944, 0.928
+collide = 1,true
+// User: KMW
+
+pos = 5655, -59, -7188
+rot = 0.000, 4.082, 0.000
+scale = 0.932, 1.020, 0.704
+collide = 1,true
+// User: KMW
+
+pos = 5799, -229, -8344
+rot = -0.479, 2.261, 0.000
+scale = 0.944, 0.720, 0.952
+collide = 1,true
+// User: KMW
+
+pos = 4914, -182, -6338
+rot = 0.479, 3.768, 0.442
+scale = 1.076, 0.776, 1.004
+collide = 1,true
+// User: KMW
+
+pos = 2510, 239, -9954
+rot = -0.295, 0.322, -0.295
+scale = 0.952, 0.856, 1.064
+collide = 1,true
+// User: KMW
+
+pos = 1586, -120, -7458
+rot = 0.000, 3.956, 0.000
+scale = 1.015, 1.070, 0.995
+collide = 1,true
+// User: KMW
+
+pos = 2163, -346, -7326
+rot = 0.000, 3.831, 0.000
+scale = 0.860, 1.110, 1.010
+collide = 1,true
+// User: KMW
+
+pos = 4147, 39, -9883
+rot = 0.295, 9.530, 0.423
+scale = 0.704, 0.752, 0.708
+collide = 1,true
+// User: KMW
+
+pos = 7808, -434, -3605
+rot = 0.000, 0.377, 0.000
+scale = 1.040, 0.856, 0.984
+collide = 1,true
+// User: KMW
+
+pos = 5610, -285, -9890
+rot = 0.331, 3.203, 0.221
+scale = 0.796, 0.808, 0.948
+collide = 1,true
+// User: KMW
+
+pos = 7452, -462, -4104
+rot = 0.000, 5.464, 0.000
+scale = 0.896, 1.064, 0.840
+collide = 1,true
+// User: KMW
+
+pos = 7438, -403, -3361
+rot = 0.000, 2.512, 0.000
+scale = 1.008, 0.720, 0.776
+collide = 1,true
+// User: KMW
+
+pos = 6532, -410, -3488
+rot = 0.000, 4.836, 0.000
+scale = 0.988, 0.788, 0.748
+collide = 1,true
+// User: KMW
+
+pos = -2721, 569, -9045
+rot = 0.000, 3.417, 0.000
+scale = 1.020, 0.955, 0.835
+collide = 1,true
+// User: KMW
+
+pos = 530, 185, -5360
+rot = -0.000, 7.606, 0.000
+scale = 0.785, 1.050, 1.195
+collide = 1,true
+// User: KMW
+
+pos = 839, -487, -6244
+rot = 0.000, 1.068, 0.000
+scale = 1.055, 1.160, 0.715
+collide = 1,true
+// User: KMW
+
+pos = 25, -448, -6105
+rot = -0.368, 2.072, 0.000
+scale = 0.945, 0.850, 0.910
+collide = 1,true
+// User: KMW
+
+pos = 1206, 95, -5573
+rot = 0.000, 3.956, 0.000
+scale = 1.090, 1.070, 0.750
+collide = 1,true
+// User: KMW
+
+pos = 907, -175, -4528
+rot = -0.681, 0.942, 0.442
+scale = 1.180, 0.910, 0.850
+collide = 1,true
+// User: KMW
+
+pos = -882, -274, -4372
+rot = 0.166, 2.233, 0.000
+scale = 0.875, 1.075, 0.835
+collide = 1,true
+// User: KMW
+
+pos = -1413, -305, -4526
+rot = -0.166, 2.764, 0.000
+scale = 0.740, 1.050, 0.745
+collide = 1,true
+// User: KMW
+
+pos = 1220, 93, -5149
+rot = 0.000, 5.275, 0.000
+scale = 0.810, 1.085, 0.705
+collide = 1,true
+// User: KMW
+
+pos = -8, -105, -5447
+rot = -0.000, -0.226, -0.166
+scale = 0.835, 1.050, 0.825
+collide = 1,true
+// User: KMW
+
+pos = -813, -382, -5311
+rot = 0.737, 13.477, -0.552
+scale = 0.945, 0.835, 1.095
+collide = 1,true
+// User: KMW
+
+pos = -3885, 413, -8135
+rot = 0.000, 2.434, 0.000
+scale = 1.100, 0.820, 1.050
+collide = 1,true
+// User: KMW
+
+pos = -6492, 234, -4634
+rot = -0.055, 0.691, 0.037
+scale = 0.710, 1.185, 0.700
+collide = 1,true
+// User: KMW
+
+pos = -5203, -261, -4691
+rot = 0.000, 5.212, 0.074
+scale = 1.125, 0.830, 0.915
+collide = 1,true
+// User: KMW
+
+pos = -3798, -445, -5666
+rot = 0.037, 0.440, -0.221
+scale = 1.095, 0.950, 0.865
+collide = 1,true
+// User: KMW
+
+pos = -4535, 35, -8590
+rot = -0.110, 2.135, -0.110
+scale = 0.715, 0.705, 0.955
+collide = 1,true
+// User: KMW
+
+pos = -4004, -422, -5141
+rot = -0.221, 2.198, 0.000
+scale = 0.900, 0.965, 1.005
+collide = 1,true
+// User: KMW
+
+pos = -3705, -199, -7612
+rot = 0.405, 3.642, 0.552
+scale = 0.880, 1.000, 0.910
+collide = 1,true
+// User: KMW
+
+pos = -1801, -13, -8181
+rot = 0.000, 1.444, 0.000
+scale = 1.100, 0.820, 1.050
+collide = 1,true
+// User: KMW
+
+pos = -1240, -255, -8431
+rot = 0.000, 0.377, 0.000
+scale = 1.125, 0.895, 1.055
+collide = 1,true
+// User: KMW
+
+pos = -570, 34, -7249
+rot = 0.000, 1.005, 0.000
+scale = 1.095, 0.745, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -325, -437, -6799
+rot = -0.184, 0.502, 0.000
+scale = 1.010, 1.155, 1.070
+collide = 1,true
+// User: KMW
+
+pos = -2545, 253, -8697
+rot = -0.147, 5.526, 0.000
+scale = 0.880, 0.740, 0.865
+collide = 1,true
+// User: KMW
+
+pos = -1675, -210, -7294
+rot = 0.295, 2.512, -0.424
+scale = 1.085, 0.725, 0.795
+collide = 1,true
+// User: KMW
+
+pos = -2310, 507, -9360
+rot = 0.460, 2.261, 0.258
+scale = 0.925, 0.850, 1.050
+collide = 1,true
+// User: KMW
+
+pos = 988, -71, -7385
+rot = -0.368, 2.198, 0.000
+scale = 1.070, 0.800, 0.765
+collide = 1,true
+// User: KMW
+
+pos = 266, -206, -7458
+rot = 0.203, 0.251, 0.000
+scale = 1.035, 1.135, 0.755
+collide = 1,true
+// User: KMW
+
+pos = -5535, -41, -4390
+rot = -0.368, 5.589, 0.000
+scale = 0.705, 0.765, 0.710
+collide = 1,true
+// User: KMW
+
+pos = -5507, -433, -3776
+rot = -0.074, 4.270, 0.258
+scale = 0.930, 1.140, 1.040
+collide = 1,true
+// User: KMW
+
+pos = -6400, 107, -4364
+rot = -0.166, 5.464, -0.166
+scale = 0.880, 0.805, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -3381, -161, -4933
+rot = 0.000, 1.005, 0.000
+scale = 0.885, 0.985, 0.770
+collide = 1,true
+// User: KMW
+
+pos = -3993, -342, -4712
+rot = 0.184, 4.019, 0.000
+scale = 1.180, 0.970, 0.720
+collide = 1,true
+// User: KMW
+
+pos = -3442, -351, -4619
+rot = -0.000, 0.691, 0.221
+scale = 0.990, 0.705, 0.735
+collide = 1,true
+// User: KMW
+
+pos = -3711, 660, -8788
+rot = 0.000, 2.638, 0.000
+scale = 1.070, 1.045, 1.145
+collide = 1,true
+// User: KMW
+
+pos = -643, -275, -7837
+rot = 0.184, 0.942, 0.000
+scale = 0.780, 0.790, 0.980
+collide = 1,true
+// User: KMW
+
+pos = -2711, -254, -7844
+rot = -0.368, 6.092, 0.000
+scale = 0.975, 1.105, 1.075
+collide = 1,true
+// User: KMW
+
+pos = 658, -400, -6877
+rot = 0.184, 3.788, 0.239
+scale = 0.805, 1.080, 0.715
+collide = 1,true
+// User: KMW
+
+pos = 3453, -288, -2677
+rot = -0.405, 2.098, 0.000
+scale = 0.935, 1.080, 1.145
+collide = 1,true
+// User: KMW
+
+pos = 3194, -264, -3938
+rot = 0.000, 5.652, 0.000
+scale = 0.875, 0.880, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -6634, -352, -7525
+rot = 0.000, 5.778, 0.000
+scale = 0.700, 0.845, 0.860
+collide = 1,true
+// User: KMW
+
+pos = -4361, -355, -7399
+rot = 0.368, 5.401, 0.110
+scale = 1.055, 0.960, 0.750
+collide = 1,true
+// User: KMW
+
+pos = -6901, -292, -6784
+rot = 0.479, 1.947, 0.000
+scale = 1.080, 0.895, 0.980
+collide = 1,true
+// User: KMW
+
+pos = -5317, -487, -8516
+rot = 0.000, 1.570, 0.000
+scale = 1.145, 0.975, 1.065
+collide = 1,true
+// User: KMW
+
+pos = -5374, -478, -5468
+rot = 0.000, 3.705, 0.000
+scale = 0.935, 1.015, 0.785
+collide = 1,true
+// User: KMW
+
+pos = -6891, -292, -6196
+rot = 0.184, 3.234, 0.405
+scale = 1.170, 0.845, 0.870
+collide = 1,true
+// User: KMW
+
+pos = -3841, -455, -6263
+rot = 0.000, 4.522, 0.000
+scale = 1.095, 0.995, 0.790
+collide = 1,true
+// User: KMW
+
+name FLAMINGTREE02
+
+pos = -4993, -474, -5117
+rot = 0.000, 1.696, 0.000
+scale = 1.110, 1.180, 1.165
+collide = 1,true
+// User: KMW
+
+pos = 5449, -439, -7600
+rot = 0.184, 5.401, -0.147
+scale = 0.720, 0.924, 0.864
+collide = 1,true
+// User: KMW
+
+pos = 3365, -23, -8315
+rot = 0.000, 2.575, 0.000
+scale = 0.828, 0.992, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -1422, -313, -4137
+rot = 0.110, 4.396, -0.055
+scale = 1.100, 1.125, 1.025
+collide = 1,true
+// User: KMW
+
+pos = -60, 81, -4906
+rot = 0.000, 3.550, 0.000
+scale = 0.870, 1.070, 1.060
+collide = 1,true
+// User: KMW
+
+pos = 369, -285, -6083
+rot = -0.368, 3.224, 0.000
+scale = 0.855, 1.005, 0.995
+collide = 1,true
+// User: KMW
+
+pos = -1841, -210, -4383
+rot = -0.166, 0.598, -0.055
+scale = 0.950, 0.950, 0.860
+collide = 1,true
+// User: KMW
+
+pos = -119, -282, -4381
+rot = 0.331, 2.959, -0.442
+scale = 0.950, 1.035, 0.730
+collide = 1,true
+// User: KMW
+
+pos = -1207, -125, -4673
+rot = 0.000, 0.188, 0.000
+scale = 0.710, 1.005, 0.985
+collide = 1,true
+// User: KMW
+
+pos = 812, 284, -4963
+rot = 0.000, 2.261, 0.000
+scale = 0.870, 1.070, 1.060
+collide = 1,true
+// User: KMW
+
+pos = -1177, -228, -5000
+rot = 0.737, 5.317, 0.737
+scale = 0.985, 1.035, 1.165
+collide = 1,true
+// User: KMW
+
+pos = -412, -480, -5575
+rot = -0.368, 2.575, 0.000
+scale = 0.920, 0.720, 0.850
+collide = 1,true
+// User: KMW
+
+pos = 1536, 206, -5673
+rot = 0.000, 1.444, 0.000
+scale = 0.940, 0.730, 0.785
+collide = 1,true
+// User: KMW
+
+pos = 432, -39, -4523
+rot = 0.221, 2.695, 0.000
+scale = 0.970, 0.965, 1.180
+collide = 1,true
+// User: KMW
+
+pos = -266, -117, -4574
+rot = 0.000, 2.638, 0.000
+scale = 0.725, 0.805, 0.950
+collide = 1,true
+// User: KMW
+
+pos = -3489, 528, -8305
+rot = 0.000, 2.449, 0.000
+scale = 0.815, 0.995, 1.080
+collide = 1,true
+// User: KMW
+
+pos = -3356, 23, -8062
+rot = -0.645, 0.879, 0.626
+scale = 0.990, 1.080, 1.065
+collide = 1,true
+// User: KMW
+
+pos = -899, -464, -6743
+rot = 0.166, 2.826, -0.055
+scale = 0.755, 1.155, 1.080
+collide = 1,true
+// User: KMW
+
+pos = -1299, 122, -7676
+rot = -0.184, 3.894, 0.000
+scale = 1.010, 0.970, 1.130
+collide = 1,true
+// User: KMW
+
+pos = 1217, -168, -7082
+rot = 0.368, 2.449, -0.552
+scale = 0.815, 0.705, 0.820
+collide = 1,true
+// User: KMW
+
+pos = -2261, -108, -7606
+rot = 0.000, 0.000, 0.000
+scale = 0.755, 1.105, 0.750
+collide = 1,true
+// User: KMW
+
+pos = -1443, -347, -6830
+rot = 0.000, 5.275, 0.000
+scale = 0.980, 0.815, 0.985
+collide = 1,true
+// User: KMW
+
+pos = -179, -26, -7158
+rot = -0.331, 4.836, 0.000
+scale = 0.730, 0.800, 0.980
+collide = 1,true
+// User: KMW
+
+pos = -2225, -458, -6187
+rot = 0.000, 0.327, 0.000
+scale = 0.990, 1.080, 1.065
+collide = 1,true
+// User: KMW
+
+pos = 5941, -281, -6856
+rot = -0.405, 5.778, 0.000
+scale = 0.940, 0.808, 0.904
+collide = 1,true
+// User: KMW
+
+pos = 5476, -152, -6507
+rot = 0.000, 2.700, 0.000
+scale = 1.012, 0.912, 0.880
+collide = 1,true
+// User: KMW
+
+pos = 5758, -60, -7259
+rot = 0.000, 0.502, 0.000
+scale = 1.008, 0.768, 0.964
+collide = 1,true
+// User: KMW
+
+pos = 3827, 474, -10043
+rot = 0.000, 2.826, 0.000
+scale = 0.880, 1.076, 1.076
+collide = 1,true
+// User: KMW
+
+pos = 3756, 71, -9177
+rot = -0.479, 4.836, 0.000
+scale = 0.996, 0.772, 0.800
+collide = 1,true
+// User: KMW
+
+pos = 4673, -73, -6578
+rot = 0.147, 5.526, 0.000
+scale = 0.892, 1.036, 0.784
+collide = 1,true
+// User: KMW
+
+pos = 3450, 358, -9155
+rot = 0.000, 2.952, 0.000
+scale = 0.948, 0.840, 1.084
+collide = 1,true
+// User: KMW
+
+pos = 1816, -431, -7248
+rot = 0.000, 5.338, 0.000
+scale = 0.835, 1.165, 1.040
+collide = 1,true
+// User: KMW
+
+pos = 199, -227, -9430
+rot = -0.442, 4.898, 0.000
+scale = 1.165, 0.770, 1.165
+collide = 1,true
+// User: KMW
+
+pos = -5871, 94, -4869
+rot = 0.184, 1.507, -0.000
+scale = 1.040, 0.705, 1.160
+collide = 1,true
+// User: KMW
+
+pos = -3763, -370, -4531
+rot = 0.184, 2.952, -0.184
+scale = 0.760, 0.735, 0.715
+collide = 1,true
+// User: KMW
+
+pos = 9527, -506, -4448
+rot = 0.110, 3.014, -0.479
+scale = 0.912, 0.956, 0.892
+collide = 1,true
+// User: KMW
+
+pos = 7014, -352, -4198
+rot = 0.000, 5.074, 0.000
+scale = 0.956, 0.904, 0.808
+collide = 1,true
+// User: KMW
+
+pos = 6825, -444, -4505
+rot = 0.000, 3.831, 0.000
+scale = 1.080, 0.900, 1.012
+collide = 1,true
+// User: KMW
+
+pos = 7287, -441, -4523
+rot = 0.000, 5.652, 0.000
+scale = 0.992, 0.844, 0.820
+collide = 1,true
+// User: KMW
+
+pos = -3514, -474, -6628
+rot = -0.110, 3.014, 0.000
+scale = 0.965, 1.020, 0.940
+collide = 1,true
+// User: KMW
+
+pos = 8478, 443, -11825
+rot = 0.000, 6.092, 0.000
+scale = 0.840, 0.896, 0.708
+collide = 1,true
+// User: KMW
+
+pos = -3865, 166, -7704
+rot = 0.000, 2.449, 0.000
+scale = 1.165, 0.720, 0.830
+collide = 1,true
+// User: KMW
+
+pos = -5205, -437, -4079
+rot = -0.000, 3.642, 0.552
+scale = 0.720, 0.915, 1.060
+collide = 1,true
+// User: KMW
+
+pos = -3533, -162, -5219
+rot = 0.000, 0.251, 0.000
+scale = 0.965, 1.015, 0.905
+collide = 1,true
+// User: KMW
+
+pos = 2418, -175, -2329
+rot = -0.442, 3.328, 0.000
+scale = 0.755, 1.005, 0.880
+collide = 1,true
+// User: KMW
+
+pos = -6002, 183, -4527
+rot = 0.000, 1.884, 0.000
+scale = 0.765, 1.005, 1.140
+collide = 1,true
+// User: KMW
+
+pos = -2915, -489, -4910
+rot = 0.000, 5.903, 0.000
+scale = 1.060, 1.005, 0.850
+collide = 1,true
+// User: KMW
+
+pos = -3128, -348, -5308
+rot = 0.147, 2.025, 0.110
+scale = 1.130, 0.890, 1.180
+collide = 1,true
+// User: KMW
+
+pos = -3547, -285, -5620
+rot = 0.442, 0.063, 0.000
+scale = 0.755, 0.870, 1.075
+collide = 1,true
+// User: KMW
+
+pos = 6323, -277, -7363
+rot = 0.000, 0.314, 0.000
+scale = 0.972, 0.792, 0.708
+collide = 1,true
+// User: KMW
+
+pos = 6735, -381, -8860
+rot = 0.258, 0.816, 0.074
+scale = 0.748, 0.732, 0.836
+collide = 1,true
+// User: KMW
+
+pos = 6129, -43, -8167
+rot = 0.000, 1.444, 0.000
+scale = 0.944, 0.712, 0.944
+collide = 1,true
+// User: KMW
+
+pos = 9361, -490, -5443
+rot = 0.000, 6.092, 0.000
+scale = 0.708, 0.852, 0.824
+collide = 1,true
+// User: KMW
+
+pos = 9133, -341, -7730
+rot = -0.074, 2.386, -0.295
+scale = 0.832, 1.068, 0.848
+collide = 1,true
+// User: KMW
+
+pos = 6977, -370, -6890
+rot = -0.331, 0.126, 0.000
+scale = 1.016, 0.832, 0.716
+collide = 1,true
+// User: KMW
+
+pos = 7068, -200, -11194
+rot = -0.221, 1.438, 0.000
+scale = 0.788, 1.064, 0.748
+collide = 1,true
+// User: KMW
+
+pos = 9282, -235, -7454
+rot = 0.000, 6.154, 0.000
+scale = 1.072, 1.036, 0.920
+collide = 1,true
+// User: KMW
+
+pos = 8724, -415, -9642
+rot = -0.295, 0.628, 0.221
+scale = 0.892, 0.852, 0.920
+collide = 1,true
+// User: KMW
+
+pos = 8972, -249, -10728
+rot = -0.331, 4.459, 0.000
+scale = 0.848, 1.084, 0.820
+collide = 1,true
+// User: KMW
+
+pos = 8325, 383, -11269
+rot = 0.000, 4.459, 0.000
+scale = 0.984, 0.992, 0.732
+collide = 1,true
+// User: KMW
+
+pos = -4301, 132, -8261
+rot = 0.000, 2.010, 0.000
+scale = 0.995, 0.785, 1.065
+collide = 1,true
+// User: KMW
+
+pos = -5667, -319, -8655
+rot = 0.000, 0.628, 0.000
+scale = 1.085, 1.125, 0.940
+collide = 1,true
+// User: KMW
+
+pos = 2388, -137, -8487
+rot = -0.203, 3.203, 0.000
+scale = 0.904, 0.972, 0.784
+collide = 1,true
+// User: KMW
+
+pos = 2576, 6, -9654
+rot = 0.276, 2.449, -0.608
+scale = 0.984, 0.796, 0.972
+collide = 1,true
+// User: KMW
+
+pos = 3623, -27, -3854
+rot = 0.000, 2.261, 0.000
+scale = 1.005, 0.725, 1.015
+collide = 1,true
+// User: KMW
+
+pos = 3737, 25, -3102
+rot = 0.221, 4.082, -0.110
+scale = 0.990, 1.100, 0.705
+collide = 1,true
+// User: KMW
+
+pos = 2975, -311, -2510
+rot = 0.552, 5.715, 0.000
+scale = 1.095, 0.810, 0.880
+collide = 1,true
+// User: KMW
+
+pos = 1680, -497, -3760
+rot = 0.000, 2.952, 0.000
+scale = 0.815, 1.070, 0.920
+collide = 1,true
+// User: KMW
+
+pos = 1203, -312, -2694
+rot = 0.368, 0.628, 0.184
+scale = 0.795, 0.735, 0.795
+collide = 1,true
+// User: KMW
+
+pos = 1180, -175, -3364
+rot = 0.000, 4.584, 0.000
+scale = 1.135, 1.045, 0.875
+collide = 1,true
+// User: KMW
+
+pos = 317, -110, -8677
+rot = 1.363, 1.884, -1.510
+scale = 1.140, 0.755, 0.845
+collide = 1,true
+// User: KMW
+
+pos = -4533, -494, -7744
+rot = -0.221, 2.261, -0.110
+scale = 0.710, 1.175, 0.885
+collide = 1,true
+// User: KMW
+
+pos = -6419, -522, -7728
+rot = -0.147, 4.903, -0.000
+scale = 1.120, 0.970, 0.760
+collide = 1,true
+// User: KMW
+
+pos = -6663, -391, -7282
+rot = 0.000, 3.266, 0.239
+scale = 0.950, 1.125, 0.725
+collide = 1,true
+// User: KMW
+
+pos = -4328, -101, -7683
+rot = -0.147, 2.638, -0.184
+scale = 0.725, 0.805, 0.950
+collide = 1,true
+// User: KMW
+
+pos = -4260, -442, -7054
+rot = -0.184, 0.314, 0.000
+scale = 1.060, 1.020, 0.745
+collide = 1,true
+// User: KMW
+
+pos = -6252, -278, -5437
+rot = 0.000, 3.454, 0.000
+scale = 1.050, 0.820, 0.745
+collide = 1,true
+// User: KMW
+
+pos = -6649, -379, -5705
+rot = 0.000, 3.203, 0.000
+scale = 0.910, 1.025, 0.755
+collide = 1,true
+// User: KMW
+
+name FLAMINGSHRUB
+
+pos = -4971, -227, -8541
+rot = 0.000, 2.889, 0.000
+scale = 0.845, 0.955, 1.075
+collide = 1,true
+// User: KMW
+
+pos = 4479, -125, -6367
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -5477, -308, -8470
+rot = 0.000, 5.526, 0.000
+scale = 0.920, 0.710, 1.115
+collide = 1,true
+// User: KMW
+
+pos = -5080, -431, -8407
+rot = 0.000, 0.188, 0.000
+scale = 0.745, 1.000, 1.190
+collide = 1,true
+// User: KMW
+
+pos = -5599, -297, -8487
+rot = 0.000, 0.188, 0.000
+scale = 0.805, 0.820, 1.065
+collide = 1,true
+// User: KMW
+
+name BURNINGTREE
+
+pos = -19123, -5590, 21771
+rot = 0.000, 3.391, 0.000
+scale = 0.952, 0.872, 0.820
+collide = 1,true
+// User: KMW
+
+pos = -19239, -5563, 20751
+rot = 0.000, 1.821, 0.000
+scale = 0.808, 0.864, 0.836
+collide = 1,true
+// User: KMW
+
+pos = -19318, -5578, 21582
+rot = 0.000, 0.754, 0.000
+scale = 0.972, 1.000, 0.812
+collide = 1,true
+// User: KMW
+
+pos = -23204, -5575, 21735
+rot = 0.000, 4.647, 0.000
+scale = 1.088, 0.980, 0.952
+collide = 1,true
+// User: KMW
+
+pos = -20037, -5593, 18197
+rot = 0.000, 1.570, 0.000
+scale = 0.848, 0.912, 1.160
+collide = 1,true
+// User: KMW
+
+pos = -22934, -5589, 22352
+rot = 0.000, 2.386, 0.000
+scale = 1.040, 0.900, 1.040
+collide = 1,true
+// User: KMW
+
+pos = -19452, -5532, 20260
+rot = 0.000, 1.444, 0.000
+scale = 1.124, 0.840, 0.968
+collide = 1,true
+// User: KMW
+
+pos = -22262, -5593, 22689
+rot = 0.000, 2.072, 0.000
+scale = 0.984, 0.840, 1.104
+collide = 1,true
+// User: KMW
+
+pos = -21477, -5593, 22733
+rot = 0.000, 0.754, 0.000
+scale = 1.012, 1.112, 0.908
+collide = 1,true
+// User: KMW
+
+pos = -21619, -5457, 22169
+rot = 0.000, 6.029, 0.000
+scale = 1.080, 0.952, 1.024
+collide = 1,true
+// User: KMW
+
+pos = -20653, -5580, 22542
+rot = 0.000, 0.314, 0.000
+scale = 0.920, 1.092, 1.064
+collide = 1,true
+// User: KMW
+
+pos = -19701, -5529, 21205
+rot = 0.000, 3.203, 0.000
+scale = 1.168, 1.180, 1.148
+collide = 1,true
+// User: KMW
+
+pos = -20097, -5583, 22332
+rot = 0.000, 3.203, 0.000
+scale = 1.004, 0.908, 0.844
+collide = 1,true
+// User: KMW
+
+pos = -19612, -5593, 22418
+rot = 0.000, 5.464, 0.000
+scale = 0.804, 1.036, 0.908
+collide = 1,true
+// User: KMW
+
+pos = -23299, -5562, 20125
+rot = 0.000, 1.947, 0.000
+scale = 1.176, 1.056, 0.968
+collide = 1,true
+// User: KMW
+
+pos = -23540, -5591, 21048
+rot = 0.000, 2.324, 0.000
+scale = 0.964, 0.832, 1.192
+collide = 1,true
+// User: KMW
+
+pos = -21714, -5581, 18181
+rot = 0.000, 1.884, 0.000
+scale = 1.192, 0.828, 0.820
+collide = 1,true
+// User: KMW
+
+pos = -20740, -5592, 18020
+rot = 0.000, 0.754, 0.000
+scale = 0.876, 1.064, 1.100
+collide = 1,true
+// User: KMW
+
+pos = -23797, -5593, 21090
+rot = 0.000, 2.261, 0.000
+scale = 1.100, 0.892, 0.952
+collide = 1,true
+// User: KMW
+
+pos = -23633, -5593, 21422
+rot = 0.000, 5.024, 0.000
+scale = 0.924, 0.828, 1.092
+collide = 1,true
+// User: KMW
+
+pos = -21158, -5528, 18549
+rot = 0.000, 2.135, 0.000
+scale = 0.856, 0.800, 1.000
+collide = 1,true
+// User: KMW
+
+pos = -22821, -5572, 19118
+rot = 0.000, 3.580, 0.000
+scale = 1.152, 0.864, 1.036
+collide = 1,true
+// User: KMW
+
+pos = -22515, -5582, 18462
+rot = 0.000, 0.188, 0.000
+scale = 0.992, 1.140, 0.928
+collide = 1,true
+// User: KMW
+
+name WARPFLOWER
+
+pos = -15553, -5646, 19072
+ID = 1,WarpFlower1
+rot = -0.000, 3.142, -0.000
+scale = 1.000, 1.000, 1.000
+bEnabled = 1,true
+midPt = -14119.000, -710.000, 18328.000
+endPt = -13623.000, -1383.000, 19536.000
+// User: KMW
+
+pos = -11314, 8049, 16614
+ID = 2,Warpflower4
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+bEnabled = 1,true
+midPt = -10639.000, 11280.000, 17294.000
+endPt = -10284.000, 10560.000, 18237.000
+// User: KMW
+
+pos = -12930, 1749, 16117
+ID = 3,Warpflower3
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+bEnabled = 1,true
+midPt = -12703.000, 8457.000, 16374.000
+endPt = -11441.000, 8042.000, 16985.000
+// User: KMW
+
+pos = -13583, -1349, 19018
+ID = 4,Warpflower2
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+bEnabled = 1,true
+midPt = -13471.000, 1895.000, 19510.000
+endPt = -12733.000, 981.000, 19793.000
+// User: KMW
+
+name TELEPORTER
+
+pos = -14330, -5621, 24538
+ID = 135,Teleport2
+destinationPos = -5498.000, -562.000, -7015.000
+delay = 5.000
+bInvisible = 0,false
+bInitiallyVisible = 1,true
+Yaw = 2.950
+// User: KMW
+
+pos = -5381, -557, -6059
+ID = 136,Teleporter1
+destinationPos = -14776.000, -5630.000, 24468.000
+delay = 5.000
+bInvisible = 0,false
+bInitiallyVisible = 0,false
+Yaw = -1.410
+// User: KMW
+
+name FRILLLIZARD
+
+pos = -5869, -487, -2630
+rot = 0.000, 1.126, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -6136, -487, -3119
+  waypoint = -5797, -487, -3101
+spawnpool = -1
+ID = 74,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -6329, -487, -2512
+rot = 0.000, 1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -5540, -487, -2859
+  waypoint = -6660, -487, -3464
+spawnpool = -1
+ID = 75,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -5990, -487, -3010
+rot = 0.000, 2.026, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -6889, -487, -2915
+  waypoint = -6255, -487, -3304
+spawnpool = -1
+ID = 76,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 4748, -487, -8575
+rot = 0.000, -2.475, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3949, -489, -8093
+  waypoint = 4874, -490, -7329
+  waypoint = 5178, -487, -8283
+spawnpool = -1
+ID = 77,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 4535, -487, -9200
+rot = 0.000, -2.475, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 4804, -488, -9697
+  waypoint = 5468, -488, -9297
+  waypoint = 4718, -487, -8337
+spawnpool = -1
+ID = 78,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 5204, -487, -8675
+rot = 0.000, -2.475, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 4942, -489, -7539
+  waypoint = 5468, -488, -9297
+  waypoint = 4492, -487, -8692
+spawnpool = -1
+ID = 79,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 5251, 1463, 5451
+rot = 0.000, 1.500, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 5881, 1468, 5510
+  waypoint = 5529, 1468, 4684
+spawnpool = -1
+ID = 80,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -439, -367, -9978
+rot = 0.000, 0.074, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 150, -421, -10346
+  waypoint = -995, -324, -10049
+spawnpool = -1
+ID = 81,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 6696, -346, -4058
+rot = 0.000, -3.683, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6328, -380, -3780
+  waypoint = 7437, -310, -3631
+spawnpool = -1
+ID = 82,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 6942, -345, -3452
+rot = 0.000, -1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6472, -356, -3840
+  waypoint = 7408, -300, -3782
+spawnpool = -1
+ID = 83,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2524, -782, -6645
+rot = 0.000, -2.839, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -2181, -781, -6808
+  waypoint = -3005, -782, -7220
+spawnpool = -1
+ID = 84,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 729, -464, -10093
+rot = 0.000, 2.339, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 290, -427, -10506
+  waypoint = -98, -393, -10134
+spawnpool = -1
+ID = 85,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -102, -397, -10550
+rot = 0.000, 1.094, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 451, -446, -10228
+  waypoint = -835, -333, -10034
+spawnpool = -1
+ID = 86,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1214, -487, -6152
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -1089, -488, -5654
+  waypoint = -1341, -487, -5718
+  waypoint = -1423, -487, -5579
+spawnpool = -1
+ID = 87,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 6292, -386, -3765
+rot = 0.000, -1.598, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6873, -387, -4231
+  waypoint = 7437, -310, -3631
+spawnpool = -1
+ID = 88,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 4175, 2555, 7162
+rot = 0.001, 0.444, -0.015
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3261, 2681, 6843
+spawnpool = -1
+ID = 89,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 3071, 2605, 6017
+rot = 0.000, 2.394, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3487, 2582, 6223
+spawnpool = -1
+ID = 90,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 2097, -487, -6759
+rot = 0.000, -1.695, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 1860, -488, -6836
+  waypoint = 1095, -487, -6449
+  waypoint = 1833, -487, -6551
+spawnpool = -1
+ID = 91,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1906, -487, -4921
+rot = 0.000, 0.552, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -1389, -487, -5345
+  waypoint = -2405, -486, -5207
+spawnpool = -1
+ID = 92,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2867, -780, -6804
+rot = 0.000, -2.839, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -2300, -781, -6805
+  waypoint = -3308, -782, -7365
+spawnpool = -1
+ID = 93,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 8851, -403, -6395
+rot = 0.000, -0.857, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 8937, -427, -5805
+  waypoint = 9464, -413, -6443
+spawnpool = -1
+ID = 94,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 9083, -389, -6581
+rot = 0.000, -0.857, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 8988, -440, -5704
+  waypoint = 9559, -412, -6100
+spawnpool = -1
+ID = 95,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 7508, -487, -8703
+rot = 0.000, 1.657, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 8365, -487, -8316
+  waypoint = 7446, -487, -9633
+spawnpool = -1
+ID = 96,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 7505, -487, -9582
+rot = 0.000, 1.841, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6872, -487, -9466
+  waypoint = 7141, -487, -9862
+spawnpool = -1
+ID = 97,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 9387, -487, -8770
+rot = 0.000, -1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 8847, -487, -8679
+  waypoint = 9476, -487, -9746
+spawnpool = -1
+ID = 98,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 8356, -487, -8303
+rot = 0.000, 1.841, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 7528, -487, -9144
+  waypoint = 9076, -487, -9040
+spawnpool = -1
+ID = 99,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -3168, -780, -6972
+rot = 0.000, -2.839, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -2599, -782, -6957
+  waypoint = -3283, -785, -7501
+spawnpool = -1
+ID = 100,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2191, -487, -5551
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -2511, -485, -4985
+  waypoint = -1341, -487, -5718
+  waypoint = -2997, -488, -5817
+spawnpool = -1
+ID = 101,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2125, 813, -1772
+rot = 0.000, 1.875, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -1782, 811, -1058
+  waypoint = -1717, 813, -2026
+spawnpool = -1
+ID = 102,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 478, 1213, -188
+rot = 0.000, -2.026, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 456, 1214, 17
+  waypoint = 320, 1213, -340
+spawnpool = -1
+ID = 103,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 402, 1213, -740
+rot = 0.000, -1.657, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 297, 1213, -462
+  waypoint = 290, 1213, -790
+spawnpool = -1
+ID = 104,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1234, 814, -1231
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -916, 812, -1431
+  waypoint = -1377, 813, -1700
+spawnpool = -1
+ID = 105,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1904, 813, -1291
+rot = 0.000, 0.870, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -1407, 814, -1128
+  waypoint = -1722, 813, -2069
+spawnpool = -1
+ID = 106,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 4765, 1468, 1441
+rot = 0.000, -1.290, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 4588, 1468, 894
+spawnpool = -1
+ID = 107,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 5001, 1468, 1849
+rot = 0.000, -1.290, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 5811, 1468, 1971
+spawnpool = -1
+ID = 108,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 4658, 1468, 1887
+rot = 0.000, -1.290, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 4246, 1468, 2483
+spawnpool = -1
+ID = 109,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1167, 5457, 10556
+rot = 0.000, 1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -572, 4977, 9871
+spawnpool = -1
+ID = 110,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -4050, 7312, 12540
+rot = 0.000, 2.578, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -4093, 7477, 13044
+  waypoint = -3396, 7134, 12244
+spawnpool = -1
+ID = 111,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -3815, 7167, 12065
+rot = 0.000, 2.578, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -3846, 7324, 12747
+  waypoint = -2934, 7014, 12040
+spawnpool = -1
+ID = 112,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -4342, 7345, 12471
+rot = 0.000, 2.578, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -4382, 7687, 13335
+  waypoint = -3619, 7247, 12576
+spawnpool = -1
+ID = 113,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1288, 5278, 10085
+rot = 0.000, 1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -714, 4953, 9545
+spawnpool = -1
+ID = 114,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2930, 6892, 11230
+rot = 0.000, -1.290, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -3229, 7026, 11890
+  waypoint = -2084, 6880, 11897
+spawnpool = -1
+ID = 115,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -2783, 6902, 11402
+rot = 0.000, -1.140, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -2502, 6918, 11730
+  waypoint = -2293, 6747, 10802
+spawnpool = -1
+ID = 116,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -3051, 6961, 11585
+rot = 0.000, -1.140, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -3149, 7103, 12311
+  waypoint = -2360, 6926, 11966
+spawnpool = -1
+ID = 117,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -1049, 5246, 10240
+rot = 0.000, 1.289, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -551, 5262, 10790
+spawnpool = -1
+ID = 118,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -5181, 9007, 15050
+rot = 0.000, 1.050, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -4409, 8834, 14794
+  waypoint = -4913, 8873, 14478
+spawnpool = -1
+ID = 119,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -5535, 9004, 14743
+rot = 0.000, 1.050, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -4729, 8874, 14617
+  waypoint = -4992, 8833, 14244
+spawnpool = -1
+ID = 120,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -5476, 9085, 15265
+rot = 0.000, 1.050, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -4909, 8960, 15036
+  waypoint = -5130, 8930, 14620
+spawnpool = -1
+ID = 121,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 807, 4694, 9101
+rot = 0.000, -2.210, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 504, 4854, 10096
+spawnpool = -1
+ID = 122,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 505, 4707, 8864
+rot = 0.000, -2.210, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 226, 4810, 9373
+spawnpool = -1
+ID = 123,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 948, 4593, 8659
+rot = 0.000, -2.210, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 1482, 4403, 8132
+spawnpool = -1
+ID = 124,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 2507, 2859, 6745
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 2600, 2740, 6331
+spawnpool = -1
+ID = 125,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 3156, 2766, 7169
+rot = 0.001, 0.444, -0.015
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3765, 2528, 6207
+spawnpool = -1
+ID = 126,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 3594, 2724, 7640
+rot = 0.001, 0.444, -0.015
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3527, 2616, 6887
+spawnpool = -1
+ID = 127,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 5498, 1468, 5051
+rot = 0.000, 1.500, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6308, 1468, 5377
+  waypoint = 6150, 1468, 4887
+spawnpool = -1
+ID = 128,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 6080, 1468, 5233
+rot = 0.000, 1.500, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 6609, 1468, 5218
+  waypoint = 6402, 1468, 4705
+spawnpool = -1
+ID = 129,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 1972, -331, -2671
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 2539, -325, -2530
+  waypoint = 2088, -338, -2767
+spawnpool = -1
+ID = 130,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 3001, -331, -3577
+rot = 0.000, -1.105, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 3273, -301, -3440
+  waypoint = 2793, -366, -3591
+spawnpool = -1
+ID = 131,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 2254, -409, -3536
+rot = 0.000, -0.115, -0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = 1975, -360, -3295
+  waypoint = 2357, -368, -3346
+spawnpool = -1
+ID = 132,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 824, -159, -7918
+rot = 0.000, -1.473, 0.000
+Type = 0,Patroller
+waypoints = waypoint
+  waypoint = -137, -279, -7950
+  waypoint = 943, -86, -8409
+spawnpool = -1
+ID = 133,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -5587, 1468, 2587
+rot = 0.000, 0.000, 0.000
+Type = 0,Patroller
+spawnpool = -1
+ID = 134,Frill1
+bVisible = 0,false
+bActive = 0,false
+// User: KMW
+
+name ARSONFRILL
+
+pos = -22219, -5534, 21027
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22582, -5524, 20739
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22228, -5534, 20859
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22349, -5537, 21096
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22620, -5534, 20904
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22564, -5537, 21051
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22458, -5538, 21112
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+pos = -22377, -5534, 20734
+rot = 0.000, 0.000, 0.000
+spawnpool = 2
+bVisible = 0,false
+// User: KMW
+
+name BLUETONGUEROCK
+
+pos = -6522, 11099, 14406
+rot = 0.000, 0.000, 0.000
+spawnpool = -1
+// User: KMW
+
+pos = -2793, 8788, 10878
+rot = 0.000, 1.289, 0.000
+spawnpool = -1
+// User: KMW
+
+pos = -268, 6795, 9158
+rot = 0.000, 0.000, 0.000
+spawnpool = -1
+// User: KMW
+
+pos = -125, 6826, 9204
+rot = 0.000, 1.197, 0.000
+spawnpool = -1
+// User: KMW
+
+pos = 2893, 4657, 6281
+rot = 0.000, 0.000, 0.000
+spawnpool = -1
+// User: KMW
+
+pos = -6742, 11069, 14320
+rot = 0.000, 2.946, 0.000
+spawnpool = -1
+// User: KMW
+
+name WOMBAT
+
+pos = -6366, 9290, 15449
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6277, 9285, 15603
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6500, 9308, 15352
+rot = -0.174, 3.142, 0.164
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6778, 9471, 15721
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6710, 9360, 15440
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6576, 9408, 15848
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6326, 9317, 15769
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+pos = -6823, 9437, 15556
+rot = 0.000, 0.000, 0.000
+bVisible = 1,true
+spawnpool = 1
+// User: KMW
+
+name SNOWROO
+
+pos = 2689, 1468, 2553
+rot = 0.000, 3.315, 0.000
+// User: KMW
+
+pos = -6078, 1468, 2044
+rot = 0.000, 2.210, 0.000
+// User: KMW
+
+pos = -5761, 1468, 2460
+rot = 0.000, -0.552, 0.000
+// User: KMW
+
+pos = -767, 1468, 892
+rot = 0.000, -1.289, 0.000
+// User: KMW
+
+pos = -1438, 1468, 593
+rot = 0.000, 2.026, 0.000
+// User: KMW
+
+pos = -2717, 1468, 4985
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = 2389, 1468, 3259
+rot = 0.000, 0.368, 0.000
+// User: KMW
+
+pos = 5932, 1468, 1540
+rot = 0.000, -2.946, 0.000
+// User: KMW
+
+pos = 5754, 1468, 2355
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = -1183, 1468, 1139
+rot = 0.000, -0.184, 0.000
+// User: KMW
+
+pos = -2746, 1468, 3951
+rot = 0.000, 3.315, 0.000
+// User: KMW
+
+name SNOWSPIDER
+
+pos = 3627, 1504, -1250
+rot = 0.000, 3.142, 0.000
+waypoints = waypoint
+  waypoint = 3349, 1468, -1095
+  waypoint = 3829, 1468, -955
+ID = 846,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = -3497, -461, 411
+rot = -0.004, 4.596, 0.000
+waypoints = waypoint
+  waypoint = -3699, -487, 686
+  waypoint = -4022, -487, 445
+  waypoint = -3714, -487, 108
+ID = 847,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 1678, -486, -5233
+rot = 0.004, 1.245, 0.007
+waypoints = waypoint
+  waypoint = 1454, -490, -5170
+  waypoint = 2094, -515, -5171
+ID = 848,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 1414, -478, -5464
+rot = -0.056, 1.521, 0.252
+waypoints = waypoint
+  waypoint = 1501, -500, -5171
+ID = 849,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+pos = 3998, 1504, -1207
+rot = 0.000, 3.142, 0.000
+waypoints = waypoint
+  waypoint = 4391, 1468, -1037
+  waypoint = 3818, 1468, -823
+ID = 850,blank
+bVisible = 1,true
+bActive = 1,true
+// User: KMW
+
+name ENEMYSPAWNER
+
+pos = -6612, 9355, 15635
+rot = 0.000, 0.000, 0.000
+type = 7,Wombat
+delay = 6
+max = 8
+waypoints = waypoint
+  waypoint = -6612, 9440, 15985
+  waypoint = -6365, 9312, 15883
+  waypoint = -6262, 9259, 15635
+  waypoint = -6364, 9253, 15388
+  waypoint = -6611, 9281, 15285
+  waypoint = -6859, 9373, 15387
+  waypoint = -6962, 9497, 15634
+  waypoint = -6860, 9539, 15882
+subtype = 0
+delayChange = 0.000, 0.000, 0.000
+ID = 842,SpawnerWombatTop
+bVisible = 0,false
+spawnpool = 1
+bSpawnOnActivate = 1,true
+bStealOk = 0,false
+bKillOnDeactivate = 0,false
+bFaceHero = 0,false
+bPlaceAtWaypoints = 0,false
+// User: KMW
+
+pos = -22429, -5549, 20922
+rot = 0.000, 0.000, 0.000
+type = 8,ArsonFrill
+delay = 0
+max = 3
+waypoints = waypoint
+  waypoint = -22486, -5523, 21192
+  waypoint = -22238, -5532, 21090
+  waypoint = -22136, -5463, 20843
+  waypoint = -22238, -5478, 20595
+  waypoint = -22485, -5552, 20492
+  waypoint = -22733, -5546, 20594
+  waypoint = -22836, -5520, 20842
+  waypoint = -22741, -5491, 21090
+subtype = 3
+delayChange = 0.000, 0.000, 0.000
+ID = 843,blank
+bVisible = 0,false
+spawnpool = 2
+bSpawnOnActivate = 0,false
+bStealOk = 0,false
+bKillOnDeactivate = 0,false
+bFaceHero = 0,false
+bPlaceAtWaypoints = 0,false
+// User: KMW
+
+pos = -1360, 6728, 11387
+rot = 0.000, 0.000, 0.000
+type = 7,Wombat
+delay = 10
+max = 8
+waypoints = waypoint
+  waypoint = -1360, 6762, 11737
+  waypoint = -1113, 6717, 11635
+  waypoint = -1010, 6679, 11388
+  waypoint = -1113, 6670, 11140
+  waypoint = -1360, 6686, 11037
+  waypoint = -1607, 6729, 11139
+  waypoint = -1710, 6778, 11387
+  waypoint = -1608, 6787, 11634
+subtype = 0
+delayChange = 0.000, 0.000, 0.000
+ID = 844,SpawnerWombatMiddle
+bVisible = 0,false
+spawnpool = 1
+bSpawnOnActivate = 1,true
+bStealOk = 0,false
+bKillOnDeactivate = 0,false
+bFaceHero = 0,false
+bPlaceAtWaypoints = 0,false
+// User: KMW
+
+pos = 4825, 2379, 6397
+rot = 0.000, 0.000, 0.000
+type = 3,Skink
+delay = 10
+max = 8
+subtype = 0
+delayChange = 0.000, 0.000, 0.000
+ID = 845,SpawnerWombatBottom
+bVisible = 0,false
+spawnpool = 1
+bSpawnOnActivate = 1,true
+bStealOk = 0,false
+bKillOnDeactivate = 0,false
+bFaceHero = 0,false
+bPlaceAtWaypoints = 0,false
+// User: KMW
+
+name SHEILA
+
+pos = -6037, -547, -6956
+rot = 0.000, -4.383, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+name DUBBO
+
+pos = -2985, -487, -5744
+rot = 0.000, 1.657, 0.000
+ID = 840,blank
+safepos = -6006.000, -532.000, -7347.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name MIM
+
+pos = 7039, -314, -3977
+rot = 0.000, -1.768, 0.000
+ID = 839,Mim
+safepos = -5956.000, -559.000, -6823.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name BOONIE
+
+pos = 6875, -487, -7757
+rot = 0.000, 0.552, 0.000
+ID = 838,blank
+safepos = -5892.000, -536.000, -7450.000
+bVisible = 1,true
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name BADBOONIE
+
+pos = 1765, 1448, 3688
+rot = 0.000, 0.000, 0.000
+ID = 837,BadBoonie
+OnCatch = event
+  TargetID = 706,ThunderEggBoonie
+  Message = Enable
+ThunderEgg = 6,Secondary3
+// User: KMW
+
+name GUMMY
+
+pos = -7047, -487, -3413
+rot = 0.000, 2.210, 0.000
+ID = 836,blank
+safepos = -6029.000, -537.000, -7201.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name SNUGS
+
+pos = -1875, -782, -6749
+rot = 0.000, -1.233, -0.000
+ID = 835,blank
+safepos = -6004.000, -557.000, -6653.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name ELIZABETH
+
+pos = 6049, -487, -11179
+rot = 0.000, 2.578, 0.000
+ID = 834,blank
+safepos = -5883.000, -546.000, -7308.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name KATIE
+
+pos = 1499, -323, -2887
+rot = -0.008, 1.260, -0.045
+ID = 833,blank
+safepos = -5916.000, -553.000, -7122.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name KIKI
+
+pos = 2195, -194, -9138
+rot = 0.000, 4.320, 0.000
+ID = 832,blank
+safepos = -6098.000, -545.000, -6806.000
+OkToLeave = 1,true
+dialogNr = 17
+phraseNr = 1
+// User: KMW
+
+name KEN
+
+pos = -20026, -5590, 18997
+rot = 0.001, 5.720, 0.012
+ID = 830,blank
+bVisible = 1,true
+// User: KMW
+
+pos = 6936, 1468, 3418
+rot = 0.000, -1.050, 0.000
+ID = 831,KenObjective9
+bVisible = 1,true
+// User: KMW
+
+name SNOWANDY
+
+pos = -6864, 9576, 15922
+bVisible = 1,true
+ID = 829,SnowAndy
+rot = 0.000, 0.000, 0.000
+OnFinish = event
+  TargetID = 0,none
+  Message = none
+// User: KMW
+
+name MAURIE
+
+pos = -5563, 1559, 1259
+rot = 0.000, 1.676, 0.000
+bActive = 0,false
+// User: KMW
+
+name CABLECAR
+
+pos = -8365, 11361, 16522
+rot = 0.000, -2.044, 0.000
+// User: KMW
+
+pos = -2260, 8750, 11208
+rot = 0.000, -2.191, 0.000
+// User: KMW
+
+pos = 7073, 3028, 3945
+rot = 0.000, -1.989, 0.000
+// User: KMW
+
+pos = -5643, 10926, 15227
+rot = 0.000, 0.811, 0.000
+// User: KMW
+
+pos = 2094, 6347, 9174
+rot = 0.000, 0.810, 0.000
+// User: KMW
+
+name SKILIFTWHEEL
+
+pos = 4253, 2522, 6501
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = 7233, 1321, 4338
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = -2039, 7032, 11572
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = -5974, 9217, 14957
+rot = 0.000, 0.037, 0.000
+// User: KMW
+
+pos = 1785, 4630, 8890
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+pos = -8157, 9640, 16890
+rot = 0.000, 0.000, 0.000
+// User: KMW
+
+name RANGERTOWER
+
+pos = -273, 4851, 9195
+rot = 0.000, 0.921, 0.000
+ID = 140,blank
+// User: KMW
+
+pos = 2830, 2692, 6336
+rot = 0.000, 0.939, 0.000
+ID = 688,blank
+// User: KMW
+
+pos = -6670, 9131, 14380
+rot = 0.000, 0.810, 0.000
+ID = 689,blank
+// User: KMW
+
+pos = -2855, 6822, 10894
+rot = 0.000, 0.976, 0.000
+ID = 690,blank
+// User: KMW
+
+name SNOWGUNTOWER
+
+pos = -20925, -5518, 19773
+rot = 0.000, 1.215, 0.000
+// User: KMW
+
+name SKILIFT
+
+pos = 8325, 2440, 4685
+rot = 0.000, -1.570, 0.000
+scale = 1.000, 1.000, 1.000
+// User: KMW
+
+name TURNINGLOG
+
+pos = 1428, -201, -8492
+rot = 0.000, -0.681, 0.000
+scale = 1.000, 1.000, 1.000
+platformID = 0,none
+ID = 137,TurnLog
+turnSpeed = 0.500
+waypoints = waypoint
+  waypoint = 1273, -164, -9352
+  waypoint = 1580, -185, -9116
+  waypoint = 1835, -194, -8824
+// User: KMW

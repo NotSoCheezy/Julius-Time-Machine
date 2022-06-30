@@ -1,0 +1,289 @@
+mesh Act_89_bullnTy.mdl
+skeleton Act_89_bullnTy.anm
+
+
+// AMBULATORY LOOPAGE:
+anim walk
+100-133,1
+event leftTrot 100
+event rightTrot 120
+event frontLeg_R_hit 117
+event frontLeg_R_lift 104
+event frontLeg_L_hit 100
+event frontLeg_L_lift 121
+event backLeg_R_hit 100
+event backLeg_R_lift 119
+event backLeg_L_hit 116
+event backLeg_L_lift 103
+cycle loop
+
+anim run
+201-214,1
+//frontlegs dust
+event hit_ground_front 206
+//backlegs dust
+event hit_ground_back 211
+event frontLeg_R_hit 203
+event frontLeg_R_lift 207
+event frontLeg_L_hit 205
+event frontLeg_L_lift 208
+event backLeg_R_hit 213
+event backLeg_R_lift 214
+event backLeg_L_hit 210
+event backLeg_L_lift 213
+cycle loop
+
+anim SkidRunLeft
+221-234,1
+//frontlegs dust
+event hit_ground_front 224
+//backlegs dust
+event hit_ground_back 231
+event frontLeg_R_hit 223
+event frontLeg_R_lift 227
+event frontLeg_L_hit 225
+event frontLeg_L_lift 228
+event backLeg_R_hit 233
+event backLeg_R_lift 234
+event backLeg_L_hit 230
+event backLeg_L_lift 233
+cycle loop
+
+anim SkidRunRight
+241-254,1
+//frontlegs dust
+event hit_ground_front 244
+//backlegs dust
+event hit_ground_back 251
+event frontLeg_R_hit 243
+event frontLeg_R_lift 247
+event frontLeg_L_hit 245
+event frontLeg_L_lift 248
+event backLeg_R_hit 253
+event backLeg_R_lift 254
+event backLeg_L_hit 250
+event backLeg_L_lift 253
+cycle loop
+
+//IDLES:
+//main idle - loop the others less and in between this one
+anim idle01_look
+300-400,1
+cycle stop
+
+//roar!! Probably play this when Bull has just shaken off ants and is facing Ty ready for the next charge.
+anim idle02_roar
+600-688,1
+event roar 616
+cycle stop
+
+//scrapes foot on ground
+anim idle03_hoof
+700-810,1
+event frontLeg_L_lift 721
+event frontLeg_L_lift 756
+cycle stop
+
+anim idle04_sniffGround
+850-1010,1
+cycle stop
+
+
+//"standing roar" Bull does after he's hit Ty - victory war cry
+//shake_ground is when Bull hits the ground, his wieght shaking the ground
+anim victory
+400-560,1
+event shake_ground 498
+event Breath 428-492
+cycle stop
+
+//slide loop when bull tries to stop urgently - anim that plays into the crash anim
+//anim slide
+//1100-1120,1
+//cycle loop
+
+//slide loop when Bull doesn't hit the ant hill
+//like a dog sliding on carpet 
+//anim slide02
+//1203-1217,1
+//cycle loop
+
+//Bull slides to a stop, shakes his head and gets back up to idle pose
+//anim slide02_stop
+//1218-1357,1
+//cycle stop
+
+//crash into ant hill
+anim crash
+1121-1150,1
+cycle stop
+
+
+//gets Bull back to idle pose from any of the ant cycles
+//shake_ground is when Bull hits the ground, his wieght shaking the ground
+//anim ants_finish
+//1624-1730,1
+//event shake_ground 1679
+//cycle stop
+
+//Bull staggers from ant pose and falls over
+anim death
+1800-1900,1
+event move 1864
+//Move Bull -159 in it's local X axis over 19 frames
+event shake_ground 1850
+cycle stop
+
+// TY BULL ANIMS:
+//anim headCharge
+//0,1
+//cycle stop
+
+//anim headCharge_idle
+//0,1
+//cycle loop
+
+//anim headCharge_recover
+//0,1
+//cycle stop
+
+//anim diveCharge
+//0,1
+//cycle stop
+
+//anim diveCharge_idle
+//0,1
+//cycle loop
+
+//anim diveCharge_recover
+//0,1
+//cycle stop
+
+
+//anim obstacleSmash
+//0,1
+//cycle stop
+
+//for when bull slams on the brakes...
+anim backPeddle
+2200-2216,1
+cycle loop
+
+
+//fast run, tween between this run for going REALLY fast, and the run anim for slower running
+//anim run_fast
+//250-269,1
+event frontLeg_R_hit 256
+event frontLeg_R_lift 258
+event frontLeg_L_hit 257
+event frontLeg_L_lift 260
+event backLeg_R_hit 264
+event backLeg_R_lift 266
+event backLeg_L_hit 261
+event backLeg_L_lift 265
+cycle loop
+
+//turn animations are for when bull is turning while walking
+anim WalkTurnLeft
+2340-2374,1
+cycle loop
+
+anim WalkTurnRight
+2290-2324,1
+cycle loop
+
+//renamed###
+//the walk_180 anims are for when bull turns 180 degrees on the spot
+//while walking
+//anim Walk180Left
+//0,1
+//cycle loop
+
+//renamed###
+//between frames 2514 and 2544 bull needs to rotate around 180¤ on the vertical axis
+//anim Walk180Right
+//2514-2549,1
+//cycle loop
+
+//use this idle at the beginning of a jump.  bull is angled upwards
+anim jump_idle_up
+2400-2412,1
+cycle loop
+
+//this is the angled downward jump idle.  it goes into the land animation.
+//when in mid flight bull should tween more and more towards this animation,
+//depending on how close to the ground he is.
+anim jump_idle_down
+2420-2432,1
+cycle loop
+
+//leads directly into the run
+//anim jump_land
+//2432-2445,1
+//cycle stop
+
+//  Ty anims
+anim Throw
+3001-3017,1
+event throw 3007
+cycle stop
+
+anim Pull
+3120-3150,1
+cycle loop
+
+//  Bull charge
+anim Charge
+3201-3209,1
+cycle stop
+
+//anim ChargeRecovery
+//3210-3232,1
+//cycle stop
+
+//  Dunny Anim - this is a big fudge and I hate it.
+anim Dunny
+3401-3514,1
+cycle stop
+
+//Ty thunderegg claim
+anim Claim
+3600-3655,1
+cycle stop
+
+//new Bull charge anims...
+//this one comes from halfway through the run cycle...(frame8)...
+
+anim RunChargeLeft
+1930-1965,1
+cycle stop
+
+anim WalkChargeLeft
+1980-2000,1
+cycle stop
+
+anim StandingCharge
+2010-2035,1
+cycle stop
+
+anim RunChargeRight
+2040-2075,1
+cycle stop
+
+anim WalkChargeRIght
+2080-2105,1
+cycle stop
+
+anim splat
+2110-2140,1
+cycle stop
+
+anim splatRecover
+2142-2199,1
+cycle stop
+
+anim trot
+2560-2580,1
+cycle loop
+
+//end

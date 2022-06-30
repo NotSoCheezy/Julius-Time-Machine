@@ -1,0 +1,231 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA2_11
+TotalPhrases = 6
+
+[PHONEMES]
+PhonemeName = CSA2_11_p01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 600
+PhonemeName = CSA2_11_p02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 400
+PhonemeName = CSA2_11_P03EN
+SubTitleNr = 2
+InTime = 0
+OutTime = 400
+PhonemeName = CSA2_11_P04EN
+SubTitleNr = 3
+InTime = 0
+OutTime = 900
+PhonemeName = CSA2_11_P05EN
+SubTitleNr = 4
+InTime = 0
+OutTime = 500
+PhonemeName = CSA2_11_P06EN
+SubTitleNr = 5
+InTime = 100
+OutTime = 1200
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = SnowAndy
+Model = ACT1_27_SNOWANDY_SYNKER.BAD
+
+[CAMERAS]
+Count = 3
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5357.53,1572.54,1104.80,-5421.23,1512.44,1439.89
+  Spline = -5352.53,1572.53,1105.85,-5448.06,1512.75,1433.35
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 10.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5340.07,1562.37,1115.80,-5278.33,1514.02,1453.12
+  Spline = -5329.54,1562.37,1113.87,-5319.27,1511.61,1456.28
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 10.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5347.89,1563.06,1041.74,-5348.92,1511.96,1384.24
+  Spline = -5333.61,1563.06,1042.23,-5368.82,1512.30,1382.97
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyYes
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -5226.427,1468.524,1247.724
+ActorRot = 0.000,-0.500,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -5305.189,1488.172,1221.406
+ActorRot = 0.000,-0.500,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = no
+FitAnimToPhrase = 0
+ActorPos = -5305.189,1488.172,1221.406
+ActorRot = 0.000,-0.500,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = bodygive
+FitAnimToPhrase = 0
+ActorPos = -5305.189,1488.172,1221.406
+ActorRot = 0.000,-0.500,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = yes
+FitAnimToPhrase = 0
+ActorPos = -5305.189,1488.172,1221.406
+ActorRot = 0.000,-0.500,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyHappy
+FitAnimToPhrase = 0
+ActorPos = -5392.530,1488.591,1188.084
+ActorRot = 0.000,0.831,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -5226.427,1468.524,1247.724
+ActorRot = 0.000,-0.500,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = event=none
+EffectDelay = 1
+CameraNr = 1
+Effect = event=none
+EffectDelay = 1
+CameraNr = 4
+Effect = event=none
+EffectDelay = 1
+CameraNr = 2
+Effect = event=attach actor=2 prop=egg scale=0.30
+EffectDelay = 700
+CameraNr = 4
+Effect = event=clear
+EffectDelay = 1
+CameraNr = 0
+Effect = event=none
+EffectDelay = 1
+
+[END]

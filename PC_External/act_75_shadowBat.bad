@@ -1,0 +1,244 @@
+mesh act_75_shadowBat.mdl
+skeleton act_75_shadowBat.anm
+
+anim SkeletonSetup
+0-1,1
+cycle stop
+
+//anim walk01
+//5-36,1
+//event RightFoot 20
+//event LeftFoot 36
+//cycle loop
+
+// shadow stands up from a crouch position
+//anim crouch2Stand
+//50-101,1
+//cycle stop
+
+
+// IDLES:
+anim idle01
+101-234,1
+cycle stop
+
+// left side anim
+//anim idleLeft01
+//0,1
+//cycle loop
+
+// left side anim
+//anim idleLeft02
+//0,1
+//cycle loop
+
+anim idle02
+153-234,1
+cycle stop
+
+
+anim idle03
+420-441,1
+cycle stop
+
+// right side anim
+//anim idleRight01
+//0,1
+//cycle loop
+
+// right side anim
+//anim idleRight02
+//0,1
+//cycle loop
+
+// this was supposed to be for the knockback from an exploding crate
+//anim knockBack
+//300-333,1
+// this is when shadow hits the ground.
+//event floorLand 313
+//cycle stop
+
+
+// BOOMERANG FLINCHES:
+// this is for when shadow gets hit by a boomerang
+//anim groundFlinch
+//500-532,1
+//cycle stop
+
+// shadow gets hit in the air by 'rang
+//anim aerialFlinch
+//750-776,1
+//cycle stop
+
+
+// FLYING:
+anim land
+350-407,1
+// this is when shadows feet touch the ground
+event touchGround 378
+cycle stop
+
+// shadow takes off from the ground.  This animation leads straight
+// into "hoverFlap"
+anim takeoff
+950-995,1
+event airBorne 971
+cycle stop
+
+// (please ignore) 450-476
+anim hoverFlap
+450-476,1
+event hoverFlapSound 453
+cycle loop
+
+// when shadow is confused by the fireworks
+//anim confusedHover
+//550-706,1
+//cycle loop
+
+// flying forward flapping idle (say that 10 times fast)
+// this is for when she is flying around.  there is also a similar animation
+// for when she is gliding.  they both flow into each other.
+// (plz ignore) 800-826
+anim flyFlap
+800-819,1
+event flyFlapSound 803
+cycle loop
+
+// transition from flyFlap into flyGlide
+//anim flyGlideTransition
+//826-834,1
+//cycle stop
+
+// this animation leads into glideFlyTransition, which then goes into flyFlap
+//anim flyGlide
+//835-900,1
+//cycle loop
+
+//anim glideFlyTransition
+//901-905,1
+//cycle stop
+
+anim flyDeathEntry
+1040-1054,1
+cycle stop
+
+anim flyDeathFall
+1055-1080,1
+cycle loop
+
+anim flyDeathExit
+1081-1090,1
+cycle stop
+
+anim FallenGetup
+950-995,1
+event airBorne 971
+cycle stop
+
+// DEFENCE:
+anim hoverDeflect_into
+1130-1149,1
+cycle stop
+
+anim hoverDeflect_loop
+1150-1162,1
+cycle loop
+
+anim hoverDeflect_outa
+1163-1168,1
+cycle stop
+
+//anim flapDeflect_into
+//1180-1191,1
+//cycle stop
+
+//anim flapDeflect_loop
+//1192-1213,1
+//cycle loop
+
+//anim flapDeflect_outa
+//1214-1225,1
+//cycle stop
+
+
+// OFFENCE:
+//anim screech
+//1320-1410,1
+//cycle stop
+
+anim screech
+1900-1965,1
+cycle loop
+
+
+anim whiteBatSummon_into
+1506-1518,1
+cycle stop
+
+//this anim can be held for as long as needs be
+anim whiteBatSummon_loop
+1519-1531,1
+cycle loop
+
+
+anim kissOfDeath_anticipate
+1506-1545,1
+cycle stop
+
+//this is an idle as she glides toward ty
+anim kissOfDeath_flyToward
+1545-1609,1
+cycle loop
+
+//this is the animation leading into the attack
+anim kissOfDeath_into
+1610-1633,1
+cycle stop
+
+//this is once she is on the ground, kissing ty to death
+anim kissOfDeath_loop
+1631-1667,1
+cycle loop
+
+//wipes her mouth, and launches herself back into the air
+anim kissOfDeath_outa
+1750-1859,1
+cycle stop
+
+//anim sonarAttack_into
+//1230-1263,1
+//cycle stop
+
+//anim sonarAttack_loop
+//1264-1281,1
+//cycle loop
+
+//anim sonarAttack_exit
+//1282-1302,1
+//cycle stop
+
+//anim gustFlap
+//450-470,1
+//cycle loop
+
+//end
+
+
+//Collision Spheres diameters 
+
+//R_Collide_head	25cm radius 
+//R_Collide_Chest	15cm radius
+//R_Collide_Groin	20cm radius
+//R_Collide_ThighL	10cm radius
+//R_Collide_ShinL	10cm radius
+//R_Collide_FootL	10cm radius
+//R_Collide_ThighR	10cm radius
+//R_Collide_ShinR	10cm radius
+//R_Collide_FootR	10cm radius
+//R_Collide_BicepL	12cm radius
+//R_Collide_ForarmL	12cm radius
+//R_Collide_HandL	12cm radius
+//R_Collide_BicepR	12cm radius
+//R_Collide_ForarmR	12cm radius
+//R_Collide_HandR	12cm radius

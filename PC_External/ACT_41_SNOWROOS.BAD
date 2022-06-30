@@ -1,0 +1,72 @@
+mesh Act_41_snowroos.mdl
+skeleton Act_41_snowroos.anm
+
+
+// AMBULATORY LOOPAGE:
+anim run01
+5-26,1
+event RightFoot 19
+event LeftFoot 19
+cycle loop
+
+anim walk01
+50-75,1
+event RightFoot 71	
+event LeftFoot 71
+cycle loop
+
+
+// IDLES:
+//standard idle
+anim idle01
+718-1146,1
+cycle loop
+
+anim idle02
+100-625,1
+cycle loop
+
+anim idle03
+375-512,1
+cycle loop
+
+anim idle04
+512-587,1
+cycle loop
+
+anim idle05
+587-718,1
+cycle loop
+
+
+// SNOWFIGHT ANIMS:
+anim snowGather
+1300-1356,1
+event snowBallCreate 1330
+cycle stop
+
+//1204-1231,1
+anim ballThrow
+1357-1387,1
+event snowBallRelease 1374
+cycle loop
+
+anim dodge
+1250-1287,1
+cycle loop
+
+anim die
+1400-1422,1
+event FallImpact 1406
+cycle stop
+
+anim flinch
+1250-1287,1
+cycle stop
+
+
+// TEST ANIMS:
+anim test01
+1300-1356
+1357-1387
+cycle loop

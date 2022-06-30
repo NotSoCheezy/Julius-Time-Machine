@@ -1,0 +1,95 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA3_06
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSA3_06_p01EN
+SubTitleNr = 0
+InTime = 400
+OutTime = 0
+PhonemeName = CSA3_06_p02EN
+SubTitleNr = 1
+InTime = 100
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = act_01_ty_synker.bad
+Actor = Rex
+Model = ACT_12_REX_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -12233.63,143.55,21037.59,-12291.12,-66.39,20193.52
+  Spline = -12258.10,121.10,20927.93,-12522.73,-27.57,20110.81
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -12179.815,38.468,20814.752
+ActorRot = 0.000,-2.000,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyGreeting
+FitAnimToPhrase = 0
+ActorPos = -12331.815,38.528,20813.855
+ActorRot = 0.000,2.000,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -12179.815,38.468,20814.752
+ActorRot = 0.000,-2.000,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -12331.815,38.528,20813.855
+ActorRot = 0.000,2.000,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

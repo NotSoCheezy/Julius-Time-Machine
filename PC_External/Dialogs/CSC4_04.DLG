@@ -1,0 +1,71 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSC4_03
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSC4_03_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 600
+PhonemeName = CSC4_03_P02EN
+SubTitleNr = 1
+InTime = 300
+OutTime = 1700
+
+[ACTORS]
+Count = 1
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 100.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 2161.12,-393.51,100.03,2888.23,-470.03,-93.38
+  Spline = 2214.70,-385.97,121.78,2841.58,-481.52,-290.26
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_shiver
+FitAnimToPhrase = 0
+ActorPos = 2313.590,-446.250,74.660
+ActorRot = 0.000,-1.570,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_shiver
+FitAnimToPhrase = 0
+ActorPos = 2313.590,-446.250,74.660
+ActorRot = 0.000,-1.570,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

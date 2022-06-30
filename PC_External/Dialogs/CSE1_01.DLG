@@ -1,0 +1,89 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSE1_01
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSE1_01_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 1000
+PhonemeName = CSE1_01_P02EN
+SubTitleNr = 1
+InTime = 100
+OutTime = 250
+PhonemeName = CSE1_01_P03EN
+SubTitleNr = 2
+InTime = 100
+OutTime = 1300
+
+[ACTORS]
+Count = 1
+Actor = Skink
+Model = ACT_81_SKINK.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 10.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 4
+  Spline = -5887.30,1907.01,17642.87,-5807.08,1950.86,17197.90
+  Spline = -5902.71,1976.58,17116.94,-6216.96,2019.83,16791.83
+  Spline = -6471.72,2115.92,16897.73,-6916.82,2152.26,16814.79
+  Spline = -7237.40,2205.87,16616.61,-7457.79,2241.29,16221.03
+
+[CELLS]
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = leanonbat
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = leanonbat
+FitAnimToPhrase = 0
+ActorPos = -6685.167,2022.454,16931.957
+ActorRot = 0.000,0.400,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = standingidlebattap
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = standingidlebattap
+FitAnimToPhrase = 0
+ActorPos = -6685.167,2022.454,16931.957
+ActorRot = 0.000,0.400,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = leanonbat
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = leanonbat
+FitAnimToPhrase = 0
+ActorPos = -7376.525,2176.012,16018.158
+ActorRot = 0.000,3.700,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

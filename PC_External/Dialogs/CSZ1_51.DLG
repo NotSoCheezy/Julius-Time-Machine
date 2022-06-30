@@ -1,0 +1,93 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA4_03
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSA4_03_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 500
+PhonemeName = CSA4_03_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 8.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 1576.78,2437.86,11037.76,1623.06,2408.40,11397.90
+  Spline = 1567.57,2437.86,11039.09,1633.73,2409.25,11396.18
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = 1553.273,2372.000,11175.560
+ActorRot = 0.000,0.900,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_Yes
+FitAnimToPhrase = 0
+ActorPos = 1644.499,2371.531,11183.602
+ActorRot = 0.000,-1.237,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = 1553.273,2372.000,11175.560
+ActorRot = 0.000,0.900,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_ChinScratch
+FitAnimToPhrase = 0
+ActorPos = 1644.499,2371.531,11183.602
+ActorRot = 0.000,-1.237,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

@@ -1,0 +1,178 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSB1_38
+TotalPhrases = 4
+
+[PHONEMES]
+PhonemeName = CSB1_38_p01EN
+SubTitleNr = 0
+InTime = 150
+OutTime = 200
+PhonemeName = CSB1_38_p02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 400
+PhonemeName = CSB1_38_p03EN
+SubTitleNr = 2
+InTime = 0
+OutTime = 200
+PhonemeName = CSB1_38_P04EN
+SubTitleNr = 3
+InTime = 0
+OutTime = 1000
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = act_01_ty_synker.bad
+Actor = Rex
+Model = ACT_12_REX_SYNKER.BAD
+
+[CAMERAS]
+Count = 3
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 100000.00
+CamTime = 8.50
+ForceLength = 1
+TCBInfo = 6
+  spline = 0.00,0.00
+  spline = 0.01,0.29
+  spline = 0.04,0.84
+  spline = 0.20,0.93
+  spline = 0.60,0.98
+  spline = 1.00,1.00
+CamSplines = 3
+  Spline = 8061.77,141.03,-12129.32,7218.27,26.91,-11947.87
+  Spline = 8134.28,149.78,-12106.66,7290.78,35.65,-11925.21
+  Spline = 8205.76,158.60,-12091.66,7362.63,44.66,-11908.41
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 384.07,8135.38,1965.55,3370.98,6802.00,11826.22
+  Spline = 379.00,8135.38,1967.09,3630.97,6792.17,11742.09
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 9.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 385.98,8166.27,1870.36,6153.25,9541.47,-6662.41
+  Spline = 397.39,8166.27,1878.07,5113.02,9490.60,-7285.26
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = 402.040,8067.080,2113.640
+ActorRot = 0.000,6.760,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = idle_03_scratch
+FitAnimToPhrase = 0
+ActorPos = 427.980,8112.210,1762.030
+ActorRot = 0.000,-3.600,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = 402.040,8067.080,2113.640
+ActorRot = 0.000,6.760,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = bodyangry
+FitAnimToPhrase = 0
+ActorPos = 427.980,8112.210,1762.030
+ActorRot = 0.000,-3.600,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = SurfaceSwimIdle
+FitAnimToPhrase = 0
+ActorPos = 402.040,8067.080,2113.640
+ActorRot = 0.000,6.760,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyGive
+FitAnimToPhrase = 0
+ActorPos = 427.980,8112.210,1762.030
+ActorRot = 0.000,-3.600,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = SurfaceSwimIdle
+FitAnimToPhrase = 0
+ActorPos = 402.040,8067.080,2113.640
+ActorRot = 0.000,6.760,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = bodyangry
+FitAnimToPhrase = 0
+ActorPos = 427.980,8112.210,1762.030
+ActorRot = 0.000,-3.600,0.000
+
+[PHRASES]
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 1
+CameraNr = 4
+Effect = Nothing
+EffectDelay = 1
+CameraNr = 4
+Effect = event=attach actor=2 prop=egg scale=0.30
+EffectDelay = 350
+CameraNr = 1
+Effect = event=clear
+EffectDelay = 1
+
+[END]

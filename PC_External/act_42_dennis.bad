@@ -1,0 +1,158 @@
+mesh Act_42_dennis.mdl
+skeleton Act_42_dennis.anm
+
+
+//AMBULATORY LOOPAGE:
+//scared walk
+anim walk01a
+800-836,1
+event RightFoot 814
+event LeftFoot 832
+cycle loop
+
+//scared walk variation01
+anim walk01_lookRight
+836-908,1
+event RightFoot 848
+event LeftFoot 868
+event RightFoot 886
+event LeftFoot 904
+cycle loop
+
+//scared walk variation02
+anim walk01_lookLeft
+908-980,1
+event RightFoot 922
+event LeftFoot 940
+event RightFoot 958
+event LeftFoot 976
+cycle loop
+
+//scared walk variation03
+anim walk01_var03
+980-1088,1
+event RightFoot 994
+event LeftFoot 1012
+event RightFoot 1030
+event LeftFoot 1048
+event RightFoot 1066
+event LeftFoot 1084
+cycle loop
+
+//836,872,908,944,980,1016,1052,1088,1124
+
+//confident walk
+anim walk02
+5-29,1
+event RightFoot 17
+event LeftFoot 29
+cycle loop
+
+//backwards walk
+anim walk03
+500-533,1
+event RightFoot 516
+event LeftFoot 533
+cycle loop
+
+anim run01
+50-70,1
+event RightFoot 54
+event LeftFoot 64
+cycle loop
+
+
+//IDLES:
+//standard idle - scared
+anim idle01
+550-767,1
+cycle stop
+
+//more scared idle
+anim idle02
+150-207,1
+cycle stop
+
+//cover eyes
+anim idle03
+207-366,1
+cycle stop
+
+anim idle04
+366-460,1
+cycle stop
+
+
+// HEAD ANIMS:
+anim HeadNeutral
+1520-1540,1
+cycle stop
+
+anim HeadHappy
+1550-1570,1
+cycle loop
+
+anim HeadSad
+1580-1600,1
+cycle loop
+
+anim HeadAngry
+1610-1630,1
+cycle loop
+
+
+// LIP ANIMS:
+anim LipsNeutral
+1520-1540,1
+cycle stop
+
+anim LipsHappy
+1550-1570,1
+cycle stop
+
+anim LipsSad
+1580-1600,1
+cycle stop
+
+anim LipsAngry
+1610-1630,1
+cycle stop
+
+
+// BODY STUFF:
+anim BodyNeutral
+550-767,1
+cycle loop
+
+anim BodyGreeting
+1650-1707,1
+cycle stop
+
+
+// MANNERISMS:
+anim BodyCoverEyes
+207-366,1
+cycle stop
+
+anim BodyDustOff
+1720-1788,1
+cycle stop
+
+anim BodyNo
+1450-1510,1
+cycle loop
+
+anim BodyYes
+1375-1430,1
+cycle loop
+
+anim BodyCherio
+1802-1845,1
+cycle stop
+
+anim BodyGive
+1850-1900,1
+cycle stop
+
+
+//end

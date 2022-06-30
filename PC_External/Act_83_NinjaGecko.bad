@@ -1,0 +1,129 @@
+mesh Act_83_NinjaGecko.mdl
+skeleton Act_83_NinjaGecko.anm
+
+
+AMBULATORY ANIMS:
+
+anim walk
+1-30,1
+event LeftFoot 15
+event RightFoot 30
+cycle loop
+
+anim crawl
+290-310,1
+cycle loop
+
+anim crawlstillidle
+140-170,1
+cycle loop
+
+anim run
+400-420,1
+event LeftFoot 413
+event RightFoot 403
+cycle loop
+
+anim runscared
+430-450,1
+event LeftFoot 446
+event RightFoot 436
+cycle loop
+
+
+// HIT ANIMS:
+
+anim struck
+500-520,1
+cycle stop
+
+anim struckintree
+535-555,1
+cycle stop
+
+anim struckfromtree
+720-785,1
+cycle stop
+event detachfromtree 730
+event fall 740
+//Contact with ground 740
+
+
+
+
+anim Struckdown
+200-237,1
+cycle stop
+
+anim fliptostand
+250-280,1
+cycle stop
+
+anim crawltostand
+460-477,1
+cycle stop
+
+
+anim flipfromtree
+600-633,1
+cycle stop
+//event detachfromtree 610
+//event land 653
+//event stretch 610-653
+
+// Dave added - temp
+anim dropfromtree
+649-665,1
+cycle stop
+event land 653
+
+anim leapontree
+670-687,1
+cycle stop
+event leaveground 685
+//event attachtotree 700
+//event stretch 685-700
+
+anim attachtotree
+688-710,1
+cycle stop
+event attach 700
+//event stretch 685-700
+
+
+// IDLE ANIMS:
+
+
+anim stretch
+320-360,1
+cycle stop
+
+anim stare01
+370-390,1
+cycle stop
+
+anim treeidle01
+570-585,1
+cycle loop
+
+
+
+// TAUNT ANIMS:
+//stands alert >>then runs alertidle
+anim alert
+80-84,1
+cycle stop
+
+//idle anim for the stance
+anim alertidle
+90-110,1
+cycle loop
+
+
+// ATTACK ANIMS:
+
+anim throwstar
+40-55,1
+cycle loop
+event releasestar 44
+//star should only appear between frames 40-55

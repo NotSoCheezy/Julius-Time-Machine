@@ -1,0 +1,84 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSD4_03
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSD4_03_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 300
+PhonemeName = CSD4_03_P02EN
+SubTitleNr = 1
+InTime = 300
+OutTime = 1300
+
+[ACTORS]
+Count = 1
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5892.73,-477.76,2563.51,-6666.83,-432.87,2906.84
+  Spline = -5944.03,-468.35,2556.28,-6622.76,-412.38,3061.45
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5944.03,-468.35,2556.28,-6622.76,-412.38,3061.45
+  Spline = -5956.59,-467.23,2565.86,-5860.31,-629.81,3392.43
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_Thinking
+FitAnimToPhrase = 0
+ActorPos = -6038.700,-509.850,2613.100
+ActorRot = 0.000,1.300,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = body_LookAround
+FitAnimToPhrase = 0
+ActorPos = -6038.700,-509.850,2613.100
+ActorRot = 0.000,1.300,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

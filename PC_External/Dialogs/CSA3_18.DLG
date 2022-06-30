@@ -1,0 +1,122 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA3_18
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSA3_18_p01EN
+SubTitleNr = 0
+InTime = 100
+OutTime = 200
+PhonemeName = CSA3_18_p02EN
+SubTitleNr = 1
+InTime = 100
+OutTime = 900
+
+[ACTORS]
+Count = 2
+Actor = Rex
+Model = ACT_12_REX_SYNKER.BAD
+Actor = Elle
+Model = ACT_28_ELLE_SYNKER.BAD
+
+[CAMERAS]
+Count = 3
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 4.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 3
+  Spline = -13287.68,385.42,22797.82,-13516.37,161.00,23606.62
+  Spline = -13358.55,404.08,22868.57,-13210.55,141.28,23684.47
+  Spline = -13312.19,441.63,22948.88,-13469.86,-138.13,23577.75
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 2.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -13312.19,441.63,22948.88,-13469.86,-138.13,23577.75
+  Spline = -13260.08,425.44,23002.26,-13349.54,-101.25,23688.54
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -13244.96,441.52,22925.33,-13821.26,-68.23,23330.76
+  Spline = -13196.28,441.58,22997.59,-13740.89,-72.70,23439.44
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 88
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = deckchair_idle_01
+FitAnimToPhrase = 0
+ActorPos = -13316.780,275.440,23024.670
+ActorRot = -0.100,0.900,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyDeckChairIdle1
+FitAnimToPhrase = 0
+ActorPos = -13236.190,276.170,23090.486
+ActorRot = 0.000,8.860,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 77
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = deckchair_idle_01
+FitAnimToPhrase = 0
+ActorPos = -13316.780,275.440,23024.670
+ActorRot = -0.100,0.900,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyDeckChairIdle1
+FitAnimToPhrase = 0
+ActorPos = -13236.190,276.170,23090.486
+ActorRot = 0.000,8.860,0.000
+
+[PHRASES]
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 4
+Effect = Nothing
+EffectDelay = 0
+
+[END]

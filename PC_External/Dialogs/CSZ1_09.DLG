@@ -1,0 +1,191 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSZ1_09
+TotalPhrases = 5
+
+[PHONEMES]
+PhonemeName = CSZ1_29_P05EN
+SubTitleNr = 0
+InTime = 100
+OutTime = 0
+PhonemeName = CSZ1_09_P02EN
+SubTitleNr = 1
+InTime = 400
+OutTime = 0
+PhonemeName = CSZ1_09_P03EN
+SubTitleNr = 2
+InTime = 400
+OutTime = 0
+PhonemeName = CSZ1_09_P04EN
+SubTitleNr = 3
+InTime = 100
+OutTime = 0
+PhonemeName = CSZ1_09_P05EN
+SubTitleNr = 4
+InTime = 400
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 10.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -6927.17,528.81,551.50,-7708.63,483.68,891.32
+  Spline = -6922.44,528.81,563.97,-7734.10,483.53,823.40
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 16.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -6819.82,523.79,677.91,-7625.72,456.44,950.47
+  Spline = -6815.51,523.79,691.44,-7639.34,455.45,903.39
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = -6936.980,455.980,764.200
+ActorRot = 0.000,62.830,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_Thinking
+FitAnimToPhrase = 0
+ActorPos = -7040.420,465.110,639.340
+ActorRot = 0.000,-5.420,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = BodyEarScratch
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -6936.980,455.980,764.200
+ActorRot = 0.000,62.830,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_ChinScratch
+FitAnimToPhrase = 0
+ActorPos = -7040.420,465.110,639.340
+ActorRot = 0.000,-5.420,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -6936.980,455.980,764.200
+ActorRot = 0.000,62.830,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_nod
+FitAnimToPhrase = 0
+ActorPos = -6989.850,457.690,693.820
+ActorRot = 0.000,-4.320,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -6936.980,455.980,764.200
+ActorRot = 0.000,62.830,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_Angry
+FitAnimToPhrase = 0
+ActorPos = -6989.850,457.690,693.820
+ActorRot = 0.000,-4.320,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -6936.980,455.980,764.200
+ActorRot = 0.000,62.830,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_Yes
+FitAnimToPhrase = 0
+ActorPos = -6989.850,457.690,693.820
+ActorRot = 0.000,-4.320,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = event=clear
+EffectDelay = 1
+CameraNr = 3
+Effect = event=clear
+EffectDelay = 1
+CameraNr = 1
+Effect = event=clear
+EffectDelay = 1
+CameraNr = 3
+Effect = event=clear
+EffectDelay = 1
+CameraNr = 0
+Effect = event=clear
+EffectDelay = 1
+
+[END]

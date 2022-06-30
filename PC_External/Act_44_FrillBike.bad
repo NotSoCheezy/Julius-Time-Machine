@@ -1,0 +1,74 @@
+// Frill Bike
+
+mesh Act_44_FrillBike.mdl
+skeleton ActAnim_44_FrillBike.anm
+
+anim idle
+2-20,1
+cycle loop
+
+anim ride
+30-50,1
+cycle loop
+
+anim turn_left
+50-55,1
+cycle stop
+
+anim turn_left_idle
+55-65,1
+cycle loop
+
+anim turn_left_return
+65-70,1
+cycle stop
+
+anim turn_right
+70-75,1
+cycle stop
+
+anim turn_right_idle
+75-85,1
+cycle loop
+
+anim turn_right_return
+85-90,1
+cycle stop
+
+anim taunt
+95-170,1
+cycle stop
+
+anim stunned
+190-240,1
+cycle stop
+
+anim run
+250-280,1
+cycle stop
+
+anim attack_left
+290-310,1
+cycle stop
+
+anim attack_right
+320-340,1
+cycle stop
+
+anim block
+350-375,1
+cycle stop
+
+anim death
+380-425,1
+cycle stop
+
+anim death_2
+440-485,1
+cycle stop
+
+anim scared
+500-525,1
+cycle stop
+
+//end

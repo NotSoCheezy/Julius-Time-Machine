@@ -1,0 +1,7236 @@
+// MapEd Data File version 2
+// Copyright Krome Studios
+// Saved by [DAN]   Date: 1/07/2002   Time: 9:40:29 PM
+//
+
+
+name setup
+
+WorldMinMax = -8401.753,-1911.072,-9576.902,16994.008,6686.437,25511.777
+ground = room_z1_01.mdl
+collisionHeapSize = 2296832
+envcube = env_z1.mdl
+envrotate = 0
+fog = 0.60, 0.40, 0.20
+waterFog = 0.40, 0.35, 0.75
+maxDepth = 600.00
+fogPlane = 7000.00
+farPlane = 25000.00
+waterFogPlane = 5.00
+waterFarPlane = 3500.00
+bDisplayMist = 0
+music = level1.wav
+waterMaterial = fx_088
+causticMaterial = fx_089
+light = -1.00, 1.50, 1.30
+lod_0 = 1250
+lod_1 = 2500
+lod_2 = 4500
+lod_3 = 8000
+lod_4 = 12000
+lod_5 = 17000
+lod_6 = 25000
+lod_7 = 40000
+overlay_0 = room_z1_05.mdl, 1, none
+overlay_1 = room_z1_02.mdl, 0, grasseffect
+overlay_2 = room_z1_04.mdl, 0, none
+overlay_3 = room_z1_07.mdl, 0, none
+overlay_4 = room_z1_09.mdl, 1, none
+overlay_water = Room_z1_03.mdl, Room_z1_water
+
+name TY
+
+pos = 100, 2378, 3994
+rot = 0.002, 3.032, -0.005
+effect = 0,none
+// User: ???
+
+name TYATTRIBUTES
+
+pos = -7031, 456, 829
+rot = 0.000, 0.000, 0.000
+ID = 937,RangAttrib
+// User: DAN
+
+name FROG_TALISMAN
+
+pos = 175, 2688, -116
+rot = 0.388, -2.555, -0.031
+ID = 936,TalismanFrog
+bVisible = 0,false
+// User: DAN
+
+name TIGERTALISMAN
+
+pos = -254, 2689, 137
+rot = 0.578, 1.722, -0.115
+ID = 935,TalismanTiger
+bVisible = 0,false
+// User: DAN
+
+name DINGOTALISMAN
+
+pos = 311, 2691, 9
+rot = 0.410, -2.180, -0.050
+ID = 934,TalismanDingo
+bVisible = 0,false
+// User: DAN
+
+name COCKYTALISMAN
+
+pos = -189, 2688, -73
+rot = 0.497, 2.302, -0.038
+ID = 933,TalismanCocky
+bVisible = 0,false
+// User: DAN
+
+name PLATYTALISMAN
+
+pos = 1, 2687, -165
+rot = 0.427, 3.072, -0.030
+ID = 932,TalismanPlaty
+bVisible = 0,false
+// User: DAN
+
+name TRIGGERSPHERE
+
+pos = 1588, 2372, 11073
+ID = 168,JuliusTriggerA
+sphere = spherezone
+  pos = 1669,2508,11231
+  radius = 411.00
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = RequestTalisman
+OnAction = event
+  TargetID = 102,JuliusA
+  Message = RequestTalisman
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = 1578, 2372, 11218
+ID = 169,JuliusTriggerAOnEnter
+sphere = spherezone
+  pos = 1669,2508,11231
+  radius = 411.00
+bActive = 0,false
+OnEnter = event
+  TargetID = 102,JuliusA
+  Message = RequestTalisman
+OnAction = event
+  TargetID = 0,none
+  Message = RequestTalisman
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 0,false
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = -6704, 456, 1172
+ID = 925,MachineTrigger
+sphere = spherezone
+  pos = -6512,520,1112
+  radius = 212.80
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 317,JuliusH
+  Message = RequestTechnoRang
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = -7046, 456, 630
+ID = 926,JuliusTrigger
+sphere = spherezone
+  pos = -6969,522,711
+  radius = 180.75
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 317,JuliusH
+  Message = RequestElementalRang
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = -3812, 293, 10091
+ID = 928,JuliusTriggerB
+sphere = spherezone
+  pos = -3789,305,9972
+  radius = 324.75
+bActive = 1,true
+OnEnter = event
+  TargetID = 311,JuliusB
+  Message = RequestTalisman
+OnAction = event
+  TargetID = 311,JuliusB
+  Message = RequestTalisman
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = 4670, 1091, 10909
+ID = 929,JuliusTriggerC
+sphere = spherezone
+  pos = 4595,1142,10747
+  radius = 394.75
+bActive = 1,true
+OnEnter = event
+  TargetID = 316,JuliusC
+  Message = RequestTalisman
+OnAction = event
+  TargetID = 316,JuliusC
+  Message = RequestTalisman
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 1,true
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = -249, 2548, 734
+ID = 930,TriggerMaurie1
+sphere = spherezone
+  pos = -353,2696,575
+  radius = 274.40
+bActive = 1,true
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 919,TalkToMaurie1
+  Message = Activate
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+pos = -153, 2548, 828
+ID = 931,TriggerMaurie2
+sphere = spherezone
+  pos = -353,2696,575
+  radius = 274.40
+bActive = 0,false
+OnEnter = event
+  TargetID = 0,none
+  Message = none
+OnAction = event
+  TargetID = 309,Maurie
+  Message = GotFlamerang
+OnExit = event
+  TargetID = 0,none
+  Message = none
+bExclaim = 1,true
+bEnterOnceOnly = 0,false
+bExitOnceOnly = 0,false
+bActionOnceOnly = 0,false
+targetID = 0,none
+// User: DAN
+
+name DIALOG
+
+pos = 1435, 2372, 11508
+ID = 164,TEMachineExplained
+camera = camera
+  cameraSource = 1205.877, 2537.105, 11430.007
+  cameraTarget = 1635.547, 2498.402, 11094.400
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 50
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = Enable
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = Activate
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 1440, 2372, 11302
+ID = 165,VisitAllPortalsA
+camera = camera
+  cameraSource = 1205.877, 2537.105, 11430.007
+  cameraTarget = 1635.547, 2498.402, 11094.400
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 52
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 1440, 2372, 11191
+ID = 166,FightBossA
+camera = camera
+  cameraSource = 1205.877, 2537.105, 11430.007
+  cameraTarget = 1635.547, 2498.402, 11094.400
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 59
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 1440, 2372, 11395
+ID = 167,RecapTEMachineExplained
+camera = camera
+  cameraSource = 1205.877, 2537.105, 11430.007
+  cameraTarget = 1635.547, 2498.402, 11094.400
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 51
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 5993, 106, -2487
+ID = 890,PuzzleA
+camera = camera
+  cameraSource = 5441.697, 278.570, -2491.306
+  cameraTarget = 5873.855, 206.768, -2148.492
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 70
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 886,ScriptPA2
+  Message = Activate
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -3404, 66, 9796
+ID = 891,IntroToPippyBeach
+camera = camera
+  cameraSource = -3216.060, 363.864, 9929.392
+  cameraTarget = -3621.798, 304.808, 9962.499
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 55
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -3370, 117, 10005
+ID = 892,FightBossB
+camera = camera
+  cameraSource = -3216.060, 363.864, 9929.392
+  cameraTarget = -3621.798, 304.808, 9962.499
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 60
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -3357, 113, 9892
+ID = 893,VisitAllPortalsB
+camera = camera
+  cameraSource = -3216.060, 363.864, 9929.392
+  cameraTarget = -3621.798, 304.808, 9962.499
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 57
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6525, 454, 1087
+ID = 897,MachineMakesMegarang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 19
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotMegarang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6694, 454, 1087
+ID = 898,MachineMakesMultirang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 17
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotMultirang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7134, 454, 352
+ID = 899,GetMoreFireTE
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 8
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6359, 454, 1092
+ID = 900,MachineMakesChronorang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 21
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotChronorang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6769, 454, 1086
+ID = 901,MachineMakesZoomerang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 16
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotZoomerang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6614, 454, 1084
+ID = 902,MachineMakesInfrarang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 18
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotInfrarang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 405, 2550, 300
+ID = 903,FirstRainbowScale
+camera = camera
+  cameraSource = 41.945, 2727.705, 771.346
+  cameraTarget = 67.787, 2653.073, 395.357
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 25
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 393, 2549, 448
+ID = 904,AllRainbowScalesCollected
+camera = camera
+  cameraSource = 41.945, 2727.705, 771.346
+  cameraTarget = 67.787, 2653.073, 395.357
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 26
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7127, 454, 444
+ID = 906,GetMoreIceTE
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 9
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7118, 454, 537
+ID = 907,GetMoreLightningTE
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 11
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7050, 454, 447
+ID = 908,GiveFrostyrang
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 13
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotFrostyrang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7041, 454, 528
+ID = 909,GiveZappyrang
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 15
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotZappyrang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6960, 456, 529
+ID = 910,ReminderToVisitAllPortals
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 58
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -7059, 456, 347
+ID = 911,GiveFlamerang
+camera = camera
+  cameraSource = -6536.730, 477.236, 667.699
+  cameraTarget = -6837.134, 453.861, 703.709
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 12
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotFlamerang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -6443, 454, 1087
+ID = 912,MachineMakesKaboomerang
+camera = camera
+  cameraSource = -6639.220, 453.861, 764.441
+  cameraTarget = -6506.126, 453.861, 932.855
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 20
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 937,RangAttrib
+  Message = GotKaboomarang
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 4335, 1076, 10739
+ID = 913,RecapIntroToLakeBurril
+camera = camera
+  cameraSource = 4235.724, 1239.103, 10366.604
+  cameraTarget = 4571.901, 1161.411, 10740.560
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 54
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 4539, 1060, 10615
+ID = 914,FightBossC
+camera = camera
+  cameraSource = 4235.724, 1239.103, 10366.604
+  cameraTarget = 4571.901, 1161.411, 10740.560
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 61
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 4435, 1085, 10670
+ID = 915,VisitAllPortalsC
+camera = camera
+  cameraSource = 4235.724, 1239.103, 10366.604
+  cameraTarget = 4571.901, 1161.411, 10740.560
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 56
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 4239, 1078, 10797
+ID = 916,IntroToLakeBurril
+camera = camera
+  cameraSource = 4235.724, 1239.103, 10366.604
+  cameraTarget = 4571.901, 1161.411, 10740.560
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 53
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -276, 2545, 405
+ID = 917,GameCompletedButBonusWorldNotFoundYet
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 27
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -437, 2539, 391
+ID = 918,FirstTimeInRainbowCliffs
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 2
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -357, 2547, 476
+ID = 919,TalkToMaurie1
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 22
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -207, 2546, 641
+ID = 920,TalkToMaurie3
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 24
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -280, 2547, 555
+ID = 921,TalkToMaurie2
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 23
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -101, 2547, 577
+ID = 922,AlternativeLines
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 29
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -196, 2545, 487
+ID = 923,Got100PercentOfEverything
+camera = camera
+  cameraSource = -91.016, 2698.304, 425.661
+  cameraTarget = -343.753, 2618.955, 525.475
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 28
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+name WATERVOLUME
+
+pos = 462, -649, -381
+rot = 0.000, 0.400, -0.000
+scale = 20000.000, 1000.000, 10000.000
+// User: CML
+
+name SCRIPT
+
+pos = 1327, 2372, 11195
+ID = 162,ScriptFightBossA
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 2,BliBliStationPortal
+  Message = Show
+Message1 = event
+  TargetID = 166,FightBossA
+  Message = Activate
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 1333, 2372, 11513
+ID = 163,ScriptIntroA
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 161,TwoUpPortal
+  Message = Show
+Message1 = event
+  TargetID = 164,TEMachineExplained
+  Message = Activate
+Message2 = event
+  TargetID = 163,ScriptIntroA
+  Message = Disable
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 486, 2550, 451
+ID = 882,AllScales
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 904,AllRainbowScalesCollected
+  Message = Activate
+Message1 = event
+  TargetID = 937,RangAttrib
+  Message = GotExtraHealth
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 5981, 88, -2198
+ID = 885,ScriptPA1
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 308,ButtonPA1
+  Message = Deactivate
+Message1 = event
+  TargetID = 890,PuzzleA
+  Message = Activate
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 5983, 97, -2336
+ID = 886,ScriptPA2
+delay = 0.500
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 803,PontoonPA1
+  Message = Activate
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = -3287, 122, 10006
+ID = 887,ScriptFightBossB
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 846,PippyBeachPortal
+  Message = Show
+Message1 = event
+  TargetID = 892,FightBossB
+  Message = Activate
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 4499, 1055, 10558
+ID = 888,ScriptFightBossC
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 858,LakeBurrilPortal
+  Message = Show
+Message1 = event
+  TargetID = 914,FightBossC
+  Message = Activate
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+name CONDITIONALSCRIPT
+
+pos = -25, 2590, -664
+ID = 874,CScriptGameCompleted
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 9,AllComplete
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 847,BonusWorldPortal
+  Message = Show
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 71, 2590, -612
+ID = 875,CScriptBossDefeatedE
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 7,E-BossDead
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 935,TalismanTiger
+  Message = Activate
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 335, 2598, -472
+ID = 876,CScriptBossDefeatedB
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 4,B-BossDead
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 311,JuliusB
+  Message = Hide
+Message1 = event
+  TargetID = 842,TECollectorB
+  Message = Hide
+Message2 = event
+  TargetID = 928,JuliusTriggerB
+  Message = Disable
+Message3 = event
+  TargetID = 846,PippyBeachPortal
+  Message = Show
+Message4 = event
+  TargetID = 936,TalismanFrog
+  Message = Activate
+Message5 = event
+  TargetID = 835,CounterPropB
+  Message = Hide
+Message6 = event
+  TargetID = 838,CounterPropHIce
+  Message = Hide
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 416, 2596, -427
+ID = 877,CScriptBossDefeatedA
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 3,A-BossDead
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 102,JuliusA
+  Message = Hide
+Message1 = event
+  TargetID = 159,TECollectorA
+  Message = Hide
+Message2 = event
+  TargetID = 168,JuliusTriggerA
+  Message = Disable
+Message3 = event
+  TargetID = 2,BliBliStationPortal
+  Message = Show
+Message4 = event
+  TargetID = 934,TalismanDingo
+  Message = Activate
+Message5 = event
+  TargetID = 158,CounterPropA
+  Message = Hide
+Message6 = event
+  TargetID = 837,CounterPropHFire
+  Message = Hide
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 163, 2590, -571
+ID = 878,CScriptBossDefeatedD
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 6,D-BossDead
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 933,TalismanCocky
+  Message = Activate
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 575, 2592, -337
+ID = 879,CScriptFirstLevelEntry
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 8,FirstLevel
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 918,FirstTimeInRainbowCliffs
+  Message = Activate
+Message1 = event
+  TargetID = 161,TwoUpPortal
+  Message = Hide
+Message2 = event
+  TargetID = 169,JuliusTriggerAOnEnter
+  Message = Enable
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 256, 2597, -523
+ID = 880,CScriptBossDefeatedC
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 5,C-BossDead
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 316,JuliusC
+  Message = Hide
+Message1 = event
+  TargetID = 844,TECollectorC
+  Message = Hide
+Message2 = event
+  TargetID = 929,JuliusTriggerC
+  Message = Disable
+Message3 = event
+  TargetID = 858,LakeBurrilPortal
+  Message = Show
+Message4 = event
+  TargetID = 932,TalismanPlaty
+  Message = Activate
+Message5 = event
+  TargetID = 840,CounterPropC
+  Message = Hide
+Message6 = event
+  TargetID = 839,CounterPropHLightning
+  Message = Hide
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+pos = 501, 2594, -382
+ID = 881,CScriptTwoRangs
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 1,BothRangs
+bNegative = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 147,GateToA
+  Message = Activate
+Message1 = event
+  TargetID = 930,TriggerMaurie1
+  Message = Disable
+Message2 = event
+  TargetID = 931,TriggerMaurie2
+  Message = Enable
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+name SOUNDPROP
+
+pos = -3944, 1272, 2422
+rot = 0.000, 0.000, 0.000
+sound = *EnvKookaburra,t:\game\art\data\SoundEvents.txt,*
+minDelay = 15.000
+maxDelay = 30.000
+bActive = 1,true
+ID = 275,SoundProp1
+dummySphere = spherezone
+  pos = -3944,1272,2422
+  radius = 1500.00
+// User: AJM
+
+pos = -5955, 914, 6756
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdSongLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 6.000
+maxDelay = 15.000
+bActive = 1,true
+ID = 842,SoundProp1
+dummySphere = spherezone
+  pos = -5955,914,6756
+  radius = 1500.00
+// User: AJM
+
+pos = -4869, 914, 1133
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp1,t:\game\art\data\SoundEvents.txt,*
+minDelay = 6.000
+maxDelay = 12.000
+bActive = 1,true
+ID = 843,SoundProp2
+dummySphere = spherezone
+  pos = -4869,914,1133
+  radius = 1500.00
+// User: AJM
+
+pos = -3223, 741, 1259
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp4,t:\game\art\data\SoundEvents.txt,*
+minDelay = 6.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 844,SoundProp3
+dummySphere = spherezone
+  pos = -3223,741,1259
+  radius = 1500.00
+// User: AJM
+
+pos = 2295, 2010, 4041
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp3,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 845,SoundProp4
+dummySphere = spherezone
+  pos = 2295,2010,4041
+  radius = 1500.00
+// User: AJM
+
+pos = -395, 2379, 4737
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp4,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 15.000
+bActive = 1,true
+ID = 846,SoundProp5
+dummySphere = spherezone
+  pos = -395,2379,4737
+  radius = 1501.00
+// User: AJM
+
+pos = 477, 2375, 4591
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdSongLP,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 15.000
+bActive = 1,true
+ID = 847,SoundProp6
+dummySphere = spherezone
+  pos = 477,2375,4591
+  radius = 1501.00
+// User: AJM
+
+pos = -508, 2539, 73
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp4,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 848,SoundProp7
+dummySphere = spherezone
+  pos = -508,2539,73
+  radius = 1500.00
+// User: AJM
+
+pos = 461, 2550, -194
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp1,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 12.000
+bActive = 1,true
+ID = 849,SoundProp8
+dummySphere = spherezone
+  pos = 461,2550,-194
+  radius = 1500.00
+// User: AJM
+
+pos = -4929, 1341, 3288
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp3,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 13.000
+bActive = 1,true
+ID = 850,SoundProp9
+dummySphere = spherezone
+  pos = -4929,1341,3288
+  radius = 1500.00
+// User: AJM
+
+pos = -5728, 747, 5123
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp1,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 15.000
+bActive = 1,true
+ID = 851,SoundProp10
+dummySphere = spherezone
+  pos = -5728,747,5123
+  radius = 1500.00
+// User: AJM
+
+pos = -2802, 2235, 4436
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp3,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 852,SoundProp11
+dummySphere = spherezone
+  pos = -2802,2235,4436
+  radius = 1500.00
+// User: AJM
+
+pos = -1237, 1472, 3329
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp1,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 853,SoundProp12
+dummySphere = spherezone
+  pos = -1237,1472,3329
+  radius = 1500.00
+// User: AJM
+
+pos = 4651, 1459, 5308
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp4,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 854,SoundProp13
+dummySphere = spherezone
+  pos = 4651,1459,5308
+  radius = 1500.00
+// User: AJM
+
+pos = 4238, 617, -1267
+rot = 0.000, 0.000, 0.000
+sound = *EnvBirdChirp4,t:\game\art\data\SoundEvents.txt,*
+minDelay = 7.000
+maxDelay = 14.000
+bActive = 1,true
+ID = 855,SoundProp14
+dummySphere = spherezone
+  pos = 4238,617,-1267
+  radius = 1500.00
+// User: AJM
+
+pos = 66, 2858, 2173
+rot = 0.000, 0.000, 0.000
+sound = *TyWoodGroan,t:\game\art\data\SoundEvents.txt,*
+minDelay = 2.000
+maxDelay = 4.000
+bActive = 1,true
+ID = 856,SoundProp15
+dummySphere = spherezone
+  pos = 66,2858,2173
+  radius = 1500.00
+// User: AJM
+
+name PORTAL
+
+pos = 360, 2399, 13139
+ID = 2,BliBliStationPortal
+standPos = -192.000, 4379.000, 4551.000
+standYaw = -632.000
+connectingLevel = 7,a4
+bExitPortal = 0,false
+bVisible = 0,false
+// User: DAN
+
+pos = 1984, 2372, 12506
+ID = 3,ShipRexPortal
+standPos = -6053.172, 439.254, 706.999
+standYaw = 0.000
+connectingLevel = 6,a3
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = -1466, 2372, 12508
+ID = 160,AWalkInTheParkPortal
+standPos = -6639.220, 453.861, 764.441
+standYaw = 0.000
+connectingLevel = 5,a2
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = -1097, 2372, 11340
+ID = 161,TwoUpPortal
+standPos = -6639.220, 453.861, 764.441
+standYaw = 0.000
+connectingLevel = 4,a1
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = -4095, 171, 8300
+ID = 846,PippyBeachPortal
+standPos = -6027.000, 522.000, 1142.000
+standYaw = 0.000
+connectingLevel = 19,d4
+bExitPortal = 0,false
+bVisible = 0,false
+// User: DAN
+
+pos = 6817, 722, 620
+ID = 847,BonusWorldPortal
+standPos = 223.000, 2376.000, 5121.000
+standYaw = -632.000
+connectingLevel = 21,e2
+bExitPortal = 0,false
+bVisible = 0,false
+// User: DAN
+
+pos = -3839, 188, 9064
+ID = 849,BridgeOnTheRiverTy
+standPos = -62.000, 2379.000, 4966.000
+standYaw = -632.000
+connectingLevel = 8,b1
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = -4011, 310, 8722
+ID = 851,OutbackSafariPortal
+standPos = -6053.172, 439.254, 706.999
+standYaw = 0.000
+connectingLevel = 10,b3
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = -3737, 211, 8441
+ID = 853,TeaPartyAtHangingRockPortal
+standPos = -6053.172, 439.254, 706.999
+standYaw = 0.000
+connectingLevel = 9,b2
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = 10, 64, -7842
+ID = 854,CassCrestPortal
+standPos = 0.000, 0.000, 0.000
+standYaw = 0.000
+connectingLevel = 20,e1
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = 3971, 1002, 8646
+ID = 855,BeyondTheBlackStumpPortal
+standPos = -6639.220, 453.861, 764.441
+standYaw = 0.000
+connectingLevel = 13,c2
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = 4449, 1034, 7839
+ID = 856,LyreLyrePantsOnFirePortal
+standPos = -6639.220, 453.861, 764.441
+standYaw = 0.000
+connectingLevel = 12,c1
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = 3881, 1003, 9168
+ID = 857,RexMarksTheSpotPortal
+standPos = -91.016, 2553.495, 425.661
+standYaw = 0.000
+connectingLevel = 14,c3
+bExitPortal = 0,false
+bVisible = 1,true
+// User: DAN
+
+pos = 3532, 1051, 10822
+ID = 858,LakeBurrilPortal
+standPos = -6053.172, 439.254, 706.999
+standYaw = 0.000
+connectingLevel = 15,c4
+bExitPortal = 0,false
+bVisible = 0,false
+// User: DAN
+
+name THUNDEGGCOLLECTOR
+
+pos = 1626, 2370, 11570
+ID = 159,TECollectorA
+rot = 0.000, -2.583, 0.000
+bVisible = 1,true
+// User: DAN
+
+pos = -3848, 260, 9777
+ID = 842,TECollectorB
+rot = 0.000, -0.712, -0.000
+bVisible = 1,true
+// User: DAN
+
+pos = 4395, 1069, 10998
+ID = 844,TECollectorC
+rot = -0.125, -1.991, -0.145
+bVisible = 1,true
+// User: DAN
+
+name JULIUSMACHINE
+
+pos = -7179, 459, 714
+ID = 841,blank
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+name COUNTERPROP
+
+pos = 1494, 2372, 11445
+ID = 158,CounterPropA
+bVisible = 1,true
+rot = 0.000, -1.040, -0.000
+type = 1,FireTE
+// User: DAN
+
+pos = -6650, 464, 1123
+ID = 834,CounterPropHGoldenCog
+bVisible = 1,true
+rot = 0.000, 0.040, -0.000
+type = 0,GoldenCog
+// User: DAN
+
+pos = -3703, 260, 9705
+ID = 835,CounterPropB
+bVisible = 1,true
+rot = 0.000, 0.773, -0.000
+type = 2,IceTE
+// User: DAN
+
+pos = -7058, 455, 574
+ID = 837,CounterPropHFire
+bVisible = 1,true
+rot = 0.000, 1.630, 0.000
+type = 1,FireTE
+// User: DAN
+
+pos = -7058, 455, 574
+ID = 838,CounterPropHIce
+bVisible = 1,true
+rot = 0.000, 1.630, 0.000
+type = 2,IceTE
+// User: DAN
+
+pos = -7058, 455, 574
+ID = 839,CounterPropHLightning
+bVisible = 1,true
+rot = 0.000, 1.630, 0.000
+type = 4,AirTE
+// User: DAN
+
+pos = 4332, 1058, 10801
+ID = 840,CounterPropC
+bVisible = 1,true
+rot = 0.000, -0.326, -0.000
+type = 4,AirTE
+// User: DAN
+
+name OPAL
+
+pos = 1677, 2398, 11482
+// User: DAN
+
+pos = -42, 1329, 130
+// User: ???
+
+pos = 3616, -477, 460
+// User: DAN
+
+pos = 6905, 801, 630
+// User: DAN
+
+pos = -4272, 1594, 6026
+// User: DAN
+
+pos = -7423, 732, -607
+// User: DAN
+
+pos = -2023, 472, 9382
+// User: DAN
+
+pos = -3270, 66, -1611
+// User: DAN
+
+pos = 6786, 256, 1068
+// User: ???
+
+pos = 4262, 1113, 6011
+// User: DAN
+
+pos = 878, 1932, -1660
+// User: DAN
+
+pos = 14, 125, -6602
+// User: DAN
+
+pos = -736, 2135, -102
+// User: ???
+
+pos = 4471, 1079, 7189
+// User: DAN
+
+pos = 7188, -175, 5467
+// User: DAN
+
+name PICNICBASKET
+
+pos = 1703, -24, -5132
+rot = 0.000, 0.000, 0.000
+type = 0,DDABasket
+bVisible = 1,true
+// User: DAN
+
+name CRATE
+
+pos = 4241, 1490, 8229
+rot = 0.000, 0.500, -0.000
+count = 1
+platformID = 0,none
+(A)Opal = 0
+ID = 817,CrateRS1
+// User: DAN
+
+name INVISICRATE
+
+pos = 265, 3182, 14189
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 187, 2372, 13936
+platformID = 0,none
+(A)Opal = 0
+ID = 4,InvisicrateRS3
+// User: DAN
+
+pos = 40, 3247, 226
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 49, 2618, 204
+platformID = 0,none
+(A)Opal = 0
+ID = 805,InvisicrateRS6
+// User: DAN
+
+pos = 358, 2956, 7891
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 363, 2372, 7889
+platformID = 0,none
+(A)Opal = 0
+ID = 806,InvisiCrateRS9
+// User: DAN
+
+pos = 5386, 646, -2559
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 5337, 133, -2661
+platformID = 0,none
+(A)Opal = 0
+ID = 807,InvisicrateRS2
+// User: DAN
+
+pos = 200, 1088, -9208
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 91, 214, -9136
+platformID = 0,none
+(A)Opal = 0
+ID = 808,InvisiCrateRS8
+// User: DAN
+
+pos = -5866, 942, 6575
+rot = 0.000, 0.000, 0.000
+count = 1
+platformID = 0,none
+(A)Opal = 0
+ID = 809,InvisicrateRS7
+// User: DAN
+
+pos = -6945, 1020, 648
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = -6924, 456, 771
+platformID = 0,none
+(A)Opal = 0
+ID = 810,InvisicrateRS5
+// User: DAN
+
+pos = -3353, 557, 9244
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = -3342, 148, 9259
+platformID = 0,none
+(A)Opal = 0
+ID = 811,InvisicrateRS4
+// User: DAN
+
+pos = 3713, 1779, 9444
+rot = 0.000, -0.000, -0.000
+count = 0
+platformID = 0,none
+(A)Opal = 0
+ID = 813,InvisicratePC3
+// User: DAN
+
+pos = 3620, 1651, 9893
+rot = 0.000, -0.000, -0.000
+count = 0
+platformID = 0,none
+(A)Opal = 0
+ID = 814,InvisicratePC2
+// User: DAN
+
+pos = 3559, 1594, 7435
+rot = 0.000, 0.000, 0.000
+count = 1
+waypoints = waypoint
+  waypoint = 3520, 1237, 7281
+platformID = 0,none
+(A)Opal = 0
+ID = 815,InvisicrateRS1
+// User: DAN
+
+pos = 4006, 1467, 9745
+rot = 0.000, 0.000, 0.000
+count = 0
+platformID = 0,none
+(A)Opal = 0
+ID = 816,InvisicratePC1
+// User: DAN
+
+name DANGEROUSSNAKE
+
+pos = 27, 1262, -103
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+name PONTOON
+
+pos = 3447, -149, 380
+speed = 200.000
+turnRange = 250.000
+turnSpeed = 1.000
+rot = 0.129, 2.507, -0.040
+waypoints = waypoint
+  waypoint = 2773, -149, -267
+  waypoint = 1877, -149, -1130
+  waypoint = 17, -149, -1754
+  waypoint = -1590, -149, -1664
+  waypoint = -3265, -149, -1610
+bActive = 0,false
+ID = 803,PontoonPA1
+bMoveOne = 1,true
+bNonCircular = 1,true
+// User: DAN
+
+name TOWER1
+
+pos = 4497, 716, 9799
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+ID = 802,TowerPC2
+// User: DAN
+
+name TOWER2
+
+pos = 4241, 827, 8223
+rot = 0.000, -2.912, 0.000
+scale = 1.000, 1.000, 1.000
+ID = 801,TowerPC1
+// User: DAN
+
+name BURNINGLOG
+
+pos = 4110, 1050, 7173
+rot = 0.000, 0.000, 0.000
+scale = 1.175, 1.400, 1.175
+collide = 1,true
+// User: DAN
+
+pos = 4183, 1050, 6893
+rot = 0.000, 0.800, -0.000
+scale = 1.300, 1.525, 1.300
+collide = 1,true
+// User: DAN
+
+pos = 3762, 1050, 7181
+rot = 0.000, -0.400, -0.000
+scale = 1.325, 1.625, 1.325
+collide = 1,true
+// User: DAN
+
+pos = 3534, 1050, 7408
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.417, 1.000
+collide = 1,true
+// User: DAN
+
+pos = 3427, 1050, 7129
+rot = 0.000, 2.370, 0.000
+scale = 1.000, 1.337, 1.000
+collide = 1,true
+// User: DAN
+
+pos = 3602, 1050, 6891
+rot = 0.000, 1.200, -0.000
+scale = 1.000, 1.227, 1.000
+collide = 1,true
+// User: DAN
+
+pos = 3893, 1050, 6834
+rot = 0.000, -1.963, 0.000
+scale = 1.250, 1.250, 1.250
+collide = 1,true
+// User: DAN
+
+name KINGFISHER
+
+pos = 2299, 2102, 4054
+count = 1
+rot = 0.000, 0.000, 0.000
+waypoints = waypoint
+  waypoint = 3912, -149, 3180
+  waypoint = 2371, -149, 2582
+scale = 1203.000, 718.699, 1152.000
+// User: DAN
+
+pos = -3704, 1247, 1042
+count = 4
+rot = 0.000, 0.269, -0.000
+waypoints = waypoint
+  waypoint = -5417, -149, -885
+  waypoint = -3789, -149, -934
+  waypoint = -1795, -149, -363
+scale = 2442.000, 650.000, 1143.600
+// User: DAN
+
+pos = 64, 2855, -1330
+count = 3
+rot = 0.000, -0.184, 0.000
+waypoints = waypoint
+  waypoint = 2257, -149, -373
+  waypoint = -147, -149, -2428
+  waypoint = -2014, -149, -793
+scale = 1338.000, 449.000, 1119.000
+// User: DAN
+
+name LORIKEET
+
+pos = -1625, 2816, 16082
+count = 5
+range = 2000.000
+// User: DAN
+
+name IBIS
+
+pos = 4680, -149, 2690
+count = 1
+rot = 0.000, 2.292, 0.000
+scale = 969.000, 200.000, 960.000
+// User: DAN
+
+pos = 4154, -149, 2973
+count = 1
+rot = 0.000, 2.292, 0.000
+scale = 969.000, 200.000, 960.000
+// User: DAN
+
+pos = -3751, -149, -251
+count = 1
+rot = 0.000, 0.465, -0.000
+scale = 676.499, 200.000, 666.899
+// User: DAN
+
+pos = -6633, -169, -1270
+count = 1
+rot = 0.000, 0.000, 0.000
+scale = 901.499, 200.000, 894.899
+// User: DAN
+
+pos = -7299, -169, -1801
+count = 1
+rot = 0.000, 0.000, 0.000
+scale = 741.900, 200.000, 957.870
+// User: DAN
+
+pos = -6762, -169, -2039
+count = 1
+rot = 0.000, 0.934, -0.000
+scale = 918.000, 200.000, 915.000
+// User: DAN
+
+pos = -7168, -169, -1360
+count = 1
+rot = 0.000, 0.000, 0.000
+scale = 300.000, 200.000, 300.000
+// User: DAN
+
+pos = 1358, -149, 1800
+count = 1
+rot = 0.000, 2.292, 0.000
+scale = 969.000, 200.000, 960.000
+// User: DAN
+
+pos = -1309, -149, 677
+count = 1
+rot = 0.000, 3.142, 0.000
+scale = 1089.000, 200.000, 1083.000
+// User: DAN
+
+pos = -2035, -149, 744
+count = 1
+rot = 0.000, 2.292, 0.000
+scale = 1035.000, 200.000, 1026.000
+// User: DAN
+
+pos = -572, -149, 1199
+count = 1
+rot = 0.000, -2.588, 0.000
+scale = 969.000, 200.000, 960.000
+// User: DAN
+
+name BUTTERFLY
+
+pos = 11, 2480, 13204
+count = 2
+rot = 0.000, -1.257, -0.000
+scale = 502.500, 322.250, 280.000
+// User: DAN
+
+pos = 261, 2480, 13472
+count = 2
+rot = 0.000, 0.260, -0.000
+scale = 502.500, 322.250, 280.000
+// User: DAN
+
+pos = 639, 2480, 13393
+count = 2
+rot = 0.000, -0.827, -0.000
+scale = 502.500, 322.250, 280.000
+// User: DAN
+
+pos = 590, 2480, 13022
+count = 2
+rot = 0.000, 0.823, -0.000
+scale = 502.500, 322.250, 280.000
+// User: DAN
+
+pos = 251, 2480, 12905
+count = 2
+rot = 0.000, -0.347, -0.000
+scale = 502.500, 322.250, 280.000
+// User: DAN
+
+pos = 1267, 2480, 13067
+count = 3
+rot = 0.000, -0.260, -0.000
+scale = 463.125, 308.275, 700.249
+// User: DAN
+
+pos = -480, 2480, 12975
+count = 3
+rot = 0.000, 0.640, -0.000
+scale = 463.125, 308.275, 700.249
+// User: DAN
+
+name GRASSHOPPER
+
+pos = 1716, 2372, 13039
+count = 4
+range = 300.000
+// User: DAN
+
+pos = -186, 2372, 12854
+count = 3
+range = 300.000
+// User: DAN
+
+pos = -852, 2372, 12956
+count = 3
+range = 300.000
+// User: DAN
+
+name DRAGONFLY
+
+pos = 6191, 66, 4322
+count = 3
+rot = 0.000, 0.645, 0.000
+scale = 464.099, 296.000, 551.696
+// User: DAN
+
+pos = 5246, 56, 4233
+count = 10
+rot = 0.000, 0.736, 0.000
+scale = 719.699, 290.000, 839.400
+// User: DAN
+
+pos = 5518, 46, 3109
+count = 4
+rot = 0.000, 0.000, 0.000
+scale = 942.000, 259.701, 765.000
+// User: DAN
+
+pos = 3653, -18, -2699
+count = 2
+rot = 0.000, 3.315, 0.000
+scale = 776.400, 200.000, 776.100
+// User: DAN
+
+pos = 3428, 242, 2629
+count = 2
+rot = 0.000, 0.345, -0.000
+scale = 1433.312, 503.301, 1172.312
+// User: DAN
+
+pos = 2274, 298, 2183
+count = 2
+rot = 0.000, 1.935, 0.000
+scale = 1433.312, 476.900, 1172.312
+// User: DAN
+
+pos = 3043, -26, -2983
+count = 2
+rot = 0.000, 0.368, 0.000
+scale = 819.000, 200.000, 822.000
+// User: DAN
+
+pos = -1603, 145, 713
+count = 4
+rot = 0.000, 0.285, -0.000
+scale = 1433.312, 385.701, 1172.312
+// User: DAN
+
+pos = 844, 191, 1305
+count = 3
+rot = 0.000, 0.840, -0.000
+scale = 1433.312, 385.701, 1172.312
+// User: DAN
+
+name FIREFLY
+
+pos = -3788, 1670, 6067
+count = 10
+rot = 0.000, -0.184, 0.000
+scale = 259.201, 386.990, 407.399
+// User: DAN
+
+name WATERDRAGON
+
+pos = -3947, 116, 502
+// User: DAN
+
+pos = 3179, 302, 3631
+// User: DAN
+
+pos = 69, 324, 2312
+// User: DAN
+
+pos = -1707, 234, 2077
+// User: DAN
+
+name SPARROW
+
+pos = -1949, 2054, 16112
+scale = 1.000
+// User: DAN
+
+name SEAGULL
+
+pos = 3278, 1008, -1863
+count = 5
+scale = 2036.000, 1000.000, 2772.201
+rot = 0.000, -0.222, -0.000
+// User: ???
+
+pos = -237, 938, -2735
+count = 3
+scale = 3333.000, 1000.000, 1836.000
+rot = 0.000, 0.079, -0.000
+// User: DAN
+
+pos = -1998, 1521, -2464
+count = 5
+scale = 2555.000, 1000.000, 1922.000
+rot = 0.000, -0.368, 0.000
+// User: ???
+
+name WALLABY
+
+pos = 274, 2412, 13146
+count = 5
+scale = 1181.200, 130.450, 760.450
+rot = 0.000, 3.142, -0.000
+// User: DAN
+
+pos = 911, 2412, 12681
+count = 3
+scale = 1181.200, 130.450, 760.450
+rot = 0.000, 3.142, -0.000
+// User: DAN
+
+pos = 743, 2412, 11542
+count = 3
+scale = 1181.200, 130.450, 760.450
+rot = 0.000, 3.142, -0.000
+// User: DAN
+
+pos = -381, 2412, 12798
+count = 2
+scale = 1181.200, 130.450, 760.450
+rot = 0.000, 3.142, -0.000
+// User: DAN
+
+pos = -526, 2412, 11371
+count = 5
+scale = 915.950, 130.450, 760.700
+rot = 0.000, 3.102, 0.000
+// User: DAN
+
+pos = 3031, 522, 4155
+count = 3
+scale = 727.299, 426.254, 685.000
+rot = 0.000, 0.000, 0.000
+// User: ???
+
+name FROG
+
+pos = 1400, -149, 667
+count = 2
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+pos = 5227, -106, 4231
+count = 3
+scale = 669.009, 188.670, 703.125
+rot = 0.000, 0.718, 0.000
+// User: DAN
+
+pos = 5956, -149, 3259
+count = 3
+scale = 616.000, 300.000, 616.000
+rot = 0.000, -0.773, 0.000
+// User: DAN
+
+pos = 1770, -149, 2331
+count = 1
+scale = 834.000, 200.000, 834.000
+rot = 0.000, 0.285, -0.000
+// User: DAN
+
+pos = 2590, -149, 2535
+count = 3
+scale = 897.000, 200.000, 897.000
+rot = 0.000, 0.450, -0.000
+// User: DAN
+
+pos = 3416, -149, 2947
+count = 4
+scale = 888.000, 200.000, 888.000
+rot = 0.000, 0.615, -0.000
+// User: DAN
+
+pos = -5937, -149, -2613
+count = 2
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = -6807, -149, -1970
+count = 1
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = -6166, -149, -1327
+count = 3
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = 4404, -169, 3380
+count = 2
+scale = 738.000, 200.000, 738.000
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+pos = 3473, -35, -2769
+count = 3
+scale = 833.174, 300.000, 848.773
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+pos = -6910, -149, -591
+count = 3
+scale = 400.780, 300.240, 400.960
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+pos = -1023, -149, -500
+count = 2
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = 566, -149, 1272
+count = 2
+scale = 867.000, 200.000, 870.000
+rot = 0.000, 0.000, 0.000
+// User: DAN
+
+pos = -2123, -149, 358
+count = 2
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = -1358, -149, 368
+count = 3
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+pos = 4692, 983, 8197
+count = 5
+scale = 452.500, 200.000, 1145.900
+rot = 0.000, 0.312, -0.000
+// User: DAN
+
+pos = 6235, -149, 5017
+count = 3
+scale = 616.660, 300.000, 613.660
+rot = 0.000, 0.681, 0.000
+// User: DAN
+
+pos = 3953, 1042, 9735
+count = 3
+scale = 372.774, 372.500, 720.150
+rot = 0.192, 1.543, -0.173
+// User: DAN
+
+pos = 4395, 983, 9032
+count = 5
+scale = 452.500, 200.000, 1145.900
+rot = 0.000, 0.312, -0.000
+// User: DAN
+
+pos = -821, -149, 1023
+count = 3
+scale = 897.000, 200.000, 903.000
+rot = 0.000, 0.510, -0.000
+// User: DAN
+
+name FISHSHOAL
+
+pos = -16, -300, -2274
+scale = 1831.000, 154.800, 660.699
+rot = 0.000, -0.000, -0.000
+count = 5
+type = 0,Yellow
+// User: DAN
+
+pos = 350, -249, -2276
+scale = 1492.001, 131.399, 1498.902
+rot = 0.000, 0.000, 0.000
+count = 5
+type = 1,Green
+// User: DAN
+
+pos = 2727, -271, -492
+scale = 1522.713, 286.711, 715.029
+rot = 0.000, -2.394, 0.000
+count = 5
+type = 3,Orange
+// User: DAN
+
+pos = 3636, -336, 215
+scale = 956.530, 413.306, 1326.510
+rot = 0.000, -0.150, -0.000
+count = 5
+type = 4,LightBlue
+// User: DAN
+
+pos = 1659, -256, -1527
+scale = 1438.599, 220.891, 832.299
+rot = 0.000, -2.394, 0.000
+count = 5
+type = 2,Purple
+// User: DAN
+
+pos = -3423, -280, -1342
+scale = 1072.001, 161.399, 1069.902
+rot = 0.000, 2.394, 0.000
+count = 5
+type = 0,Yellow
+// User: DAN
+
+pos = -2214, -280, -1919
+scale = 1072.001, 161.399, 1069.902
+rot = 0.000, 1.344, -0.000
+count = 5
+type = 2,Purple
+// User: DAN
+
+pos = -3076, -280, -1673
+scale = 1072.001, 161.399, 1069.902
+rot = 0.000, 2.754, 0.000
+count = 5
+type = 1,Green
+// User: DAN
+
+pos = -1462, -294, -1920
+scale = 940.277, 216.599, 1112.402
+rot = 0.000, -1.859, 0.000
+count = 5
+type = 3,Orange
+// User: DAN
+
+pos = -587, -263, -2128
+scale = 1072.001, 161.399, 1069.902
+rot = 0.000, 2.394, 0.000
+count = 5
+type = 4,LightBlue
+// User: DAN
+
+name GECKO
+
+pos = -433, 2667, -446
+count = 1
+rot = 0.000, 0.000, 0.000
+scale = 396.599, 281.000, 381.899
+// User: DAN
+
+pos = -5793, 886, 1994
+count = 3
+rot = 0.000, 0.000, 0.000
+scale = 687.570, 318.050, 697.230
+// User: DAN
+
+pos = -437, 2575, 3996
+count = 3
+rot = 0.000, 0.000, 0.000
+scale = 531.840, 338.000, 801.450
+// User: DAN
+
+pos = -2526, 1199, 2917
+count = 1
+rot = 0.000, 0.000, 0.000
+scale = 300.000, 200.000, 333.660
+// User: DAN
+
+pos = -2797, 829, 2258
+count = 2
+rot = 0.000, 0.000, 0.000
+scale = 393.000, 306.500, 420.000
+// User: DAN
+
+name SIGNPOST
+
+pos = -358, 2544, 569
+rot = 0.000, 1.050, 0.000
+// User: DAN
+
+name TASIGNPOST
+
+pos = 1404, 2340, 11044
+rot = 0.000, -3.083, 0.000
+// User: DAN
+
+name DANGERSIGN
+
+pos = 3734, 1252, 7355
+rot = -0.260, -0.667, -0.311
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name GATE1
+
+pos = 460, 2372, 12049
+rot = 0.000, 0.000, 0.000
+ID = 147,GateToA
+bActive = 0,false
+// User: DAN
+
+name BLIBLIGATE
+
+pos = 168, 2367, 5306
+rot = 0.000, -0.090, -0.000
+ID = 704,BliBliStationGate
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name TORCH1
+
+pos = -3648, 1460, 7059
+rot = -0.276, 0.681, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -2756, 150, 8711
+rot = 0.009, 3.142, -0.194
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -2979, 103, 10007
+rot = -1.449, 1.689, 1.276
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -1768, 912, 7619
+rot = 6.464, 0.829, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -4164, 180, 9411
+rot = -1.449, 1.689, 1.276
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name GHOSTGUM1
+
+pos = 590, 2374, 13545
+rot = 0.186, -0.937, 0.067
+scale = 0.105, 0.105, 0.105
+collide = 1,true
+// User: DAN
+
+pos = 721, 2418, 13706
+rot = -0.095, -2.083, -0.050
+scale = 0.280, 0.280, 0.280
+collide = 0,false
+// User: DAN
+
+pos = 1730, 2389, 13391
+rot = 0.000, 0.589, -0.000
+scale = 0.234, 0.234, 0.234
+collide = 0,false
+// User: DAN
+
+pos = -85, 2403, 13984
+rot = -0.093, 2.181, -0.175
+scale = 0.277, 0.277, 0.277
+collide = 1,true
+// User: DAN
+
+pos = 1901, 2367, 12842
+rot = -0.455, -1.846, -0.440
+scale = 0.423, 0.423, 0.423
+collide = 1,true
+// User: DAN
+
+pos = -1252, 2417, 12846
+rot = -0.455, -1.846, -0.280
+scale = 0.423, 0.423, 0.423
+collide = 1,true
+// User: DAN
+
+pos = -1276, 2458, 13267
+rot = 0.014, 0.591, -0.087
+scale = 0.297, 0.297, 0.297
+collide = 1,true
+// User: DAN
+
+pos = -1473, 2388, 13162
+rot = -0.120, 2.174, -0.131
+scale = 0.163, 0.163, 0.163
+collide = 0,false
+// User: DAN
+
+pos = -1413, 2397, 12920
+rot = -0.156, 2.979, 0.137
+scale = 0.127, 0.127, 0.127
+collide = 1,true
+// User: DAN
+
+pos = 3508, 3308, 13061
+rot = 0.227, -1.024, 0.302
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = 743, 2417, 9740
+rot = -0.721, 1.105, 0.796
+scale = 0.588, 0.588, 0.588
+collide = 1,true
+// User: DAN
+
+pos = 177, 2419, 10617
+rot = -0.406, 0.893, 0.549
+scale = 0.330, 0.330, 0.330
+collide = 1,true
+// User: DAN
+
+pos = 956, 2417, 9392
+rot = 0.425, 2.303, -0.357
+scale = 0.250, 0.250, 0.250
+collide = 1,true
+// User: DAN
+
+pos = 7040, 1988, -900
+rot = -0.190, -2.357, -0.220
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = -5703, 621, 7039
+rot = 0.110, -0.276, 0.000
+scale = 0.450, 0.450, 0.450
+collide = 1,true
+// User: DAN
+
+pos = -5960, 646, 5647
+rot = 0.000, 0.000, -0.000
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = 297, 2417, 9500
+rot = 0.054, -2.972, -0.127
+scale = 0.200, 0.200, 0.200
+collide = 1,true
+// User: DAN
+
+pos = -153, 2469, 4846
+rot = -0.183, 0.649, 0.092
+scale = 0.580, 0.580, 0.580
+collide = 1,true
+// User: DAN
+
+pos = -7772, 2144, 2314
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DAN
+
+pos = -2459, 1429, 3441
+rot = -0.146, -2.888, -0.076
+scale = 0.730, 0.730, 0.730
+collide = 1,true
+// User: DAN
+
+pos = -4152, 443, 1278
+rot = -1.078, -1.968, -0.920
+scale = 0.850, 0.850, 0.850
+collide = 1,true
+// User: DAN
+
+pos = -5412, 692, 4545
+rot = 0.039, 3.142, 0.008
+scale = 0.400, 0.400, 0.400
+collide = 1,true
+// User: DAN
+
+pos = -5735, 630, 5711
+rot = 0.092, 1.749, 0.000
+scale = 0.150, 0.150, 0.150
+collide = 1,true
+// User: DAN
+
+pos = -5230, 697, 2635
+rot = -0.482, -2.428, -0.420
+scale = 0.850, 0.850, 0.850
+collide = 1,true
+// User: DAN
+
+pos = -1298, 3670, 9989
+rot = -0.190, -2.357, -0.220
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = -3950, 161, 737
+rot = 0.735, -0.972, 0.592
+scale = 0.275, 0.275, 0.275
+collide = 1,true
+// User: DAN
+
+pos = -3875, 649, 2430
+rot = 0.297, -0.204, 0.327
+scale = 0.275, 0.275, 0.275
+collide = 1,true
+// User: DAN
+
+pos = -2478, 3516, 13917
+rot = -0.482, -2.428, -0.420
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = -2834, 2026, -6784
+rot = 0.735, -0.972, 0.592
+scale = 0.850, 0.850, 0.850
+collide = 1,true
+// User: DAN
+
+pos = 557, 2368, 7768
+rot = -0.721, 1.105, 0.796
+scale = 0.480, 0.480, 0.480
+collide = 1,true
+// User: DAN
+
+pos = -78, 2417, 6964
+rot = -0.721, 1.105, 0.796
+scale = 1.130, 1.130, 1.130
+collide = 1,true
+// User: DAN
+
+pos = -79, 2492, 8267
+rot = 0.096, -0.461, 0.142
+scale = 0.705, 0.705, 0.705
+collide = 1,true
+// User: DAN
+
+pos = -217, 2368, 7816
+rot = 0.037, 2.604, -0.182
+scale = 0.380, 0.380, 0.380
+collide = 1,true
+// User: DAN
+
+pos = -966, 3725, 8057
+rot = 0.022, -0.341, 0.165
+scale = 0.600, 0.600, 0.600
+collide = 0,false
+// User: DAN
+
+pos = 596, 2523, -165
+rot = 0.087, 0.000, 0.262
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -5200, 324, 1115
+rot = 0.735, -0.972, 0.592
+scale = 0.850, 0.850, 0.850
+collide = 1,true
+// User: DAN
+
+pos = 4855, 1036, 8661
+rot = 0.045, 0.852, -0.316
+scale = 0.325, 0.325, 0.325
+collide = 1,true
+// User: DAN
+
+pos = 3838, 1219, 10960
+rot = -0.265, 2.845, 0.208
+scale = 0.850, 0.850, 0.850
+collide = 1,true
+// User: DAN
+
+name GHOSTGUM2
+
+pos = 5, 2361, 14109
+rot = 1.079, 1.802, -0.939
+scale = 0.221, 0.221, 0.221
+collide = 0,false
+// User: DAN
+
+pos = 148, 2366, 13836
+rot = 0.000, -2.846, 0.000
+scale = 0.242, 0.242, 0.242
+collide = 1,true
+// User: DAN
+
+pos = 313, 2372, 13641
+rot = 0.291, -0.631, 0.231
+scale = 0.150, 0.150, 0.150
+collide = 0,false
+// User: DAN
+
+pos = -156, 2359, 13818
+rot = 1.477, -1.379, 1.328
+scale = 0.305, 0.305, 0.305
+collide = 1,true
+// User: DAN
+
+pos = 61, 2372, 13701
+rot = 0.291, -0.631, 0.231
+scale = 0.150, 0.150, 0.150
+collide = 0,false
+// User: DAN
+
+pos = 1884, 2372, 13309
+rot = 0.291, -0.631, 0.231
+scale = 0.215, 0.215, 0.215
+collide = 1,true
+// User: DAN
+
+pos = 934, 2372, 13859
+rot = 0.291, -0.631, 0.231
+scale = 0.107, 0.107, 0.107
+collide = 0,false
+// User: DAN
+
+pos = 1030, 2372, 14083
+rot = 0.475, -1.034, 0.369
+scale = 0.280, 0.280, 0.280
+collide = 1,true
+// User: DAN
+
+pos = 1635, 2352, 13154
+rot = 0.163, 0.626, -0.304
+scale = 0.348, 0.348, 0.348
+collide = 1,true
+// User: DAN
+
+pos = 1020, 2349, 10831
+rot = -0.210, 0.812, -0.026
+scale = 0.335, 0.335, 0.335
+collide = 1,true
+// User: DAN
+
+pos = -1170, 2352, 13532
+rot = -0.039, -0.079, -0.246
+scale = 0.348, 0.348, 0.348
+collide = 1,true
+// User: DAN
+
+pos = 1750, 3789, 10024
+rot = -0.799, -1.395, -1.077
+scale = 0.954, 0.701, 0.954
+collide = 0,false
+// User: DAN
+
+pos = -796, 2354, 13270
+rot = 0.291, -0.631, 0.231
+scale = 0.215, 0.215, 0.215
+collide = 1,true
+// User: DAN
+
+pos = -931, 2372, 13120
+rot = -0.015, 0.730, 0.250
+scale = 0.115, 0.115, 0.115
+collide = 0,false
+// User: DAN
+
+pos = 1635, 3220, 14986
+rot = 0.214, -0.418, 0.095
+scale = 0.954, 0.701, 0.954
+collide = 0,false
+// User: DAN
+
+pos = -1334, 3063, 14987
+rot = 0.105, 0.677, 0.112
+scale = 0.954, 0.701, 0.954
+collide = 0,false
+// User: DAN
+
+pos = -487, 2372, 14126
+rot = 0.291, -0.631, 0.231
+scale = 0.183, 0.183, 0.183
+collide = 0,false
+// User: DAN
+
+pos = 2077, 3396, 7796
+rot = 0.214, -0.418, 0.095
+scale = 0.954, 0.701, 0.954
+collide = 0,false
+// User: DAN
+
+pos = -996, 3548, 7404
+rot = -0.032, 1.171, 0.225
+scale = 0.654, 0.401, 0.654
+collide = 0,false
+// User: DAN
+
+pos = 14, 2342, 8493
+rot = -0.470, 1.238, 0.510
+scale = 0.335, 0.335, 0.335
+collide = 1,true
+// User: DAN
+
+pos = 1046, 2187, 3667
+rot = 0.079, 0.067, 0.253
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -2602, 1451, 4425
+rot = -0.185, 1.182, -0.007
+scale = 0.885, 0.885, 0.885
+collide = 1,true
+// User: DAN
+
+pos = 4045, 148, 4604
+rot = 0.034, 0.005, 0.332
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -5643, 574, 5347
+rot = 0.147, -0.700, 0.000
+scale = 0.500, 0.500, 0.500
+collide = 1,true
+// User: DAN
+
+pos = -4903, 384, 1558
+rot = 0.185, -0.344, 0.063
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -4202, 532, 2427
+rot = -0.185, 1.182, -0.007
+scale = 0.885, 0.885, 0.885
+collide = 1,true
+// User: DAN
+
+pos = -3334, 1037, 2728
+rot = 0.219, 0.313, -0.362
+scale = 0.326, 0.326, 0.326
+collide = 1,true
+// User: DAN
+
+pos = -5704, 589, 3417
+rot = 0.350, 1.027, -0.235
+scale = 0.326, 0.326, 0.326
+collide = 1,true
+// User: DAN
+
+pos = 2281, 304, 3321
+rot = 0.211, -0.388, 0.094
+scale = 0.729, 0.476, 0.729
+collide = 1,true
+// User: DAN
+
+pos = 5103, 2081, -5348
+rot = -0.185, 1.182, -0.007
+scale = 0.885, 0.885, 0.885
+collide = 0,false
+// User: DAN
+
+pos = -5709, 587, 6273
+rot = 0.184, 1.252, 0.000
+scale = 0.300, 0.300, 0.300
+collide = 1,true
+// User: DAN
+
+pos = -6067, 586, 6784
+rot = 0.018, 2.062, 0.000
+scale = 0.400, 0.400, 0.400
+collide = 1,true
+// User: DAN
+
+pos = 4687, 952, 5610
+rot = 0.175, 0.000, 0.087
+scale = 0.729, 0.476, 0.729
+collide = 1,true
+// User: DAN
+
+pos = 8589, 2701, 1723
+rot = 0.211, -0.388, 0.094
+scale = 0.729, 0.476, 0.729
+collide = 0,false
+// User: DAN
+
+pos = 10248, 2622, 4641
+rot = -0.185, 1.182, -0.007
+scale = 0.885, 0.885, 0.885
+collide = 1,true
+// User: DAN
+
+pos = 694, 2367, 4682
+rot = -0.185, 1.182, -0.007
+scale = 0.885, 0.885, 0.885
+collide = 1,true
+// User: DAN
+
+pos = -2007, 3404, 10258
+rot = 0.211, -0.388, 0.094
+scale = 0.729, 0.476, 0.729
+collide = 0,false
+// User: DAN
+
+pos = -431, 2349, 10897
+rot = -1.311, 1.398, 1.315
+scale = 0.335, 0.335, 0.335
+collide = 1,true
+// User: DAN
+
+pos = -2311, 3109, 11306
+rot = 1.318, 1.666, -1.144
+scale = 0.729, 0.476, 0.729
+collide = 0,false
+// User: DAN
+
+pos = 647, 2342, 8427
+rot = 0.133, -0.625, 0.198
+scale = 0.285, 0.285, 0.285
+collide = 1,true
+// User: DAN
+
+pos = 91, 2342, 7266
+rot = -0.111, -0.235, 0.128
+scale = 0.375, 0.375, 0.375
+collide = 1,true
+// User: DAN
+
+pos = 548, 2342, 6912
+rot = 0.092, -0.326, -0.036
+scale = 0.535, 0.535, 0.535
+collide = 1,true
+// User: DAN
+
+pos = 957, 2343, 7261
+rot = 0.201, 0.973, -0.349
+scale = 1.185, 1.185, 1.185
+collide = 1,true
+// User: DAN
+
+pos = 1010, 2342, 8437
+rot = -0.183, -1.941, -0.151
+scale = 0.385, 0.385, 0.385
+collide = 1,true
+// User: DAN
+
+pos = 83, 2342, 9616
+rot = -0.183, -1.941, -0.251
+scale = 0.610, 0.610, 0.610
+collide = 1,true
+// User: DAN
+
+pos = 831, 2336, 8757
+rot = -0.038, -0.088, 0.055
+scale = 0.660, 0.660, 0.660
+collide = 1,true
+// User: DAN
+
+pos = -104, 2342, 9049
+rot = -0.547, 0.947, 0.487
+scale = 0.235, 0.235, 0.235
+collide = 1,true
+// User: DAN
+
+pos = 745, 2342, 9395
+rot = -0.291, 1.025, 0.171
+scale = 0.300, 0.250, 0.250
+collide = 1,true
+// User: DAN
+
+pos = -3670, 213, 1165
+rot = 0.187, 0.317, -0.127
+scale = 0.326, 0.326, 0.326
+collide = 1,true
+// User: DAN
+
+pos = 4635, 1014, 10483
+rot = -1.174, -1.903, -1.013
+scale = 0.500, 0.500, 0.500
+collide = 1,true
+// User: DAN
+
+pos = 4818, 984, 8946
+rot = 0.313, -0.713, 0.417
+scale = 0.750, 0.750, 0.750
+collide = 1,true
+// User: DAN
+
+name GHOSTGUM3
+
+pos = -29, 2367, 14166
+rot = -0.302, 1.266, 0.121
+scale = 0.183, 0.183, 0.183
+collide = 0,false
+// User: DAN
+
+pos = 133, 2368, 14092
+rot = -0.106, -1.152, 0.088
+scale = 0.320, 0.320, 0.320
+collide = 1,true
+// User: DAN
+
+pos = 522, 2342, 13696
+rot = -0.214, 0.656, 0.045
+scale = 0.188, 0.188, 0.188
+collide = 0,false
+// User: DAN
+
+pos = 26, 2367, 13870
+rot = -0.246, 1.872, 0.096
+scale = 0.183, 0.183, 0.183
+collide = 0,false
+// User: DAN
+
+pos = 1503, 2358, 12790
+rot = -0.261, -2.307, -0.255
+scale = 0.295, 0.295, 0.295
+collide = 1,true
+// User: DAN
+
+pos = 1740, 2342, 12927
+rot = -0.171, 1.747, 0.040
+scale = 0.235, 0.235, 0.235
+collide = 0,false
+// User: DAN
+
+pos = -24, 2332, 11389
+rot = 0.017, 0.276, -0.103
+scale = 0.275, 0.275, 0.275
+collide = 1,true
+// User: DAN
+
+pos = -1071, 2357, 12914
+rot = 0.165, -0.472, 0.183
+scale = 0.175, 0.175, 0.175
+collide = 0,false
+// User: DAN
+
+pos = -1576, 2358, 12820
+rot = 0.392, 0.633, -0.367
+scale = 0.295, 0.295, 0.295
+collide = 1,true
+// User: DAN
+
+pos = 2654, 3316, 13908
+rot = 0.184, 6.640, 0.000
+scale = 0.800, 0.800, 0.800
+collide = 0,false
+// User: DAN
+
+pos = -1059, 2357, 13202
+rot = -0.184, -2.615, 0.024
+scale = 0.238, 0.238, 0.238
+collide = 0,false
+// User: DAN
+
+pos = 21, 2332, 8849
+rot = -0.571, 1.756, 0.568
+scale = 0.725, 0.725, 0.725
+collide = 1,true
+// User: DAN
+
+pos = -218, 2332, 8571
+rot = 0.078, 0.020, -0.169
+scale = 0.305, 0.305, 0.305
+collide = 1,true
+// User: DAN
+
+pos = 1769, 3596, 7053
+rot = -0.137, -0.900, -0.160
+scale = 0.375, 0.375, 0.375
+collide = 0,false
+// User: DAN
+
+pos = -1402, 3535, 7067
+rot = 0.109, 0.878, -0.156
+scale = 0.925, 0.925, 0.925
+collide = 0,false
+// User: DAN
+
+pos = 2014, 3852, 9185
+rot = -0.127, 2.283, 0.152
+scale = 0.425, 0.425, 0.425
+collide = 0,false
+// User: DAN
+
+pos = 2877, 321, 3683
+rot = -1.324, -1.691, -1.103
+scale = 0.375, 0.375, 0.375
+collide = 1,true
+// User: DAN
+
+pos = -7550, 2012, -4388
+rot = 0.184, 6.640, 0.000
+scale = 0.800, 0.800, 0.800
+collide = 0,false
+// User: DAN
+
+pos = -1258, 1390, 3457
+rot = -0.037, -1.920, 0.000
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = 2270, 1020, 4163
+rot = 0.184, 6.640, 0.000
+scale = 0.800, 0.800, 0.800
+collide = 1,true
+// User: DAN
+
+pos = -5873, 594, 4287
+rot = 0.239, -0.239, 0.000
+scale = 0.600, 0.600, 0.600
+collide = 1,true
+// User: DAN
+
+pos = -5913, 588, 5088
+rot = 0.000, 0.000, 0.000
+scale = 0.300, 0.300, 0.300
+collide = 1,true
+// User: DAN
+
+pos = -4122, 529, 2831
+rot = 0.000, -0.960, -0.000
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -5182, 551, 4219
+rot = 0.000, 0.000, -0.000
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -4897, 605, 3306
+rot = 0.166, 1.050, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DAN
+
+pos = -4308, 231, 697
+rot = 0.557, -1.333, 0.351
+scale = 0.450, 0.450, 0.450
+collide = 1,true
+// User: DAN
+
+pos = 413, 2359, 4032
+rot = -0.262, -2.811, -0.113
+scale = 0.375, 0.375, 0.375
+collide = 1,true
+// User: DAN
+
+pos = -5694, 556, 6667
+rot = 0.000, -0.611, -0.000
+scale = 0.476, 0.476, 0.476
+collide = 1,true
+// User: DAN
+
+pos = -3159, 3039, 11756
+rot = -0.088, 2.488, 0.125
+scale = 0.925, 0.925, 0.925
+collide = 0,false
+// User: DAN
+
+pos = 888, 2332, 7706
+rot = 0.073, -0.009, 0.081
+scale = 0.400, 0.400, 0.400
+collide = 1,true
+// User: DAN
+
+pos = 838, 2332, 8089
+rot = -0.023, -0.122, -0.100
+scale = 0.925, 0.925, 0.925
+collide = 1,true
+// User: DAN
+
+pos = 231, 2332, 10157
+rot = -0.051, -0.505, -0.294
+scale = 0.500, 0.500, 0.500
+collide = 1,true
+// User: DAN
+
+pos = 512, 2332, 8872
+rot = -0.165, -0.949, -0.292
+scale = 0.400, 0.400, 0.400
+collide = 1,true
+// User: DAN
+
+pos = 879, 2332, 9068
+rot = 0.285, -2.516, 0.319
+scale = 0.610, 0.610, 0.610
+collide = 1,true
+// User: DAN
+
+pos = -536, 2417, -36
+rot = 0.000, 0.000, -0.175
+scale = 0.510, 0.476, 0.510
+collide = 1,true
+// User: DAN
+
+pos = -2443, 257, 1815
+rot = 0.822, -0.800, 0.735
+scale = 0.700, 0.700, 0.700
+collide = 1,true
+// User: DAN
+
+pos = -3097, 267, 1518
+rot = 0.240, 0.000, -0.000
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DAN
+
+pos = 4734, 979, 9279
+rot = 0.136, -3.002, 0.275
+scale = 0.500, 0.500, 0.500
+collide = 1,true
+// User: DAN
+
+pos = 5069, 967, 8069
+rot = -1.298, 1.776, 1.401
+scale = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DAN
+
+name SAPLING1
+
+pos = 2118, 2769, 13478
+rot = 1.372, -0.797, 0.154
+scale = 0.700, 0.700, 0.700
+collide = 0,false
+// User: DAN
+
+pos = 2387, 2787, 11538
+rot = 0.580, -1.746, -0.347
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = 1955, 3520, 13873
+rot = -0.000, 0.000, -0.983
+scale = 0.700, 0.700, 0.700
+collide = 0,false
+// User: DAN
+
+pos = -1154, 2723, 14064
+rot = 1.053, -0.566, 1.259
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = -809, 2723, 14349
+rot = 0.646, 0.372, 0.746
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = 1484, 4312, 6974
+rot = 0.737, -2.026, 0.000
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = 1280, 3215, 4852
+rot = 0.196, -0.216, -0.420
+scale = 1.140, 1.140, 1.140
+collide = 0,false
+// User: DAN
+
+pos = -657, 789, -6796
+rot = 0.737, 0.368, 0.921
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -6553, 1822, 3655
+rot = -0.346, 1.155, 1.066
+scale = 1.721, 1.997, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 2546, 878, -4423
+rot = 0.781, 2.540, -1.164
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -2428, 1139, -4066
+rot = -0.886, 0.719, 1.064
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -1577, 1139, -5555
+rot = -0.536, 0.322, 0.925
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -6764, 1689, 2402
+rot = 0.338, 0.727, 0.493
+scale = 1.071, 1.347, 1.071
+collide = 0,false
+// User: DAN
+
+pos = -557, 1369, -9541
+rot = -1.105, -0.368, 0.368
+scale = 1.500, 1.500, 1.500
+collide = 0,false
+// User: DAN
+
+pos = -5011, 2072, 5324
+rot = -0.157, 0.434, 0.329
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -5176, 1505, 6275
+rot = 1.657, -1.657, 0.921
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -7329, 1948, 1907
+rot = -0.465, 3.106, 0.743
+scale = 1.721, 1.997, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -3812, 1920, 4261
+rot = -2.394, 0.249, -2.946
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = -4813, 1551, -3856
+rot = -0.940, 0.355, 1.322
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -7935, 1235, -2460
+rot = -0.693, 0.286, 1.244
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 3961, 1746, -3992
+rot = 1.459, 2.192, -1.522
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 6026, 1495, -3219
+rot = 0.364, 2.827, -1.054
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 5787, 1464, -1133
+rot = -0.036, 3.074, -1.089
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -6465, 1866, 8064
+rot = 0.280, 0.434, 0.330
+scale = 1.721, 1.997, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 1296, 1030, -5804
+rot = -1.379, 0.684, 1.357
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 9024, 2120, 3998
+rot = 0.073, 3.018, -1.100
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = 7304, 1634, 1997
+rot = 0.815, 2.729, -1.307
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+pos = -2380, 2867, 5841
+rot = 0.196, -0.216, -0.420
+scale = 1.140, 1.140, 1.140
+collide = 0,false
+// User: DAN
+
+pos = 1127, 1397, -7439
+rot = -0.479, 3.462, -0.958
+scale = 0.750, 0.750, 0.750
+collide = 0,false
+// User: DAN
+
+pos = 1244, 705, -8474
+rot = -0.055, 0.000, -0.552
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -1062, 1287, -7241
+rot = 0.552, -0.184, 0.921
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -2016, 2784, 11951
+rot = 0.243, -0.160, 0.950
+scale = 0.850, 0.850, 0.850
+collide = 0,false
+// User: DAN
+
+pos = -1974, 2665, 11553
+rot = -0.110, -0.168, 1.258
+scale = 0.475, 0.475, 0.475
+collide = 0,false
+// User: DAN
+
+pos = 5567, 1878, 6224
+rot = -0.894, -2.420, -1.114
+scale = 1.721, 1.721, 1.721
+collide = 0,false
+// User: DAN
+
+name SAPLING2
+
+pos = 1395, 2820, 14172
+rot = -0.699, -2.840, -0.621
+scale = 0.800, 0.800, 0.800
+collide = 0,false
+// User: DAN
+
+pos = 2061, 3047, 13439
+rot = -0.343, -3.043, -0.643
+scale = 1.050, 1.050, 1.050
+collide = 0,false
+// User: DAN
+
+pos = 350, 3336, 14310
+rot = -0.838, -2.327, -1.540
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = 2161, 2911, 10993
+rot = -1.691, 1.196, 1.092
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 2180, 3533, 13815
+rot = -1.373, -2.901, 1.033
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 2507, 2899, 12446
+rot = 3.131, 2.923, 1.563
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -878, 2924, 14360
+rot = 0.828, -0.145, 0.766
+scale = 0.800, 0.800, 0.800
+collide = 0,false
+// User: DAN
+
+pos = 2482, 3069, 11846
+rot = 0.505, -3.073, -0.833
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -1822, 3014, 5203
+rot = 0.921, 6.629, 4.604
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 1699, 4738, 5574
+rot = 0.000, -1.289, 0.552
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 993, 4525, 6024
+rot = -1.473, 1.657, 1.105
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 1904, 3575, 5168
+rot = 0.000, -1.213, -0.000
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 771, 2102, -6359
+rot = 0.544, 2.934, -0.074
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 1393, 1999, -7963
+rot = -0.368, 2.210, 0.000
+scale = 1.250, 1.250, 1.250
+collide = 0,false
+// User: DAN
+
+pos = 3033, 1959, -4155
+rot = -1.923, 1.262, 1.993
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 2367, 1340, -5458
+rot = 0.388, 2.252, -0.426
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -4795, 2030, 4801
+rot = -0.000, -2.618, -0.227
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -4597, 1590, 4403
+rot = -0.324, -2.303, -0.570
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -4495, 1867, 5038
+rot = -1.013, 1.697, 2.210
+scale = 1.210, 1.210, 1.210
+collide = 0,false
+// User: DAN
+
+pos = -7402, 1074, -2951
+rot = -0.021, 0.600, 0.238
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -4903, 989, -3144
+rot = 0.772, 2.879, 1.443
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 667, 1747, -9425
+rot = -1.473, 1.326, 1.271
+scale = 1.500, 1.500, 1.500
+collide = 0,false
+// User: DAN
+
+pos = -3569, 1415, -4293
+rot = 1.810, 2.107, -1.504
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -1439, 1835, -5706
+rot = -0.089, 0.369, -0.022
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -7427, 1612, 1560
+rot = 0.147, -0.831, 0.573
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 5483, 1328, 1249
+rot = 0.868, -2.356, -0.377
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 5875, 1279, -115
+rot = -3.000, -3.006, 0.931
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 6490, 2075, -2744
+rot = 0.680, 2.236, -0.595
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 6252, 1303, -2080
+rot = -2.743, -2.948, 1.586
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -6135, 2164, 5932
+rot = 0.222, -0.493, 0.223
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = -6272, 1561, 6878
+rot = -0.203, -0.847, 0.276
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 8583, 2428, 5669
+rot = -0.183, -2.671, -0.007
+scale = 2.674, 2.674, 2.674
+collide = 0,false
+// User: DAN
+
+pos = 3703, 2131, 5980
+rot = -0.747, -2.225, -0.862
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 8076, 1582, 2837
+rot = 0.123, 2.150, -0.361
+scale = 1.870, 1.870, 1.870
+collide = 0,false
+// User: DAN
+
+pos = 966, 956, -8980
+rot = -0.350, 0.184, -1.326
+scale = 2.000, 2.000, 2.000
+collide = 0,false
+// User: DAN
+
+pos = -1134, 1053, -8630
+rot = -0.368, -0.368, 0.368
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -1159, 738, -7904
+rot = 0.000, -0.552, 0.552
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = -2041, 2870, 12471
+rot = 0.175, 0.023, 0.623
+scale = 0.800, 0.800, 0.800
+collide = 0,false
+// User: DAN
+
+pos = -1720, 2916, 11018
+rot = -0.528, 0.470, 0.615
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -951, 3420, 10671
+rot = -0.528, 0.470, 0.615
+scale = 1.125, 1.125, 1.125
+collide = 0,false
+// User: DAN
+
+pos = -1285, 2830, 10684
+rot = 1.979, 2.515, -1.324
+scale = 0.900, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 5335, 2011, 6899
+rot = 1.792, -2.015, 1.297
+scale = 2.674, 2.674, 2.674
+collide = 0,false
+// User: DAN
+
+pos = 6330, 355, 6037
+rot = -0.751, -1.811, -0.660
+scale = 2.674, 2.674, 2.674
+collide = 0,false
+// User: DAN
+
+name SAPLING3
+
+pos = 1836, 2973, 13824
+rot = 2.554, -0.501, 1.497
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = 2301, 2965, 12996
+rot = -0.588, -2.641, -1.275
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = 2406, 2808, 12782
+rot = 1.179, -1.156, -0.030
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 2792, 3555, 11628
+rot = -0.552, -0.184, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -336, 3988, 14582
+rot = 0.162, -2.531, -1.222
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = -1382, 2973, 13837
+rot = 1.248, 0.205, 0.982
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = 306, 3449, 5423
+rot = -0.759, 2.836, 0.000
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -1660, 3619, 5273
+rot = -0.392, -1.389, -0.962
+scale = 3.432, 3.432, 3.432
+collide = 0,false
+// User: DAN
+
+pos = -886, 3867, 5302
+rot = -0.230, -2.991, -0.313
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 1246, 3946, 6606
+rot = -0.184, 0.921, -0.737
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -225, 3027, 6368
+rot = -0.737, -1.841, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -908, 810, -9005
+rot = -0.552, -0.921, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -6325, 1733, 4047
+rot = 1.289, 2.014, 0.000
+scale = 1.975, 1.975, 1.975
+collide = 0,false
+// User: DAN
+
+pos = -6559, 1826, 2818
+rot = 0.048, 0.111, 0.659
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -6832, 2104, 2421
+rot = 0.048, 0.111, 0.659
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 3761, 270, -3568
+rot = 1.327, 2.118, -1.431
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 3340, 1187, -3923
+rot = 1.466, 2.445, -1.078
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 2731, 1284, -4200
+rot = 0.762, 2.623, -0.908
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -2841, 1735, -4325
+rot = 1.368, 2.253, -1.201
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -4740, 2115, 5598
+rot = 0.552, 2.359, 0.737
+scale = 1.270, 1.270, 1.270
+collide = 0,false
+// User: DAN
+
+pos = -4532, 2088, 6216
+rot = -0.334, -2.913, 0.658
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -1320, 1731, -7771
+rot = 0.184, -0.184, 1.105
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -4069, 1886, 4150
+rot = -0.380, -3.040, -0.332
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -5274, 1268, -3479
+rot = 1.368, 2.253, -1.306
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -7031, 1875, -3551
+rot = -0.997, 0.868, 1.226
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 5075, 2259, -3858
+rot = 1.993, 2.633, -1.596
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 2541, 1879, -4862
+rot = 1.237, 4.631, -0.206
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 1333, 1648, -5777
+rot = 1.528, 2.091, -1.402
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -7951, 685, 610
+rot = 0.055, -0.076, 0.756
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 5903, 1670, -1445
+rot = -0.365, 2.468, -0.588
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 5823, 1566, 1778
+rot = -1.283, 0.806, 0.676
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -5203, 1653, 6990
+rot = -0.029, -2.912, -0.541
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -6040, 1673, 6021
+rot = -0.552, -1.473, 0.000
+scale = 0.500, 0.500, 0.500
+collide = 0,false
+// User: DAN
+
+pos = -6250, 2197, 4476
+rot = 1.289, 0.184, 0.000
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = 8276, 858, 4649
+rot = -1.209, 1.855, 0.767
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -2074, 1236, -4839
+rot = -0.196, 0.545, 0.610
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -2473, 168, -3866
+rot = -1.217, 0.940, 1.496
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 4284, 2398, 6092
+rot = -0.086, -2.061, 0.352
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 6524, 2530, 6224
+rot = -0.377, -3.084, 0.362
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 7768, 2514, 2126
+rot = -0.229, 0.366, -0.210
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = 1278, 1339, -8087
+rot = 0.184, 1.473, -0.737
+scale = 1.750, 1.750, 1.500
+collide = 0,false
+// User: DAN
+
+pos = 508, 672, -9301
+rot = -0.534, 0.000, -0.092
+scale = 1.000, 1.000, 1.000
+collide = 0,false
+// User: DAN
+
+pos = -1316, 3143, 10689
+rot = -0.780, 0.000, -0.000
+scale = 1.250, 1.250, 1.250
+collide = 0,false
+// User: DAN
+
+pos = -1949, 2973, 11563
+rot = 0.257, -0.317, 0.906
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = -1882, 3132, 13047
+rot = 1.110, -0.776, 1.370
+scale = 1.225, 1.225, 1.225
+collide = 0,false
+// User: DAN
+
+pos = -540, 1818, -5958
+rot = -0.485, 0.814, 0.794
+scale = 2.984, 2.984, 2.984
+collide = 0,false
+// User: DAN
+
+pos = -459, 1235, -5879
+rot = 1.436, 1.901, -0.542
+scale = 2.784, 2.784, 2.784
+collide = 0,false
+// User: DAN
+
+name PALMTREECLUMP
+
+pos = 5525, 16, -2219
+rot = -0.068, 2.715, 0.148
+scale = 2.175, 2.175, 2.175
+collide = 1,true
+// User: DAN
+
+pos = -278, 36, -8721
+rot = 0.000, 0.394, -0.000
+scale = 1.900, 1.900, 1.900
+collide = 1,true
+// User: DAN
+
+pos = 533, 45, -7872
+rot = 0.000, 2.734, 0.000
+scale = 1.050, 1.050, 1.050
+collide = 1,true
+// User: DAN
+
+pos = 4356, -72, -1591
+rot = -1.179, -1.206, -1.393
+scale = 1.500, 1.500, 1.500
+collide = 1,true
+// User: DAN
+
+pos = 4867, -2, -2026
+rot = -0.027, 0.018, -0.339
+scale = 0.875, 0.875, 0.875
+collide = 1,true
+// User: DAN
+
+pos = 766, -69, -4133
+rot = 1.040, -2.137, 0.862
+scale = 1.700, 1.700, 1.700
+collide = 1,true
+// User: DAN
+
+pos = -1408, -74, -4247
+rot = -0.410, -0.885, -0.578
+scale = 1.450, 1.450, 1.450
+collide = 1,true
+// User: DAN
+
+pos = -667, -39, -4780
+rot = -0.310, -2.442, 0.084
+scale = 1.800, 1.800, 1.800
+collide = 1,true
+// User: DAN
+
+pos = 1310, -27, -4429
+rot = -0.250, -0.478, -0.183
+scale = 0.975, 0.975, 0.975
+collide = 1,true
+// User: DAN
+
+pos = 1608, -65, -4881
+rot = -0.052, 2.815, 0.067
+scale = 2.300, 2.300, 2.300
+collide = 1,true
+// User: DAN
+
+pos = -452, 51, -7575
+rot = 0.000, 0.394, -0.000
+scale = 1.050, 1.050, 1.050
+collide = 1,true
+// User: DAN
+
+pos = -1281, -43, -4854
+rot = 0.043, -2.200, -0.002
+scale = 2.300, 2.300, 2.300
+collide = 1,true
+// User: DAN
+
+name BEACHPALM
+
+pos = 4601, -60, -2980
+rot = 0.188, 0.587, -0.236
+scale = 0.775, 0.775, 0.775
+collide = 1,true
+// User: DAN
+
+pos = 5146, 21, -2855
+rot = 0.100, 0.603, -0.186
+scale = 2.025, 2.025, 2.025
+collide = 1,true
+// User: DAN
+
+pos = 643, 34, -8357
+rot = 0.000, -1.432, -0.000
+scale = 3.275, 3.275, 3.275
+collide = 1,true
+// User: DAN
+
+pos = -619, 43, -8028
+rot = 0.000, 3.142, 0.000
+scale = 2.825, 2.825, 2.825
+collide = 1,true
+// User: DAN
+
+pos = 224, 39, -8797
+rot = -0.178, 2.052, 0.122
+scale = 2.575, 2.575, 2.575
+collide = 1,true
+// User: DAN
+
+pos = 5155, -13, -1611
+rot = -1.265, -1.350, -1.278
+scale = 2.225, 2.225, 2.225
+collide = 1,true
+// User: DAN
+
+pos = 4662, -24, -2449
+rot = -0.234, 0.330, -0.236
+scale = 1.225, 1.225, 1.225
+collide = 1,true
+// User: DAN
+
+pos = 687, -14, -5076
+rot = 0.277, 1.068, -0.321
+scale = 2.650, 2.650, 2.650
+collide = 1,true
+// User: DAN
+
+pos = 685, 28, -4666
+rot = 0.205, 2.370, -0.011
+scale = 1.300, 1.300, 1.300
+collide = 1,true
+// User: DAN
+
+pos = 430, 8, -4437
+rot = 0.731, -1.643, 0.473
+scale = 1.175, 1.175, 1.175
+collide = 1,true
+// User: DAN
+
+pos = -821, -30, -4313
+rot = 0.731, -1.643, 0.473
+scale = 1.250, 1.250, 1.250
+collide = 1,true
+// User: DAN
+
+pos = -487, -66, -4098
+rot = 0.252, 2.909, 0.034
+scale = 1.750, 1.750, 1.750
+collide = 1,true
+// User: DAN
+
+pos = 1635, -79, -4064
+rot = 0.443, -2.185, 0.563
+scale = 2.150, 2.150, 2.150
+collide = 1,true
+// User: DAN
+
+name GRASSTREE1
+
+pos = -6099, 592, 6989
+rot = -0.000, -2.824, 0.000
+scale = 0.730, 0.730, 0.730
+// User: DAN
+
+pos = 1838, 1035, 3831
+rot = -0.442, -2.140, -0.196
+scale = 0.924, 0.924, 0.924
+// User: DAN
+
+pos = 2772, 564, 4546
+rot = -0.436, -2.386, -0.080
+scale = 0.940, 0.940, 0.940
+// User: DAN
+
+pos = -2062, 1501, 4956
+rot = -0.164, 2.864, -0.111
+scale = 0.840, 0.840, 0.840
+// User: DAN
+
+pos = -3400, 580, 2287
+rot = 0.453, -0.638, 0.452
+scale = 0.620, 0.620, 0.620
+// User: DAN
+
+name GRASSTREE2
+
+pos = 4378, 1044, 5960
+rot = 0.246, -0.742, 0.705
+scale = 0.790, 0.790, 0.790
+// User: DAN
+
+pos = -5620, 588, 2692
+rot = 0.125, -1.064, 0.102
+scale = 0.720, 0.720, 0.720
+// User: DAN
+
+pos = 2087, 1047, 5158
+rot = 0.000, -0.442, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = 2079, 1047, 5165
+rot = 0.000, -1.621, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -2123, 1462, 4039
+rot = 6.353, 1.105, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -6014, 595, 5271
+rot = 0.002, 3.142, 0.013
+scale = 0.585, 0.585, 0.585
+// User: DAN
+
+name GRASSTREE4
+
+pos = -5824, 587, 7239
+rot = -0.032, 2.074, 0.038
+scale = 0.845, 0.845, 0.845
+// User: DAN
+
+pos = -4620, 607, 3864
+rot = -0.280, 3.079, 0.087
+scale = 0.970, 0.970, 0.970
+// User: DAN
+
+pos = -1236, 481, 2586
+rot = 0.105, -0.038, 0.130
+scale = 1.310, 1.310, 1.310
+// User: DAN
+
+name GRASSCLUMP1
+
+pos = -1539, 1888, 12659
+rot = -0.108, -0.689, 0.028
+scale = 1.870, 1.870, 1.870
+// User: DAN
+
+pos = -1546, 1856, 13001
+rot = -0.227, 2.272, 0.197
+scale = 1.280, 1.280, 1.280
+// User: DAN
+
+pos = -1682, 1431, 3597
+rot = -0.088, -2.953, -0.164
+scale = 0.640, 0.640, 0.640
+// User: DAN
+
+pos = -2370, 1510, 4630
+rot = 0.043, -2.008, -0.027
+scale = 0.660, 0.660, 0.660
+// User: DAN
+
+pos = -2644, 1435, 3443
+rot = 0.085, 0.817, 0.051
+scale = 1.400, 1.400, 1.400
+// User: DAN
+
+pos = 2532, 1034, 4756
+rot = -0.718, 2.304, 1.020
+scale = 0.900, 0.900, 0.900
+// User: DAN
+
+pos = 3276, 1050, 5287
+rot = -0.000, 2.451, 0.000
+scale = 1.060, 1.060, 1.060
+// User: DAN
+
+pos = 1606, 1050, 4233
+rot = 0.000, -0.815, 0.000
+scale = 0.550, 0.550, 0.550
+// User: DAN
+
+pos = 2844, 339, 3550
+rot = 0.254, -0.243, 0.233
+scale = 0.620, 0.620, 0.620
+// User: DAN
+
+pos = 2879, 411, 3867
+rot = 0.986, -1.274, 1.136
+scale = 1.240, 1.240, 1.240
+// User: DAN
+
+pos = -2611, 1488, 4257
+rot = -0.078, 1.951, 0.128
+scale = 1.260, 1.260, 1.260
+// User: DAN
+
+pos = -4181, 439, 1555
+rot = -0.370, 2.345, 0.277
+scale = 0.650, 0.650, 0.650
+// User: DAN
+
+pos = -2928, 1491, 3906
+rot = 0.038, -0.686, 0.118
+scale = 0.730, 0.730, 0.730
+// User: DAN
+
+pos = -5847, 600, 4800
+rot = 0.002, 2.388, -0.009
+scale = 0.875, 0.875, 0.875
+// User: DAN
+
+pos = -5588, 609, 5228
+rot = 0.106, -1.380, -0.015
+scale = 0.820, 0.820, 0.820
+// User: DAN
+
+pos = -5049, 594, 2460
+rot = 0.016, -1.757, -0.003
+scale = 0.980, 0.980, 0.980
+// User: DAN
+
+pos = -4996, 520, 2030
+rot = -0.375, 2.514, 0.020
+scale = 0.510, 0.510, 0.510
+// User: DAN
+
+pos = -3333, 1046, 2635
+rot = -0.147, -2.887, -0.014
+scale = 0.750, 0.750, 0.750
+// User: DAN
+
+pos = -1348, 1050, 2865
+rot = -0.000, -2.008, -0.000
+scale = 0.730, 0.730, 0.730
+// User: DAN
+
+pos = -1088, 1497, 3340
+rot = 0.086, -0.061, -0.143
+scale = 1.320, 1.320, 1.320
+// User: DAN
+
+pos = -3182, 1050, 2889
+rot = -0.000, -1.003, -0.000
+scale = 1.050, 1.050, 1.050
+// User: DAN
+
+pos = -4603, 600, 3225
+rot = -0.001, -1.066, -0.001
+scale = 0.640, 0.640, 0.640
+// User: DAN
+
+pos = -5537, 607, 3423
+rot = 0.017, 1.132, -0.035
+scale = 1.090, 1.090, 1.090
+// User: DAN
+
+pos = -5364, 604, 2975
+rot = -0.028, -2.950, 0.005
+scale = 0.520, 0.520, 0.520
+// User: DAN
+
+pos = -6027, 570, 3041
+rot = 0.003, 2.828, -0.002
+scale = 1.220, 1.220, 1.220
+// User: DAN
+
+pos = -6115, 590, 5502
+rot = 0.070, 1.006, 0.006
+scale = 0.855, 0.855, 0.855
+// User: DAN
+
+pos = -6051, 600, 6629
+rot = -0.008, -2.008, -0.033
+scale = 0.635, 0.635, 0.635
+// User: DAN
+
+pos = -6157, 599, 7050
+rot = -0.004, 2.890, -0.010
+scale = 0.520, 0.520, 0.520
+// User: DAN
+
+pos = -5689, 595, 6888
+rot = -0.002, -0.061, 0.013
+scale = 0.880, 0.880, 0.880
+// User: DAN
+
+pos = 4783, 915, 5399
+rot = -0.767, 1.808, 1.018
+scale = 1.230, 1.230, 1.230
+// User: DAN
+
+pos = -3445, 1501, 4712
+rot = 0.023, 2.138, -0.065
+scale = 0.880, 0.880, 0.880
+// User: DAN
+
+pos = -3658, 1505, 5218
+rot = -0.004, -2.386, -0.071
+scale = 1.230, 1.230, 1.230
+// User: DAN
+
+pos = -911, 1542, 4086
+rot = 0.013, 3.016, 0.044
+scale = 0.880, 0.880, 0.880
+// User: DAN
+
+pos = -4051, 145, 434
+rot = -0.220, -2.470, 0.300
+scale = 0.900, 0.900, 0.900
+// User: DAN
+
+pos = -3329, 1489, 3341
+rot = -1.009, -1.795, -0.603
+scale = 0.970, 0.970, 0.970
+// User: DAN
+
+pos = -3329, 297, 1406
+rot = 0.499, 0.874, -0.167
+scale = 0.830, 0.830, 0.830
+// User: DAN
+
+pos = -94, 1050, 2853
+rot = -0.000, 3.016, 0.000
+scale = 0.530, 0.530, 0.530
+// User: DAN
+
+name WILDFLOWERS
+
+pos = 1259, 2372, 13014
+rot = 0.000, -2.071, -0.000
+scale = 1.215, 1.215, 1.215
+// User: DAN
+
+pos = 1191, 2372, 12863
+rot = 0.000, 2.074, 0.000
+scale = 1.452, 1.452, 1.452
+// User: DAN
+
+pos = 1111, 2372, 13092
+rot = 0.000, 2.262, 0.000
+scale = 1.237, 1.237, 1.237
+// User: DAN
+
+pos = 1391, 2372, 12912
+rot = -0.239, -2.568, -0.131
+scale = -2.144, 1.840, -1.570
+// User: DAN
+
+pos = 591, 2372, 13532
+rot = 0.000, -2.671, 0.000
+scale = 1.462, 1.462, 1.462
+// User: DAN
+
+pos = 422, 2372, 13534
+rot = 0.000, 1.948, 0.000
+scale = 1.290, 1.290, 1.290
+// User: DAN
+
+pos = 276, 2372, 13514
+rot = 0.000, -2.196, -0.000
+scale = 1.230, 1.230, 1.230
+// User: DAN
+
+pos = 705, 2372, 13382
+rot = 0.000, 2.262, 0.000
+scale = 1.237, 1.237, 1.237
+// User: DAN
+
+pos = 211, 2372, 13351
+rot = 0.000, 0.627, -0.000
+scale = 1.074, 1.307, 1.513
+// User: DAN
+
+pos = 347, 2372, 13391
+rot = 0.000, -1.317, -0.000
+scale = 1.403, 1.403, 1.403
+// User: DAN
+
+pos = 541, 2372, 13372
+rot = 0.000, -2.134, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = 1264, 2372, 13143
+rot = 0.000, 2.325, 0.000
+scale = 0.772, 0.772, 0.772
+// User: DAN
+
+pos = 1434, 2372, 13065
+rot = 0.000, 1.948, 0.000
+scale = 1.290, 1.290, 1.290
+// User: DAN
+
+pos = 1384, 2372, 13249
+rot = 0.000, -2.134, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = 1217, 2372, 13224
+rot = 0.000, 2.451, 0.000
+scale = 2.427, 1.102, 1.702
+// User: DAN
+
+pos = 776, 2372, 13245
+rot = 0.000, -2.134, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = 1214, 2372, 13343
+rot = 0.000, 2.262, 0.000
+scale = 1.237, 1.237, 1.237
+// User: DAN
+
+pos = 853, 2372, 13374
+rot = 0.000, -2.791, 0.000
+scale = 1.462, 1.462, 1.462
+// User: DAN
+
+pos = 118, 2372, 13517
+rot = 0.000, -2.074, 0.000
+scale = 1.069, 1.287, 1.473
+// User: DAN
+
+pos = 57, 2372, 13395
+rot = -0.238, -2.574, -0.130
+scale = 1.056, 1.252, 1.410
+// User: DAN
+
+pos = 609, 2372, 13205
+rot = 0.000, 1.567, -0.000
+scale = 1.298, 1.298, 1.298
+// User: DAN
+
+pos = 128, 2372, 13247
+rot = 0.000, 2.008, 0.000
+scale = 1.072, 1.301, 1.499
+// User: DAN
+
+pos = 458, 2372, 12812
+rot = 0.000, 2.074, 0.000
+scale = 1.452, 1.452, 1.452
+// User: DAN
+
+pos = 160, 2372, 12801
+rot = 0.000, 2.325, 0.000
+scale = 0.772, 0.772, 0.772
+// User: DAN
+
+pos = 296, 2372, 12801
+rot = 0.000, -2.196, -0.000
+scale = 1.230, 1.230, 1.230
+// User: DAN
+
+pos = -103, 2372, 13202
+rot = 0.000, -1.317, -0.000
+scale = 1.403, 1.403, 1.178
+// User: DAN
+
+pos = 77, 2372, 13178
+rot = 0.000, -2.134, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = 658, 2372, 12861
+rot = -0.239, -2.568, -0.131
+scale = -2.144, 1.840, -1.570
+// User: DAN
+
+pos = 87, 2372, 12909
+rot = 0.000, 1.948, 0.000
+scale = 1.290, 1.290, 1.290
+// User: DAN
+
+pos = -9, 2372, 13039
+rot = 0.000, 2.262, 0.000
+scale = 1.237, 1.237, 1.237
+// User: DAN
+
+pos = 344, 2372, 12924
+rot = 0.000, 2.451, 0.000
+scale = 1.102, 1.102, 1.102
+// User: DAN
+
+pos = 170, 2372, 13012
+rot = 0.000, 0.567, -0.000
+scale = 1.298, 1.298, 1.298
+// User: DAN
+
+pos = 526, 2372, 12963
+rot = 0.000, -2.071, -0.000
+scale = 1.215, 1.215, 1.215
+// User: DAN
+
+pos = 531, 2372, 13092
+rot = 0.000, 2.325, 0.000
+scale = 0.772, 0.772, 0.772
+// User: DAN
+
+pos = 701, 2372, 13014
+rot = 0.000, 1.948, 0.000
+scale = 1.290, 1.290, 1.290
+// User: DAN
+
+pos = -367, 2372, 13149
+rot = 0.000, -2.717, 0.000
+scale = 1.283, 1.405, 1.520
+// User: DAN
+
+pos = -84, 2372, 13346
+rot = 0.000, -1.257, -0.000
+scale = -2.099, 1.740, -1.385
+// User: DAN
+
+pos = 1058, 2372, 12907
+rot = 0.000, 1.948, 0.000
+scale = 1.290, 1.290, 1.290
+// User: DAN
+
+pos = -551, 2372, 13242
+rot = 0.000, -2.071, -0.000
+scale = 1.215, 1.215, 1.215
+// User: DAN
+
+pos = -666, 2372, 13115
+rot = 0.000, 0.647, -0.000
+scale = -2.145, 1.834, -1.554
+// User: DAN
+
+pos = -358, 2372, 12731
+rot = 0.000, -2.114, 0.000
+scale = 1.208, 1.280, 1.339
+// User: DAN
+
+pos = -539, 2372, 12733
+rot = 0.000, 2.282, 0.000
+scale = 1.179, 1.244, 1.293
+// User: DAN
+
+pos = -282, 2372, 13008
+rot = 0.000, -2.224, 0.000
+scale = 0.997, 1.288, 1.541
+// User: DAN
+
+pos = -223, 2372, 12815
+rot = 0.000, 0.647, -0.000
+scale = -2.145, 1.834, -1.554
+// User: DAN
+
+pos = -438, 2372, 12914
+rot = 0.000, 2.028, 0.000
+scale = -2.144, 1.840, -1.570
+// User: DAN
+
+pos = -609, 2372, 12874
+rot = 0.000, -1.237, -0.000
+scale = -2.213, 1.744, -1.272
+// User: DAN
+
+pos = -498, 2372, 13071
+rot = 0.000, 2.342, 0.000
+scale = 0.992, 1.255, 1.470
+// User: DAN
+
+pos = 63, 0, 30
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name FLOWERCLUMP
+
+pos = 1158, 2372, 13025
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 363, 2372, 13474
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 450, 2372, 13453
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 657, 2372, 13321
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 1309, 2372, 13118
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 1349, 2372, 13178
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 134, 2372, 13412
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 361, 2372, 12860
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 425, 2372, 12974
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 209, 2372, 12921
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 86, 2372, 13079
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 623, 2372, 12943
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 576, 2372, 13067
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 616, 2372, 13127
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -21, 2372, 13267
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 1356, 2372, 12994
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -561, 2372, 13152
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -466, 2372, 12787
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -439, 2372, 13031
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -313, 2372, 12931
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -552, 2372, 13001
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -632, 2372, 13053
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name COLLICEWALL
+
+pos = -1382, 602, 8993
+rot = 0.048, 0.563, -0.023
+scale = 0.580, 1.010, 1.125
+// User: DAN
+
+pos = -1286, 652, 8565
+rot = 0.037, 0.063, -0.020
+scale = 0.580, 1.010, 1.125
+// User: DAN
+
+pos = -1944, 379, 9470
+rot = 0.079, 1.153, -0.048
+scale = 0.580, 1.010, 1.125
+// User: DAN
+
+pos = -1637, 490, 9300
+rot = 0.063, 0.963, -0.034
+scale = 0.580, 1.010, 1.125
+// User: DAN
+
+name EZONEGATE
+
+pos = -13, 61, -5668
+rot = 0.000, 0.055, 0.000
+scale = 1.660, 1.000, 1.000
+OnActivate = event
+  TargetID = 0,none
+  Message = none
+ID = 296,EGate
+// User: DAN
+
+name GENERATOR
+
+pos = -962, 20, -5314
+rot = 0.006, 3.289, -0.085
+scale = 1.000, 1.000, 1.000
+OnBoomerangHit = event
+  TargetID = 296,EGate
+  Message = Open
+ID = 295,ZapGenerator
+Message0 = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+name LILLYS
+
+pos = -6361, -149, -1566
+rot = 0.000, -0.815, -0.000
+scale = 1.880, 1.880, 1.880
+// User: DAN
+
+pos = -7083, -149, -321
+rot = 0.000, -1.142, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -3879, -149, -866
+rot = 0.000, -1.129, -0.000
+scale = 1.025, 1.025, 1.025
+// User: DAN
+
+pos = 5101, -149, 3841
+rot = 0.000, -0.061, -0.000
+scale = 1.235, 1.235, 1.235
+// User: DAN
+
+pos = 5265, -149, 4184
+rot = 0.000, 2.011, 0.000
+scale = 0.815, 0.815, 0.815
+// User: DAN
+
+pos = 4910, -149, 4740
+rot = 0.000, 1.320, -0.000
+scale = 0.640, 0.640, 0.640
+// User: DAN
+
+pos = 5764, -149, 4116
+rot = 0.000, 1.948, -0.000
+scale = 0.680, 0.680, 0.680
+// User: DAN
+
+pos = 5405, -149, 3838
+rot = 0.000, 2.590, 0.000
+scale = 1.128, 1.128, 1.128
+// User: DAN
+
+pos = 4961, -149, 4110
+rot = 0.000, -0.878, -0.000
+scale = 1.340, 1.340, 1.340
+// User: DAN
+
+pos = 5327, -149, 3518
+rot = 0.000, 0.441, -0.000
+scale = 1.370, 1.370, 1.370
+// User: DAN
+
+pos = -6722, -149, -2526
+rot = 0.000, 1.006, -0.000
+scale = 1.190, 1.190, 1.190
+// User: DAN
+
+pos = -6673, -149, -2816
+rot = 0.000, 2.451, 0.000
+scale = 0.740, 0.740, 0.740
+// User: DAN
+
+pos = 1819, -149, 2593
+rot = 0.000, 1.006, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = 4782, -149, 4406
+rot = 0.000, 3.879, 0.000
+scale = 0.844, 0.844, 0.844
+// User: DAN
+
+pos = 5940, -149, 4365
+rot = 0.000, 3.142, 0.000
+scale = 0.960, 0.960, 0.960
+// User: DAN
+
+pos = 6593, -149, 4174
+rot = 0.000, 1.485, 0.000
+scale = 0.864, 0.864, 0.864
+// User: DAN
+
+pos = 6328, -149, 4307
+rot = 0.000, 1.383, -0.000
+scale = 1.475, 1.475, 1.475
+// User: DAN
+
+pos = -6102, -149, -2901
+rot = 0.000, -1.882, -0.000
+scale = 1.180, 1.180, 1.180
+// User: DAN
+
+pos = -5770, -149, -1982
+rot = 0.000, -1.129, 0.000
+scale = 0.860, 0.860, 0.860
+// User: DAN
+
+pos = -5872, -149, -1710
+rot = 0.000, 1.446, -0.000
+scale = 0.665, 0.665, 0.665
+// User: DAN
+
+pos = -4262, -149, -463
+rot = 0.000, 0.692, -0.000
+scale = 1.075, 1.075, 1.075
+// User: DAN
+
+pos = -3320, -149, -300
+rot = 0.000, -1.882, -0.000
+scale = 0.850, 0.850, 0.850
+// User: DAN
+
+pos = -3068, -149, -108
+rot = 0.000, 0.818, -0.000
+scale = 1.225, 1.225, 1.225
+// User: DAN
+
+pos = -6081, -149, -2212
+rot = 0.000, -0.752, -0.000
+scale = 0.930, 0.930, 0.930
+// User: DAN
+
+pos = -6247, -149, -2385
+rot = 0.000, 2.262, 0.000
+scale = 2.240, 2.240, 2.240
+// User: DAN
+
+pos = -3998, -149, -3133
+rot = 0.000, -1.066, -0.000
+scale = 2.240, 2.240, 2.240
+// User: DAN
+
+pos = 4718, -149, 3779
+rot = 0.000, -1.631, -0.000
+scale = 0.770, 0.770, 0.770
+// User: DAN
+
+pos = -5221, -149, -2366
+rot = 0.000, 2.576, 0.000
+scale = 0.550, 0.550, 0.550
+// User: DAN
+
+pos = 6935, -149, 3048
+rot = 0.000, 1.069, -0.000
+scale = 0.860, 0.860, 0.860
+// User: DAN
+
+pos = 7497, -149, 3039
+rot = 0.000, 2.262, -0.000
+scale = 0.620, 0.620, 0.620
+// User: DAN
+
+pos = 7257, -149, 3541
+rot = 0.000, 2.037, 0.000
+scale = 1.064, 1.064, 1.064
+// User: DAN
+
+pos = 4318, -149, 4147
+rot = 0.000, 1.697, 0.000
+scale = 0.925, 0.925, 0.925
+// User: DAN
+
+pos = -5550, -149, -2730
+rot = 0.000, -0.815, -0.000
+scale = 1.280, 1.280, 1.280
+// User: DAN
+
+pos = -4858, -149, -3007
+rot = 0.000, -2.510, -0.000
+scale = 1.610, 1.610, 1.610
+// User: DAN
+
+pos = 6438, -149, 3402
+rot = 0.000, -1.003, -0.000
+scale = 1.115, 1.115, 1.115
+// User: DAN
+
+pos = -7677, -149, -1909
+rot = 0.000, 1.446, -0.000
+scale = 1.020, 1.020, 1.020
+// User: DAN
+
+pos = -6569, -149, -2280
+rot = 0.000, -0.312, -0.000
+scale = 0.840, 0.840, 0.840
+// User: DAN
+
+pos = -4916, -149, -569
+rot = 0.000, 0.567, -0.000
+scale = 0.575, 0.575, 0.575
+// User: DAN
+
+pos = -4059, -149, -194
+rot = 0.000, -2.636, -0.000
+scale = 0.950, 0.950, 0.950
+// User: DAN
+
+pos = -7248, -149, -1899
+rot = 0.000, -1.945, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 6716, -149, 2928
+rot = 0.000, -0.626, -0.000
+scale = 1.020, 1.020, 1.020
+// User: DAN
+
+pos = 7287, -149, 3188
+rot = 0.000, -1.631, -0.000
+scale = 0.665, 0.665, 0.665
+// User: DAN
+
+pos = 7471, -149, 3743
+rot = 0.000, 2.514, 0.000
+scale = 1.490, 1.490, 1.490
+// User: DAN
+
+pos = 4226, -149, 3749
+rot = 0.000, -0.438, -0.000
+scale = 2.700, 2.700, 2.700
+// User: DAN
+
+pos = -6665, -149, -1713
+rot = 0.000, -0.815, -0.000
+scale = 1.745, 1.745, 1.745
+// User: DAN
+
+pos = -4578, -149, -346
+rot = 0.000, -0.312, -0.000
+scale = 1.750, 1.750, 1.750
+// User: DAN
+
+pos = -7015, -149, -1219
+rot = 0.000, 0.567, -0.000
+scale = 0.635, 0.635, 0.635
+// User: DAN
+
+pos = -4642, -149, -587
+rot = 0.000, -0.312, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = -3576, -149, -20
+rot = 0.000, -0.312, -0.000
+scale = 1.750, 1.750, 1.750
+// User: DAN
+
+pos = 1494, -149, 1730
+rot = 0.000, -0.626, -0.000
+scale = 0.625, 0.625, 0.625
+// User: DAN
+
+pos = 1066, -149, 2071
+rot = 0.000, -2.950, -0.000
+scale = 1.500, 1.500, 1.500
+// User: DAN
+
+pos = -438, -149, 1928
+rot = 0.000, 1.823, 0.000
+scale = 2.075, 2.075, 2.075
+// User: DAN
+
+pos = -863, -149, 1631
+rot = 0.000, 2.639, 0.000
+scale = 1.300, 1.300, 1.300
+// User: DAN
+
+pos = -1197, -149, 1251
+rot = 0.000, -2.259, -0.000
+scale = 2.875, 2.875, 2.875
+// User: DAN
+
+pos = 476, -149, 1657
+rot = 0.000, 2.074, 0.000
+scale = 0.675, 0.675, 0.675
+// User: DAN
+
+pos = 775, -149, 1198
+rot = 0.000, -1.694, 0.000
+scale = 2.350, 2.350, 2.350
+// User: DAN
+
+pos = -1891, -149, -307
+rot = 0.000, 1.383, -0.000
+scale = 2.075, 2.075, 2.075
+// User: DAN
+
+pos = -1490, -149, -746
+rot = 0.000, -0.312, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 835, -149, 1684
+rot = 0.000, -1.003, -0.000
+scale = 1.275, 1.275, 1.275
+// User: DAN
+
+pos = -1395, -149, 353
+rot = 0.000, 1.948, 0.000
+scale = 2.050, 2.050, 2.050
+// User: DAN
+
+pos = -1702, -149, 159
+rot = 0.000, 0.692, -0.000
+scale = 2.275, 2.275, 2.275
+// User: DAN
+
+pos = 1164, -149, 1451
+rot = 0.000, -2.259, -0.000
+scale = 2.875, 2.875, 2.875
+// User: DAN
+
+pos = -1266, -149, -14
+rot = 0.000, 2.828, 0.000
+scale = 2.800, 2.800, 2.800
+// User: DAN
+
+pos = 728, -149, 1979
+rot = 0.000, 1.886, 0.000
+scale = 1.175, 1.175, 1.175
+// User: DAN
+
+pos = 476, -149, 2043
+rot = 0.000, 1.006, -0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = 204, -149, 1978
+rot = 0.000, 0.567, -0.000
+scale = 1.300, 1.300, 1.300
+// User: DAN
+
+pos = -1524, -149, 839
+rot = 0.000, -1.757, -0.000
+scale = 2.825, 2.825, 2.825
+// User: DAN
+
+pos = -1553, -149, 1086
+rot = 0.000, -2.510, 0.000
+scale = 0.850, 0.850, 0.850
+// User: DAN
+
+pos = -1382, -149, 635
+rot = 0.000, -2.071, -0.000
+scale = 1.250, 1.250, 1.250
+// User: DAN
+
+pos = -1911, -149, 450
+rot = 0.000, 0.316, -0.000
+scale = 1.875, 1.875, 1.875
+// User: DAN
+
+pos = -2201, -149, 84
+rot = 0.000, -2.510, -0.000
+scale = 2.800, 2.800, 2.800
+// User: DAN
+
+pos = -904, -149, 202
+rot = 0.000, 3.510, 0.000
+scale = 1.088, 1.088, 1.088
+// User: DAN
+
+pos = 179, -149, 1157
+rot = 0.000, 0.190, -0.000
+scale = 2.050, 2.050, 2.050
+// User: DAN
+
+pos = 305, -149, 854
+rot = 0.000, -2.950, -0.000
+scale = 1.500, 1.500, 1.500
+// User: DAN
+
+pos = -993, -149, 662
+rot = 0.000, -1.568, 0.000
+scale = 2.525, 2.525, 2.525
+// User: DAN
+
+pos = -2454, -149, 943
+rot = 0.000, -1.882, -0.000
+scale = 0.850, 0.850, 0.850
+// User: DAN
+
+pos = -2530, -149, 605
+rot = 0.000, -1.945, -0.000
+scale = 1.725, 1.725, 1.725
+// User: DAN
+
+pos = -2634, -149, 106
+rot = 0.000, -2.887, 0.000
+scale = 1.650, 1.650, 1.650
+// User: DAN
+
+pos = -2210, -149, 504
+rot = 0.000, -2.636, -0.000
+scale = 0.950, 0.950, 0.950
+// User: DAN
+
+pos = -1922, -149, 1264
+rot = 0.000, 0.818, -0.000
+scale = 1.225, 1.225, 1.225
+// User: DAN
+
+pos = -2115, -149, 908
+rot = 0.000, -0.250, -0.000
+scale = 2.400, 2.400, 2.400
+// User: DAN
+
+pos = 4707, 1003, 7612
+rot = 0.000, -0.006, -0.000
+scale = 0.700, 0.700, 0.700
+// User: DAN
+
+pos = 4554, 1003, 8335
+rot = 0.000, 2.765, 0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 4524, 1003, 8625
+rot = 0.000, -2.385, 0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 4736, 1003, 8334
+rot = 0.000, -1.688, 0.000
+scale = 0.625, 0.625, 0.625
+// User: DAN
+
+pos = 7393, -149, 4493
+rot = 0.000, 4.247, 0.000
+scale = 0.856, 0.856, 0.856
+// User: DAN
+
+pos = 7334, -149, 4861
+rot = 0.000, 0.378, -0.000
+scale = 0.830, 0.830, 0.830
+// User: DAN
+
+pos = 7018, -149, 4444
+rot = 0.000, 4.247, 0.000
+scale = 0.852, 0.852, 0.852
+// User: DAN
+
+pos = 7072, -149, 4812
+rot = 0.000, 3.326, 0.000
+scale = 1.160, 1.160, 1.160
+// User: DAN
+
+pos = 7036, -149, 5091
+rot = 0.000, 5.536, 0.000
+scale = 0.904, 0.904, 0.904
+// User: DAN
+
+pos = 6053, -149, 4643
+rot = 0.000, 2.074, 0.000
+scale = 1.460, 1.460, 1.460
+// User: DAN
+
+pos = 6861, -149, 4254
+rot = 0.000, 1.446, -0.000
+scale = 0.770, 0.770, 0.770
+// User: DAN
+
+pos = 6529, -149, 5126
+rot = 0.000, 0.253, -0.000
+scale = 1.355, 1.355, 1.355
+// User: DAN
+
+pos = 6032, -149, 5000
+rot = 0.000, 3.142, 0.000
+scale = 1.040, 1.040, 1.040
+// User: DAN
+
+pos = 6313, -149, 4797
+rot = 0.000, 3.142, 0.000
+scale = 0.888, 0.888, 0.888
+// User: DAN
+
+pos = 6212, -149, 5219
+rot = 0.000, -1.694, -0.000
+scale = 1.670, 1.670, 1.670
+// User: DAN
+
+pos = 6787, -149, 4927
+rot = 0.000, 2.388, -0.000
+scale = 1.505, 1.505, 1.505
+// User: DAN
+
+pos = 7741, -149, 3887
+rot = 0.000, 3.142, 0.000
+scale = 1.036, 1.036, 1.036
+// User: DAN
+
+pos = 7806, -149, 4113
+rot = 0.000, -0.187, -0.000
+scale = 0.965, 0.965, 0.965
+// User: DAN
+
+pos = 4951, 1003, 7718
+rot = 0.000, 1.331, -0.000
+scale = 1.250, 1.250, 1.250
+// User: DAN
+
+pos = 4019, 1003, 8122
+rot = 0.000, -1.688, 0.000
+scale = 0.475, 0.475, 0.475
+// User: DAN
+
+pos = 3999, 1003, 8321
+rot = 0.000, -0.006, -0.000
+scale = 0.700, 0.700, 0.700
+// User: DAN
+
+pos = 4196, 1003, 8438
+rot = 0.000, -2.678, 0.000
+scale = 0.800, 0.800, 0.800
+// User: DAN
+
+pos = 4206, 1003, 7998
+rot = 0.000, -2.678, 0.000
+scale = 0.800, 0.800, 0.800
+// User: DAN
+
+pos = 3730, 1003, 9466
+rot = 0.000, 2.765, 0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 3900, 1003, 8877
+rot = 0.000, -1.066, -0.000
+scale = 0.860, 0.860, 0.860
+// User: DAN
+
+pos = 4097, 1003, 8930
+rot = 0.000, -0.006, -0.000
+scale = 0.700, 0.700, 0.700
+// User: DAN
+
+pos = 4804, 1003, 7848
+rot = 0.000, 0.441, -0.000
+scale = 1.175, 1.175, 1.175
+// User: DAN
+
+pos = 3926, 1003, 9414
+rot = 0.000, -1.688, 0.000
+scale = 0.475, 0.475, 0.475
+// User: DAN
+
+pos = 3879, 1003, 9611
+rot = 0.000, -1.818, 0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 4562, 1003, 7530
+rot = 0.000, -2.824, -0.000
+scale = 1.800, 1.800, 1.800
+// User: DAN
+
+pos = 3666, 1003, 9665
+rot = 0.000, 1.621, 0.000
+scale = 0.950, 0.950, 0.950
+// User: DAN
+
+pos = 4668, 1003, 7735
+rot = 0.000, -1.066, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 4461, 1003, 9129
+rot = 0.000, 1.331, -0.000
+scale = 1.070, 1.070, 1.070
+// User: DAN
+
+pos = 4219, 1003, 9088
+rot = 0.000, -2.824, -0.000
+scale = 1.662, 1.662, 1.662
+// User: DAN
+
+pos = 4390, 1003, 9543
+rot = 0.000, -2.678, 0.000
+scale = 0.800, 0.800, 0.800
+// User: DAN
+
+pos = 4250, 1003, 8851
+rot = 0.000, 0.441, -0.000
+scale = 0.925, 0.925, 0.925
+// User: DAN
+
+pos = 3887, 1003, 9857
+rot = 0.000, 3.142, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 4126, 1003, 9653
+rot = 0.000, 1.331, -0.000
+scale = 1.250, 1.250, 1.250
+// User: DAN
+
+pos = 4213, 1007, 9872
+rot = 0.000, -2.824, -0.000
+scale = 1.800, 1.800, 1.800
+// User: DAN
+
+pos = -409, -149, 821
+rot = 0.000, 1.697, 0.000
+scale = 1.750, 1.750, 1.750
+// User: DAN
+
+pos = 89, -149, 1600
+rot = 0.000, -1.568, 0.000
+scale = 2.525, 2.525, 2.525
+// User: DAN
+
+pos = -79, -149, 868
+rot = 0.000, 1.010, -0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = -295, -149, 1291
+rot = 0.000, -0.187, -0.000
+scale = 2.175, 2.175, 2.175
+// User: DAN
+
+pos = -734, -149, 1149
+rot = 0.000, -1.066, -0.000
+scale = 2.600, 2.600, 2.600
+// User: DAN
+
+pos = 1746, -149, 1574
+rot = 0.000, 1.634, 0.000
+scale = 2.350, 2.350, 2.350
+// User: DAN
+
+pos = 1073, -149, -74
+rot = 0.000, -2.071, 0.000
+scale = 1.975, 1.975, 1.975
+// User: DAN
+
+pos = 1089, -149, -687
+rot = 0.000, -0.878, 0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = 875, -149, -381
+rot = 0.000, -2.196, 0.000
+scale = 2.075, 2.075, 2.075
+// User: DAN
+
+pos = 415, -149, -775
+rot = 0.000, 1.948, -0.000
+scale = 0.680, 0.680, 0.680
+// User: DAN
+
+pos = -462, -149, -1121
+rot = 0.000, -0.815, -0.000
+scale = 0.850, 0.850, 0.850
+// User: DAN
+
+pos = -883, -149, -631
+rot = 0.000, 0.002, -0.000
+scale = 2.530, 2.530, 2.530
+// User: DAN
+
+pos = -588, -149, -841
+rot = 0.000, 2.200, 0.000
+scale = 1.450, 1.450, 1.450
+// User: DAN
+
+pos = 406, -149, -1237
+rot = 0.000, -0.061, -0.000
+scale = 1.070, 1.070, 1.070
+// User: DAN
+
+pos = 736, -149, -902
+rot = 0.000, -2.699, -0.000
+scale = 1.675, 1.675, 1.675
+// User: DAN
+
+pos = 87, -149, -969
+rot = 0.000, -0.438, -0.000
+scale = 2.700, 2.700, 2.700
+// User: DAN
+
+pos = -2680, -149, -265
+rot = 0.000, -0.312, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 2573, -149, 1153
+rot = 0.000, 2.325, 0.000
+scale = 1.025, 1.025, 1.025
+// User: DAN
+
+pos = -2770, -149, -3196
+rot = 0.000, 0.881, -0.000
+scale = 0.725, 0.725, 0.725
+// User: DAN
+
+pos = -3581, -149, -2566
+rot = 0.000, -0.852, -0.000
+scale = 1.212, 1.285, 1.345
+// User: DAN
+
+pos = -4107, -149, -3396
+rot = 0.000, 0.881, -0.000
+scale = 0.860, 0.860, 0.860
+// User: DAN
+
+pos = -3876, -149, -3545
+rot = 0.000, -1.129, -0.000
+scale = 0.965, 0.965, 0.965
+// User: DAN
+
+pos = -3399, -149, -2939
+rot = 0.000, 1.006, -0.000
+scale = 0.875, 0.875, 0.875
+// User: DAN
+
+pos = -3591, -149, -3284
+rot = 0.000, -0.124, -0.000
+scale = 1.775, 1.775, 1.775
+// User: DAN
+
+pos = -6430, -149, -2985
+rot = 0.000, -1.003, -0.000
+scale = 0.550, 0.550, 0.550
+// User: DAN
+
+pos = 5481, -149, 2031
+rot = 0.000, -2.071, -0.000
+scale = 0.670, 0.670, 0.670
+// User: DAN
+
+pos = 5085, -149, 2024
+rot = 0.000, -0.061, -0.000
+scale = 1.070, 1.070, 1.070
+// User: DAN
+
+pos = -7044, -149, -1607
+rot = 0.000, -1.757, 0.000
+scale = 1.775, 1.775, 1.775
+// User: DAN
+
+pos = 3788, -149, 2342
+rot = 0.000, -0.878, -0.000
+scale = 2.000, 2.000, 2.000
+// User: DAN
+
+pos = 4466, -149, 3250
+rot = 0.000, 2.639, 0.000
+scale = 2.650, 2.650, 2.650
+// User: DAN
+
+pos = 1225, -149, 2410
+rot = 0.000, -0.187, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -6284, -149, -2643
+rot = 0.000, 1.886, 0.000
+scale = 1.010, 1.010, 1.010
+// User: DAN
+
+pos = -3797, -149, -455
+rot = 0.000, -0.187, -0.000
+scale = 2.175, 2.175, 2.175
+// User: DAN
+
+pos = -5943, -149, -2596
+rot = 0.000, 2.325, 0.000
+scale = 0.770, 0.770, 0.770
+// User: DAN
+
+pos = -3377, -149, -780
+rot = 0.000, -2.448, -0.000
+scale = 0.675, 0.675, 0.675
+// User: DAN
+
+pos = -3333, -149, -3471
+rot = 0.000, -2.699, -0.000
+scale = 1.865, 1.865, 1.865
+// User: DAN
+
+pos = 2496, -149, 2012
+rot = 0.000, -1.066, -0.000
+scale = 2.700, 2.700, 2.700
+// User: DAN
+
+pos = -2982, -149, -3465
+rot = 0.000, 1.697, -0.000
+scale = 1.970, 1.970, 1.970
+// User: DAN
+
+pos = -3147, -149, -453
+rot = 0.000, 1.006, -0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = 2872, -149, 1964
+rot = 0.000, -2.762, -0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = 3338, -149, 2266
+rot = 0.000, 0.316, -0.000
+scale = 2.025, 2.025, 2.025
+// User: DAN
+
+pos = 3813, -149, 2683
+rot = 0.000, -0.689, -0.000
+scale = 1.550, 1.550, 1.550
+// User: DAN
+
+pos = 3185, -149, 2667
+rot = 0.000, -2.824, 0.000
+scale = 2.400, 2.400, 2.400
+// User: DAN
+
+pos = -5766, -149, -2907
+rot = 0.000, 2.451, 0.000
+scale = 0.630, 0.630, 0.630
+// User: DAN
+
+pos = -3778, -149, -2770
+rot = 0.000, 0.881, -0.000
+scale = 0.965, 0.965, 0.965
+// User: DAN
+
+pos = 3523, -149, 2898
+rot = 0.000, 3.510, 0.000
+scale = 1.088, 1.088, 1.088
+// User: DAN
+
+pos = 2818, -149, 2717
+rot = 0.000, 2.200, 0.000
+scale = 1.450, 1.450, 1.450
+// User: DAN
+
+pos = 5019, -149, 2937
+rot = 0.000, -2.134, -0.000
+scale = 0.575, 0.575, 0.575
+// User: DAN
+
+pos = -7550, -149, -1671
+rot = 0.000, 0.378, -0.000
+scale = 1.250, 1.250, 1.250
+// User: DAN
+
+pos = 4923, -149, 3371
+rot = 0.000, 2.011, -0.000
+scale = 2.475, 2.475, 2.475
+// User: DAN
+
+pos = 2233, -149, 2653
+rot = 0.000, -1.882, 0.000
+scale = 2.000, 2.000, 2.000
+// User: DAN
+
+pos = 5103, -149, 2537
+rot = 0.000, 0.002, -0.000
+scale = 2.525, 2.525, 2.525
+// User: DAN
+
+pos = -6825, -149, -2083
+rot = 0.000, 2.576, 0.000
+scale = 1.440, 1.440, 1.440
+// User: DAN
+
+pos = 3784, -149, 3001
+rot = 0.000, 1.886, 0.000
+scale = 0.905, 0.905, 0.905
+// User: DAN
+
+pos = 4150, -149, 2800
+rot = 0.000, 2.828, 0.000
+scale = 2.800, 2.800, 2.800
+// User: DAN
+
+pos = 4646, -149, 2846
+rot = 0.000, 2.200, 0.000
+scale = 2.725, 2.725, 2.725
+// User: DAN
+
+pos = -7235, -149, -1409
+rot = 0.000, 0.190, -0.000
+scale = 1.550, 1.550, 1.550
+// User: DAN
+
+pos = -7080, -149, -2501
+rot = 0.000, -1.443, -0.000
+scale = 1.090, 1.090, 1.090
+// User: DAN
+
+pos = -6670, -149, -1326
+rot = 0.000, 1.697, 0.000
+scale = 1.535, 1.535, 1.535
+// User: DAN
+
+pos = -5629, -149, -1390
+rot = 0.000, 0.127, -0.000
+scale = 0.860, 0.860, 0.860
+// User: DAN
+
+pos = -5242, -149, -959
+rot = 0.000, -0.626, -0.000
+scale = 0.545, 0.545, 0.545
+// User: DAN
+
+pos = -6088, -149, -1326
+rot = 0.000, 1.195, -0.000
+scale = 1.610, 1.610, 1.610
+// User: DAN
+
+pos = -5693, -149, -2390
+rot = 0.000, -1.945, -0.000
+scale = 2.390, 2.390, 2.390
+// User: DAN
+
+pos = -6100, -149, -1938
+rot = 0.000, 2.514, 0.000
+scale = 2.090, 2.090, 2.090
+// User: DAN
+
+pos = -5431, -149, -2957
+rot = 0.000, -1.568, -0.000
+scale = 1.340, 1.340, 1.340
+// User: DAN
+
+pos = -5260, -149, -2701
+rot = 0.000, 2.388, 0.000
+scale = 1.370, 1.370, 1.370
+// User: DAN
+
+pos = -4426, -149, -3293
+rot = 0.000, -1.945, -0.000
+scale = 1.160, 1.160, 1.160
+// User: DAN
+
+pos = -7446, -149, -2088
+rot = 0.000, -2.071, -0.000
+scale = 0.550, 0.550, 0.550
+// User: DAN
+
+pos = 4206, -149, 2130
+rot = 0.000, 1.006, -0.000
+scale = 1.950, 1.950, 1.950
+// User: DAN
+
+pos = 1626, -149, 2311
+rot = 0.000, -0.501, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 2270, -149, 2274
+rot = 0.000, -0.626, -0.000
+scale = 1.675, 1.675, 1.675
+// User: DAN
+
+pos = -6859, -149, -597
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = 4355, -149, 2480
+rot = 0.000, -1.003, -0.000
+scale = 0.875, 0.875, 0.875
+// User: DAN
+
+pos = -6713, -149, -479
+rot = 0.000, -0.921, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -6598, -149, -636
+rot = 0.000, -1.289, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -7013, -149, -515
+rot = 0.000, 0.000, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = 2763, -149, 2369
+rot = 0.000, 1.195, -0.000
+scale = 2.450, 2.450, 2.450
+// User: DAN
+
+pos = 4788, -149, 2239
+rot = 0.000, 2.702, 0.000
+scale = 1.725, 1.725, 1.725
+// User: DAN
+
+pos = -6466, -149, -2009
+rot = 0.000, 2.702, 0.000
+scale = 1.340, 1.340, 1.340
+// User: DAN
+
+pos = -7156, -149, -2170
+rot = 0.000, -0.312, -0.000
+scale = 0.780, 0.780, 0.780
+// User: DAN
+
+pos = -6776, -149, -354
+rot = 0.000, -0.737, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -6833, -149, -683
+rot = 0.000, 0.692, -0.000
+scale = 0.815, 0.815, 0.815
+// User: DAN
+
+pos = -3235, -149, -3152
+rot = 0.000, -1.192, -0.000
+scale = 1.280, 1.280, 1.280
+// User: DAN
+
+pos = 1950, -149, 2226
+rot = 0.000, 0.630, -0.000
+scale = 1.750, 1.750, 1.750
+// User: DAN
+
+pos = 1460, -149, 2006
+rot = 0.000, 0.630, -0.000
+scale = 0.825, 0.825, 0.825
+// User: DAN
+
+pos = 1954, -149, 1841
+rot = 0.000, 1.006, -0.000
+scale = 0.675, 0.675, 0.675
+// User: DAN
+
+pos = 2203, -149, 888
+rot = 0.000, 1.260, -0.000
+scale = 1.025, 1.025, 1.025
+// User: DAN
+
+pos = 1004, -149, 434
+rot = 0.000, 0.316, -0.000
+scale = 1.625, 1.625, 1.625
+// User: DAN
+
+pos = 707, -149, 672
+rot = 0.000, -2.134, 0.000
+scale = 2.100, 2.100, 2.100
+// User: DAN
+
+pos = -6915, -149, -395
+rot = 0.000, -1.657, 0.000
+scale = 1.000, 1.000, 1.000
+// User: ???
+
+pos = -7223, -149, -2316
+rot = 0.000, -2.636, -0.000
+scale = 0.680, 0.680, 0.680
+// User: DAN
+
+pos = -5145, -149, -457
+rot = 0.000, 0.630, -0.000
+scale = 1.010, 1.010, 1.010
+// User: DAN
+
+pos = 3101, -149, 3143
+rot = 0.000, 3.079, -0.000
+scale = 2.900, 2.900, 2.900
+// User: DAN
+
+pos = 5689, -149, 3299
+rot = 0.000, -0.626, -0.000
+scale = 1.775, 1.775, 1.775
+// User: DAN
+
+pos = 7595, -149, 3341
+rot = 0.000, -0.124, -0.000
+scale = 1.070, 1.070, 1.070
+// User: DAN
+
+pos = 6052, -149, 3423
+rot = 0.000, 4.247, 0.000
+scale = 0.892, 0.892, 0.892
+// User: DAN
+
+pos = 953, -149, 921
+rot = 0.000, 1.760, 0.000
+scale = 0.550, 0.550, 0.550
+// User: DAN
+
+pos = 7817, -149, 3590
+rot = 0.000, 3.142, 0.000
+scale = 1.092, 1.092, 1.092
+// User: DAN
+
+pos = -915, -149, -1044
+rot = 0.000, -0.689, -0.000
+scale = 1.550, 1.550, 1.550
+// User: DAN
+
+pos = 2603, -149, 2869
+rot = 0.000, 1.320, -0.000
+scale = 1.025, 1.025, 1.025
+// User: DAN
+
+pos = -5717, -149, -1023
+rot = 0.000, -0.312, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = -6453, -149, -668
+rot = 0.000, -1.757, 0.000
+scale = 1.145, 1.145, 1.145
+// User: DAN
+
+pos = -4865, -149, -2606
+rot = 0.000, 1.195, -0.000
+scale = 1.835, 1.835, 1.835
+// User: DAN
+
+pos = 1798, -149, 1066
+rot = 0.000, -1.066, -0.000
+scale = 2.600, 2.600, 2.600
+// User: DAN
+
+pos = 3363, -149, 3361
+rot = 0.000, 2.074, 0.000
+scale = 2.050, 2.050, 2.050
+// User: DAN
+
+pos = 872, -149, 132
+rot = 0.000, 1.195, -0.000
+scale = 1.075, 1.075, 1.075
+// User: DAN
+
+pos = 1218, -149, -374
+rot = 0.000, -0.312, -0.000
+scale = 0.950, 0.950, 0.950
+// User: DAN
+
+pos = 1337, -149, 913
+rot = 0.000, 2.639, 0.000
+scale = 1.300, 1.300, 1.300
+// User: DAN
+
+pos = 1502, -149, 452
+rot = 0.000, -0.312, -0.000
+scale = 2.225, 2.225, 2.225
+// User: DAN
+
+pos = 1547, -149, -135
+rot = 0.000, -0.815, -0.000
+scale = 0.850, 0.850, 0.850
+// User: DAN
+
+pos = 2180, -149, 1454
+rot = 0.000, -1.631, -0.000
+scale = 1.400, 1.400, 1.400
+// User: DAN
+
+pos = 4067, -149, 3428
+rot = 0.000, -2.448, 0.000
+scale = 1.500, 1.500, 1.500
+// User: DAN
+
+pos = 5946, -149, 2674
+rot = 0.000, -2.448, 0.000
+scale = 1.390, 1.390, 1.390
+// User: DAN
+
+pos = 1857, -149, 1487
+rot = 0.000, 2.514, 0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+pos = 6189, -149, 3127
+rot = 0.000, 3.142, 0.000
+scale = 0.892, 0.892, 0.892
+// User: DAN
+
+pos = -6105, -149, -757
+rot = 0.000, -0.689, -0.000
+scale = 2.100, 2.100, 2.100
+// User: DAN
+
+pos = -4575, -149, -2929
+rot = 0.000, -2.134, -0.000
+scale = 1.760, 1.760, 1.760
+// User: DAN
+
+pos = 5359, -149, 3005
+rot = 0.000, -2.699, -0.000
+scale = 1.975, 1.975, 1.975
+// User: DAN
+
+pos = 1520, -149, 1951
+rot = 0.000, 1.948, 0.000
+scale = 2.025, 2.025, 2.025
+// User: DAN
+
+pos = 5749, -149, 2877
+rot = 0.000, 1.634, -0.000
+scale = 1.170, 1.170, 1.170
+// User: DAN
+
+pos = 2564, -149, 1380
+rot = 0.000, -1.192, -0.000
+scale = 0.870, 0.870, 0.870
+// User: DAN
+
+pos = -7929, -149, -1603
+rot = 0.000, 2.702, 0.000
+scale = 0.610, 0.610, 0.610
+// User: DAN
+
+pos = 3766, -149, 3286
+rot = 0.000, 0.064, -0.000
+scale = 2.150, 2.150, 2.150
+// User: DAN
+
+pos = -6560, -149, -922
+rot = 0.000, -1.568, -0.000
+scale = 0.665, 0.665, 0.665
+// User: DAN
+
+pos = -6283, -149, -1032
+rot = 0.000, 2.514, 0.000
+scale = 1.670, 1.670, 1.670
+// User: DAN
+
+pos = -5667, -149, -514
+rot = 0.000, -2.762, -0.000
+scale = 1.610, 1.610, 1.610
+// User: DAN
+
+pos = 6618, -149, 3740
+rot = 0.000, 3.142, -0.000
+scale = 1.210, 1.210, 1.210
+// User: DAN
+
+pos = 5185, -149, 4486
+rot = 0.000, -0.061, -0.000
+scale = 1.970, 1.970, 1.970
+// User: DAN
+
+pos = -5367, -149, -711
+rot = 0.000, 0.692, -0.000
+scale = 0.890, 0.890, 0.890
+// User: DAN
+
+name LILYPAD
+
+pos = -4208, -149, -2867
+rot = 0.000, 1.380, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = -3706, -149, -2093
+rot = 0.000, -0.570, -0.000
+scale = 0.750, 0.750, 0.750
+// User: DAN
+
+pos = -4122, -149, -2387
+rot = 0.000, 0.090, -0.000
+scale = 1.200, 1.200, 1.200
+// User: DAN
+
+pos = 4329, 1003, 8592
+rot = 0.000, 1.650, 0.000
+scale = 1.500, 1.500, 1.500
+// User: DAN
+
+pos = 3971, 1003, 8646
+rot = 0.000, -1.730, 0.000
+scale = 1.975, 1.975, 1.975
+// User: DAN
+
+pos = 3878, 1003, 9158
+rot = 0.000, 0.000, 0.000
+scale = 2.175, 2.175, 2.175
+// User: DAN
+
+pos = 4561, 1003, 8092
+rot = 0.000, 0.000, 0.000
+scale = 1.668, 1.668, 1.668
+// User: DAN
+
+pos = 4453, 1003, 7847
+rot = 0.000, 2.050, 0.000
+scale = 1.975, 1.975, 1.975
+// User: DAN
+
+pos = 4842, 1003, 8083
+rot = 0.000, 1.780, 0.000
+scale = 1.445, 1.445, 1.445
+// User: DAN
+
+pos = 4521, 1003, 8856
+rot = 0.000, 0.450, -0.000
+scale = 1.500, 1.500, 1.500
+// User: DAN
+
+pos = 4387, 1003, 9346
+rot = 0.000, -0.600, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+pos = 4140, 1003, 9409
+rot = 0.000, -1.330, -0.000
+scale = 1.325, 1.325, 1.325
+// User: DAN
+
+name FERN1
+
+pos = -8190, 1754, -1371
+rot = 2.316, 2.434, -1.014
+scale = 1.391, 1.937, 1.391
+// User: ???
+
+pos = 5691, 1799, -461
+rot = -0.293, -2.086, -1.239
+scale = 1.062, 1.479, 1.062
+// User: ???
+
+pos = -610, 3435, 5302
+rot = 0.812, 0.608, 0.106
+scale = 0.345, 0.228, 0.345
+// User: ???
+
+pos = -8195, 177, -1356
+rot = 3.034, 2.272, -1.536
+scale = 1.391, 1.937, 1.391
+// User: ???
+
+pos = -8203, 1657, 293
+rot = 0.561, 0.557, 0.849
+scale = 1.961, 2.731, 1.961
+// User: ???
+
+pos = -696, 2359, 4702
+rot = -0.365, 2.763, 0.190
+scale = 1.895, 2.904, 1.892
+// User: ???
+
+pos = 5488, 2591, 356
+rot = -0.468, 2.118, -0.392
+scale = 1.327, 2.588, 1.327
+// User: ???
+
+name FERN2
+
+pos = -8403, 2015, -1366
+rot = 0.870, 2.827, -0.043
+scale = 1.876, 1.876, 1.876
+// User: ???
+
+pos = -8227, 515, -1221
+rot = 0.133, 2.713, 1.350
+scale = 1.876, 1.876, 1.876
+// User: ???
+
+pos = -8217, 1869, 352
+rot = 0.038, 2.696, 0.866
+scale = 1.876, 1.876, 1.876
+// User: ???
+
+pos = -8091, 444, 128
+rot = 1.902, 0.751, -0.780
+scale = 1.876, 1.876, 1.876
+// User: ???
+
+pos = 5586, 2184, 177
+rot = 0.589, -0.132, -0.966
+scale = 1.210, 1.210, 1.210
+// User: ???
+
+pos = 5470, 2553, 1213
+rot = -0.049, -0.395, -1.163
+scale = 2.106, 2.106, 2.106
+// User: ???
+
+pos = 5625, 2029, 1094
+rot = -1.279, 1.425, 0.139
+scale = 1.743, 3.834, 1.743
+// User: ???
+
+pos = 5667, 1629, 105
+rot = 0.544, -0.448, -1.509
+scale = 1.210, 1.210, 1.210
+// User: ???
+
+name FERN3
+
+pos = 5578, 2713, 297
+rot = -0.296, -2.581, -1.051
+scale = 1.272, 1.807, 1.272
+// User: ???
+
+pos = 5758, 2031, -41
+rot = 2.731, -0.566, 1.581
+scale = 1.010, 1.434, 1.010
+// User: ???
+
+pos = -8152, 2005, -1400
+rot = -0.629, 0.500, 1.422
+scale = 1.539, 2.186, 1.539
+// User: ???
+
+pos = -8172, 1287, 321
+rot = 0.803, 0.030, 1.149
+scale = 1.539, 2.186, 1.539
+// User: ???
+
+pos = -7856, 362, 251
+rot = 0.752, 0.085, 1.057
+scale = 1.663, 2.361, 1.663
+// User: ???
+
+name JULIUS
+
+pos = 1723, 2372, 11208
+rot = 0.000, -1.790, 0.000
+ID = 102,JuliusA
+bVisible = 1,true
+OnMoreCogs = event
+  TargetID = 0,none
+  Message = none
+OnAllTechnorangs = event
+  TargetID = 0,none
+  Message = none
+OnIntroduceTalisman = event
+  TargetID = 163,ScriptIntroA
+  Message = Activate
+OnRecapTalisman = event
+  TargetID = 167,RecapTEMachineExplained
+  Message = Activate
+OnNeedTalisman = event
+  TargetID = 165,VisitAllPortalsA
+  Message = Activate
+OnMoreFireTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreIceTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreLightningTE = event
+  TargetID = 0,none
+  Message = none
+OnGiveFlamerang = event
+  TargetID = 0,none
+  Message = none
+OnGiveFrostyrang = event
+  TargetID = 0,none
+  Message = none
+OnGiveZappyrang = event
+  TargetID = 0,none
+  Message = none
+OnMakeZoomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMultirang = event
+  TargetID = 0,none
+  Message = none
+OnMakeInfrarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMegarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeKaboomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeChronorang = event
+  TargetID = 0,none
+  Message = none
+OnEnoughTEForTalisman = event
+  TargetID = 165,VisitAllPortalsA
+  Message = Activate
+OnGiveTalisman = event
+  TargetID = 162,ScriptFightBossA
+  Message = Activate
+// User: DAN
+
+pos = -3737, 261, 10004
+rot = 0.000, 1.488, -0.000
+ID = 311,JuliusB
+bVisible = 1,true
+OnMoreCogs = event
+  TargetID = 0,none
+  Message = none
+OnAllTechnorangs = event
+  TargetID = 0,none
+  Message = none
+OnIntroduceTalisman = event
+  TargetID = 891,IntroToPippyBeach
+  Message = Activate
+OnRecapTalisman = event
+  TargetID = 891,IntroToPippyBeach
+  Message = Activate
+OnNeedTalisman = event
+  TargetID = 893,VisitAllPortalsB
+  Message = Activate
+OnMoreFireTE = event
+  TargetID = 0,none
+  Message = Activate
+OnMoreIceTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreLightningTE = event
+  TargetID = 0,none
+  Message = none
+OnGiveFlamerang = event
+  TargetID = 0,none
+  Message = none
+OnGiveFrostyrang = event
+  TargetID = 0,none
+  Message = Activate
+OnGiveZappyrang = event
+  TargetID = 0,none
+  Message = none
+OnMakeZoomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMultirang = event
+  TargetID = 0,none
+  Message = none
+OnMakeInfrarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMegarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeKaboomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeChronorang = event
+  TargetID = 0,none
+  Message = none
+OnEnoughTEForTalisman = event
+  TargetID = 893,VisitAllPortalsB
+  Message = Activate
+OnGiveTalisman = event
+  TargetID = 887,ScriptFightBossB
+  Message = Activate
+// User: DAN
+
+pos = 4651, 1069, 10706
+rot = 0.000, -1.120, -0.000
+ID = 316,JuliusC
+bVisible = 1,true
+OnMoreCogs = event
+  TargetID = 0,none
+  Message = none
+OnAllTechnorangs = event
+  TargetID = 0,none
+  Message = none
+OnIntroduceTalisman = event
+  TargetID = 916,IntroToLakeBurril
+  Message = Activate
+OnRecapTalisman = event
+  TargetID = 913,RecapIntroToLakeBurril
+  Message = Activate
+OnNeedTalisman = event
+  TargetID = 0,none
+  Message = Activate
+OnMoreFireTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreIceTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreLightningTE = event
+  TargetID = 0,none
+  Message = none
+OnGiveFlamerang = event
+  TargetID = 0,none
+  Message = none
+OnGiveFrostyrang = event
+  TargetID = 0,none
+  Message = none
+OnGiveZappyrang = event
+  TargetID = 0,none
+  Message = none
+OnMakeZoomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMultirang = event
+  TargetID = 0,none
+  Message = none
+OnMakeInfrarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMegarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeKaboomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeChronorang = event
+  TargetID = 0,none
+  Message = none
+OnEnoughTEForTalisman = event
+  TargetID = 915,VisitAllPortalsC
+  Message = Activate
+OnGiveTalisman = event
+  TargetID = 888,ScriptFightBossC
+  Message = Activate
+// User: DAN
+
+pos = -6995, 456, 691
+rot = 0.000, 2.062, 0.000
+ID = 317,JuliusH
+bVisible = 1,true
+OnMoreCogs = event
+  TargetID = 0,none
+  Message = none
+OnAllTechnorangs = event
+  TargetID = 0,none
+  Message = none
+OnIntroduceTalisman = event
+  TargetID = 0,none
+  Message = none
+OnRecapTalisman = event
+  TargetID = 0,none
+  Message = none
+OnNeedTalisman = event
+  TargetID = 910,ReminderToVisitAllPortals
+  Message = Activate
+OnMoreFireTE = event
+  TargetID = 899,GetMoreFireTE
+  Message = Activate
+OnMoreIceTE = event
+  TargetID = 906,GetMoreIceTE
+  Message = Activate
+OnMoreLightningTE = event
+  TargetID = 907,GetMoreLightningTE
+  Message = Activate
+OnGiveFlamerang = event
+  TargetID = 911,GiveFlamerang
+  Message = Activate
+OnGiveFrostyrang = event
+  TargetID = 908,GiveFrostyrang
+  Message = Activate
+OnGiveZappyrang = event
+  TargetID = 909,GiveZappyrang
+  Message = Activate
+OnMakeZoomerang = event
+  TargetID = 901,MachineMakesZoomerang
+  Message = Activate
+OnMakeMultirang = event
+  TargetID = 898,MachineMakesMultirang
+  Message = Activate
+OnMakeInfrarang = event
+  TargetID = 902,MachineMakesInfrarang
+  Message = Activate
+OnMakeMegarang = event
+  TargetID = 897,MachineMakesMegarang
+  Message = Activate
+OnMakeKaboomerang = event
+  TargetID = 912,MachineMakesKaboomerang
+  Message = Activate
+OnMakeChronorang = event
+  TargetID = 900,MachineMakesChronorang
+  Message = Activate
+OnEnoughTEForTalisman = event
+  TargetID = 0,none
+  Message = none
+OnGiveTalisman = event
+  TargetID = 0,none
+  Message = none
+// User: DAN
+
+name BUNYIPELDER
+
+pos = 6, 2624, 88
+rot = 0.108, 2.992, -0.057
+ID = 310,BunyipElder
+bVisible = 0,false
+OnFirstScale = event
+  TargetID = 903,FirstRainbowScale
+  Message = Activate
+OnAllScales = event
+  TargetID = 882,AllScales
+  Message = Activate
+// User: DAN
+
+name MAURIE
+
+pos = -291, 2548, 655
+rot = 0.000, 0.000, 0.000
+ID = 309,Maurie
+bActive = 0,false
+OnNewRangAvailable = event
+  TargetID = 921,TalkToMaurie2
+  Message = Activate
+OnNewRangGiven = event
+  TargetID = 920,TalkToMaurie3
+  Message = Activate
+// User: DAN
+
+name BARBEDWIREFENCE
+
+pos = 1619, 2354, 12067
+rot = 0.010, -3.092, 0.012
+scale = 1.820, 2.400, 1.000
+// User: DAN
+
+pos = -526, 2340, 12051
+rot = 0.020, 0.040, 0.009
+scale = 1.270, 2.400, 1.000
+// User: DAN
+
+pos = -1433, 2344, 12004
+rot = -0.000, 0.020, -0.000
+scale = 1.400, 2.400, 1.000
+// User: DAN
+
+name QLANDER01
+
+pos = -557, 2371, 13807
+rot = 0.000, 0.500, -0.000
+scale = 1.000, 1.000, 1.000
+// User: DAN
+
+name QLANDER02
+
+pos = 1310, 2370, 13573
+rot = 0.000, -0.442, 0.000
+scale = 0.500, 0.500, 0.500
+// User: DAN
+
+name WATERWHEEL
+
+pos = -7432, 519, -925
+rot = 0.000, 1.584, 0.000
+// User: DAN
+
+name BIGREDBUTTON
+
+pos = 6034, 273, -2026
+rot = 0.000, -0.255, -0.000
+OnBoomerangHit = event
+  TargetID = 885,ScriptPA1
+  Message = Activate
+ID = 308,ButtonPA1
+// User: DAN

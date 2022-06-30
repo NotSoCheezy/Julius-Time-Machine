@@ -1,0 +1,916 @@
+[]
+TEXT_ERROR_STEAM_CLIENT Please sign in to the Steam Client
+TEXT_ERROR_STEAM_CLIENT_MSG TY the Tasmanian Tiger Steam Edition requires the Steam Client to be running and the Steam user signed in, to launch.
+TEXT_ERROR_STEAM_APPID The Steam App ID used is not correct.
+TEXT_ERROR_STEAM_APPID_MSG Please make sure there is no steam_appid.txt in the TY the Tasmanian Tiger directory or other system of overriding app IDs active.
+TEXT_ERROR_STEAM_GAME_LICENCE No valid game licence found.
+TEXT_ERROR_STEAM_GAME_LICENCE_MSG Please check that you are signed into the Steam Client correctly and that you have purchased the game on that account.
+TEXT_ERROR_OPENGL_VERSION Insufficient OpenGL version: %s
+TEXT_ERROR_OPENGL_VERSION_MSG Your OpenGL does not support vertex_array_objects. Please update your graphics drivers!
+TEXT_ERROR_OPENGL_SHADER_VERSION Insufficient OpenGL shader version: %s
+TEXT_ERROR_OPENGL_SHADER_VERSION_MSG Your OpenGL shader version needs to be at least 1.20 or above (OpenGL 2.1 or higher). Please update your graphics drivers!
+TEXT_ERROR_OPENAL_NOT_FOUND Failed to Create OpenAL Soft sound device
+TEXT_ERROR_OPENAL_NOT_FOUND_MSG TY requires OpenAL installed! Try installing oalinst.exe from the _CommonRedist/OpenAL folder in the TY folder.\n\nAlso, check you have an enabled audio device (speakers or headphones) on your computer, as TY requires a valid audio device to run.
+TEXT_TITLE TY the Tasmanian Tiger™
+TEXT_COPYRIGHT © 2002 Krome Studios Pty Ltd.  All rights reserved.  Ty the Tasmanian Tiger and the Krome Studios logo are trademarks of Krome Studios Pty Ltd\n\nJulius' Time Machine\nported from July 1, 2002 build by\nNotSoCheezy and Floralz, et al.
+TEXT_LEVEL_Z1 Rainbow Cliffs
+TEXT_LEVEL_Z2 Rainbow Cliffs
+TEXT_LEVEL_Z3 Super Bonus World
+TEXT_LEVEL_Z4 Super Bonus World
+TEXT_LEVEL_A1 Two Up
+TEXT_LEVEL_A2 Walk in the Park
+TEXT_LEVEL_A3 Ship Rex
+TEXT_LEVEL_A4 Bli Bli Station
+TEXT_LEVEL_B1 Bridge on the River Ty
+TEXT_LEVEL_B2 Snow Worries
+TEXT_LEVEL_B3 Outback Safari
+TEXT_LEVEL_B4 Kumu Caves
+TEXT_LEVEL_C1 Lyre, Lyre Pants on Fire
+TEXT_LEVEL_C2 Beyond the Black Stump
+TEXT_LEVEL_C3 Rex Marks The Spot
+TEXT_LEVEL_C4 Lake Burril
+TEXT_LEVEL_D1 Min Min
+TEXT_LEVEL_D2 No Man Groves
+TEXT_LEVEL_D3 Snow Worries
+TEXT_LEVEL_D4 Pippy Beach
+TEXT_LEVEL_E1 Cass' Crest
+TEXT_LEVEL_E2 Bilby Bonus World 1
+TEXT_LEVEL_E3 Bilby Bonus World 2
+TEXT_LEVEL_E4 Final Battle
+TEXT_MENU_PLAYGAME Play Game
+TEXT_MENU_INTRO Intro
+TEXT_MENU_GALLERY Gallery
+TEXT_LOADING Loading
+TEXT_BOOMERANG_NAME Boomerang
+TEXT_AQUARANG_NAME Aquarang
+TEXT_FLAMERANG_NAME Flamerang
+TEXT_FROSTYRANG_NAME Frostyrang
+TEXT_SMASHARANG_NAME Smasharang
+TEXT_ZAPPYRANG_NAME Zappyrang
+TEXT_ZOOMERANG_NAME Zoomerang
+TEXT_MULTIRANG_NAME Multirang
+TEXT_INFRARANG_NAME Infrarang
+TEXT_MEGARANG_NAME Megarang
+TEXT_KABOOMARANG_NAME Kaboomarang
+TEXT_CHRONORANG_NAME Chronorang
+TEXT_DOOMARANG_NAME Doomarang
+TEXT_LASSORANG_NAME Lassorang
+TEXT_BOOMERANG_DESC Carved from the wood of an ancient gum tree, this rang is light and fast. Like all boomerangs, it can be thrown in first person by pressing the ©TY’S VIEW button. You can also cycle through your rang collection by pressing the ¨NEXT RANG and §PREVIOUS RANG buttons.
+TEXT_AQUARANG_DESC Found by Rex in an old shipwreck, the Aquarangs can cut through water like a hot knife through butter. Unlike the other rangs, these are the only ones that work under water.
+TEXT_FLAMERANG_DESC Harnessing the power of the Fire Thunder Eggs, the Flamerang creates a devastating fireball on impact. Lightweight and durable, not only is it lethal to enemies it can also melt ice.
+TEXT_FROSTYRANG_DESC Using the energy from the Ice Thunder Eggs, the Frostyrang can put out fires, freeze enemies and even create ice stepping stones in water!
+TEXT_SMASHARANG_DESC .
+TEXT_ZAPPYRANG_DESC Brimming with energy from the Lightning Thunder Eggs, the Zappyrang is a highly charged rang with enough power to jump-start a generator.
+TEXT_ZOOMERANG_DESC With a built in telescopic aimer, the Zoomerang has the longest reach of all the rangs. You can use it to zoom in on far away objects by pressing the ©TY’S VIEW button. Push up on the ¦CAMERA STICK to zoom in, pull down to zoom out.
+TEXT_MULTIRANG_DESC Not as fast or far reaching as the others, the Multirang lets you throw multiple rangs at the same time. Use it to unleash a frenzy of boomerang justice on Cass’ henchmen!
+TEXT_INFRARANG_DESC Using a special infrared attachment, the Infrarang will enable you to see things you couldn’t see before when you press the ©TY’S VIEW button. Make sure you scan for secrets when you visit somewhere new!
+TEXT_MEGARANG_DESC Using Julius’ patented Super Seeking Technology, the Megarang has the ability to auto target both enemies and crates. Useful when you run into a bunch of Cass’ henchmen.
+TEXT_KABOOMARANG_DESC Made from Exploderium, an ancient substance found only in the Outback, the Kaboomarang creates a deadly explosion on impact.
+TEXT_CHRONORANG_DESC Using Julius’ latest invention, the Trans Temporal Transistor, the Chronorang can affect the time field around Cass’ henchmen causing them to slow down.
+TEXT_DOOMARANG_DESC The Doomerang can be controlled remotely allowing you to fly it into out of the way places. Passed down through Ty’s family this is a last minute gift from Sly.
+TEXT_LASSORANG_DESC Created by Julius, the Lassorangs can be used to hook enemies and wayward emus. If you hook something you can reel it in by pressing the £THROW button. These are only available when riding Bull.
+TEXT_ELEMENT_WOOD Wood
+TEXT_ELEMENT_WATER Water
+TEXT_ELEMENT_FIRE Fire
+TEXT_ELEMENT_EARTH Earth
+TEXT_ELEMENT_AIR Air
+TEXT_ELEMENT_TECH Technology
+TEXT_RANGE_CLOSE Close
+TEXT_RANGE_MEDIUM Medium
+TEXT_RANGE_LONG Long
+TEXT_SPEED_SLOW Slow
+TEXT_SPEED_FAST Fast
+TEXT_SPEED_VERYFAST Very fast
+TEXT_MENU_SOUND Sound
+TEXT_MENU_MUSIC Music
+TEXT_MENU_SFX SFX
+TEXT_MENU_BACK Back
+TEXT_MENU_STEREO Stereo
+TEXT_MENU_MONO Mono
+TEXT_MENU_AUDIO Output
+TEXT_MENU_POSITION Position
+TEXT_MENU_SCREEN Screen
+TEXT_MENU_DEFAULT Default
+TEXT_MENU_WIDE Widescreen
+TEXT_MENU_NORMAL Normal
+TEXT_MENU_MOVE_SCREEN Move screen using controller
+TEXT_MENU_TO_ACCEPT ‡ to accept
+TEXT_MENU_TO_CANCEL “ to cancel
+TEXT_MENU_TO_RESET ˆ to reset
+TEXT_MENU_HORZ_SHIFT Horizontal shift: %d
+TEXT_MENU_VERT_SHIFT Vertical shift: %d
+TEXT_MENU_SHIFT_HORZ Shift horizontal
+TEXT_MENU_SHIFT_VERT Shift vertical
+TEXT_MENU_CONTROLS Controls
+TEXT_MENU_OPTIONS Options
+TEXT_MENU_GAMEPAD Gamepad
+TEXT_MENU_KBM Keyboard & Mouse
+TEXT_MENU_CONFIGURATION Configuration
+TEXT_MENU_CAMERA Camera
+TEXT_MENU_RUMBLE Vibration
+TEXT_MENU_ON On
+TEXT_MENU_OFF Off
+TEXT_MENU_FLIPPED Flipped
+TEXT_MENU_A A
+TEXT_MENU_B B
+TEXT_MENU_C C
+TEXT_MENU_D D
+TEXT_MENU_JOYPAD Joypad
+TEXT_MENU_TYPE Type
+TEXT_MENU_GAME_TOTALS Game Totals
+TEXT_MENU_TOTAL Total
+TEXT_MENU_CONTINUE Continue
+TEXT_MENU_GAME_INFO Game Info
+TEXT_MENU_CHANGE_LEVEL Change Level
+TEXT_MENU_PLAY_CUTSCENE Play Cutscene
+TEXT_MENU_EXIT_LEVEL Exit Level
+TEXT_MENU_ARE_YOU_SURE Are you sure?
+TEXT_MENU_YES Yes
+TEXT_MENU_NO No
+TEXT_MENU_CANCEL Cancel
+TEXT_MENU_CHANGE_SETTING Change
+TEXT_MENU_SELECT Select
+TEXT_MENU_ACCEPT Accept
+TEXT_MENU_SELECT_LEVEL Level
+TEXT_MENU_SELECT_RANG 'Rang
+TEXT_MENU_SELECT_SCREEN Screen
+TEXT_MENU_PLAYERSELECT_TITLE Select Character
+TEXT_MENU_NEW_GAME New Game
+TEXT_MENU_LOAD_GAME Load Game
+TEXT_MENU_SAVE_GAME Save Game
+TEXT_CHARACTER_TY TY
+TEXT_CHARACTER_SLY Sly
+TEXT_CHARACTER_SHAZZA Shazza
+TEXT_GALLERY_BILBYBOY .
+TEXT_GALLERY_BILBYDAD .
+TEXT_GALLERY_BILBYGIRL .
+TEXT_GALLERY_BILBYGRANNY .
+TEXT_GALLERY_BIBLYMUM .
+TEXT_GALLERY_BLUETONGUE .
+TEXT_GALLERY_BOSSCASS .
+TEXT_GALLERY_BULL .
+TEXT_GALLERY_BUNYIP .
+TEXT_GALLERY_CHOCKERS .
+TEXT_GALLERY_DENNIS .
+TEXT_GALLERY_ELLE .
+TEXT_GALLERY_EMU .
+TEXT_GALLERY_FARLAPP .
+TEXT_GALLERY_FRILLLIZARD .
+TEXT_GALLERY_JULIUS .
+TEXT_GALLERY_LEECH .
+TEXT_GALLERY_LENNY .
+TEXT_GALLERY_MAURIE .
+TEXT_GALLERY_MUDCRAB .
+TEXT_GALLERY_NEDDY .
+TEXT_GALLERY_REX .
+TEXT_GALLERY_RHINO .
+TEXT_GALLERY_REDKANGAROO .
+TEXT_GALLERY_SALTIE .
+TEXT_GALLERY_SHARK .
+TEXT_GALLERY_SHAZZA .
+TEXT_GALLERY_SHEILA .
+TEXT_GALLERY_SLY .
+TEXT_GALLERY_TY .
+TEXT_MENU_MAINMENU Main Menu
+TEXT_CHEAT_JUMPENABLED Cheat jump enabled
+TEXT_CHEAT_JUMPDISABLED Cheat jump disabled
+TEXT_CHEAT_LEVELENABLED Change level enabled
+TEXT_CHEAT_LEVELDISABLED Change level disabled
+TEXT_MENU_TIMEOUTWARNING Going to attract mode in %d seconds...
+TEXT_CHEAT_E3DEMO E3 Demo
+TEXT_CHEAT_ENABLEALLLEVELS All levels enabled
+TEXT_CHEAT_DISABLEALLLEVELS Selected levels only
+TEXT_CHEAT_TRANSFERRINGDDA Transferring DDA info to host...
+TEXT_CHEAT_DDATRANSFEROK DDA transfer OK
+TEXT_OBJECTIVE_Z1_0 .
+TEXT_OBJECTIVE_Z1_1 .
+TEXT_OBJECTIVE_Z1_2 .
+TEXT_OBJECTIVE_Z1_3 .
+TEXT_OBJECTIVE_Z1_4 .
+TEXT_OBJECTIVE_Z1_5 .
+TEXT_OBJECTIVE_Z1_6 .
+TEXT_OBJECTIVE_Z1_7 .
+TEXT_OBJECTIVE_Z2_0 .
+TEXT_OBJECTIVE_Z2_1 .
+TEXT_OBJECTIVE_Z2_2 .
+TEXT_OBJECTIVE_Z2_3 .
+TEXT_OBJECTIVE_Z2_4 .
+TEXT_OBJECTIVE_Z2_5 .
+TEXT_OBJECTIVE_Z2_6 .
+TEXT_OBJECTIVE_Z2_7 .
+TEXT_OBJECTIVE_Z3_0 .
+TEXT_OBJECTIVE_Z3_1 .
+TEXT_OBJECTIVE_Z3_2 .
+TEXT_OBJECTIVE_Z3_3 .
+TEXT_OBJECTIVE_Z3_4 .
+TEXT_OBJECTIVE_Z3_5 .
+TEXT_OBJECTIVE_Z3_6 .
+TEXT_OBJECTIVE_Z3_7 .
+TEXT_OBJECTIVE_Z4_0 .
+TEXT_OBJECTIVE_Z4_1 .
+TEXT_OBJECTIVE_Z4_2 .
+TEXT_OBJECTIVE_Z4_3 .
+TEXT_OBJECTIVE_Z4_4 .
+TEXT_OBJECTIVE_Z4_5 .
+TEXT_OBJECTIVE_Z4_6 .
+TEXT_OBJECTIVE_Z4_7 .
+TEXT_OBJECTIVE_A1_0 Collect 300 Opals
+TEXT_OBJECTIVE_A1_1 Find 5 Bilbies
+TEXT_OBJECTIVE_A1_2 Time Attack
+TEXT_OBJECTIVE_A1_3 Glide the Gap
+TEXT_OBJECTIVE_A1_4 Rang the Frills
+TEXT_OBJECTIVE_A1_5 Rock Jump
+TEXT_OBJECTIVE_A1_6 Super Chomp
+TEXT_OBJECTIVE_A1_7 Lower the Platforms
+TEXT_OBJECTIVE_A2_0 Collect 300 Opals
+TEXT_OBJECTIVE_A2_1 Find 5 Bilbies
+TEXT_OBJECTIVE_A2_2 Wombat Race
+TEXT_OBJECTIVE_A2_3 Truck Trouble
+TEXT_OBJECTIVE_A2_4 Bounce Tree
+TEXT_OBJECTIVE_A2_5 Drive me Batty
+TEXT_OBJECTIVE_A2_6 Turkey Chase
+TEXT_OBJECTIVE_A2_7 Log Climb
+TEXT_OBJECTIVE_A3_0 Collect 300 Opals
+TEXT_OBJECTIVE_A3_1 Find 5 Bilbies
+TEXT_OBJECTIVE_A3_2 Race Rex
+TEXT_OBJECTIVE_A3_3 Where's Elle?
+TEXT_OBJECTIVE_A3_4 Aurora's Kids
+TEXT_OBJECTIVE_A3_5 Quicksand Coconuts
+TEXT_OBJECTIVE_A3_6 Ship Wreck
+TEXT_OBJECTIVE_A3_7 Nest Egg
+TEXT_OBJECTIVE_A4_0 .
+TEXT_OBJECTIVE_A4_1 .
+TEXT_OBJECTIVE_A4_2 .
+TEXT_OBJECTIVE_A4_3 .
+TEXT_OBJECTIVE_A4_4 .
+TEXT_OBJECTIVE_A4_5 .
+TEXT_OBJECTIVE_A4_6 .
+TEXT_OBJECTIVE_A4_7 .
+TEXT_OBJECTIVE_B1_0 Collect 300 Opals
+TEXT_OBJECTIVE_B1_1 Find 5 Bilbies
+TEXT_OBJECTIVE_B1_2 Time Attack
+TEXT_OBJECTIVE_B1_3 Home, Sweet, Home
+TEXT_OBJECTIVE_B1_4 Heat Dennis' House
+TEXT_OBJECTIVE_B1_5 Tag Team Turkeys
+TEXT_OBJECTIVE_B1_6 TY Diving
+TEXT_OBJECTIVE_B1_7 Neddy the Bully
+TEXT_OBJECTIVE_B2_0 Collect 300 Opals
+TEXT_OBJECTIVE_B2_1 Find 5 Bilbies
+TEXT_OBJECTIVE_B2_2 Time Attack
+TEXT_OBJECTIVE_B2_3 Koala Chaos
+TEXT_OBJECTIVE_B2_4 The Old Mill
+TEXT_OBJECTIVE_B2_5 Trap the Yabby
+TEXT_OBJECTIVE_B2_6 Musical Icicles
+TEXT_OBJECTIVE_B2_7 Snowy Peak
+TEXT_OBJECTIVE_B3_0 Collect 300 Opals
+TEXT_OBJECTIVE_B3_1 Find 5 Bilbies
+TEXT_OBJECTIVE_B3_2 Race Shazza
+TEXT_OBJECTIVE_B3_3 Emu Roundup
+TEXT_OBJECTIVE_B3_4 Frill Frenzy
+TEXT_OBJECTIVE_B3_5 Fire Fight
+TEXT_OBJECTIVE_B3_6 Toxic Trouble
+TEXT_OBJECTIVE_B3_7 Secret Thunder Egg
+TEXT_OBJECTIVE_B4_0 .
+TEXT_OBJECTIVE_B4_1 .
+TEXT_OBJECTIVE_B4_2 .
+TEXT_OBJECTIVE_B4_3 .
+TEXT_OBJECTIVE_B4_4 .
+TEXT_OBJECTIVE_B4_5 .
+TEXT_OBJECTIVE_B4_6 .
+TEXT_OBJECTIVE_B4_7 .
+TEXT_OBJECTIVE_C1_0 Collect 300 Opals
+TEXT_OBJECTIVE_C1_1 Find 5 Bilbies
+TEXT_OBJECTIVE_C1_2 Time Attack
+TEXT_OBJECTIVE_C1_3 Lenny the Lyrebird
+TEXT_OBJECTIVE_C1_4 Fiery Furnace
+TEXT_OBJECTIVE_C1_5 Water Worries
+TEXT_OBJECTIVE_C1_6 Muddy Towers
+TEXT_OBJECTIVE_C1_7 Gantry Glide
+TEXT_OBJECTIVE_C2_0 Collect 300 Opals
+TEXT_OBJECTIVE_C2_1 Find 5 Bilbies
+TEXT_OBJECTIVE_C2_2 Wombat Rematch
+TEXT_OBJECTIVE_C2_3 Koala Crisis
+TEXT_OBJECTIVE_C2_4 Cable Car Capers
+TEXT_OBJECTIVE_C2_5 Flaming Frills
+TEXT_OBJECTIVE_C2_6 Catch Boonie
+TEXT_OBJECTIVE_C2_7 Pillar Ponder
+TEXT_OBJECTIVE_C3_0 Collect 300 Opals
+TEXT_OBJECTIVE_C3_1 Find 5 Bilbies
+TEXT_OBJECTIVE_C3_2 Race Rex
+TEXT_OBJECTIVE_C3_3 Treasure Hunt
+TEXT_OBJECTIVE_C3_4 Parrot Beard's Booty
+TEXT_OBJECTIVE_C3_5 Frill Boat Battle
+TEXT_OBJECTIVE_C3_6 Geyser Hop
+TEXT_OBJECTIVE_C3_7 Volcanic Panic
+TEXT_OBJECTIVE_C4_0 .
+TEXT_OBJECTIVE_C4_1 .
+TEXT_OBJECTIVE_C4_2 .
+TEXT_OBJECTIVE_C4_3 .
+TEXT_OBJECTIVE_C4_4 .
+TEXT_OBJECTIVE_C4_5 .
+TEXT_OBJECTIVE_C4_6 .
+TEXT_OBJECTIVE_C4_7 .
+TEXT_OBJECTIVE_D1_0 Collect 300 opals
+TEXT_OBJECTIVE_D1_1 Rescue five bilbies
+TEXT_OBJECTIVE_D1_2 Race against the sheep poacher
+TEXT_OBJECTIVE_D1_3 Rid the town of the min mins
+TEXT_OBJECTIVE_D1_4 Battery frills
+TEXT_OBJECTIVE_D1_5 Flying doctor
+TEXT_OBJECTIVE_D1_6 Objective 6
+TEXT_OBJECTIVE_D1_7 Objective 7
+TEXT_OBJECTIVE_D2_0 Collect 300 opals
+TEXT_OBJECTIVE_D2_1 Rescue five bilbies
+TEXT_OBJECTIVE_D2_2 Win time attack
+TEXT_OBJECTIVE_D2_3 Find the pump station
+TEXT_OBJECTIVE_D2_4 Defeat Chockers
+TEXT_OBJECTIVE_D2_5 Objective 5
+TEXT_OBJECTIVE_D2_6 Objective 6
+TEXT_OBJECTIVE_D2_7 Objective 7
+TEXT_OBJECTIVE_D3_0 Collect 300 opals
+TEXT_OBJECTIVE_D3_1 Rescue five bilbies
+TEXT_OBJECTIVE_D3_2 Win time attack
+TEXT_OBJECTIVE_D3_3 Ice floe koalas
+TEXT_OBJECTIVE_D3_4 The Guns of Neverwarm
+TEXT_OBJECTIVE_D3_5 Four Turkeys
+TEXT_OBJECTIVE_D3_6 Find the hidden thunderegg
+TEXT_OBJECTIVE_D3_7 Charge bite
+TEXT_OBJECTIVE_D4_0 .
+TEXT_OBJECTIVE_D4_1 .
+TEXT_OBJECTIVE_D4_2 .
+TEXT_OBJECTIVE_D4_3 .
+TEXT_OBJECTIVE_D4_4 .
+TEXT_OBJECTIVE_D4_5 .
+TEXT_OBJECTIVE_D4_6 .
+TEXT_OBJECTIVE_D4_7 .
+TEXT_OBJECTIVE_E1_0 .
+TEXT_OBJECTIVE_E1_1 .
+TEXT_OBJECTIVE_E1_2 .
+TEXT_OBJECTIVE_E1_3 .
+TEXT_OBJECTIVE_E1_4 .
+TEXT_OBJECTIVE_E1_5 .
+TEXT_OBJECTIVE_E1_6 .
+TEXT_OBJECTIVE_E1_7 .
+TEXT_OBJECTIVE_E2_0 .
+TEXT_OBJECTIVE_E2_1 .
+TEXT_OBJECTIVE_E2_2 .
+TEXT_OBJECTIVE_E2_3 .
+TEXT_OBJECTIVE_E2_4 .
+TEXT_OBJECTIVE_E2_5 .
+TEXT_OBJECTIVE_E2_6 .
+TEXT_OBJECTIVE_E2_7 .
+TEXT_OBJECTIVE_E3_0 .
+TEXT_OBJECTIVE_E3_1 .
+TEXT_OBJECTIVE_E3_2 .
+TEXT_OBJECTIVE_E3_3 .
+TEXT_OBJECTIVE_E3_4 .
+TEXT_OBJECTIVE_E3_5 .
+TEXT_OBJECTIVE_E3_6 .
+TEXT_OBJECTIVE_E3_7 .
+TEXT_OBJECTIVE_E4_0 .
+TEXT_OBJECTIVE_E4_1 .
+TEXT_OBJECTIVE_E4_2 .
+TEXT_OBJECTIVE_E4_3 .
+TEXT_OBJECTIVE_E4_4 .
+TEXT_OBJECTIVE_E4_5 .
+TEXT_OBJECTIVE_E4_6 .
+TEXT_OBJECTIVE_E4_7 .
+TEXT_MENU_EXTRAS Extras
+TEXT_MENU_PAUSED Paused
+TEXT_MENU_RETRY Retry
+TEXT_MENU_OK Okay
+TEXT_MEMCARD_AUTOSAVING      AutoSaving
+TEXT_MEMCARD_BADQUERY        BAD QUERY!
+TEXT_MEMCARD_NOCARDFOUND     No memory unit found.\n\nPlease insert a memory unit.
+TEXT_MEMCARD_SELECTCARD      Select memory unit.
+TEXT_MEMCARD_NOTFORMATTED    The %s is not formatted.
+TEXT_MEMCARD_NOFREESPACE     Your PC doesn't have enough free blocks to save games.\n\nYou need to free %d more blocks.
+TEXT_MEMCARD_NOSAVEGAME      No valid TY saved games found.
+TEXT_MEMCARD_SAVEGAMESPACE   The %s does not have enough free space to save your game.\n\nPlease insert a memory unit with at least %d blocks free or that contains TY save game data.
+TEXT_MEMCARD_FORMATCARD      The memory unit %s is not formatted.\n\nWould you like to format it now?
+TEXT_MEMCARD_NODATA          The memory unit %s has no data.\nCreate?
+TEXT_MEMCARD_OVERWRITE       The memory unit %s already contains data.\nOverwrite?
+TEXT_MEMCARD_FORMATFAIL      Format failed.
+TEXT_MEMCARD_READFAIL        Unable to load saved game.\n\nPress ‡ to continue.
+TEXT_MEMCARD_WRITEFAIL       Write failed.
+TEXT_MEMCARD_CORRUPTDATA     The memory unit %s is corrupted and needs to be formatted.
+TEXT_MEMCARD_SLOT1           MU %.1d%c
+TEXT_MEMCARD_SLOT2           hard disk
+TEXT_MEMCARD_READING         Loading saved game.\n\nPlease do not remove memory units or disconnect any controllers.
+TEXT_MEMCARD_WRITING         Saving to memory unit %s.\nPlease do not remove memory units or disconnect any controllers.
+TEXT_MEMCARD_FORMATTING      Formatting memory unit %s.\n\nPlease do not remove memory units or disconnect any controllers.
+TEXT_MEMCARD_SELECTFILE      Select a save game file.
+TEXT_LICENSE                 License
+TEXT_MEMCARD_GAMESLOT1       Game 1
+TEXT_MEMCARD_GAMESLOT2       Game 2
+TEXT_MEMCARD_GAMESLOT3       Game 3
+TEXT_CHEAT_BOSSENABLED Boss cheat enabled
+TEXT_CHEAT_BOSSDISABLED Boss cheat disabled
+TEXT_MENU_CONTROLLERREMOVED Controller Removed
+TEXT_MENU_GAMEPLAYTIMEOUT Demo ends out in %d seconds
+TEXT_MEMCARD_CARDREMOVED The memory unit %s was removed.\n\nAutoSaving has been disabled.\n\nTo re-enable manually save your game using the 'Save Game' option on the pause menu.
+TEXT_MENU_MAKINGOF Making Of
+TEXT_MENU_CREDITS Credits
+TEXT_MENU_PRESSSTART Press Start
+TEXT_MENU_COMPLETE Complete
+TEXT_MEMCARD_WITHOUTSAVING   Press ˆ to continue without saving
+TEXT_MEMCARD_NOCARDBOOT      No memory unit found.\n\nPlease insert a memory unit with at least %d free blocks or that contains TY save game data.
+TEXT_MENU_NTSC NTSC
+TEXT_MENU_PAL PAL
+TEXT_CREDITS_000 Published by
+TEXT_CREDITS_001 Copyright © 2002 Electronic Arts
+TEXT_CREDITS_002 All Rights Reserved
+TEXT_CREDITS_003 Developed by
+TEXT_CREDITS_004 Vice President, Development
+TEXT_CREDITS_005 Producer
+TEXT_CREDITS_006 Assistant Producer
+TEXT_CREDITS_007 Group Brand Manager
+TEXT_CREDITS_008 Brand Manager
+TEXT_CREDITS_009 Public Relations Manager
+TEXT_CREDITS_010 Creative Director
+TEXT_CREDITS_011 Graphic Artists (U.S. Packaging Design)
+TEXT_CREDITS_012 Promotions Manager
+TEXT_CREDITS_013 Web Marketing Manager
+TEXT_CREDITS_014 Channel Marketing Manager
+TEXT_CREDITS_015 VP of Marketing
+TEXT_CREDITS_016 Director of Marketing Strategy
+TEXT_CREDITS_017 Director of Product Development and Licensing
+TEXT_CREDITS_018 Senior QA Manager
+TEXT_CREDITS_019 QA Lead
+TEXT_CREDITS_020 QA Assistant Lead
+TEXT_CREDITS_021 QA Staff
+TEXT_CREDITS_022 Localization Co-ordinator
+TEXT_CREDITS_023 Chief Executive Officer
+TEXT_CREDITS_024 Development Director
+TEXT_CREDITS_025 .
+TEXT_CREDITS_026 Creative Director
+TEXT_CREDITS_027 Studio Manager
+TEXT_CREDITS_028 Producer
+TEXT_CREDITS_029 Executive Producer
+TEXT_CREDITS_030 Production Assistants
+TEXT_CREDITS_031 Office Manager
+TEXT_CREDITS_032 Office Assistant
+TEXT_CREDITS_033 Technical Support
+TEXT_CREDITS_034 Hardware Lead
+TEXT_CREDITS_035 Office Handyman
+TEXT_CREDITS_036 Game Manual
+TEXT_CREDITS_037 Programming
+TEXT_CREDITS_038 Lead Programmer
+TEXT_CREDITS_039 Assistant Lead Programmer
+TEXT_CREDITS_040 Merkury Engine
+TEXT_CREDITS_041 Senior Programmer/Level Editor Design
+TEXT_CREDITS_042 Programming
+TEXT_CREDITS_043 Documentation
+TEXT_CREDITS_044 Art
+TEXT_CREDITS_045 Lead Artist
+TEXT_CREDITS_046 Lead Concept Artist
+TEXT_CREDITS_047 Additional Concept Artist
+TEXT_CREDITS_048 Storyboard Artist
+TEXT_CREDITS_049 Lead Texture and Model Artist
+TEXT_CREDITS_050 Texture Department
+TEXT_CREDITS_051 Additional Art
+TEXT_CREDITS_052 Modelling Department
+TEXT_CREDITS_053 Lead Level Builder
+TEXT_CREDITS_054 Level Building Department
+TEXT_CREDITS_055 Lead Animator
+TEXT_CREDITS_056 Animation Department
+TEXT_CREDITS_057 Lead Cutscene Creation
+TEXT_CREDITS_058 Cutscene Department
+TEXT_CREDITS_059 Video Production
+TEXT_CREDITS_060 Lead Level Populater
+TEXT_CREDITS_061 Senior Level Populater
+TEXT_CREDITS_062 Level Population Department
+TEXT_CREDITS_063 Scripting
+TEXT_CREDITS_064 Sound
+TEXT_CREDITS_065 Audio Engineer
+TEXT_CREDITS_066 Voice Talent
+TEXT_CREDITS_067 Quality Assurance
+TEXT_CREDITS_068 QA Manager
+TEXT_CREDITS_069 QA Leads
+TEXT_CREDITS_070 Senior QA
+TEXT_CREDITS_071 QA Staff
+TEXT_MEMCARD_DAMAGEDCARD     .
+TEXT_MEMCARD_UNSUPPORTEDCARD .
+TEXT_MEMCARD_REPAIRCARD	     .
+TEXT_MEMCARD_CORRUPTCARD     .
+TEXT_MENU_SURROUND           Surround
+TEXT_DISC_REMOVED            The disc was removed.
+TEXT_DISC_PLEASE_INSERT      Please insert the TY The Tasmanian Tiger™ Game Disc to continue playing.
+TEXT_DISC_COVER_OPEN         Please close the Disc Tray.
+TEXT_DISC_UNREADABLE         There's a problem with the disc you're using. It may be dirty or damaged.
+TEXT_DISC_RTFM               Press ‡ to continue.
+TEXT_MEMCARD_EMPTY           Empty
+TEXT_MEMCARD_CORRUPT         Damaged
+TEXT_MEMCARD_AUTOSAVEWARN1   Caution! TY The Tasmanian Tiger™ uses an Autosave Feature.\n\nWhen your game progress is being autosaved, this icon is displayed.
+TEXT_MEMCARD_AUTOSAVEWARN2   Please don't turn off your PC while the game is autosaving.\n\nPress ‡ to continue.
+TEXT_MEMCARD_SAVESUCCESSFUL  Save Successful.
+TEXT_MEMCARD_LOADSUCCESSFUL  Load Successful.
+TEXT_CONTROLS_FIRSTPERSON TY's View
+TEXT_CONTROLS_ENEMYCAMERA Lock On
+TEXT_CONTROLS_CAMERADISTANCE Camera Distance
+TEXT_CONTROLS_ACTION Action
+TEXT_CONTROLS_THROW Throw
+TEXT_CONTROLS_BITE Bite
+TEXT_CONTROLS_JUMP Jump
+TEXT_CONTROLS_MOVEMENT Move TY
+TEXT_CONTROLS_ADJUSTCAMERA Move Camera
+TEXT_CONTROLS_START Start
+TEXT_CONTROLS_GAMEINFO Game Info
+TEXT_CONTROLS_CHANGERANGS Change Rangs
+TEXT_CONTROLS_NEXTRANG Next Rang
+TEXT_CONTROLS_PREVIOUSRANG Previous Rang
+TEXT_CREDITS_072 We hope you enjoyed playing
+TEXT_CREDITS_073 Game Design
+TEXT_CREDITS_074 Additional Design
+TEXT_CREDITS_075 Programmers
+TEXT_CREDITS_076 Lead Level Artist
+TEXT_CREDITS_077 Lead Props and Models
+TEXT_CREDITS_078 Artists
+TEXT_CREDITS_079 Concept Art and Character Design
+TEXT_CREDITS_080 Additional Concept Art
+TEXT_CREDITS_081 Texture Department
+TEXT_CREDITS_082 Sound
+TEXT_CREDITS_083 Sound Design
+TEXT_CREDITS_084 Main Audio Programmer
+TEXT_CREDITS_085 Recorded at Krome Studios, Brisbane, Australia
+TEXT_CREDITS_086 Additional Music Recorded at
+TEXT_CREDITS_087 Guitar
+TEXT_CREDITS_088 Keyboards
+TEXT_CREDITS_089 Bass
+TEXT_CREDITS_090 Sampling
+TEXT_CREDITS_091 Engineer
+TEXT_CREDITS_092 Animation
+TEXT_CREDITS_093 Direction and Storyboards
+TEXT_CREDITS_094 Cut Scene Animators
+TEXT_CREDITS_095 Cut Scene Builders
+TEXT_CREDITS_096 Video Production
+TEXT_CREDITS_097 Video Editors
+TEXT_CREDITS_098 Documentary
+TEXT_CREDITS_099 Level Builders
+TEXT_CREDITS_100 Senior Level Builder
+TEXT_CREDITS_101 Level Builders
+TEXT_CREDITS_102 Administration
+TEXT_CREDITS_103 Hardware Support Manager
+TEXT_CREDITS_104 Additional Hardware Support
+TEXT_CREDITS_105 Quality Assurance
+TEXT_CREDITS_106 Senior QA
+TEXT_CREDITS_107 Special Thanks
+TEXT_CREDITS_108 In Memory Of
+TEXT_CREDITS_109 Supervising Producer
+TEXT_CREDITS_110 Associate Producer
+TEXT_CREDITS_111 Director, Business and Product Development
+TEXT_CREDITS_112 Development Director
+TEXT_CREDITS_113 Senior Product Manager
+TEXT_CREDITS_114 Marketing Assistant
+TEXT_CREDITS_115 Public Relations
+TEXT_CREDITS_116 International Production Specialist
+TEXT_CREDITS_117 Production Assistant
+TEXT_CREDITS_118 Package Project Management
+TEXT_CREDITS_119 Package Art and Design
+TEXT_CREDITS_120 Package Illustration
+TEXT_CREDITS_121 Documentation Layout
+TEXT_CREDITS_122 Mastering
+TEXT_CREDITS_123 Customer Quality Control
+TEXT_CREDITS_124 Lead Tester
+TEXT_CREDITS_125 Assistant Lead
+TEXT_CREDITS_126 Core Testers
+TEXT_CREDITS_127 The Cast
+TEXT_CREDITS_128 TY the Tasmanian Tiger
+TEXT_CREDITS_129 Maurie the Sulphur Crested Cockatoo
+TEXT_CREDITS_130 Shazza the Dingo
+TEXT_CREDITS_131 Boss Cass
+TEXT_CREDITS_132 Rex the Platypus
+TEXT_CREDITS_133 Elle the Platypus
+TEXT_CREDITS_134 Sheila the Koala
+TEXT_CREDITS_135 Julius the Koala
+TEXT_CREDITS_136 Neddy the Bully
+TEXT_CREDITS_137 Dennis the Green Tree Frog
+TEXT_CREDITS_138 Ranger Ken
+TEXT_CREDITS_139 Sly
+TEXT_CREDITS_140 Lenny the Lyrebird
+TEXT_CREDITS_141 Wedgewood the Pirate
+TEXT_CREDITS_142 Andy the Wombat
+TEXT_CREDITS_143 The Bunyip Elder
+TEXT_CREDITS_144 Shadow the Ghost Bat
+TEXT_CREDITS_145 Aurora the SeaDragon
+TEXT_CREDITS_146 Boonie
+TEXT_CREDITS_147 Bilby Boy
+TEXT_CREDITS_148 Rex's Mate the Seahorse
+TEXT_CREDITS_149 The Frill-Necked Lizard
+TEXT_CREDITS_150 The Blue Tongue
+TEXT_CREDITS_151 Bry
+TEXT_CREDITS_152 Bro
+TEXT_CREDITS_153 Script
+TEXT_CREDITS_154 Narrative and Script Consultant
+TEXT_CREDITS_155 Additional Dialog
+TEXT_CREDITS_156 Voice Director (US)
+TEXT_CREDITS_157 Voice Director (Melbourne)
+TEXT_CREDITS_158 Sound Engineer (San Francisco)
+TEXT_CREDITS_159 Sound Editor (San Francisco)
+TEXT_CREDITS_160 Sound Engineer (Los Angeles)
+TEXT_CREDITS_161 Extra Voices Recorded at Krome Studios (Brisbane)
+TEXT_CREDITS_162 3D Supervisor
+TEXT_CREDITS_163 Lead Character Animator
+TEXT_CREDITS_164 Technical Director
+TEXT_CREDITS_165 Animators
+TEXT_CREDITS_166 Matte Painting Artist
+TEXT_CREDITS_167 Video Operations Technician
+TEXT_CREDITS_168 No animals were harmed during the making of this game.
+TEXT_CREDITS_169 Music
+TEXT_CREDITS_170 Translation Co-ordinator
+TEXT_CREDITS_171 Cut Scene Lead
+TEXT_CREDITS_172 Game Play Director
+TEXT_CREDITS_173 Senior Creative Designer
+TEXT_CREDITS_174 Senior Video Editor
+TEXT_CREDITS_175 Game Editor Software
+TEXT_MENU_OBJECTIVE Objective
+TEXT_MEMCARD_MANAGECARD Dashboard
+TEXT_MENU_VIDEOS Movies
+TEXT_VIDEO_00 Prologue
+TEXT_VIDEO_01 Boss Cass finds the first Talisman
+TEXT_VIDEO_02 Sly reveals that TY is after the Talismans
+TEXT_VIDEO_03 Cass sends Sly to stop TY
+TEXT_VIDEO_04 Cass reveals his plans...
+TEXT_VIDEO_05 TY gets the Frog Talisman
+TEXT_VIDEO_06 TY gets the Cockatoo Talisman
+TEXT_VIDEO_07 TY gets the Platypus Talisman
+TEXT_MENU_PLAYVIDEO Play
+TEXT_MENU_SELECTPAGE Page
+TEXT_MENU_SELECTVIDEO Movie
+TEXT_MEMCARD_FULLCARD Hard Disk Full
+TEXT_MENU_SUBTITLES Subtitles
+TEXT_MEMCARD_RESETWARN       Warning!\n\nStarting the Dashboard will lose your game progress.\n\nContinue?
+TEXT_VIDEO_08 Outtakes
+TEXT_CREDITS_176 Project Supervisor
+TEXT_CREDITS_177 QA Supervisor
+TEXT_CREDITS_178 P.A. (Los Angeles)
+TEXT_CREDITS_179 Editor (Los Angeles)
+TEXT_CREDITS_180 Senior Creative Designer
+TEXT_CREDITS_181 Senior Video Editors
+TEXT_MEMCARD_FORMAT          Format
+TEXT_CREDITS_182 All logos are trademarks of their respective companies
+TEXT_MEMCARD_DELETECORRUPTEDQ .
+TEXT_MEMCARD_DELETING        .
+TEXT_MEMCARD_DELETEFAIL      .
+TEXT_CREDITS_183 Functional Language Testing
+TEXT_CREDITS_184 FLT Project Lead
+TEXT_CREDITS_185 Functional Language Testers
+TEXT_MENU_CONFIRM_EXIT_LEVEL Exit level and return to Rainbow Cliffs?
+TEXT_MENU_LOSE_PROGRESS Unsaved game progress will be lost.
+TEXT_ENTERACTION Press “ to enter
+TEXT_MEMCARD_DASHBOARD1 Press ‡ to continue without saving or
+TEXT_MEMCARD_DASHBOARD2 to free more blocks.
+TEXT_MEMCARD_AUTOSAVEERROR   Save failed!\n\nAutoSaving has been disabled.\n\nTo re-enable manually save your game using the 'Save Game' option on the pause menu.\n\nPress ‡ to continue.
+TEXT_MEMCARD_NOFREESPACE2    .
+TEXT_MEMCARD_SAVEGAMESPACE2  .
+TEXT_CREDITS_186 Dolby and the double-D symbol are trademarks of Dolby Laboratories
+TEXT_CREDITS_187 Localisation
+TEXT_CREDITS_188 EAD Localisation Manager
+TEXT_CREDITS_189 EAD Localisation Project Manager
+TEXT_CREDITS_190 Localisation Managers
+TEXT_CREDITS_191 Italy
+TEXT_CREDITS_192 Germany
+TEXT_CREDITS_193 France
+TEXT_CREDITS_194 Spain
+TEXT_CREDITS_195 Localisation Coordinators
+TEXT_CREDITS_196 Translators
+TEXT_CREDITS_197 Language Testing
+TEXT_CREDITS_198 Roland GS Sound Set used under license.
+TEXT_CREDITS_199 TY The Tasmanian Tiger HD Team
+TEXT_MEMCARD_UNKNOWNDEVICE   .
+TEXT_MEMCARD_AUTOSAVEBROKEN  .
+TEXT_MEMCARD_CARDREMOVED2    .
+TEXT_MEMCARD_RESETWARN2      Warning!\n\nStarting the Dashboard will lose your game data.\n\nContinue?
+TEXT_MENU_EXIT_GAME Exit Game
+TEXT_MENU_EXIT_GAME_DIALOG_TITLE Exit Game?
+TEXT_CONTROLS_MOVE_FORWARD Forward
+TEXT_CONTROLS_MOVE_BACKWARD Backward
+TEXT_CONTROLS_MOVE_LEFT Left
+TEXT_CONTROLS_MOVE_RIGHT Right
+TEXT_CONTROLS_MOVE_WALK Walk
+TEXT_MENU_RESET_TO_DEFAULT Reset To Default
+TEXT_MENU_MOUSE_SENSITIVITY Mouse Sensitivity
+TEXT_MENU_CAMERA_THIRDPERSONX Camera Rotation L/R
+TEXT_MENU_CAMERA_THIRDPERSONY Camera Rotation U/D
+TEXT_MENU_CAMERA_THIRDPERSONSPEED Camera Speed
+TEXT_MENU_CAMERA_FIRSTPERSONX TY's View L/R
+TEXT_MENU_CAMERA_FIRSTPERSONY TY's View U/D
+TEXT_MENU_CAMERA_FIRSTPERSONSPEED TY's View Speed
+TEXT_MENU_CAMERA_TRACKBODY Track Body On Jump
+TEXT_MENU_FULLSCREEN Fullscreen
+TEXT_MENU_RESOLUTION Resolution
+TEXT_MENU_DETAILSETTINGS Detail Level
+TEXT_MENU_SHADOWS Shadows
+TEXT_MENU_REFLECTIONS Reflections
+TEXT_MENU_MSAA MSAA
+TEXT_MENU_ANISOTROPIC Anisotropic Filtering
+TEXT_MENU_SSAO SSAO
+TEXT_MENU_BLOOM Bloom
+TEXT_MENU_GRASS Grass Detail
+TEXT_MENU_DRAW_DISTANCE Draw Distance
+TEXT_MENU_PROPS Props
+TEXT_MENU_UNSUPPORTED Unsupported
+TEXT_MENU_LOW Low
+TEXT_MENU_MID Mid
+TEXT_MENU_HIGH High
+TEXT_MENU_CUSTOM Custom
+TEXT_MENU_UNSUPPORTED_GL_DRIVERS	WARNING! Some features are not supported with your current drivers. Please update your graphics card drivers.
+TEXT_MENU_2X 2x
+TEXT_MENU_4X 4x
+TEXT_MENU_8X 8x
+TEXT_MENU_LEADERBOARDS Leaderboards
+TEXT_MENU_LEADERBOARDS_HEADING_RANK Rank
+TEXT_MENU_LEADERBOARDS_HEADING_NAME Name
+TEXT_MENU_LEADERBOARDS_HEADING_TIME Time
+TEXT_MENU_LEADERBOARDS_CHANGE_TO_SPEED_RUN TOGGLE SPEED RUN BOARDS
+TEXT_MENU_LEADERBOARDS_CHANGE_TO_TIME_ATTACK TOGGLE TIME ATTACK BOARDS
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_NORMAL GAME COMPLETE
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_NORMALCHEAT GAME COMPLETE (CHEATS)
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_COMPLETE GAME 100% COMPLETE
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_COMPLETECHEAT GAME 100% COMPLETE (CHEATS)
+TEXT_MENU_MSAA_NOTIFICATION Changes to MSAA settings will only apply after the game has been restarted.
+TEXT_VIDEO_09 Krome Logo, 2002
+TEXT_VIDEO_10 E3 Final Trailer, 2002
+TEXT_VIDEO_11 First Pitch, 2001
+TEXT_VIDEO_12 Second Pitch - Living World, 2001
+TEXT_VIDEO_13 Initial TY Prototypes, 2000
+TEXT_MENU_CAMERA_FIRSTPERSON_INITIALDIR TY's View Direction
+TEXT_MENU_CAMERA_FIRSTPERSON_INITIALDIR_HERO TY's Body
+TEXT_MENU_CAMERA_FIRSTPERSON_INITIALDIR_CAMERA Camera
+TEXT_MENU_RANG_SELECT_WHEEL 'Rang Select Wheel
+TEXT_MENU_HARDCORE_MODE_TOGGLE Press “ to change game mode.
+TEXT_MENU_HARDCORE_MODE Hardcore Mode
+TEXT_MENU_NORMAL_MODE Normal Mode
+TEXT_MENU_GAME_OVER Game Over
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_ANYCOMPLETE GAME COMPLETE (HARDCORE MODE)
+TEXT_MENU_LEADERBOARDS_SPEEDRUN_100COMPLETE GAME 100% COMPLETE (HARDCORE MODE)
+TEXT_CREDITS_FMOD Made with FMOD Studio by Firelight Technologies Pty Ltd.
+TEXT_MENU_GAMEMANUAL Game Manual
+TEXT_MENU_SKINSELECT Skins
+TEXT_MENU_SKIN00_NAME Classic
+TEXT_MENU_SKIN00_DESC The standard style.
+TEXT_MENU_SKIN01_NAME Prototype
+TEXT_MENU_SKIN01_DESC Purple flavoured for extra kick.
+TEXT_VIDEO_ST0000 I gotcha! I gotcha!
+TEXT_VIDEO_ST0001 Ok TY, I'm it. Catch me if you can!
+TEXT_VIDEO_ST0002 Woooohhhh! Uggh.
+TEXT_VIDEO_ST0003 Don't move mate. I'll get help.
+TEXT_VIDEO_ST0004 Don't be afraid TY.
+TEXT_VIDEO_ST0005 I am Nandu Gili, the bunyip elder...
+TEXT_VIDEO_ST0006 G'day mate.
+TEXT_VIDEO_ST0007 It's time you knew the truth.
+TEXT_VIDEO_ST0008 Years ago, a great battle was fought over the fate of five mystic talismans.
+TEXT_VIDEO_ST0009 My dinosaur ancestors were here first, you stinking furry mammal opportunists.
+TEXT_VIDEO_ST0010 Remember the comet!
+TEXT_VIDEO_ST0011 Nooooo! You mammals don't deserve to be at the top of the food chain!
+TEXT_VIDEO_ST0012 Now!
+TEXT_VIDEO_ST0013 Grrr.
+TEXT_VIDEO_ST0014 Now to restore the natural order, once and for all!
+TEXT_VIDEO_ST0015 Yaaargh!
+TEXT_VIDEO_ST0016 Oooooh, my head.
+TEXT_VIDEO_ST0017 Never! Never! Never!
+TEXT_VIDEO_ST0018 Hahahahahaaa!
+TEXT_VIDEO_ST0019 Bye Bye...
+TEXT_VIDEO_ST0020 Nooooooooo!
+TEXT_VIDEO_ST0021 Those brave few who challenged Boss Cass were trapped in the Dreaming.
+TEXT_VIDEO_ST0022 Mum? Dad?
+TEXT_VIDEO_ST0023 Word grows that Boss Cass is seeking out the talismans again.
+TEXT_VIDEO_ST0024 He must be stopped at all costs.
+TEXT_VIDEO_ST0025 It's up to you to find the talismans before he does.
+TEXT_VIDEO_ST0026 It's up to me to save my family!
+TEXT_VIDEO_ST0027 Oi! TY! Are you ok?
+TEXT_VIDEO_ST0028 Maurie? Ah, am I glad to see you!
+TEXT_VIDEO_ST0029 You're never going to believe what just happened!
+TEXT_VIDEO_ST0030 I was playing in the forest, when the ground suddenly...
+TEXT_VIDEO_ST0031 ... and that's when you showed up.
+TEXT_VIDEO_ST0032 Struth! Sounds like you've got a fair dinkum adventure ahead of you mate.
+TEXT_VIDEO_ST0033 Not that I'm inta that sorta thing.
+TEXT_VIDEO_ST0034 I'd much rather be at home, watchin the footy...
+TEXT_VIDEO_ST0035 But! I tell ya what. You do the adventurin, and I'll help you out where I can...
+TEXT_VIDEO_ST0036 Well done TY.
+TEXT_VIDEO_ST0037 You've retrieved the first of the ancient talismans.
+TEXT_VIDEO_ST0038 When Boss Cass discovers that we're out to thwart his plans
+TEXT_VIDEO_ST0039 he will do all in his power to stop you.
+TEXT_VIDEO_ST0040 Be careful, my friend.
+TEXT_VIDEO_ST0041 She'll be right old timer!
+TEXT_VIDEO_ST0042 Strike me lucky! You actually found the talisman.
+TEXT_VIDEO_ST0043 I just might've bet on the wrong horse.
+TEXT_VIDEO_ST0044 Anyway mate, Julius has got a present for you at his lab.
+TEXT_VIDEO_ST0045 I see you have retrieved the third talisman.
+TEXT_VIDEO_ST0046 Do not become complacent in your quest.
+TEXT_VIDEO_ST0047 There is still much danger ahead.
+TEXT_VIDEO_ST0048 Well, I have to admit it, you're not doing such a bad job mate.
+TEXT_VIDEO_ST0049 Well, adequate ma-maybe, but but but, not bad.
+TEXT_VIDEO_ST0050 Now. Julius is waiting for you, back at his lab.
+TEXT_VIDEO_ST0051 I think he's got a new gadget for ya!
+TEXT_VIDEO_ST0052 Bonza!
+TEXT_VIDEO_ST0053 You have come far. This will be no easy task.
+TEXT_VIDEO_ST0054 But I have faith in you my friend.
+TEXT_VIDEO_ST0055 Don't just stand there like a stunned mullet mate!
+TEXT_VIDEO_ST0056 Julius has got something that will help you enter Cass' Crest mate.
+TEXT_VIDEO_ST0057 Off you go.
+TEXT_VIDEO_ST0058 I found it. I found it!
+TEXT_VIDEO_ST0059 Let me see that.
+TEXT_VIDEO_ST0060 At last... A mystic talisman.
+TEXT_VIDEO_ST0061 It's time to move out.
+TEXT_VIDEO_ST0062 We got four more talismans to find.
+TEXT_VIDEO_ST0063 You there! Fetch my bags.
+TEXT_VIDEO_ST0064 Heh heh heh...
+TEXT_VIDEO_ST0065 Soon unimaginable power will be mine mine miiine.
+TEXT_VIDEO_ST0066 You have done well my friend.
+TEXT_VIDEO_ST0067 The information you supplied is invaluable.
+TEXT_VIDEO_ST0068 So someone thinks they can stop me obtaining all the talismans.
+TEXT_VIDEO_ST0069 Of course he will no succeed!
+TEXT_VIDEO_ST0070 I want this meddling mammal stopped at any cost.
+TEXT_VIDEO_ST0071 Yes sir. Right away sir.
+TEXT_VIDEO_ST0072 Both talismans are as good as mine.
+TEXT_VIDEO_ST0073 Begin phase 2!
+TEXT_VIDEO_ST0074 Hahahaha.
+TEXT_VIDEO_ST0075 You go first.
+TEXT_VIDEO_ST0076 No, you go first.
+TEXT_VIDEO_ST0077 Nyah, I went first last time.
+TEXT_VIDEO_ST0078 Get in here!
+TEXT_VIDEO_ST0079 Did you take care of that troublesome tasmanian tiger?
+TEXT_VIDEO_ST0080 That's just the thing, see...
+TEXT_VIDEO_ST0081 He's kind of, umm, well, err... good!
+TEXT_VIDEO_ST0082 Whaaat?
+TEXT_VIDEO_ST0083 I cannot believe that a rat could outwit my two best lizards.
+TEXT_VIDEO_ST0084 He's too tough for us Boss.
+TEXT_VIDEO_ST0085 Ehh, you know, uhh... I was, ehh, thinking...
+TEXT_VIDEO_ST0086 Eeh, instead of trying to stop him, maybe we should, uhhh...
+TEXT_VIDEO_ST0087 You ok Boss?
+TEXT_VIDEO_ST0088 Come over here.
+TEXT_VIDEO_ST0089 Juuust come over here.
+TEXT_VIDEO_ST0090 I won't hurt you.
+TEXT_VIDEO_ST0091 Now. What's my name?
+TEXT_VIDEO_ST0092 Uhh... Cass?
+TEXT_VIDEO_ST0093 No. That's my last name.
+TEXT_VIDEO_ST0094 What's my first name?
+TEXT_VIDEO_ST0095 Ooh! Ooh! I know! I know!
+TEXT_VIDEO_ST0096 Let him answer!
+TEXT_VIDEO_ST0097 Uhh... Boss?
+TEXT_VIDEO_ST0098 That's right.
+TEXT_VIDEO_ST0099 And. I'm. The. Only. Boss. Around. Here.
+TEXT_VIDEO_ST0100 And. I. Do. All. The. Thinkin. Now, get outa my sight!
+TEXT_VIDEO_ST0101 Imbeciles. I've surrounded myself with numbskull imbeciles.
+TEXT_VIDEO_ST0102 Maybe I can help.
+TEXT_VIDEO_ST0103 After all, who knows tasmanian tigers better than... meee.
+TEXT_VIDEO_ST0104 Who indeed.
+TEXT_VIDEO_ST0105 Hah. Hah. Ha. Hah. Hah. Ha. Hah. Hah. Haaa...
+TEXT_VIDEO_ST0106 Did you take care of our little problem?
+TEXT_VIDEO_ST0107 I tried, but umm...
+TEXT_VIDEO_ST0108 He's stronger than I thought.
+TEXT_VIDEO_ST0109 He's stronger than you thought.
+TEXT_VIDEO_ST0110 How. Hard. Can. It. Be?!
+TEXT_VIDEO_ST0111 It's. Just. A. Little orange...
+TEXT_VIDEO_ST0112 rat.
+TEXT_VIDEO_ST0113 He has friends. The bunyips are helping him.
+TEXT_VIDEO_ST0114 What?! Aha, then the stakes have been raised.
+TEXT_VIDEO_ST0115 To take over the world, I must have those talismans.
+TEXT_VIDEO_ST0116 I need them to open the portal to the dreamtime,
+TEXT_VIDEO_ST0117 so I can banish all those annoying warm-blooded mammals
+TEXT_VIDEO_ST0118 once and for all.
+TEXT_VIDEO_ST0119 Present company excepted, of course.
+TEXT_VIDEO_ST0120 Well, if our orange friend is so intent on finding
+TEXT_VIDEO_ST0121 the talismans, then I say, let him.
+TEXT_VIDEO_ST0122 My metal menace here will take care of him
+TEXT_VIDEO_ST0123 and steal back the talismans to boot.
+TEXT_VIDEO_ST0124 Heh, it's so simple, it's brilliant.
+TEXT_VIDEO_ST0125 Hah ha hah ha hah ha haaaaa...
+TEXT_MENU_SKIN02_NAME Ridge
+TEXT_MENU_SKIN02_DESC 
+TEXT_MENU_SKIN03_NAME Flinders
+TEXT_MENU_SKIN03_DESC 
+TEXT_MENU_SKIN04_NAME Sly
+TEXT_MENU_SKIN04_DESC 
+TEXT_MENU_SKIN05_NAME Wetsuit
+TEXT_MENU_SKIN05_DESC 
+TEXT_MENU_SKIN06_NAME Doomeranger
+TEXT_MENU_SKIN06_DESC 
+TEXT_MENU_SKIN07_NAME Tasmanian Dingo
+TEXT_MENU_SKIN07_DESC 
+TEXT_MENU_SKIN08_NAME Ghost Tiger
+TEXT_MENU_SKIN08_DESC 
+TEXT_MENU_CAMERA_AUTOCENTER Auto-Center Camera
+TEXT_LEVEL_NULL_878 
+TEXT_LEVEL_NULL_879 
+TEXT_LEVEL_NULL_880 
+TEXT_LEVEL_NULL_881 
+TEXT_LEVEL_NULL_882 
+TEXT_LEVEL_NULL_883 
+TEXT_LEVEL_NULL_884 
+TEXT_LEVEL_NULL_885 
+TEXT_LEVEL_NULL_886 
+TEXT_LEVEL_NULL_887 
+TEXT_LEVEL_NULL_888 
+TEXT_LEVEL_NULL_889 
+TEXT_LEVEL_NULL_890 
+TEXT_LEVEL_NULL_891 
+TEXT_LEVEL_NULL_892 
+TEXT_LEVEL_NULL_893 
+TEXT_LEVEL_NULL_894 
+TEXT_LEVEL_NULL_895 
+TEXT_LEVEL_NULL_896 
+TEXT_LEVEL_NULL_897 
+TEXT_LEVEL_NULL_898 
+TEXT_LEVEL_NULL_899 
+TEXT_LEVEL_f0 Shadow's Grotto

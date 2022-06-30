@@ -1,0 +1,11 @@
+name Prop_Common_Explosion
+overlay fx_118
+
+name fx_118
+blend 6
+aref 0
+envmap 1
+
+name  Prop_Common_ExploBlend
+blend 1
+envmap 1

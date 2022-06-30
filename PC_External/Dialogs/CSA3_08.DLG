@@ -1,0 +1,106 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA3_08
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSA3_08_p01EN
+SubTitleNr = 0
+InTime = 400
+OutTime = 800
+PhonemeName = CSA3_08_p02EN
+SubTitleNr = 1
+InTime = 400
+OutTime = 1300
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Rex
+Model = ACT_12_REX_SYNKER.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 825.07,5887.89,-11404.50,1464.66,5810.68,-11329.54
+  Spline = 825.24,5888.13,-11423.21,1452.13,5811.38,-11275.70
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 865.30,5882.41,-11383.72,1492.19,5805.66,-11236.21
+  Spline = 882.01,5885.86,-11379.79,1508.90,5809.11,-11232.28
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = 964.770,5808.900,-11434.930
+ActorRot = 0.000,-2.300,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 168
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = mannerism1
+FitAnimToPhrase = 0
+ActorPos = 971.380,5805.610,-11338.360
+ActorRot = -0.100,-0.700,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 996.731,5823.802,-11498.682
+ActorRot = 0.000,-3.400,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 168
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = mannerism3
+FitAnimToPhrase = 0
+ActorPos = 971.380,5805.610,-11338.360
+ActorRot = -0.100,-0.700,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 1
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 1
+
+[END]

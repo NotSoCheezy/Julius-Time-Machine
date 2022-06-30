@@ -1,0 +1,113 @@
+//Rhino Bad File
+
+mesh Act_36_Rhino.ASE
+skeleton Act_36_Rhino.ASE
+vat Act_36_Rhino.vat
+
+//run anim 
+anim run
+1795-1810,1
+event leftfoot 1807
+event rightfoot 1799
+cycle loop
+
+//walk anim 
+anim walk
+10-40,1
+event leftfoot 15
+event rightfoot 19
+cycle loop
+
+//Idle 1 is the main idle.  All other idles should be spliced in between idle 1, 
+//not after eachother!
+
+anim idle01_breath
+140-240,1
+cycle stop
+
+anim idle02_LookLR
+340-540,1
+cycle stop
+
+anim idle03_evil
+640-940,1
+cycle stop
+
+//combat attack
+
+anim Alert
+1040-1070,1
+cycle stop
+
+anim Attack_01
+1170-1205,1
+event whack 1195
+cycle stop
+
+//fall
+//character animates on the spot, needs to be moved backwards as he falls
+
+anim fall
+1290-1315,1
+cycle stop
+
+anim FallRecovery
+1415-1450,1
+cycle stop
+
+anim Death
+1540-1565,1
+cycle stop
+
+//Turning
+
+anim quickturn
+1665-1685,1
+cycle stop
+
+anim stand_on_back_legs
+1860-1890,1
+cycle stop
+
+anim fight
+1900-1920,1
+cycle loop
+
+anim return_from_back_legs
+1930-1950,1
+cycle stop
+
+
+//RhinoBeetle on the Flat (ie Off the log)
+
+anim RunOnFlat
+2000-2015,1
+event leftfoot 2013
+event rightfoot 2004
+cycle loop
+
+anim WalkOnFlat
+2050-2080,1
+event leftfoot 2055
+event rightfoot 2059
+cycle loop
+
+anim idle01_breathOnFlat
+2100-2200,1
+cycle stop
+
+anim idle02_LookLROnFlat
+2300-2500,1
+cycle stop
+
+anim idle03_evilOnFlat
+2600-2900,1
+cycle stop
+
+anim StunOnFlat
+2950-2965,1
+cycle stop
+
+
+
+//end

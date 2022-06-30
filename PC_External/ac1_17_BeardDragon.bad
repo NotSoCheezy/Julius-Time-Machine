@@ -1,0 +1,68 @@
+//Bearded Dragon
+
+mesh Act1_17_BeardDragon.mdl
+skeleton Act1_17_BeardDragon.anm
+
+//Ambulatory Animations
+
+anim walk
+291-326,1
+event LeftFoot 294
+event RightFoot 312
+cycle loop
+
+anim run
+3-32,1
+event LeftFoot 14
+event RightFoot 28
+cycle loop
+
+//Idle Animations
+
+anim idle01look
+146-289,1
+cycle stop
+
+anim idle02scratchchin
+329-550,1
+cycle stop
+
+anim idle03bashfists
+37-145,1
+cycle stop
+
+//Misc
+
+anim block/flinch
+552-565,1
+cycle stop
+
+anim taunt
+749-912,1
+cycle stop
+
+anim death
+566-677,1
+cycle stop
+
+anim scared
+914-980,1
+cycle stop
+
+anim alert
+981-1008,1
+cycle stop
+
+//Attack Animations
+
+anim attack01hookpunch
+1009-1042,1
+cycle stop
+
+anim attack02roundpunch
+1042-1070,1
+cycle stop
+
+//end
+
+

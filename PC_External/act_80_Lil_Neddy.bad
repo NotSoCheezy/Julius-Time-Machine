@@ -1,0 +1,177 @@
+mesh act_80_lil_Neddy.mdl
+skeleton act_80_lil_Neddy.anm
+
+
+// AMBULATORY LOOPS:
+anim walk01
+100-140,1
+event LeftFoot 140
+event RightFoot 120
+cycle loop
+
+//anim comment goes here...
+anim run01
+200-224,1
+event LeftFoot 216
+event RightFoot 206
+cycle loop
+
+
+// IDLE ANIMS:
+//Sleepy idle
+anim Sleepyidle
+870-1250,1
+cycle loop
+
+//anim comment goes here...
+anim BellyScratchIdle
+1300-1520,1
+cycle stop
+
+//anim comment goes here...
+anim BrearthingIdle
+1520-1555,1
+cycle loop
+
+
+// COMBAT ANIMS:
+//anim comment goes here...
+anim attack01
+580-610,1
+cycle stop
+
+//anim uses sheild to block from the front
+anim defend01
+540-565,1
+cycle stop
+
+
+//anim could also be used as a second taunt anim...
+anim alert
+680-740,1
+cycle stop
+
+anim alert02
+780-860,1
+cycle stop
+
+//anim comment goes here...
+anim flinch01
+750-775,1
+cycle stop
+
+//Butt waving as commanded...
+anim taunt
+230-346,1
+cycle stop
+
+anim scared
+350-530,1
+cycle stop
+
+
+//anim comment goes here...
+anim death01
+620-665,1
+cycle stop
+
+anim Charge
+3150-3174,1
+event LeftFoot 3166
+event RightFoot 3156
+cycle loop
+
+
+
+// COMMUNICATION ANIMS:
+//anim comment goes here...
+anim gesture01
+0,1
+cycle stop
+
+
+// TEST ANIMS:
+//anim comment goes here...
+anim test01
+0
+0
+0
+0
+cycle loop
+
+
+
+//Without the Shield
+
+anim walk01NoShield
+1570-1610,1
+event LeftFoot 1610
+event RightFoot 1590
+cycle loop
+
+anim run01NoShield
+1620-1644,1
+event LeftFoot 1636
+event RightFoot 1626
+cycle loop
+
+// IDLE ANIMS without shield:
+
+anim idle01NoShield
+1700-1900,1
+cycle loop
+
+anim idle02NoShield
+1950-2170,1
+cycle stop
+
+anim Idle03NoShield
+2180-2215,1
+cycle loop
+
+// COMBAT ANIMS with no shield:
+anim attack01NoShield
+2230-2260,1
+cycle stop
+
+//anim uses sheild to block from the front
+anim defend01NoShield
+2270-2295,1
+cycle stop
+
+//anim could also be used as a second taunt anim...
+anim alertNoShield
+2300-2360,1
+cycle stop
+
+anim alert02NoShield
+2400-2480,1
+cycle stop
+
+anim flinch01NoShield
+2500-2525,1
+cycle stop
+
+//Butt wavingNoShield 
+anim tauntNoShield
+2600-2716,1
+cycle stop
+
+anim scaredNoShield
+2750-2930,1
+cycle stop
+
+anim death01NoShield
+3000-3045,1
+cycle stop
+
+anim ChargeNoShield
+3100-3124,1
+event LeftFoot 1116
+event RightFoot 3106
+cycle loop
+
+
+
+
+//end

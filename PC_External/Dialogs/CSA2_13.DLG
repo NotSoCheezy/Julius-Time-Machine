@@ -1,0 +1,71 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA2_13
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSA2_13_p01EN
+SubTitleNr = 0
+InTime = 100
+OutTime = 200
+PhonemeName = CSA2_13_p02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 1000
+
+[ACTORS]
+Count = 1
+Actor = Andy
+Model = ACT1_07_ANDY_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 8.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.27,0.07
+  spline = 0.75,0.94
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 1425.53,-3278.10,-1130.96,9817.68,-5126.69,4708.54
+  Spline = 1428.20,-3278.11,-1134.28,9482.05,-5117.71,5166.59
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 73
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 1514.130,-3356.070,-1037.840
+ActorRot = 0.000,-0.300,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 104
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = no
+FitAnimToPhrase = 0
+ActorPos = 1514.130,-3356.070,-1037.840
+ActorRot = 0.000,-0.300,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

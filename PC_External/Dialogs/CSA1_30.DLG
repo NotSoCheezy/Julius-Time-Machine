@@ -1,0 +1,133 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA1_30
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSA1_30_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 300
+PhonemeName = CSA1_30_P02EN
+SubTitleNr = 1
+InTime = 300
+OutTime = 100
+PhonemeName = CSA1_30_P03EN
+SubTitleNr = 2
+InTime = 100
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Maurie
+Model = ACT_11_MAURIE_SYNKER.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 14.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 145.70,-135.73,6587.95,956.99,-206.00,6816.09
+  Spline = 149.88,-135.73,6574.93,944.54,-205.57,6855.72
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 214.46,-145.83,6785.24,1029.60,-225.52,6995.75
+  Spline = 214.46,-145.83,6785.24,1006.64,-226.15,7070.09
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = 330.873,-231.512,6704.105
+ActorRot = 0.000,-0.220,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 360.660,-144.990,6579.510
+ActorRot = 0.000,-2.400,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadCurious
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = 330.873,-231.512,6704.105
+ActorRot = 0.000,-0.220,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyJolly
+FitAnimToPhrase = 0
+ActorPos = 360.660,-144.990,6579.510
+ActorRot = 0.000,-2.400,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadCurious
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 259.002,-235.711,6548.514
+ActorRot = 0.000,-0.220,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = 360.660,-144.990,6579.510
+ActorRot = 0.000,-2.400,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 3
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

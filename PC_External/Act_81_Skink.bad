@@ -1,0 +1,153 @@
+mesh Act_81_Skink.mdl
+skeleton Act_81_Skink.anm
+
+
+// AMBULATORY ANIMS:
+
+anim walk
+1-30,1
+event LeftFoot 15 
+event RightFoot 30
+cycle loop
+
+anim run
+500-520,1
+event LeftFoot 515
+event RightFoot 505
+cycle loop
+
+anim runscared
+540-560,1
+event LeftFoot 555
+event RightFoot 545
+cycle loop
+
+
+// HIT ANIMS:
+
+anim struck01
+840-856,1
+cycle stop
+
+anim death
+860-885,1
+event FallImpact 876
+cycle stop
+
+anim deathdramatic
+900-970,1
+event FallImpact 920
+event FallImpact 932
+cycle stop
+
+// IDLE ANIMS:
+
+anim idlestance
+600-660,1
+cycle loop
+
+anim idleBatTap
+30-59,1
+cycle loop
+
+anim standingidlebattap
+160-210,1
+cycle loop
+
+anim idleraisebat
+60-89,1
+cycle stop
+
+anim idlelowerbat
+134-149,1
+cycle stop
+
+anim walkbatshoulder
+90-119,1
+cycle loop
+
+anim leanonbat
+220-260,1
+cycle stop
+
+anim batcreasetap
+270-315,1
+cycle stop
+
+
+// TAUNT ANIMS:
+
+anim tossbeercan
+730-760,1
+cycle loop
+event showcan 735
+
+anim hitbeer
+760-790,1
+cycle stop
+event showcan 760
+event hitcan 774
+event hidecan 774
+
+//775-790 turn can off
+
+
+// ATTACK ANIMS:
+
+anim hitforsix
+320-343,1
+cycle stop
+event strike 334
+
+anim returntoready
+343-360,1
+cycle stop
+
+anim repeathitforsix
+328-343,1
+cycle stop
+
+anim headhit
+800-840,1
+cycle stop
+event strike 830
+
+anim celebrate
+440-478,1
+cycle loop
+
+anim dodge
+1140-1155,1
+cycle stop
+
+
+// BLOCK ANIMS:
+anim block
+1020-1040,1
+cycle stop
+
+anim surprise
+1050-1105,1
+cycle stop
+
+anim letgo
+360-410,1
+cycle stop
+
+
+//TAIL ANIMS
+anim dropoff
+1-19,1
+cycle stop
+
+anim wriggle01
+20-40,1
+cycle loop
+
+anim wriggle02
+40-60,1
+cycle loop
+
+anim wriggle03
+60-80,1
+

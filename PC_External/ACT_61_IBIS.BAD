@@ -1,0 +1,43 @@
+//Ibis Bad File
+
+mesh Act_61_Ibis.ASE
+skeleton Act_61_Ibis.anm
+
+//Fluff wings 
+anim Idle00
+100-230,1
+cycle stop
+
+//Look around 
+anim Idle01
+1-90,1
+cycle stop
+
+//Preen
+anim Idle02
+240-380,1
+cycle stop
+
+//Walk
+anim walk cycle00
+430-490,1
+event RightFoot 460
+event LeftFoot 490
+cycle loop
+
+//Walk head down
+anim walk cycle01
+500-560,1
+event RightFoot 530
+event LeftFoot 560
+cycle loop
+// It would be prefered if this anim was run in shallow water.
+
+//crazy run
+anim run
+400-419,1
+event RightFoot 614
+event LeftFoot 617
+cycle loop
+
+//end

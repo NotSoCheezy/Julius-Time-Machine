@@ -1,0 +1,54 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSD4_04
+TotalPhrases = 1
+
+[PHONEMES]
+PhonemeName = CSD4_04_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 1500
+
+[ACTORS]
+Count = 1
+Actor = Julius
+Model = ACT_25_JULIUS.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 100.00
+FarPlane = 100000.00
+CamTime = 5.00
+ForceLength = 1
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 3
+  Spline = -5846.10,-487.88,2399.91,-6575.00,-483.65,2833.32
+  Spline = -5865.35,-487.78,2405.43,-6594.54,-466.21,2837.79
+  Spline = -5897.41,-476.70,2384.83,-6445.64,-474.91,3031.68
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = body_Thinking
+FitAnimToPhrase = 0
+ActorPos = -5982.220,-523.020,2463.500
+ActorRot = 0.000,1.200,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+
+[END]

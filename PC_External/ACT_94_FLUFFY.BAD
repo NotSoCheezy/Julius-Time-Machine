@@ -1,0 +1,147 @@
+mesh act_94_fluffy.mdl
+skeleton act_94_fluffy.mdl
+
+
+//AMBULATORY LOOPS:
+anim walk01
+0,1
+cycle loop
+
+anim run01
+0,1
+cycle loop
+
+//rotate the model from 0 to 90 over the duration of this anim
+anim turn_left_90
+280-342,1
+cycle stop
+
+//rotate the model from 0 to -90 over the duration of this anim
+anim turn_right_90
+350-414,1
+cycle stop
+
+//similar to turn_left_90, except rotation goes from 0 45
+anim turn_left_45
+430-460,1
+cycle stop
+
+anim turn_right_45
+470-500,1
+cycle stop
+
+
+//  OFFENSIVE ANIMS:
+//CLOSE RANGE BASHES
+//bashes between his legs with his right arm
+anim closeBash01
+520-561,1
+event groundHit 536
+cycle stop
+
+//leftArm
+anim closeBash02
+570-613,1
+event groundHit 588
+cycle stop
+
+//range approx: 530
+//this hits just in front of each of his feet.  right arm:
+anim closeBash03
+620-664,1
+event groundHit 639
+cycle stop
+
+//left arm:
+anim closeBash04
+670-714,1
+event groundHit 689
+cycle stop
+
+//MEDIUM RANGE BASHES
+//range approx: 740
+//bashes the area in front of himself
+anim bash01
+30-100,1
+event groundHit 60
+cycle stop
+
+//bashes the area to his left
+anim bash02
+110-179,1
+event groundHit 141
+cycle stop
+
+//bashes the area to his right
+anim bash03
+185-247,1
+event groundHit 210
+cycle stop
+
+//FAR RANGE BASHES
+//range approx: 1215
+//bashes faraway with right hand
+anim farBash01
+720-762,1
+event groundHit 742
+cycle stop
+
+anim farBash02
+780-830,1
+event groundHit 802
+cycle stop
+
+
+//RANGE ATTACKS
+anim snowBall_entry
+840-854,1
+cycle stop
+
+anim snowBall_loop
+855-869,1
+cycle loop
+
+anim snowBall_exit
+870-882,1
+cycle stop
+
+//there is a reference point in fluffy's mouth r_mouth
+anim icicleShoot_stand
+890-938,1
+event icileFireStart 904
+event icileFireStop 928
+cycle stop
+
+anim icicleShoot_sunk
+1080-1130,1
+event icileFireStart 1095
+event icileFireStop 1116
+cycle stop
+
+
+//IDLE LOOPS:
+anim idle01
+1130-1178,1
+cycle loop
+
+//jumps in the air - to blast ty back
+//this anim is a bit shit, so I may end up re-doing it.  maybe he'll just stamp his foot instead.  but for now...
+anim idle02
+1030-1062,1
+event jump 1042
+event jumpLand 1051
+cycle stop
+
+//chest beating - this is the idle that he plays after jumping up in the air (shockwave to blast ty back)
+anim idle03
+950-1020,1
+event chestHit 968
+event roar 971
+event chestHit 974
+event chestHit 980
+event chestHit 986
+event chestHit 992
+cycle stop
+
+
+//end

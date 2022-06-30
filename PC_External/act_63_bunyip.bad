@@ -1,0 +1,69 @@
+mesh act_63_bunyip.mdl
+skeleton act_63_bunyip.anm
+
+name walk01
+5-33,1
+cycle loop
+
+name run01
+50-84,1
+event thud 67
+event footThud 81
+cycle loop
+
+//still to be done, this frame will serve as an idle for now
+name idle01
+600-783,1
+cycle stop
+
+//subtle right look motion.  idle01a and idle01b are the main idle animations, split up so they can be
+//randomised with a bit more variation.  It also allows a breath idle animaton to be put in every now
+//and then.
+name idle01a
+600-659,1
+cycle stop
+
+//this one is just a subtle left look motion.  also see notes above for idle01a.
+name idle01b
+659-783,1
+cycle stop
+
+//this is an animation of bunyip just swinging on the spot.
+name idle02
+500-595,1
+cycle stop
+
+//this is a breathe idle.
+name breathe
+400-427,1
+cycle stop
+
+//this is the bunyip's main attack.  its a long overhead swing.
+name hit01
+275-305,1
+cycle stop
+event hit 289
+
+//this is also an overhead swing, but its a bit faster, and snappier.
+name hit02
+100-129,1
+cycle stop
+event hit 119
+
+//this is a left armed swing.  It goes around in front, then swings back.  so it can be used as a double
+//hit.
+name hit03
+325-360,1
+cycle stop
+event hit 334
+
+//roar!
+name roar01
+150-260,1
+cycle stop
+event stun 172
+
+//for when bunyip appears
+name appear
+950-988,1
+cycle stop

@@ -1,0 +1,11 @@
+mesh            Prop_0284_House.mdl
+skeleton        Prop_0284_House.anm
+
+anim Damage
+25-134,1
+cycle stop
+
+
+
+
+

@@ -1,0 +1,2300 @@
+// MapEd Data File version 2
+// Copyright Krome Studios
+// Saved by [DYO]   Date: 1/07/2002   Time: 5:07:23 PM
+//
+
+
+name setup
+
+WorldMinMax = -4913.047,-602.575,-4885.084,9905.350,3601.068,9889.293
+ground = room_c4_01.mdl
+collisionHeapSize = 730112
+envcube = env_a4.mdl
+envrotate = 0
+fog = 0.72, 0.57, 0.30
+waterFog = 0.40, 0.35, 0.75
+maxDepth = 600.00
+fogPlane = 7000.00
+farPlane = 25000.00
+waterFogPlane = 5.00
+waterFarPlane = 3500.00
+bDisplayMist = 0
+music = level1.wav
+waterMaterial = fx_088
+causticMaterial = fx_089
+light = 1.00, 1.50, 1.30
+lod_0 = 1250
+lod_1 = 2500
+lod_2 = 4500
+lod_3 = 8000
+lod_4 = 12000
+lod_5 = 17000
+lod_6 = 25000
+lod_7 = 40000
+overlay_0 = room_c4_02.mdl, 0, none
+
+name TY
+
+pos = 2313, -454, -555
+rot = 0.107, 4.431, -0.005
+effect = 1,breathmist
+// User: RBW
+
+name DIALOG
+
+pos = 2002, -361, -82
+ID = 2,FightFluffy
+camera = camera
+  cameraSource = 2101.885, -212.125, 17.874
+  cameraTarget = 1450.296, -336.224, 378.991
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 2
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 6,FightFluffyScript
+  Message = Activate
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+pos = 1871, -383, -395
+ID = 3,HintOnDefeatingFluffy
+camera = camera
+  cameraSource = 1970.940, -287.914, -295.119
+  cameraTarget = 1319.350, -386.633, 65.998
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 3
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+pos = 1861, -298, -747
+ID = 4,DefeatFluffy
+camera = camera
+  cameraSource = 1961.320, -275.884, -646.260
+  cameraTarget = 1309.730, -437.846, -285.143
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 4
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+pos = 1804, -285, -1063
+ID = 5,TalkToJulius
+camera = camera
+  cameraSource = 1904.249, -236.357, -962.875
+  cameraTarget = 1252.659, -371.910, -601.758
+bUseEventCamera = 0,false
+heroPos = 0.000, 0.000, 0.000
+heroLookAt = 0.000, 0.000, 0.000
+bUseHeroPos = 0,false
+dialogNr = 1
+dialogNr2 = -1
+dialog2Nr = -1
+dialog2Nr2 = -1
+OnCompletion = event
+  TargetID = 0,none
+  Message = none
+bUseNewDialog = 1,true
+OnActivation = event
+  TargetID = 0,none
+  Message = none
+bLevelIntro = 0,false
+bYesNoOption = 0,false
+OnYes = event
+  TargetID = 0,none
+  Message = none
+OnNo = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+name SCRIPT
+
+pos = 2127, -382, -230
+ID = 6,FightFluffyScript
+delay = 0.000
+bDelayEachMessage = 0,false
+bEnabled = 1,true
+Message0 = event
+  TargetID = 291,Fluffy
+  Message = Enable
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+name CONDITIONALSCRIPT
+
+pos = 2309, -415, -870
+ID = 7,C4BossDefeated
+delay = 0.000
+bDelayEachMessage = 0,false
+bExecuteOnStart = 1,true
+condition = 5,C-BossDead
+bNegative = 1,true
+bEnabled = 1,true
+Message0 = event
+  TargetID = 291,Fluffy
+  Message = Enable
+Message1 = event
+  TargetID = 0,none
+  Message = none
+Message2 = event
+  TargetID = 0,none
+  Message = none
+Message3 = event
+  TargetID = 0,none
+  Message = none
+Message4 = event
+  TargetID = 0,none
+  Message = none
+Message5 = event
+  TargetID = 0,none
+  Message = none
+Message6 = event
+  TargetID = 0,none
+  Message = none
+Message7 = event
+  TargetID = 0,none
+  Message = none
+Message8 = event
+  TargetID = 0,none
+  Message = none
+Message9 = event
+  TargetID = 0,none
+  Message = none
+// User: DYO
+
+name PORTAL
+
+pos = 2792, -458, -673
+ID = 8,PortalZ1
+standPos = 1443.000, -491.000, -1598.000
+standYaw = 0.000
+connectingLevel = 0,z1
+bExitPortal = 1,true
+bVisible = 1,true
+// User: DYO
+
+name GASJET
+
+pos = 653, -246, -1059
+rot = 0.000, 0.092, 0.000
+// User: DYO
+
+pos = 1363, -267, 904
+rot = 0.000, 0.552, 0.000
+// User: DYO
+
+pos = -1360, -307, 847
+rot = 0.000, 0.976, 0.000
+// User: DYO
+
+name SNOWGUM01
+
+pos = 665, -218, -2814
+rot = 0.000, 3.077, 0.000
+scale = 1.100, 1.064, 1.296
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2139, -437, -2468
+rot = 0.000, 2.386, 0.000
+scale = 1.100, 1.168, 0.992
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 649, -208, -3097
+rot = 0.000, 5.526, 0.000
+scale = 0.956, 1.172, 1.232
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1826, -407, -2377
+rot = 0.000, 4.710, 0.000
+scale = 0.972, 1.264, 0.940
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2175, -454, -1896
+rot = 0.000, 5.652, 0.000
+scale = 1.256, 0.972, 0.940
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2403, -455, -1653
+rot = 0.000, 5.212, 0.000
+scale = 1.092, 1.232, 0.960
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1479, -322, -2651
+rot = 0.000, 4.270, 0.000
+scale = 1.208, 1.104, 1.088
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 834, -242, -2583
+rot = 0.000, 0.942, 0.000
+scale = 1.132, 1.104, 1.160
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1846, -382, -2762
+rot = 0.000, 1.382, 0.000
+scale = 1.116, 1.280, 0.960
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1088, -244, -2922
+rot = 0.000, 4.082, 0.000
+scale = 1.060, 0.940, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1537, -374, -2212
+rot = 0.000, 2.952, 0.000
+scale = 0.992, 1.196, 1.076
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2547, -421, -2446
+rot = 0.000, 0.816, 0.000
+scale = 0.916, 1.044, 1.016
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1167, -271, -2584
+rot = 0.000, 3.140, 0.000
+scale = 1.224, 1.044, 1.144
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2029, 124, -3860
+rot = 0.000, 5.212, 0.000
+scale = 0.462, 0.426, 0.409
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2284, -450, -2242
+rot = 0.000, 3.517, 0.000
+scale = 1.156, 1.096, 1.216
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -793, -285, -3208
+rot = 0.000, 4.333, 0.000
+scale = 1.232, 0.956, 1.204
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -244, -249, -3268
+rot = 0.000, 1.821, 0.000
+scale = 1.128, 1.016, 1.260
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 253, -218, -3106
+rot = 0.000, 2.072, 0.000
+scale = 1.020, 1.244, 1.040
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 460, -191, -3327
+rot = 0.000, 5.526, 0.000
+scale = 1.172, 1.024, 1.244
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 241, -234, -2855
+rot = 0.000, 3.140, 0.000
+scale = 0.992, 1.188, 1.000
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -54, -264, -2893
+rot = 0.000, 1.005, 0.000
+scale = 0.936, 1.196, 1.128
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1364, -312, -1882
+rot = 0.000, 3.956, 0.000
+scale = 1.088, 1.004, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -744, -247, -3480
+rot = 0.000, 3.454, 0.000
+scale = 1.008, 1.060, 1.260
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 511, -449, 3096
+rot = 0.000, 3.517, 0.000
+scale = 1.252, 1.008, 1.176
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -408, -292, -2999
+rot = 0.000, 2.575, 0.000
+scale = 1.204, 1.188, 1.064
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1014, -277, -3035
+rot = 0.000, 1.382, 0.000
+scale = 1.060, 1.232, 1.024
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -690, -306, -2918
+rot = 0.000, 6.092, 0.000
+scale = 1.096, 1.236, 1.280
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2254, -218, -2346
+rot = 0.000, 4.082, 0.000
+scale = 0.996, 0.972, 1.000
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1751, -138, -2568
+rot = 0.000, 1.256, 0.000
+scale = 1.244, 1.236, 1.296
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1853, -260, -1853
+rot = 0.000, 4.522, 0.000
+scale = 0.908, 1.132, 1.280
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1795, -96, -3163
+rot = 0.000, 0.816, 0.000
+scale = 1.120, 1.280, 1.284
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1835, -175, -2262
+rot = 0.000, 4.961, 0.000
+scale = 1.168, 1.240, 1.136
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -931, -385, -1755
+rot = 0.000, 3.894, 0.000
+scale = 1.164, 0.988, 1.176
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1565, -310, -1644
+rot = 0.000, 2.198, 0.000
+scale = 1.288, 0.980, 1.288
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1971, -103, -2891
+rot = 0.000, 0.816, 0.000
+scale = 1.064, 1.168, 0.952
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2537, -278, -3153
+rot = 0.000, 5.778, 0.000
+scale = 0.468, 0.490, 0.404
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1542, -186, -2785
+rot = 0.000, 1.696, 0.000
+scale = 1.224, 1.184, 0.920
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1427, -254, -2175
+rot = 0.000, 1.758, 0.000
+scale = 1.228, 1.288, 1.180
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2317, -143, -2689
+rot = 0.000, 5.024, 0.000
+scale = 0.996, 1.140, 1.124
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2765, -333, -1501
+rot = 0.000, 0.502, 0.000
+scale = 1.100, 1.124, 1.256
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1592, -167, -3694
+rot = 0.000, 4.836, 0.000
+scale = 0.472, 0.422, 0.412
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2730, -243, -84
+rot = 0.000, 4.710, 0.000
+scale = 0.904, 1.084, 1.084
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2307, 75, -3750
+rot = 0.000, 1.444, 0.000
+scale = 0.408, 0.460, 0.480
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2940, -212, -3152
+rot = 0.000, 3.642, 0.000
+scale = 0.426, 0.485, 0.476
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2875, -219, -764
+rot = 0.000, 1.068, 0.000
+scale = 1.292, 1.176, 1.280
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2667, -333, -1910
+rot = 0.000, 2.261, 0.000
+scale = 1.092, 1.272, 0.996
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1517, -84, -3944
+rot = 0.000, 3.014, 0.000
+scale = 0.427, 0.491, 0.421
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2123, -341, 1629
+rot = 0.000, 6.187, 0.000
+scale = 1.068, 1.020, 1.252
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2775, -211, -534
+rot = 0.000, 0.691, 0.000
+scale = 1.096, 1.096, 0.924
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2436, -259, -2318
+rot = 0.000, 3.956, 0.000
+scale = 1.248, 1.196, 1.140
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2256, -289, -3278
+rot = 0.000, 3.517, 0.000
+scale = 0.430, 0.452, 0.472
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2959, -365, 1031
+rot = 0.000, 1.319, 0.000
+scale = 1.096, 0.928, 1.272
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2422, -249, 1916
+rot = 0.000, 1.193, 0.000
+scale = 0.972, 0.936, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2593, 102, -3633
+rot = 0.000, 1.821, 0.000
+scale = 0.478, 0.405, 0.453
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3195, -255, 1355
+rot = 0.000, 2.386, 0.000
+scale = 1.032, 1.268, 1.048
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3199, -361, 718
+rot = 0.000, 1.444, 0.000
+scale = 1.200, 1.188, 1.140
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2693, -291, 1438
+rot = 0.000, 0.628, 0.000
+scale = 1.296, 1.072, 0.976
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2090, -151, -3812
+rot = 0.000, 5.966, 0.000
+scale = 0.494, 0.458, 0.497
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1855, -386, 1653
+rot = 0.000, 3.768, 0.000
+scale = 1.108, 1.164, 1.200
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -625, -426, 2926
+rot = 0.000, 0.251, 0.000
+scale = 1.112, 1.152, 1.064
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2880, -334, 440
+rot = 0.000, 2.324, 0.000
+scale = 0.908, 0.916, 1.032
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2845, -183, 1816
+rot = 0.000, 5.589, 0.000
+scale = 1.256, 1.148, 1.232
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1815, -375, 1959
+rot = 0.000, 3.203, 0.000
+scale = 1.028, 0.928, 1.024
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1095, -445, 2734
+rot = 0.000, 2.198, 0.000
+scale = 1.204, 1.008, 1.008
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -555, -402, 3100
+rot = 0.000, 2.763, 0.000
+scale = 1.000, 1.044, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1484, -435, 2549
+rot = 0.000, 4.019, 0.000
+scale = 0.952, 1.276, 1.100
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -278, -392, 3228
+rot = 0.000, 3.705, 0.000
+scale = 1.196, 1.172, 1.200
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1348, -352, 3265
+rot = 0.000, 5.212, 0.000
+scale = 0.916, 1.212, 0.932
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -130, -448, 2840
+rot = 0.000, 2.324, 0.000
+scale = 1.292, 1.032, 0.956
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 16, -435, 3066
+rot = 0.000, 1.570, 0.000
+scale = 1.032, 0.988, 0.912
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1370, -430, 2852
+rot = 0.000, 5.087, 0.000
+scale = 0.908, 1.016, 1.072
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1767, -387, 2489
+rot = 0.000, 4.145, 0.000
+scale = 0.944, 1.072, 0.904
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2007, -278, 2667
+rot = 0.000, 2.763, 0.000
+scale = 1.188, 1.296, 1.136
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1996, -217, 3006
+rot = 0.000, 0.000, 0.000
+scale = 1.076, 1.232, 0.916
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1131, -373, 3071
+rot = 0.000, 5.212, 0.000
+scale = 1.264, 1.212, 1.180
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1993, -314, 1716
+rot = 0.000, 3.203, 0.000
+scale = 1.164, 1.032, 1.148
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2284, -233, 2495
+rot = 0.000, 5.966, 0.000
+scale = 0.940, 1.260, 1.228
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2562, -190, -3535
+rot = 0.000, 5.526, 0.000
+scale = 0.448, 0.484, 0.421
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2269, -278, 1965
+rot = 0.000, 1.256, 0.000
+scale = 1.168, 1.216, 1.264
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1460, -288, 3191
+rot = 0.000, 5.150, 0.000
+scale = 0.940, 1.172, 1.060
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 295, -416, 3363
+rot = 0.000, 0.628, 0.000
+scale = 1.184, 1.260, 1.056
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 3118, -273, 2159
+rot = 0.000, 2.198, 0.000
+scale = 0.988, 1.072, 1.180
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2806, -256, 2157
+rot = 0.000, 4.019, 0.000
+scale = 1.108, 0.956, 1.224
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 3077, -354, 1843
+rot = 0.000, 2.198, 0.000
+scale = 0.996, 0.932, 1.044
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2284, -205, -3582
+rot = 0.000, 0.440, 0.000
+scale = 0.449, 0.444, 0.400
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 3035, -405, 1475
+rot = 0.000, 3.831, 0.000
+scale = 1.148, 1.268, 1.160
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1869, -195, -3670
+rot = 0.000, 4.270, 0.000
+scale = 0.418, 0.421, 0.413
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2819, -245, -3074
+rot = 0.000, 5.778, 0.000
+scale = 0.468, 0.490, 0.404
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 151, -76, -4271
+rot = 0.000, 2.952, 0.000
+scale = 0.439, 0.448, 0.440
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 417, -63, -4242
+rot = 0.000, 4.647, 0.000
+scale = 0.482, 0.476, 0.490
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2032, 17, -3910
+rot = 0.000, 0.251, 0.000
+scale = 0.471, 0.421, 0.494
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1356, -45, -4083
+rot = 0.000, 5.778, 0.000
+scale = 0.481, 0.450, 0.436
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1468, -65, -4151
+rot = 0.000, 4.082, 0.000
+scale = 0.463, 0.410, 0.462
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1099, -106, -4158
+rot = 0.000, 0.440, 0.000
+scale = 0.486, 0.432, 0.475
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -835, -113, -4132
+rot = 0.000, 5.778, 0.000
+scale = 0.491, 0.458, 0.454
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -455, -100, -4130
+rot = 0.000, 1.444, 0.000
+scale = 0.417, 0.400, 0.446
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -209, -104, -4190
+rot = 0.000, 5.401, 0.000
+scale = 0.478, 0.409, 0.495
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1774, -72, -3361
+rot = 0.000, 0.691, 0.000
+scale = 0.742, 0.710, 0.652
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1545, -70, -3864
+rot = 0.000, 2.135, 0.000
+scale = 0.403, 0.408, 0.434
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1061, -28, -4210
+rot = 0.000, 1.382, 0.000
+scale = 0.403, 0.415, 0.430
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1001, -87, -3913
+rot = 0.000, 2.386, 0.000
+scale = 0.462, 0.465, 0.436
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1651, -79, -3530
+rot = 0.000, 3.014, 0.000
+scale = 0.776, 0.728, 0.682
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 661, -37, -4296
+rot = 0.000, 1.068, 0.000
+scale = 0.450, 0.463, 0.458
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1891, -11, -3770
+rot = 0.000, 1.696, 0.000
+scale = 0.470, 0.404, 0.420
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1528, -137, -3314
+rot = 0.000, 5.464, 0.000
+scale = 0.696, 0.668, 0.794
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2336, -28, -3105
+rot = 0.000, 0.628, 0.000
+scale = 0.742, 0.720, 0.606
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3585, -90, -2799
+rot = 0.000, 3.580, 0.000
+scale = 0.476, 0.426, 0.410
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4559, -136, -551
+rot = 0.000, 5.401, 0.000
+scale = 0.427, 0.476, 0.446
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4276, -158, -425
+rot = 0.000, 1.821, 0.000
+scale = 0.472, 0.433, 0.444
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4231, -54, -1703
+rot = 0.000, 2.952, 0.000
+scale = 0.404, 0.456, 0.415
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4331, -68, -1475
+rot = 0.000, 0.502, 0.000
+scale = 0.480, 0.499, 0.480
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2547, 29, -3387
+rot = 0.000, 1.444, 0.000
+scale = 0.480, 0.459, 0.440
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4375, -119, -996
+rot = 0.000, 1.507, 0.000
+scale = 0.476, 0.403, 0.424
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3657, -82, -2580
+rot = 0.000, 6.154, 0.000
+scale = 0.421, 0.402, 0.440
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4439, -124, 705
+rot = 0.000, 5.966, 0.000
+scale = 0.489, 0.428, 0.435
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3812, -71, -2082
+rot = 0.000, 0.942, 0.000
+scale = 0.437, 0.457, 0.469
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3877, -88, -1790
+rot = 0.000, 2.889, 0.000
+scale = 0.458, 0.459, 0.448
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4548, -131, 143
+rot = 0.000, 4.333, 0.000
+scale = 0.429, 0.489, 0.495
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4145, -29, -1907
+rot = 0.000, 3.894, 0.000
+scale = 0.442, 0.405, 0.480
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2927, -12, -3393
+rot = 0.000, 4.584, 0.000
+scale = 0.433, 0.461, 0.401
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4477, -137, -762
+rot = 0.000, 4.333, 0.000
+scale = 0.424, 0.413, 0.421
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2762, -38, -3168
+rot = 0.000, 4.584, 0.000
+scale = 0.420, 0.456, 0.409
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4608, 53, 238
+rot = 0.000, 2.010, 0.000
+scale = 0.451, 0.436, 0.411
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4196, -167, 753
+rot = 0.000, 4.522, 0.000
+scale = 0.497, 0.454, 0.440
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3213, -124, -2893
+rot = 0.000, 4.584, 0.000
+scale = 0.474, 0.480, 0.465
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4225, -167, -146
+rot = 0.000, 0.314, 0.000
+scale = 0.494, 0.463, 0.429
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2982, -125, 3348
+rot = 0.000, 5.024, 0.000
+scale = 0.478, 0.444, 0.481
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2409, -183, 3522
+rot = 0.000, 5.840, 0.000
+scale = 0.430, 0.483, 0.481
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3158, -85, 3067
+rot = 0.000, 3.580, 0.000
+scale = 0.466, 0.438, 0.432
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2054, -124, 3850
+rot = 0.000, 0.126, 0.000
+scale = 0.411, 0.470, 0.444
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3701, 42, 2198
+rot = 0.000, 0.188, 0.000
+scale = 0.486, 0.421, 0.479
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1866, -58, 4093
+rot = 0.000, 1.696, 0.000
+scale = 0.483, 0.419, 0.453
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2664, -144, 3576
+rot = 0.000, 2.198, 0.000
+scale = 0.483, 0.466, 0.419
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3759, 34, 2614
+rot = 0.000, 4.961, 0.000
+scale = 0.475, 0.459, 0.425
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3361, -11, 2716
+rot = 0.000, 3.328, 0.000
+scale = 0.418, 0.498, 0.473
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4231, -17, 1645
+rot = 0.000, 5.150, 0.000
+scale = 0.451, 0.400, 0.453
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2453, -99, 3939
+rot = 0.000, 3.014, 0.000
+scale = 0.411, 0.434, 0.410
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4168, -86, 1346
+rot = 0.000, 0.565, 0.000
+scale = 0.423, 0.445, 0.469
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3917, 7, 1871
+rot = 0.000, 2.198, 0.000
+scale = 0.471, 0.418, 0.499
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3509, 26, 2555
+rot = 0.000, 4.836, 0.000
+scale = 0.489, 0.491, 0.448
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1562, -30, 4216
+rot = 0.000, 5.087, 0.000
+scale = 0.403, 0.458, 0.428
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3560, -26, 2960
+rot = 0.000, 1.947, 0.000
+scale = 0.463, 0.470, 0.431
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4271, 196, 1750
+rot = 0.000, 1.507, 0.000
+scale = 0.428, 0.436, 0.424
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3989, 34, 2077
+rot = 0.000, 5.589, 0.000
+scale = 0.420, 0.400, 0.485
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2565, -260, 1658
+rot = 0.000, 5.589, 0.000
+scale = 1.256, 1.148, 1.232
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2110, -311, 2323
+rot = 0.000, 1.633, 0.000
+scale = 0.771, 1.032, 1.180
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3090, -285, -1414
+rot = 0.000, 4.082, 0.000
+scale = 0.996, 0.972, 1.000
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2440, -16, 3493
+rot = 0.000, 0.251, 0.000
+scale = 0.446, 0.497, 0.429
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2001, -321, 3109
+rot = 0.000, 1.570, 0.000
+scale = 0.681, 0.916, 1.220
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 924, -45, 4264
+rot = 0.000, 1.444, 0.000
+scale = 0.429, 0.465, 0.490
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -849, 21, 4585
+rot = 0.000, 0.879, 0.000
+scale = 0.443, 0.433, 0.454
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2768, -54, 3224
+rot = 0.000, 2.072, 0.000
+scale = 0.461, 0.414, 0.415
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2058, -340, 2713
+rot = 0.000, 3.894, 0.000
+scale = 0.864, 1.100, 1.140
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1400, 80, 4137
+rot = 0.000, 5.401, 0.000
+scale = 0.472, 0.456, 0.485
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2209, 24, 3661
+rot = 0.000, 4.333, 0.000
+scale = 0.442, 0.410, 0.411
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1918, 135, 4104
+rot = 0.000, 5.840, 0.000
+scale = 0.487, 0.405, 0.468
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -210, -40, 4535
+rot = 0.000, 3.831, 0.000
+scale = 0.488, 0.460, 0.416
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1327, -26, 4203
+rot = 0.000, 4.459, 0.000
+scale = 0.401, 0.412, 0.465
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 650, -118, 4239
+rot = 0.000, 1.570, 0.000
+scale = 0.477, 0.494, 0.409
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -641, -23, 4346
+rot = 0.000, 4.208, 0.000
+scale = 0.428, 0.490, 0.467
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 43, -92, 4480
+rot = 0.000, 2.010, 0.000
+scale = 0.474, 0.465, 0.458
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 417, -129, 4394
+rot = 0.000, 4.522, 0.000
+scale = 0.429, 0.485, 0.407
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 233, -188, 4149
+rot = 0.000, 0.628, 0.000
+scale = 0.469, 0.472, 0.495
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1628, 86, 3986
+rot = 0.000, 3.517, 0.000
+scale = 0.437, 0.495, 0.464
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2151, 100, 3956
+rot = 0.000, 3.768, 0.000
+scale = 0.457, 0.445, 0.470
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2995, -53, 3074
+rot = 0.000, 1.633, 0.000
+scale = 0.449, 0.499, 0.499
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 3203, 207, 3108
+rot = 0.000, 2.826, 0.000
+scale = 0.404, 0.415, 0.439
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 3305, -112, 2715
+rot = 0.000, 4.019, 0.000
+scale = 0.443, 0.496, 0.480
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1172, 33, 4197
+rot = 0.000, 6.029, 0.000
+scale = 0.481, 0.484, 0.483
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 965, -82, 4081
+rot = 0.000, 1.319, 0.000
+scale = 0.682, 0.794, 0.760
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2758, -102, 2896
+rot = 0.000, 5.212, 0.000
+scale = 0.630, 0.770, 0.736
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2207, -39, 3461
+rot = 0.000, 2.952, 0.000
+scale = 0.644, 0.788, 0.624
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2725, -149, 2659
+rot = 0.000, 0.188, 0.000
+scale = 0.770, 0.668, 0.790
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2488, -91, 3179
+rot = 0.000, 3.328, 0.000
+scale = 0.610, 0.766, 0.608
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 112, -229, 4000
+rot = 0.000, 0.879, 0.000
+scale = 0.736, 0.634, 0.766
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2949, -124, 2701
+rot = 0.000, 1.633, 0.000
+scale = 0.670, 0.732, 0.700
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -113, -204, 3956
+rot = 0.000, 1.821, 0.000
+scale = 0.794, 0.728, 0.672
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1521, 21, 3890
+rot = 0.000, 3.642, 0.000
+scale = 0.772, 0.762, 0.730
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1232, -94, 3801
+rot = 0.000, 2.324, 0.000
+scale = 0.744, 0.700, 0.672
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1757, 25, 3779
+rot = 0.000, 5.150, 0.000
+scale = 0.632, 0.778, 0.760
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 672, -203, 3965
+rot = 0.000, 0.188, 0.000
+scale = 0.612, 0.674, 0.798
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1093, -195, 3659
+rot = 0.000, 3.014, 0.000
+scale = 0.672, 0.716, 0.622
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 472, -308, 3770
+rot = 0.000, 1.005, 0.000
+scale = 0.678, 0.632, 0.706
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2013, 9, 3653
+rot = 0.000, 3.956, 0.000
+scale = 0.752, 0.706, 0.738
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3652, -92, -2416
+rot = 0.000, 0.251, 0.000
+scale = 0.692, 0.624, 0.638
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1035, -158, 3804
+rot = 0.000, 4.773, 0.000
+scale = 0.732, 0.726, 0.796
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3446, -148, -2386
+rot = 0.000, 5.401, 0.000
+scale = 0.734, 0.696, 0.754
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2834, -126, 2595
+rot = 0.000, 2.135, 0.000
+scale = 0.604, 0.726, 0.722
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -515, -155, 3937
+rot = 0.000, 5.589, 0.000
+scale = 0.790, 0.616, 0.744
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2575, -184, 3373
+rot = 0.000, 0.754, 0.000
+scale = 0.706, 0.748, 0.632
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2731, -168, 2862
+rot = 0.000, 4.145, 0.000
+scale = 0.784, 0.700, 0.728
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1723, -125, 3833
+rot = 0.000, 4.459, 0.000
+scale = 0.646, 0.756, 0.730
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2485, -233, 2586
+rot = 0.000, 5.275, 0.000
+scale = 0.686, 0.614, 0.782
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2020, -157, 3743
+rot = 0.000, 1.256, 0.000
+scale = 0.656, 0.694, 0.724
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -691, -272, 3577
+rot = 0.000, 0.126, 0.000
+scale = 0.602, 0.792, 0.682
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1197, -86, 3976
+rot = 0.000, 2.261, 0.000
+scale = 0.758, 0.700, 0.648
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2235, -198, 3540
+rot = 0.000, 3.705, 0.000
+scale = 0.630, 0.676, 0.686
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2275, -237, 3311
+rot = 0.000, 5.024, 0.000
+scale = 0.644, 0.618, 0.756
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2699, -180, 3086
+rot = 0.000, 0.942, 0.000
+scale = 0.784, 0.660, 0.794
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -298, -112, 4143
+rot = 0.000, 5.589, 0.000
+scale = 0.648, 0.638, 0.602
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -561, -48, 4252
+rot = 0.000, 3.768, 0.000
+scale = 0.680, 0.608, 0.610
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1508, -116, 3873
+rot = 0.000, 0.816, 0.000
+scale = 0.794, 0.624, 0.620
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -778, -37, 4209
+rot = 0.000, 1.507, 0.000
+scale = 0.624, 0.706, 0.678
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3934, -169, -675
+rot = 0.000, 3.705, 0.000
+scale = 0.676, 0.774, 0.672
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1848, -221, 3555
+rot = 0.000, 1.256, 0.000
+scale = 0.644, 0.790, 0.630
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4139, -158, -716
+rot = 0.000, 4.019, 0.000
+scale = 0.754, 0.796, 0.734
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3365, 11, 2536
+rot = 0.000, 6.029, 0.000
+scale = 0.636, 0.684, 0.676
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3633, -193, -364
+rot = 0.000, 5.087, 0.000
+scale = 0.718, 0.672, 0.732
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3322, -194, -427
+rot = 0.000, 0.251, 0.000
+scale = 0.622, 0.646, 0.680
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3749, 13, 1962
+rot = 0.000, 2.324, 0.000
+scale = 0.688, 0.746, 0.620
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4170, -170, -190
+rot = 0.000, 0.126, 0.000
+scale = 0.746, 0.630, 0.660
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3913, -179, -463
+rot = 0.000, 2.889, 0.000
+scale = 0.660, 0.636, 0.768
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3440, -37, 1910
+rot = 0.000, 3.266, 0.000
+scale = 0.774, 0.790, 0.658
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3388, -2, 2152
+rot = 0.000, 5.778, 0.000
+scale = 0.706, 0.678, 0.718
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3828, -212, -28
+rot = 0.000, 5.526, 0.000
+scale = 0.642, 0.644, 0.664
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3709, -61, 1652
+rot = 0.000, 5.778, 0.000
+scale = 0.720, 0.798, 0.698
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3520, -243, 72
+rot = 0.000, 0.816, 0.000
+scale = 0.652, 0.678, 0.764
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4218, -183, 122
+rot = 0.000, 1.444, 0.000
+scale = 0.728, 0.760, 0.786
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3944, -228, 387
+rot = 0.000, 2.763, 0.000
+scale = 0.656, 0.668, 0.662
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3731, -264, 427
+rot = 0.000, 2.889, 0.000
+scale = 0.746, 0.764, 0.764
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4097, -164, 955
+rot = 0.000, 3.768, 0.000
+scale = 0.620, 0.702, 0.788
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3806, -225, 1050
+rot = 0.000, 0.879, 0.000
+scale = 0.768, 0.740, 0.634
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4169, -191, 335
+rot = 0.000, 1.947, 0.000
+scale = 0.722, 0.740, 0.624
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3257, -207, -203
+rot = 0.000, 1.382, 0.000
+scale = 0.628, 0.682, 0.798
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4045, -142, 1170
+rot = 0.000, 1.382, 0.000
+scale = 0.780, 0.744, 0.786
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3908, -132, 1306
+rot = 0.000, 2.198, 0.000
+scale = 0.640, 0.730, 0.714
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2957, -297, -2100
+rot = 0.000, 1.758, 0.000
+scale = 0.712, 0.776, 0.760
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3485, -171, -2048
+rot = 0.000, 6.092, 0.000
+scale = 0.774, 0.740, 0.756
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3079, -233, -2359
+rot = 0.000, 2.449, 0.000
+scale = 0.738, 0.648, 0.652
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3649, -176, -793
+rot = 0.000, 2.324, 0.000
+scale = 0.702, 0.662, 0.694
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4008, -143, -966
+rot = 0.000, 4.019, 0.000
+scale = 0.786, 0.796, 0.662
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3330, -133, -2751
+rot = 0.000, 5.024, 0.000
+scale = 0.750, 0.720, 0.666
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2689, -77, -3001
+rot = 0.000, 0.691, 0.000
+scale = 0.782, 0.726, 0.702
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3589, -186, -1282
+rot = 0.000, 5.903, 0.000
+scale = 0.622, 0.796, 0.734
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3294, -184, -2384
+rot = 0.000, 4.584, 0.000
+scale = 0.708, 0.690, 0.620
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3770, -132, -1609
+rot = 0.000, 6.217, 0.000
+scale = 0.796, 0.704, 0.658
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3256, -226, -2170
+rot = 0.000, 2.826, 0.000
+scale = 0.674, 0.644, 0.738
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2348, 43, -3488
+rot = 0.000, 3.831, 0.000
+scale = 0.666, 0.612, 0.684
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -4219, -126, -1003
+rot = 0.000, 1.193, 0.000
+scale = 0.730, 0.618, 0.658
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3136, -289, -1909
+rot = 0.000, 1.130, 0.000
+scale = 0.676, 0.626, 0.712
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3765, -158, -1092
+rot = 0.000, 0.126, 0.000
+scale = 0.782, 0.710, 0.638
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2726, -163, -2717
+rot = 0.000, 5.087, 0.000
+scale = 0.720, 0.630, 0.608
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1383, -142, -3713
+rot = 0.000, 0.628, 0.000
+scale = 0.644, 0.702, 0.706
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 748, -122, -3745
+rot = 0.000, 2.072, 0.000
+scale = 0.738, 0.698, 0.690
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -918, -161, -3871
+rot = 0.000, 5.778, 0.000
+scale = 0.642, 0.766, 0.728
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -78, -134, -3965
+rot = 0.000, 5.024, 0.000
+scale = 0.734, 0.606, 0.730
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1270, -146, -3652
+rot = 0.000, 3.328, 0.000
+scale = 0.782, 0.678, 0.686
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1163, -129, -3891
+rot = 0.000, 0.440, 0.000
+scale = 0.788, 0.784, 0.696
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1619, -212, -3550
+rot = 0.000, 0.628, 0.000
+scale = 0.724, 0.680, 0.724
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1525, -262, -3310
+rot = 0.000, 3.956, 0.000
+scale = 0.776, 0.752, 0.648
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1138, -163, -3590
+rot = 0.000, 0.000, 0.000
+scale = 0.638, 0.696, 0.758
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2028, -270, -3395
+rot = 0.000, 5.275, 0.000
+scale = 0.632, 0.630, 0.716
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 542, -80, -4058
+rot = 0.000, 1.570, 0.000
+scale = 0.698, 0.634, 0.792
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 148, -102, -4068
+rot = 0.000, 3.768, 0.000
+scale = 0.774, 0.764, 0.734
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 442, -120, -3824
+rot = 0.000, 6.154, 0.000
+scale = 0.726, 0.784, 0.662
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -287, -110, -4135
+rot = 0.000, 1.947, 0.000
+scale = 0.760, 0.762, 0.742
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -988, -125, -4075
+rot = 0.000, 1.633, 0.000
+scale = 0.720, 0.600, 0.774
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 922, -56, -4059
+rot = 0.000, 1.507, 0.000
+scale = 0.762, 0.692, 0.746
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3637, -159, 1380
+rot = 0.000, 4.145, 0.000
+scale = 0.704, 0.684, 0.670
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3898, -243, 523
+rot = 0.000, 3.328, 0.000
+scale = 0.694, 0.674, 0.684
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3755, -277, 684
+rot = 0.000, 0.188, 0.000
+scale = 0.672, 0.756, 0.650
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3178, -29, 2430
+rot = 0.000, 4.961, 0.000
+scale = 0.662, 0.724, 0.752
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3182, -35, 2201
+rot = 0.000, 4.459, 0.000
+scale = 0.682, 0.656, 0.760
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1659, -297, 3363
+rot = 0.000, 1.256, 0.000
+scale = 0.724, 0.614, 0.772
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -1870, -317, 3240
+rot = 0.000, 1.130, 0.000
+scale = 0.660, 0.764, 0.622
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -586, -345, 3364
+rot = 0.000, 0.000, 0.000
+scale = 0.722, 0.718, 0.764
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -439, -311, 3535
+rot = 0.000, 1.319, 0.000
+scale = 0.784, 0.674, 0.646
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 570, -325, 3662
+rot = 0.000, 0.502, 0.000
+scale = 0.722, 0.766, 0.696
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 664, -239, 3861
+rot = 0.000, 5.212, 0.000
+scale = 0.624, 0.704, 0.636
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1839, -81, 3499
+rot = 0.000, 5.966, 0.000
+scale = 0.732, 0.648, 0.704
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2022, -104, 3354
+rot = 0.000, 5.589, 0.000
+scale = 0.618, 0.794, 0.798
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1225, -194, -3475
+rot = 0.000, 3.140, 0.000
+scale = 0.606, 0.612, 0.630
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1166, -223, -3273
+rot = 0.000, 1.633, 0.000
+scale = 0.604, 0.702, 0.706
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2310, -375, -2876
+rot = 0.000, 0.816, 0.000
+scale = 0.676, 0.744, 0.672
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1982, -368, -2964
+rot = 0.000, 0.565, 0.000
+scale = 0.648, 0.730, 0.686
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 2708, -337, -2745
+rot = 0.000, 5.526, 0.000
+scale = 0.762, 0.652, 0.602
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -3300, -239, -1313
+rot = 0.000, 1.068, 0.000
+scale = 1.292, 1.176, 1.280
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = -2922, -270, 148
+rot = 0.000, 6.187, 0.000
+scale = 1.068, 1.020, 1.252
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+pos = 1936, -300, 2016
+rot = 0.000, 5.150, 0.000
+scale = 0.940, 1.172, 1.060
+colour = 1.000, 1.000, 1.000
+collide = 1,true
+// User: DYO
+
+name FLUFFY
+
+pos = 90, -489, 93
+rot = 0.000, 0.184, 0.000
+bEnabled = 1,true
+OnDefeated = event
+  TargetID = 4,DefeatFluffy
+  Message = Activate
+ID = 291,Fluffy
+// User: DYO
+
+name JULIUS
+
+pos = 2334, -447, 82
+rot = 0.000, -1.473, 0.000
+ID = 292,Julius
+bVisible = 0,false
+OnMoreCogs = event
+  TargetID = 0,none
+  Message = none
+OnAllTechnorangs = event
+  TargetID = 0,none
+  Message = none
+OnIntroduceTalisman = event
+  TargetID = 0,none
+  Message = none
+OnRecapTalisman = event
+  TargetID = 0,none
+  Message = none
+OnNeedTalisman = event
+  TargetID = 0,none
+  Message = none
+OnMoreFireTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreIceTE = event
+  TargetID = 0,none
+  Message = none
+OnMoreLightningTE = event
+  TargetID = 0,none
+  Message = none
+OnGiveFlamerang = event
+  TargetID = 0,none
+  Message = none
+OnGiveFrostyrang = event
+  TargetID = 0,none
+  Message = none
+OnGiveZappyrang = event
+  TargetID = 0,none
+  Message = none
+OnMakeZoomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMultirang = event
+  TargetID = 0,none
+  Message = none
+OnMakeInfrarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeMegarang = event
+  TargetID = 0,none
+  Message = none
+OnMakeKaboomerang = event
+  TargetID = 0,none
+  Message = none
+OnMakeChronorang = event
+  TargetID = 0,none
+  Message = none
+OnEnoughTEForTalisman = event
+  TargetID = 0,none
+  Message = none
+OnGiveTalisman = event
+  TargetID = 2,FightFluffy
+  Message = Activate
+// User: DYO

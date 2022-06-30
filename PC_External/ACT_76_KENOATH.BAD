@@ -1,0 +1,146 @@
+mesh act_76_kenoath.mdl
+skeleton act_76_kenoath.anm
+
+
+// AMBULATORY LOOPS
+anim walk01
+7-31,1
+event LeftFoot 23
+event RightFoot 11
+cycle loop
+
+anim run01
+50-74,1
+event LeftFoot 56
+event RightFoot 68
+cycle loop
+
+
+// ATTACK LOOPS
+//anim punchBouce01
+//100-108,1
+//cycle loop
+
+//anim punchBounce_transition12
+//109-115,1
+//cycle stop
+
+//anim punchBounce02
+//116-124,1
+//cycle loop
+
+//anim punchBounce_transition21
+//125-131,1
+//cycle stop
+
+//anim jump_transition12
+//132-144,1
+//cycle stop
+
+//anim jumpBounce01
+//144-152,1
+//cycle loop
+
+//anim jumpPunch01
+//153-165,1
+//cycle stop
+
+//anim jump_transition21
+//166-177,1
+//cycle stop
+
+//anim punch01
+//179-191,1
+//cycle stop
+
+
+// IDLE LOOPS
+//standard idle
+anim idle01
+500-725,1
+cycle loop
+
+//ken blows some snot out his very occa nose
+anim idle02
+250-286,1
+event snotExpel 269-271
+cycle stop
+
+//scratches his chest
+anim idle03
+300-346,1
+cycle stop
+
+//chin scratching
+anim idle04
+350-386,1
+cycle stop
+
+//back scratching
+anim idle05
+386-467,1
+cycle stop
+
+//breathe idle
+anim idle06
+750-773,1
+cycle stop
+
+
+// CONVERSATIONAL LOOPAGE:
+//ken thumps his finger into his palm
+anim gesture01
+800-829,1
+cycle stop
+
+anim gesture01_idle
+830-841,1
+cycle loop
+
+anim gesture01_exit
+842-860,1
+cycle stop
+
+//single armed shrug
+anim gesture02
+870-902,1
+cycle stop
+
+//points over his shoulder
+anim gesture03
+920-952,1
+cycle stop
+
+//shoulder shrug
+anim gesture04
+960-995,1
+cycle stop
+
+//point finger at ty
+anim gesture05
+1000-1034,1
+cycle stop
+
+//points at himself  This anim has an entry, loopable idle, and exit, so that he can
+//continue the gesture for varied lengths of time.
+anim gesture06
+1040-1058,1
+cycle stop
+
+anim gesture06_idle
+1059-1083,1
+cycle loop
+
+anim gesture06_exit
+1084-1093,1
+cycle stop
+
+
+
+anim bodyLookaround
+2380-2420,1
+cycle stop
+
+anim binocularlookaround
+2421-2550,1
+cycle loop

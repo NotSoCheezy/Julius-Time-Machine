@@ -1,0 +1,105 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSB1_09
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSB1_09_p01EN
+SubTitleNr = 0
+InTime = 200
+OutTime = 300
+PhonemeName = CSB1_09_p02EN
+SubTitleNr = 1
+InTime = 200
+OutTime = 1500
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = act_01_ty_synker.bad
+Actor = Maurie
+Model = ACT_11_MAURIE_SYNKER.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 0
+TCBInfo = 3
+  spline = 0.00,0.00
+  spline = 0.10,0.73
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5080.92,617.62,-7619.07,-5785.79,582.46,-8127.87
+  Spline = -4925.21,590.78,-7556.70,-5776.25,578.80,-7736.81
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 4.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -5078.89,617.62,-7621.86,-5791.51,582.21,-8119.72
+  Spline = -5080.92,617.62,-7619.07,-5785.79,582.46,-8127.87
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -5065.290,504.930,-7553.230
+ActorRot = 0.000,5.360,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = -5164.230,590.900,-7676.180
+ActorRot = 0.000,-3.740,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -5065.290,504.930,-7553.230
+ActorRot = 0.000,5.360,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyGive
+FitAnimToPhrase = 0
+ActorPos = -5164.230,590.900,-7676.180
+ActorRot = 0.000,-3.740,0.000
+
+[PHRASES]
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 1
+CameraNr = 0
+Effect = event=attach actor=2 prop=fullpie scale=0.30
+EffectDelay = 1200
+
+[END]

@@ -1,0 +1,26 @@
+mesh Act_49_BilbyBoy.mdl
+skeleton Act_49_BilbyBoy.anm
+
+anim idle01
+100-186,1
+cycle stop
+
+//anim idle02_Jump4atten
+//270-291,1
+//cycle stop
+
+//anim idle03
+//400-425,1
+//cycle stop
+
+//After release
+
+anim dance
+552-612,1
+cycle stop
+
+//anim Small_Dance
+//700-765,1
+//cycle stop
+
+//end

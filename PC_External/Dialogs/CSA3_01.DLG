@@ -1,0 +1,98 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA3_01
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSA3_01_P01EN
+SubTitleNr = 0
+InTime = 100
+OutTime = 0
+PhonemeName = CSA3_01_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 600
+PhonemeName = CSA3_01_P03EN
+SubTitleNr = 2
+InTime = 400
+OutTime = 1200
+
+[ACTORS]
+Count = 1
+Actor = Ty
+Model = act_01_ty_synker.bad
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 9.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 8426.16,920.36,19634.44,18099.91,-2840.03,19211.63
+  Spline = 8426.16,920.36,19634.44,8091.86,-1446.90,29741.20
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 7.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -10855.29,908.65,17238.62,-11237.44,767.10,18009.11
+  Spline = -10855.29,908.65,17238.62,-11372.56,764.81,17925.21
+
+[CELLS]
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = BodyYes
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyYes
+FitAnimToPhrase = 0
+ActorPos = 10190.910,9.400,15641.340
+ActorRot = 0.000,0.000,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = BodyYes
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyYes
+FitAnimToPhrase = 0
+ActorPos = 10190.910,9.400,15641.340
+ActorRot = 0.000,0.000,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = BodyYes
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyYes
+FitAnimToPhrase = 0
+ActorPos = 10190.910,9.400,15641.340
+ActorRot = 0.000,0.000,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 3
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

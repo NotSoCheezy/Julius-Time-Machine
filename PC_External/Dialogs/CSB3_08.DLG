@@ -1,0 +1,168 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSB3_08
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSB3_08_P01EN
+SubTitleNr = 0
+InTime = 200
+OutTime = 500
+PhonemeName = CSB3_08_P02EN
+SubTitleNr = 1
+InTime = 400
+OutTime = 900
+PhonemeName = CSB3_08_P03EN
+SubTitleNr = 2
+InTime = 400
+OutTime = 1200
+
+[ACTORS]
+Count = 3
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Shazza
+Model = ACT1_08_SHAZZAPROP.BAD
+Actor = Bushpig
+Model = ACT_89_BULLNTY.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 7.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -12843.00,4112.42,6185.73,-12571.95,3989.39,5391.31
+  Spline = -12854.11,4112.43,6181.80,-12513.82,3980.88,5415.93
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -12826.23,4103.53,6166.65,-12843.25,4041.30,5320.83
+  Spline = -12828.35,4112.48,6145.57,-12845.37,4050.25,5299.75
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyHopDown
+FitAnimToPhrase = 0
+ActorPos = -12688.765,4023.852,5992.953
+ActorRot = 0.000,4.544,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyHairArrange
+FitAnimToPhrase = 0
+ActorPos = -12839.820,4039.129,6090.534
+ActorRot = 0.000,2.550,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = idle01_look
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = idle01_look
+FitAnimToPhrase = 0
+ActorPos = -12625.500,3997.866,5921.721
+ActorRot = 0.000,4.844,0.000
+Speaking = 0
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNod
+FitAnimToPhrase = 0
+ActorPos = -12758.925,4036.638,6066.617
+ActorRot = 0.000,4.544,0.000
+Speaking = 1
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = give
+FitAnimToPhrase = 1
+ActorPos = -12833.274,4043.101,6071.588
+ActorRot = 0.000,2.550,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = idle01_look
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = idle01_look
+FitAnimToPhrase = 0
+ActorPos = -12625.500,4013.866,5921.721
+ActorRot = 0.000,4.844,0.100
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyHappy
+FitAnimToPhrase = 0
+ActorPos = -12758.925,4036.638,6066.617
+ActorRot = 0.000,4.544,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -12833.274,4043.101,6071.588
+ActorRot = 0.000,2.550,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = idle04_sniffGround
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = idle04_sniffGround
+FitAnimToPhrase = 0
+ActorPos = -12625.500,4013.866,5921.721
+ActorRot = 0.000,4.844,0.100
+
+[PHRASES]
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 1
+CameraNr = 0
+Effect = event=attach actor=2 prop=egg scale=0.30
+EffectDelay = 900
+CameraNr = 3
+Effect = event=clear
+EffectDelay = 1
+
+[END]

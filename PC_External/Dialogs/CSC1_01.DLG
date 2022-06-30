@@ -1,0 +1,80 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSC1_01
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSC1_01_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 300
+PhonemeName = CSC1_01_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 1000
+
+[ACTORS]
+Count = 1
+Actor = Maurie
+Model = ACT_11_MAURIE_SYNKER.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 9.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -10592.27,348.12,4432.33,-10718.65,343.44,4022.58
+  Spline = -10415.43,354.66,5005.64,-10541.81,349.98,4595.89
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -2874.66,1011.43,-2886.92,-3651.81,913.82,-3268.79
+  Spline = -2872.10,1011.44,-2891.90,-3676.60,912.69,-3211.75
+
+[CELLS]
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = -2916.562,970.839,-2927.999
+ActorRot = 0.000,-3.100,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadHappy
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = -2916.562,970.839,-2927.999
+ActorRot = 0.000,-3.100,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

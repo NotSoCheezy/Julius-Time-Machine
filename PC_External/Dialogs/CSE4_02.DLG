@@ -1,0 +1,116 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSE4_02
+TotalPhrases = 4
+
+[PHONEMES]
+PhonemeName = CSE4_02_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 300
+PhonemeName = CSE4_02_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 450
+PhonemeName = CSE4_02_P03EN
+SubTitleNr = 2
+InTime = 0
+OutTime = 1500
+PhonemeName = blanken
+SubTitleNr = 3
+InTime = 0
+OutTime = 3000
+
+[ACTORS]
+Count = 1
+Actor = BossCass
+Model = ACT_23_BOSSCASS.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 12.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -62.26,948.14,-552.43,1732.82,-151.33,9502.22
+  Spline = 2.62,957.45,-580.86,-2083.54,-196.10,9410.82
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 3.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 52.74,63.64,-1746.04,3058.82,-1648.73,7924.18
+  Spline = 52.74,108.64,-1746.04,3058.82,-1603.73,7924.18
+
+[CELLS]
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNo
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+Speaking = 1
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = goingpostal
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+Speaking = 0
+LipAnim = LipsAngry
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadAngry
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -29.260,802.480,-317.960
+ActorRot = 0.000,0.040,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 3
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 3
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

@@ -1,0 +1,66 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSA3_09
+TotalPhrases = 1
+
+[PHONEMES]
+PhonemeName = CSA3_09_p01EN
+SubTitleNr = 0
+InTime = 250
+OutTime = 1100
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Rex
+Model = ACT_12_REX_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.32,0.13
+  spline = 0.72,0.91
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 818.09,5883.67,-11392.15,1460.24,5796.87,-11365.95
+  Spline = 818.80,5883.67,-11405.52,1457.49,5796.83,-11334.00
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsSad
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 3
+BodyAnim = BodyEarScratch
+FitAnimToPhrase = 0
+ActorPos = 964.770,5808.900,-11434.930
+ActorRot = 0.000,-2.300,0.000
+Speaking = 1
+LipAnim = LipsHappy
+LipScaler = 160
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = 971.380,5805.610,-11338.360
+ActorRot = -0.100,-0.700,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+
+[END]

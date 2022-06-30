@@ -1,0 +1,98 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSC3_01
+TotalPhrases = 3
+
+[PHONEMES]
+PhonemeName = CSC3_01_P01EN
+SubTitleNr = 0
+InTime = 0
+OutTime = 300
+PhonemeName = CSC3_01_P02EN
+SubTitleNr = 1
+InTime = 0
+OutTime = 500
+PhonemeName = CSC3_01_P03EN
+SubTitleNr = 2
+InTime = 0
+OutTime = 0
+
+[ACTORS]
+Count = 1
+Actor = Shark
+Model = ACT_39_SHARK.BAD
+
+[CAMERAS]
+Count = 2
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 14.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -3496.01,-1486.34,-24790.56,-9174.00,-2523.07,-16149.98
+  Spline = -3496.01,-1486.34,-24790.56,-7070.99,-2417.75,-15078.67
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 6.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -934.94,-1529.30,-2317.22,8692.12,-1538.98,-6217.26
+  Spline = -934.94,-1529.30,-2317.22,4309.54,-1548.71,-11282.68
+
+[CELLS]
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = swim
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = swim
+FitAnimToPhrase = 0
+ActorPos = -2072.140,-3261.260,-22893.740
+ActorRot = 0.000,-1.800,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = bodyswim
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = bodyswim
+FitAnimToPhrase = 0
+ActorPos = -2072.140,-1956.260,-22893.740
+ActorRot = 0.000,-1.700,0.000
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = swim
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = swim
+FitAnimToPhrase = 0
+ActorPos = -2072.140,-3261.260,-22893.740
+ActorRot = 0.000,-1.800,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 3
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 1
+Effect = Nothing
+EffectDelay = 0
+
+[END]

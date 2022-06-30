@@ -1,0 +1,114 @@
+mesh act_90_scrubturkey.mdl
+skeleton act_90_scrubturkey.anm
+
+
+// REFERENCE NODES:
+//r_beak node for the beak, where the turkey will carry the thunder egg
+//r_foot_L bottom of the left foot
+//r_foot_R
+
+// AMBULATORY LOOPAGE:
+anim run
+5-19,1
+event leftfoot 8
+event rightfoot 15
+cycle loop
+
+anim walk
+60-84,1
+event leftfoot 82
+event rightfoot 71
+cycle loop
+
+//scrub turkey gets hit by a boomerang.  this loops in with the run
+anim jump
+25-49,1
+cycle stop
+
+anim bitten
+660-686,1
+//550-590,1
+cycle stop
+
+anim bittenIdle
+780-790,1
+cycle loop
+
+anim bittenStandup
+634-645,1
+cycle stop
+
+anim bitten_coughUp
+749-764,1
+event releaseEgg 758
+cycle stop
+
+//This animation goes into the stand up anim.
+anim bitten_throw
+687-701,1
+event releaseEgg 696
+cycle stop
+
+anim eggCatch
+550-596,1
+event catchEgg 578
+cycle stop
+
+
+// IDLES:
+//scratches the ground
+anim idle01
+100-152,1
+cycle stop
+
+//pecking at the ground.  could maybe have a few little particles get thrown up when he pecks...
+anim idle02
+160-233,1
+event peck01 168
+event peck03 174
+event peck04 185
+event peck05 197
+event peck06 204
+event peck07 216
+event peck08 223
+cycle stop
+
+//looks around
+anim idle03
+250-370,1
+cycle stop
+
+
+// ALERTS:
+//been spotted
+anim alert01
+500-524,1
+cycle stop
+
+//scratch dirt caution
+anim alert02
+400-470,1
+cycle stop
+
+//look around caution
+anim alert03
+250-370,1
+cycle stop
+
+
+//TEST ANIMS
+//anim test01
+//100-152
+//160-233
+//400-470
+//250-370
+//500-524
+//5-19
+//5-19
+//25-49
+//5-19
+//5-19
+//cycle stop
+
+
+//end

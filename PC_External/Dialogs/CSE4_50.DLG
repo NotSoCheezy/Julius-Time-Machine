@@ -1,0 +1,53 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = BLANK
+TotalPhrases = 1
+
+[PHONEMES]
+PhonemeName = blanken
+SubTitleNr = 0
+InTime = 0
+OutTime = 5500
+
+[ACTORS]
+Count = 1
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 5.00
+ForceLength = 0
+TCBInfo = 4
+  spline = 0.00,0.00
+  spline = 0.57,0.16
+  spline = 0.93,0.98
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = 6.03,79.43,-2008.99,320.67,-1548.38,8130.34
+  Spline = -33.01,465.86,-3242.47,215.27,-3370.05,6285.00
+
+[CELLS]
+Speaking = 0
+LipAnim = 
+LipScaler = 128
+HeadType = 1
+HeadAnim = actionIdle
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = actionIdle
+FitAnimToPhrase = 0
+ActorPos = 5.990,0.000,-1907.480
+ActorRot = 0.000,3.142,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+
+[END]

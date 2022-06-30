@@ -1,0 +1,10 @@
+// Prop_0014_Detour_sign
+mesh 	Prop_0042_portal.ASE
+skeleton PropANIM_0042_portal.ASE
+vat	NULL
+//single frame for position data
+anim idle
+1-100,1
+cycle loop
+
+.end

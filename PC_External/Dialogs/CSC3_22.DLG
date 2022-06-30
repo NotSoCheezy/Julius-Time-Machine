@@ -1,0 +1,93 @@
+// Krome Dialog File
+// Created at :
+//
+[SETUP]
+SubtitleFile = CSC3_22
+TotalPhrases = 2
+
+[PHONEMES]
+PhonemeName = CSC3_22_P01EN
+SubTitleNr = 0
+InTime = 300
+OutTime = 300
+PhonemeName = CSC3_22_P02EN
+SubTitleNr = 1
+InTime = 300
+OutTime = 1500
+
+[ACTORS]
+Count = 2
+Actor = Ty
+Model = ACT_01_TY_SYNKER.BAD
+Actor = Maurie
+Model = ACT_11_MAURIE_SYNKER.BAD
+
+[CAMERAS]
+Count = 1
+FOV = 0.96
+NearPlane = 10.00
+FarPlane = 1000000.00
+CamTime = 8.00
+ForceLength = 0
+TCBInfo = 2
+  spline = 0.00,0.00
+  spline = 1.00,1.00
+CamSplines = 2
+  Spline = -17643.39,-1602.96,-10554.87,-18216.54,-1639.00,-9931.13
+  Spline = -17634.98,-1602.96,-10546.14,-18308.64,-1634.22,-10032.33
+
+[CELLS]
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyNeutral
+FitAnimToPhrase = 0
+ActorPos = -17847.141,-1717.200,-10715.810
+ActorRot = 0.000,-3.800,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyGlasses
+FitAnimToPhrase = 0
+ActorPos = -17680.188,-1633.500,-10494.086
+ActorRot = 0.000,0.000,0.000
+Speaking = 0
+LipAnim = LipsNeutral
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyHappy
+FitAnimToPhrase = 0
+ActorPos = -17847.141,-1717.200,-10715.810
+ActorRot = 0.000,-3.800,0.000
+Speaking = 1
+LipAnim = Lips
+LipScaler = 128
+HeadType = 1
+HeadAnim = HeadNeutral
+FitAnimToPhrase = 0
+BodyType = 1
+BodyAnim = BodyJolly
+FitAnimToPhrase = 0
+ActorPos = -17680.188,-1633.500,-10494.086
+ActorRot = 0.000,0.000,0.000
+
+[PHRASES]
+CameraNr = 0
+Effect = Nothing
+EffectDelay = 0
+CameraNr = 2
+Effect = Nothing
+EffectDelay = 0
+
+[END]

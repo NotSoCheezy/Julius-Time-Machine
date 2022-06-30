@@ -1,0 +1,238 @@
+mesh act_31_slyprop.ase
+skeleton act_31_slyprop.ASE
+
+anim SkeletonSetup
+0-2,1
+cycle stop
+
+//-----------------
+//  WALKS AND RUNS 1-1000
+//-----------------
+
+//  Standing Pose is at frame 1
+
+//  Walk
+anim walk
+200-240,1
+event leftFoot 220
+event rightFoot 240
+cycle loop
+
+//  Jog
+anim Jog
+300-320,1
+event RightFoot 305
+event LeftFoot 315
+cycle loop
+
+//  run
+anim run00
+750-766,1
+event leftFoot 761
+event rightFoot 753
+cycle loop
+
+//  Skid to a halt  Tween to this over 5-10 frames
+anim skid
+500-507,1
+cycle stop
+
+//  Quick 180 turn Move Ty 92cm backwards and rotate him 180 over 21 frames please
+anim turn
+600-620,1
+cycle stop
+
+//  Recover after skid to a halt
+anim SkidRecover
+700-720,1
+cycle stop
+
+
+
+//-------------------
+//  JUMPS AND GLIDES 1001-2000
+//-------------------
+
+// Jump to the up peak
+anim jump
+1001-1010,1
+cycle stop
+
+// Fall frames
+anim fall
+1600-1611,1
+cycle loop
+
+
+//--------
+//  IDLES 5001-8000
+//--------
+
+// Panting after running a lot
+anim actionIdle
+5000-5080,1
+event blink 5005
+event blink 5034
+cycle stop
+
+// Just stands, breathing
+anim relaxIdle
+5100-5300,1
+event blink 5240
+cycle loop
+
+// Swing boomerangs like a gunslinger
+anim specialIdle1
+5300-5448,1
+event TrailOn 5321
+event TrailOff 5360
+event TrailOn 5386
+event TrailOff 5437
+event blink 5335
+event blink 5364
+event blink 5382
+cycle stop
+
+// Boomerang flies off
+anim specialIdle2
+6000-6370,1
+event TrailOn 6021
+event TrailOff 6060
+event TrailOn 6086
+event TrailOff 6118
+event RangTyRightOff 6118
+event RangTyRightSpecialIdle2On 6118
+event RangTyRightSpecialIdle2Off 6317
+event RangTyRightOn 6317
+cycle stop
+
+
+// Swipe at flies
+anim specialIdle3
+6400-6512,1
+cycle stop
+
+// Scratch back with boomerang
+anim SpecialIdle4
+6900-7097,1
+cycle stop
+
+// Ty being talked to special idles
+anim TalkNod
+7101-7300,1
+cycle stop
+
+anim TalkFlySwat
+7301-7357,1
+cycle stop
+
+anim TalkHeadShake
+7401-7478,1
+cycle stop
+
+anim TalkEarScratch
+7501-7585,1
+cycle stop
+
+anim NastyIdle_01
+11900-12000,1
+cycle stop
+
+anim NastyIdle_02
+12100-12200,1
+cycle stop
+
+anim NastyIdle_03
+12300-12450,1
+cycle stop
+
+
+//----------------------------------
+//  BOOMERANG THROWING AND CATCHING 8001-7000
+//----------------------------------
+
+// Throw boomerang from right hand  
+anim rightThrow
+8001-8015,1
+event rightThrowBoomerang 8007
+cycle stop
+
+// Throw boomerang from left hand
+anim leftThrow
+8101-8115,1
+event leftThrowBoomerang 8107
+cycle stop
+
+// Catch with left hand
+anim leftCatch
+8301-8320,1
+event leftCatch 8308
+cycle stop
+
+// Catch with right hand
+anim rightCatch
+8201-8220,1
+event rightCatch 8208
+cycle stop
+
+// Throw both boomerangs at once
+
+anim ThrowBoth
+15800-15815,1
+event BothThrowBoomerang 15806
+cycle stop
+
+// Catch both boomerangs at once
+
+anim CatchBoth 
+15820-15835,1
+event BothCatch 15824
+cycle stop
+
+
+//------------------
+//  HITS AND KNOCKS 9001-10000
+//------------------
+
+// knocked backwards by an enemy
+anim knockDown
+9000-9035,1
+event blink 9001
+cycle stop
+
+// Get up from a splat landing
+anim getUp
+9100-9130,1
+event leftfoot 9119
+event rightfoot 9119
+cycle stop
+
+// Hit animation
+anim flinch1
+9201-9212,1
+cycle stop
+
+// Hit animation
+anim flinch2
+9301-9312,1
+cycle stop
+
+// Hit animation
+anim flinch3
+9401-9412,1
+cycle stop
+
+// Recovery from Ice Rangs
+anim IceRangRecovery
+12700-12785,1
+cycle stop
+
+//-------------------------------
+// DEATH ANIMATIONS  10001-11000
+//-------------------------------
+
+// Regular Death
+anim Death
+10001-10046,1
+10046,40
+cycle stop
