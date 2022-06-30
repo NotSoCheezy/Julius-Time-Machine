@@ -1,6 +1,6 @@
 # Julius' Time Machine: Twenty Years Ago - Today.
 
-Greetings, young Ty!
+Greetings, Ty!
 
 Have you ever wondered what might have been, had you started on your great quest to retrieve the talismans sooner? Say, three months sooner, to be exact.
 
