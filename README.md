@@ -2,7 +2,7 @@
 
 Greetings, Ty!
 
-Have you ever wondered what might have been, had you started on your great quest to retrieve the talismans sooner? Say, three months sooner, to be exact.
+Have you ever wondered what might have been, had you started on your great quest to retrieve the talismans sooner? Say, three months and a week sooner, to be exact.
 
 Well, wonder no more, my Thylacinus cynocephalus friend! Thanks to the enormous power of the excess thunder eggs you've collected, I was able to channel energy into my latest invention - the Temporalis Transportacious Translocator! You may be familiar with the concept - it is a time machine.
 
