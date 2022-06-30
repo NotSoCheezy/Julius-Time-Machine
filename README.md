@@ -31,7 +31,7 @@ Julius' Time Machine is a mod designed for the debug build of Ty the Tasmanian T
   
 3. You should now have a folder called "depots" which contains two folders - 411961 and 411962. Within each is another folder - the contents of both of which should be copied into a directory of your choice, now referred to as "TY-DEBUG".
 
-4. Extract Julius-Time-Machine.7z from this repository into TY-DEBUG. It should now contain the following:
+4. Extract Julius-Time-Machine.7z from the latest release into TY-DEBUG. It should now contain the following:
 
   PC_External **[folder]**
   
